@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/bottom-sheets.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:39 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>바텀 시트 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Bottom sheets - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bottom sheets - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Bottom sheets - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Bottom sheets</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components first-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header class="qp-ui" data-qp-ui="{
+  'Peekaboo': {
+    'mobile': 72,
+    'desktop-sm': 72,
+    'default': 192
+  }
+}">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">바텀 시트</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="nav_selected" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">바텀 시트
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>바텀 시트는 화면의 최하단 가장자리에서부터 위로 슬라이드하는 머티리얼의 시트입니다. 바텀 시트는 오직 사용자가 시작한 액션의 결과로만 표시되고, 추가적인 내용물을 드러내기 위해 위로 스와이프 될 수 있습니다. 바텀 시트는 임시적인 모달(Modal) 표면이나 앱의 지속적인 구조적 요소일 수 있습니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bottom-sheets-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bottom-sheets-persistent-bottom-sheets">지속적인 바텀 시트
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bottom-sheets-modal-bottom-sheets">모달 바텀 시트
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bottom-sheets-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bottom-sheets-specs">명세
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+<div id="bottom-sheets-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:l">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:m">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p>바텀 시트의 두 가지 주요 유형은 다음과 같습니다:</p><ul><li><strong>모달 바텀 시트(Modal Bottom Sheet)</strong>는 메뉴나 심플 다이얼로그의 대체 요소입니다. 이것은 또한 다른 앱에 딥 링크된 내용물을 보여줄 수 있습니다. 이것은 주로 모바일을 위해 사용됩니다.</li><li><strong>지속적인 바텀 시트(Persistent Bottom Sheet)</strong>는 앱 내의 내용물을 보여 줍니다.</li></ul><p>고도(Elevation)가 지속적인 바텀 시트와 모달을 구분 짓습니다. 모달 바텀 시트는 앱의 내용물보다 높은 고도에 있습니다; 반면에 지속적인 바텀 시트는 그 앱과 동일한 고도에 있으며 그 내용물을 통합합니다.</p><p>공간이 덜 제한되는 큰 화면에서, <a href="/design/spec/components/dialogs.html#dialogs-simple-dialogs">심플 다이얼로그</a>나 <a href="/design/spec/components/menus.html">메뉴</a>와 같은 대체 가능한 표면과 컴포넌트를 사용하는 것이 바텀 시트를 사용하는 것 보다 더 적절할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VW9HUDhtTE5XZVk/components_bottomsheets_usage2.png">
+                    </div>
+                        <figcaption>
+                        <p>모달 바텀 시트는 앱의 내용물 위를 미끌어지듯이 들어옵니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dDZKN1lHNG1TekU/components_bottomsheets_usage1.png">
+                    </div>
+                        <figcaption>
+          <p>지속적인 바텀 시트는 앱의 레이아웃에 내장된 부분입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>
+<div id="bottom-sheets-persistent-bottom-sheets" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:n">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:o">
+    지속적인 바텀 시트
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>지속적인(Persistent) 바텀 시트는 메인 뷰를 보충하는 앱 내의 내용물을 표시합니다. 이것은 능동적으로 사용하지 않을 때에도 보여지며, 앱과 동일한 고도에 있고 그 내용물과 통합됩니다.</p><h4>사용법</h4><ol start="1"><li>고유의 표면에 새로운 내용물을 넣기 위해 사용</li><li>주 내용물과 가치가 동일한 내용물을 표시하기 위해 사용</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3SWdXb1NwN0ZYNm8/components_bottomsheets_persistent2.png">
+                    </div>
+                        <figcaption>
+          <p>레이아웃에 FAB가 있는 지속적인 바텀 시트를 넣는 것은 FAB가 수직으로 이동하게 만들 것입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ejJ0TERfdGgyNVk/components_bottomsheets_persistent5.png">
+                    </div>
+                        <figcaption>
+          <p>지속적인 바텀 시트는 지도를 이동하는 동안 지역 세부 사항이 화면에 남아 있는 것을 가능하게 합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NmZkN1NVRGgzM28/components_bottomsheets_persistent6.png">
+                    </div>
+                        <figcaption>
+          <p>재생 컨트롤은 사용자의 메인 뷰 탐색과 상관없이 지속적인 바텀 시트 위에 보여진 상태로 있습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>모바일</strong></p><p>모바일의 지속적인 바텀 시트는 세로 방향(Portrait)과 가로 방향(Landscape) 뷰 모두에서 전체 너비입니다.</p><p><strong>태블릿/데스크탑</strong></p><p>지속적인 바텀 시트는 들어 있는 내용물의 너비, 전반적인 UI, 밑에 있는 내용물, 그리고 감각적인 선택에 의해서 결정된 대로 전체 너비이거나 아니면 삽입된 크기를 가집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NzdlengzeE5KbEU/components_bottomsheets_persistent7.png">
+                    </div>
+                        <figcaption>
+                        <p>태블릿에서 전체 너비의 지속적인 바텀 시트</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3WUdMcUgtQmoxaTA/components_bottomsheets_persistent8.png">
+                    </div>
+                        <figcaption>
+          <p>테블릿에서 삽입된 크기의 지속적인 바텀 시트</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>데스크탑에서, 지속적인 바텀 시트는 또다른 표면이나 머티리얼의 시트로 변형할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3V3lHdWU3cTdKRzQ/components_bottomsheets_persistent9.png">
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서, 보통 지속적인 바텀 시트 안에 표시된 내용물은 머티리얼의 새 시트로 이동할 것입니다. 큰 화면에서 인터페이스의 좌측에 위치한 머티리얼의 시트에 바텀 시트의 내용물을 표시하는 것이 더 적절할 것입니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>
+<div id="bottom-sheets-modal-bottom-sheets" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:p">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:q">
+   모달 바텀 시트 
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>모달 바텀 시트는 메뉴나 심플 다이얼로그의 대체 요소이며, 다른 앱에 딥 링크된 내용물을 표시할 수 있습니다. 이것은 다른 UI 요소 위에 보여지며 밑에 있는 내용물과 상호작용 하기 위해서 사라져야만 합니다. 모달 바텀 시트가 화면 안으로 미끌어져 들어올 때, 화면의 나머지는 어두워지며, 바텀 시트는 초점을 얻습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NWNQcUo1TnhhaWs/components_bottomsheets_modal1.png">
+                    </div>
+                        <figcaption>
+          <p>리스트 안에 액션의 집합이 있는 모달 바텀 시트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UzA3RDctV2k0YUk/components_bottomsheets_modal2.png">
+                    </div>
+                        <figcaption>
+          <p>그리드 안에 액션의 집합이 있는 모달 바텀 시트</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>사용법</h4><p>모달 바텀 시트는 다음과 같을 것입니다:</p><ol start="1"><li>메뉴나 심플 다이얼로그의 대체 요소로서 리스트나 그리드 안에 액션을 보여 줍니다.</li><li>메뉴에 대한 분명한 입구가 없을 때, 상황에 맞는 메뉴를 표시합니다.</li><li>들어 있는 요소의 가시성에 우선순위를 매깁니다.</li></ol><p>모달 바텀 시트는 긴 메뉴 아이템 이름, 부수적인 텍스트가 있는 메뉴 아이템, 그리고 메뉴 아이템과 관련된 아이콘을 표시할 수 있습니다.</p><p>메뉴 아이템을 표시할 때, 전체로 확장된 모달 바텀 시트는 앱 바의 최하단에서부터 최소 8dp의 거리를 유지합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3OWxLQ182ZTNxZGM/components_bottomsheets_modal3.png">
+                    </div>
+                        <figcaption>
+          <p>바텀 시트는 메뉴 아이템과 아이콘이 연관될 것입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B7WCemMG6e0VS0RlMEx5Qk9PQjQ/components_bottomsheets_modal4.png">
+                    </div>
+                        <figcaption>
+          <p>부수적인 텍스트가 있는 메뉴 아이템</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>딥 링크</h4><p>모달 바텀 시트는 다른 앱에 내용물이나 컨트롤을 연결하는 딥 링크를 제공하기 위해 사용될 것입니다. 이것은 전체 화면 너비에 걸쳐 표시됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3LTM2UnM0VEtFQnc/components_bottomsheets_modal7.png">
+                    </div>
+                        <figcaption>
+          <p>딥 링크된 모달 바텀 시트는 사용자가 사전 앱을 여는 일 없이 용어의 정의를 표시합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3YXA2Y3RoSnhPM2c/components_bottomsheets_modal6.png">
+                    </div>
+                        <figcaption>
+          <p>우측 앱은 좌측 앱에서 온 내용물이 들어 있는 바텀 시트를 표시합니다. 이것은 사용자가 현재 앱을 떠나는 일 없이 다른 앱에서 온 내용물을 보여주는 것을 허용합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>바텀 시트는 또다른 앱의 내부를 깊이 탐색하는 링크가 들어 있을 것입니다. 이 링크든 다음과 같을 것입니다:</p><ul><li>사용자가 또다른 앱 내에 여러 수준의 깊이를 탐색하는 것을 허용합니다.</li><li>링크가 시작했던 위에 수준으로 돌아갑니다.</li></ul><p>그러나, 이 딥 링크는 사용자가 계층구조의 위쪽으로 탐색하는 것을 허용하지 않을 것입니다: 링크는 초기 수준에 머물러 있거나, 깊이 들어가거나, 초기 수준으로 돌아오기만 할 것입니다.</p><p>그렇지 않으면, 딥 링크는 사용자가 바텀 시트 전체에서 떠나 또다른 뷰 안으로 탐색하게 할 것입니다.</p><p>바텀 시트의 딥 링크에서 위쪽으로 탐색하는 것을 가능하게 하기 위해서, 오버플로우 메뉴를 통해 어플리케이션을 열기 위한 명시적인 링크를 제공하십시오. “연락처 추가” 액션이 있는 것과 같이 딥 링크된 바텀 시트 내에 액션은 부모 어플리케이션을 여는 결과를 낳을 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3b1BpT0dRd0tFaUE/components_bottomsheets_modal_do.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>완전히 확장된 모달 바텀 시트는 앱 바에 X를 제공합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UTB0bG8tYWxVRG8/components_bottomsheets_modal_dont.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>내용물 계층 구조 안으로 탐색할 때, 위쪽 화살표(Up Arrow)를 보여 주는 것이 적절할 것입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>모바일</h4><p>모달 바텀 시트는 주로 모바일 컴포넌트이며, 세로 방향과 가로 방향 뷰 모두에서 전체 화면 너비로 걸쳐 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3MC0zbFNZaU1lUkk/components_bottomsheets_modal9.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>모달 바텀 시트를 위해서, 처음에 앱 바를 겹치지 마십시오. 사용자가 사라지게 하기 위해 탭/스와이프하는 것을 허용하십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TnJEQUF3Y0JVb2c/components_bottomsheets_modal10.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>바텀 시트의 높이는 들어 있는 내용물의 양에 의해서 좌우되어야 합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Ym9QLTlfbUR4ekk/components_bottomsheets_modal11.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>긴 리스트를 표시할 때, 모달 바텀 시트는 내부적으로 스크롤 할 수 있고, 16:9 키라인을 넘어서 확장할 수 있습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3YmVmTWVhMWtZbFk/components_bottomsheets_modal12.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>모달 바텀 시트를 위해서, 처음에 앱 바를 겹치지 마십시오. 바텀 시트 밖을 탭하여 사라지게 하기 위해서 사용자를 위한 영역을 유지하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>태블릿/데스크탑</h4><p>큰 화면에서 모달 바텀 시트의 대체를 고려하십시오. 바텀 시트는 그것을 불러 들이기 위해 사용자가 클릭했거나 터치했던 곳에서부터 먼 곳에 보여지기 때문에, 화면의 두 개의 다른 부분에 걸쳐 사용자의 주의를 분산시킵니다.</p><p>데스크탑 공간은 덜 제한되기 때문에, 모달 바텀 시트에 대한 많은 대체 요소를 지원할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c6">
+    <tbody>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>바텀 시트 대체 요소</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>이점</span></p>
+            </td>
+        </tr>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>메뉴</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>상호 작용 지점 근처에서 액션 선택을 유지</span></p>
+            </td>
+        </tr>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>심플 다이얼로그</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>사용자의 현재 상황을 강하게 중단</span></p>
+            </td>
+        </tr>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>같은 뷰 내에 인라인 확장</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>메뉴나 다이얼로그 같이 중단하지 않음</span></p>
+            </td>
+        </tr>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>지속적으로 접근 가능한 요소로서 모든 옵션을 보여 주기</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>접근하기 위해 버튼을 누를 필요가 없음</span></p>
+            </td>
+        </tr>
+        <tr class="c3">
+            <td class="c8" colspan="1" rowspan="1">
+                <p><span>새 브라우저 윈도우 열기</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>유연한 크기 조절과 레이아웃 독립</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Zm9IR1dxb0E5Ync/components_bottomsheets_modal15.png">
+                    </div>
+                        <figcaption>
+          <p>메뉴는 상호 작용 지점 근처에서 액션의 선택을 유지합니다. 바텀 시트 내로 이 메뉴 옵션을 배치하는 것은 권장되지 않습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>추가 공간에 적절한 레이아웃을 사용하는 큰 화면에서 모달 바텀 시트를 만드십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3QTBOb0p2WTh4NFE/components_bottomsheets_modal13.png">
+                    </div>
+                        <figcaption>
+          <p>태블릿에서 그리드 리스트 바텀 시트</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VE1WN0h5Ql9ZR2M/components_bottomsheets_modal14.png">
+                    </div>
+                        <figcaption>
+          <p>태블릿에서 긴 리스트 바텀 시트</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>
+<div id="bottom-sheets-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:r">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:s">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>바텀 시트는 바텀 시트를 아래로 스와이프하거나, 앱 바에 X와 같은 명시적인 컨트롤을 터치하거나, 시스템 뒤로 가기 버튼(안드로이드)을 터치하는 것에 의해 사라질 수 있습니다.</p><p>모달 바텀 시트는 또한 바텀 시트의 밖을 터치하는 것에 의해 사라질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3a3Z2UGZJMkRWamM/components_bottomsheets_behavior1.png">
+                    </div>
+                        <figcaption>
+          <p>바텀 시트를 아래로 스와이프하는 것에 의해 사라지기</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cGt6TlA0ZzNLdDg/components_bottomsheets_behavior2.png">
+                    </div>
+                        <figcaption>
+          <p>바텀 시트 표면의 밖을 터치하는 것에 의해 사라지기</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cTdiQWp2TkI0NEE/components_bottomsheets_behavior3.png">
+                    </div>
+                        <figcaption>
+          <p>“X” 액션을 터치하는 것에 의해 사라지기 (앱 바에 존재하는 경우)</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>
+<div id="bottom-sheets-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>다음의 명세는 모바일 앱을 위해 제공됩니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+            <h3>폰트와 색</h3>
+    <div class="module-body">
+    <ul><li>텍스트: Roboto Regular 16sp,  #000 87% </li><li>제목 (Title, 선택적): Roboto Regular 16sp, #000 54%</li><li>기본 바텀 시트 배경 채우기: #FFF</li><li>덮어씌우는 막(Overlay Shield) 채우기: #000 20%</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+          </section>
+              </div>
+              <div>
+  <section class="moduleD1">
+  <div class="module-body">
+    <h4>리스트 스타일 바텀 시트</h4><p>화면 가장자리 왼쪽 &amp; 오른쪽 여백: 16dp<br/>상단과 하단 여백: 8dp<br/>리스트 아이템 높이: 48dp<br/>리스트 아이콘: 24x24dp, 수직 가운데 정렬<br/>아이콘과 관련된 텍스트: 32dp 수평 패딩</p>
+  </div>    
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QmkwSk1Da0hvelE/components_bottomsheets_specs1.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일 앱에서 리스트 스타일의 바텀 시트를 위한 레드 라인. </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7OGZIb3pyclNMTXM/components_bottomsheets_specs2.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일 앱에서 리스트 스타일의 바텀 시트</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+<div class="module-body">
+  <h4>헤더가 있는 리스트 스타일 시트</h4><p>화면 가장자리 왼쪽 &amp; 오른쪽 여백: 16dp<br/>최상단 리스트 아래의 공간: 7dp<br/>디바이더 라인: 1dp<br/>두번째 바텀 시트 위의 공간: 8dp<br/>리스트 아이템 높이: 48dp<br/>리스트 아이콘: 24x24dp, 수직 가운데 정렬<br/>아이콘과 관련된 텍스트: 32dp 수평 패딩<br/>리스트 제목(Title) 높이: 56dp</p>
+  </div>            
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VFFxVS1nUWoyYlk/components_bottomsheets_specs3.png" / />
+                    </div>
+                        <figcaption>
+                        <p>헤더가 있는 리스트 스타일의 시트를 위한 레드 라인</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZU9tMzZ0em4zT0U/components_bottomsheets_specs4.png" / />
+                    </div>
+                        <figcaption>
+          <p>헤더가 있는 리스트 스타일의 시트</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+          <div>
+          <section class="moduleD1">
+<div class="module-body">
+    <h4>아이콘이 있는 그리드 스타일 바텀 시트</h4><p>화면 가장자리 왼쪽 &amp; 오른쪽 여백: 24dp<br/>그리드 리스트 사이의 수직 공간: 16dp<br/>그리드 리스트 아이콘: 48x48dp, 수직 가운데 정렬, 그리드에 걸쳐 균등하게 분산됨<br/>그리드 리스트 텍스트 영역: 16dp 높이, 각 아이콘 아래 가운데 정렬<br/>그리드 하단 패딩: 24dp</p>
+  </div>            
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Rk9FQ0k1dGpvQjg/components_bottomsheets_specs7.png" / />
+                    </div>
+                        <figcaption>
+          <p>다른 앱을 위한 액션의 표준 집합을 포함한 그리드 스타일의 바텀 시트를 위한 레드 라인</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QTVTSU04U3ZJS0U/components_bottomsheets_specs8.png" / />
+                    </div>
+                        <figcaption>
+          <p>다른 앱을 위한 액션의 집합을 포함한 그리드 스타일의 바텀 시트</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>바텀 시트는 화면 최하단에서 위로 미끌어져 들어오며, 처음에 화면의 일부분을 덮습니다.</p><p>바텀 시트의 초기 높이는 들어 있는 리스트 아이템(또는 그리드 행)의 높이와 연관되어 있습니다. 바텀 시트는 처음에 들어 있는 내용물이 얼마나 많은 지에 따라 그것의 16:9 비율 키라인을 넘는 높이를 갖지 않아야 합니다. 내부적으로 스크롤하는 내용물이 있는 바텀 시트는 그 화면의 높이를 채우도록 위로 스와이프 될 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VVJVdF9wRG5Iem8/components_bottomsheets_specs9.png">
+                    </div>
+                        <figcaption>
+          <p>바텀 시트의 초기 높이는 16:9 비율 키라인을 넘어 확장하지 않아야 합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bVRGSXhsdUFVMkk/components_bottomsheets_specs10.png">
+                    </div>
+                        <figcaption>
+          <p>바텀 시트의 최소 높이는 들어 있는 리스트 아이템의 높이와 관련되어 있습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>데스크탑과 태블릿 앱을 위한 명세</h4><p>데스크탑과 태블릿에서 모달과 삽입된 지속적인 바텀 시트는 다음의 최소, 최대 너비를 사용합니다.</p><p>바텀 시트의 너비는 일반적으로 증분(Increment)에 기반하여, 전반적인 인터페이스의 구조에 의해 결정됩니다. 페이지 그리드에서, 바텀 시트의 최대 너비는 페이지 그리드와 그 위에 있는 내용물과 관련이 있습니다.</p><p>예를 들어, 당신이 증분으로 앱 바의 높이(64dp)를 사용한다면, 960dp 너비 화면에서 총 15배의 증분 너비를 가집니다. 당신의 바텀 시트는 최소 하나의 증분 크기만큼 화면의 가장자리에서 분리해야 하고, 바텀 시트 자신은 적어도 6배 증분 너비를 가져야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c16">
+    <tbody>
+        <tr class="c11">
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>화면 너비</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>화면 가장자리에서부터 최소 거리 (증분 단위)</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>최소 시트 너비 (증분 단위)</span></p>
+            </td>
+        </tr>
+        <tr class="c11">
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>960dp</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>1배 증분</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>6배 증분</span></p>
+            </td>
+        </tr>
+        <tr class="c11">
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>1280dp</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>2배 증분</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>8배 증분</span></p>
+            </td>
+        </tr>
+        <tr class="c11">
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>1440dp</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>3배 증분</span></p>
+            </td>
+            <td class="c10" colspan="1" rowspan="1">
+                <p><span>9배 증분</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3OHY3aFZadG9XajQ/components_bottomsheets_specs11.png">
+              </div>
+            <figcaption>
+        <p>다양한 데스크탑 화면 크기를 위한 중단점</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>        
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-L section-layout">
+            <a class="footer-text" href="../layout/adaptive-ui.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      레이아웃
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="buttons.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      버튼
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/bottom-sheets.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:39 GMT -->
+</html>

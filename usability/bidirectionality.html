@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/usability/bidirectionality.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:02 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>양 방향성 - 사용성 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Bidirectionality - Usability - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bidirectionality - Usability - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Bidirectionality - Usability" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Bidirectionality</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Usability</Attribute>
+      <Attribute name="section_slug">usability</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-usability noninitial-chapter color-blue-grey qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">사용성</span>
+      <span class="chapter-title">양방향성</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                   <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="accessibility.html">접근성
+                    </a>
+                    <a class="nav_selected" href="bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>   
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">양방향성
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+          <p>잘 디자인된 앱은 영어와 같은 왼쪽에서 오른쪽으로(Left-To-Right, LTR) 쓰여지고 읽히는 언어 문자와 <em>양방향의(Bidirectional)</em> 언어 문자를 위해 쉽게 지역화(Localization)될 수 있습니다.</p><p>양방향의 문자에서, 텍스트는 오른쪽에서 왼쪽으로(Right-To-Left, RTL) 쓰여지고 읽히지만, LTR 언어에서 숫자 그리고 지역화되지 않은 이름과 같은 내장된 단어(Embedded Word)는 왼쪽에서 오른쪽으로(LTR) 쓰여집니다. 양방향 문자는 아랍어, 히브리어, 그리고 페르시아어를 포함합니다.</p><p>양방향성(Bidirectionality)은 텍스트와 UI 요소의 레이아웃 뿐만 아니라 아이콘화(Iconography)에도 영향을 미칩니다. 이 섹션은 디자인에서 양방향성을 고려하는 방법에 대한 기본적이고 높은 수준의 정보를 제공합니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bidirectionality-ui-mirroring-overview">UI 미러링 개요
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bidirectionality-rtl-mirroring-guidelines">RTL 미러링 가이드라인
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#bidirectionality-other-localization-considerations">그 밖의 지역화 고려 사항
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="bidirectionality-ui-mirroring-overview" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    UI 미러링 개요
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>왼쪽에서 오른쪽으로(LTR)와 오른쪽에서 왼쪽으로(RTL)인 인터페이스 사이의 주된 차이는 시간의 흐름이 어떻게 연결되었는가 하는 것입니다. LTR 문자를 사용하는 언어는 시간이 왼쪽에서 오른쪽으로 흐르는 것으로 시간을 묘사하고, RTL 문자를 사용하는 언어는 시간이 오른쪽에서 왼쪽으로 흐르는 것으로 시간을 묘사합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c10">
+    <tbody>
+        <tr class="c8">
+            <td class="c7" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>요소</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>LTR</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>RTL</span></p>
+            </td>
+        </tr>
+        <tr class="c8">
+            <td class="c7" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>이미지</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>왼쪽에서 오른쪽을 가리키는 화살표가 앞으로(Forward) 동작을 나타냅니다: →</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>오른쪽에서 왼쪽을 가리키는 화살표가 앞으로(Forward) 동작을 나타냅니다: ←</span></p>
+            </td>
+        </tr>
+        <tr class="c8">
+            <td class="c7" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>텍스트</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>문장은 왼쪽에서 오른쪽으로 읽힙니다.</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>문장은 오른쪽에서 왼쪽으로 읽힙니다.</span></p>
+            </td>
+        </tr>
+        <tr class="c8">
+            <td class="c7" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>타임라인</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>이벤트의 표현 순서는 왼쪽에서 오른쪽으로 진행합니다.</span></p>
+            </td>
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>이벤트의 표현 순서는 오른쪽에서 왼쪽으로 진행합니다.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>미러링(Mirroring)은 LTR에서 RTL로 또는 그 반대로 UI를 변경하는 것을 말하며, 앱의 레이아웃과 그래픽적 요소들 모두에 영향을 미칩니다. LTR 문자에서 텍스트 문자열의 내용, 숫자, 그리고 내장된 단어는 미러링되지 않는다는 것에 유의하십시오; 이것들은 LTR로 보여집니다. (텍스트 문자열의 내용은 결코 미러링되지 않습니다; 그것은 항상 그 언어를 위해 올바른 방향에 있습니다.)</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>RTL 레이아웃은 LTR 레이아웃의 좌우가 반전된 모습입니다.</p><p>필수적인 레이아웃 변경 사항:</p><ul><li>아이콘은 텍스트 필드의 우측에 위치합니다.</li><li>네비게이션 버튼은 역순으로 위치합니다.</li><li>스피커 아이콘과 같이 방향을 전달하는 아이콘은 미러링됩니다.</li><li>카메라와 체크 표시와 같은 방향을 전달하지 않는 아이콘은 미러링되지 않고 유지합니다.</li><li>텍스트는 미러링되지만, 시계와 전화번호는 아닙니다. RTL 문자에서 숫자는 LTR로 표시됩니다.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbW1zYjVWTk03TzA/usability_bidirectionality_mirror1.png" / />
+                    </div>
+                        <figcaption>
+          <p>LTR UI를 사용한 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsb3NQTFZZVUI4WHM/usability_bidirectionality_mirror2.png" / />
+                    </div>
+                        <figcaption>
+          <p>히브리어에서 RTL UI를 사용한 예제. 숫자는 LTR로 보여집니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="bidirectionality-rtl-mirroring-guidelines" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    RTL 미러링 가이드라인
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>오른쪽에서 왼쪽인 UI를 지원하는 텍스트, 레이아웃과 아이콘화를 미러링하기 위해서 이 가이드라인을 따르십시오.</p><p>RTL 인터페이스를 위한 가이드 원칙은 시간이 오른쪽에서 왼쪽으로 이동한다는 것입니다. 앞으로(Forward)는 왼쪽을 가리키고, 뒤로(Backward)는 오른쪽을 가리킵니다.</p><p>미러링을 위해 가장 중요한 아이콘은 뒤로 가기(Back)과 앞으로 가기(Forward) 버튼입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>미러링 하는 경우</h3>
+    <div class="module-body">
+    <p>뒤로 가기(Back)와 앞으로 가기(Forward) 탐색 버튼은 서로 반대가 되어야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dDRHMVd5SDVRR2c/usability_bidirectionality_guidelines_when1.png" / />
+                    </div>
+                        <figcaption>
+          <p>LTR 뒤로 가기 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7blFsaE1ObGlsR00/usability_bidirectionality_guidelines_when2.png" / />
+                    </div>
+                        <figcaption>
+          <p>RTL 뒤로 가기 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NUFOeEo0NXJyNTQ/usability_bidirectionality_guidelines_when3.png" / />
+                    </div>
+                        <figcaption>
+          <p>LTR 앞으로 가기 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VUR5d3I5MmVGVVU/usability_bidirectionality_guidelines_when4.png" / />
+                    </div>
+                        <figcaption>
+          <p>RTL 앞으로 가기 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>앞으로 이동하는 것을 보여주는 아이콘은 미러링되어야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Mlczb3FqRk5UbjQ/usability_bidirectionality_guidelines_when5.png" / />
+                    </div>
+                        <figcaption>
+          <p>앞으로 이동하는 LTR 자전거는 오른쪽을 가리킵니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UnhDWDVVaE5xYUk/usability_bidirectionality_guidelines_when6.png" / />
+                    </div>
+                        <figcaption>
+          <p>앞으로 이동하는 RTL 자전거는 왼쪽을 가리킵니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>다른 것은 더 미묘합니다. 예를 들어, 설정을 상징하는 아이콘은 끄기 상태를 나타내기 위해서 그 아이콘을 통과하는 슬래쉬(Slash, /)를 사용합니다. LTR 인터페이스에서, 슬래쉬는 좌측 상단에서 우측 하단으로 그어집니다. RTL 인터페이스에서, 슬래쉬는 우측 상단에서 좌측 하단으로 그어집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QlJCaTctQzVGM2s/usability_bidirectionality_guidelines_when7.png" / />
+                    </div>
+                        <figcaption>
+          <p>비행기 모드의 LTR 끄기 상태</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UTJqbFEtY1J2S3c/usability_bidirectionality_guidelines_when8.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">비행기 모드의 RTL 끄기 상태</div><p>이 이미지 내에서, 슬래쉬는 미러링됩니다. 비행기 자체는 바로 위를 가리킵니다. 다른 특별한 처리가 필요하지 않습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>우측에 슬라이더가 있는 음량 아이콘은 미러링되어야 합니다. 그 슬라이더는 RTL로 진행해야 하며, 그 음파(Sound Wave)는 오른쪽에서부터 나와야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dWhJYlZqaDZUTWs/usability_bidirectionality_guidelines_when9.png" / />
+                    </div>
+                        <figcaption>
+          <p>슬라이더가 있는 LTR 음량</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bGVzcFkweHE3SDA/usability_bidirectionality_guidelines_when10.png" / />
+                    </div>
+                        <figcaption>
+          <p>미러링된 스피커 아이콘과 슬라이더가 있는 RTL 음량</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>사람, 머리, 또는 얼굴의 아이콘은 일반적으로 미러링해야 합니다. 특히 그것들이 텍스트에 가깝게 보여진다면 미러링해야 합니다. 그렇게 해서 그 사람의 얼굴이 앞을 향하거나, 텍스트를 향하거나, 뒤를 대신하거나, 텍스트를 피하게 하는 것입니다.</p><p>이것은 각이 있거나(Angled) 약간 돌린(Turned) 얼굴, 또는 얼굴의 그룹이 있는 것과 같이 때때로 매우 미묘할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7cTZsM0MzTnhZelU/usability_bidirectionality_guidelines_when11.png" / />
+                    </div>
+                        <figcaption>
+          <p>LTR 그룹 아이콘</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7V2xkNFZKTzhKV3c/usability_bidirectionality_guidelines_when12.png" / />
+                    </div>
+                        <figcaption>
+          <p>RTL 그룹 아이콘</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>때때로, 시간의 수평과 원형 방향 모두 아이콘 안에 함축됩니다. 예를 들어, 구글 독스에서 다시 실행(Redo)와 실행 취소(Undo) 버튼은 가로 방향과 원형 방향 모두를 가집니다.</p><p>LTR에서, 이것은 시간의 원형과 수평 표현 모두에서 동일한 방향을 가리킵니다. RTL에서, 원형으로 보여줄 것인지 아니면 수평 방향으로 보여줄 것인지 선택하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VGc3VGlSREh4QjA/usability_bidirectionality_guidelines_when13.png"  />
+                    </div>
+                        <figcaption>
+          <p>구글 독스에서 툴바의 LTR 다시 실행(Redo)과 실행 취소(Undo) 버튼</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>텍스트 상징이 들어 있는 아이콘은 세심한 미러링이 필요합니다.</p><p>텍스트는 RTL에서 오른쪽으로 정렬됩니다. 단락의 맨 처음에 단락 들여쓰기(Indent)가 있거나, 단락의 맨 끝에 끝마치지 않은 줄이 있거나, 또는 단락의 오른쪽이 고르지 못하다면, 그 아이콘은 미러링될 필요가 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7d0ptRHkxZTNKTEU/usability_bidirectionality_guidelines_when14.png" / />
+                    </div>
+                        <figcaption>
+          <p>LTR 채팅 아이콘</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VmNfazQ1VlRULTQ/usability_bidirectionality_guidelines_when15.png" / />
+                    </div>
+                        <figcaption>
+          <p>RTL 채팅 아이콘</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>미러링 하지 않는 경우</h3>
+    <div class="module-body">
+    <p>시간의 선형적 표현은 RTL에서 미러링되는 반면에, 시간의 <strong>원형(Circular)</strong> 방향은 아닙니다. 시계는 여전히 RTL에서도 시계방향으로 돕니다. 시계 아이콘이나 원형 새로고침이나 시계방향을 가리키는 화살표가 있는 프로그레스 인디케이터는 미러링되지 않아야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aVNuMkh2NExFejQ/usability_bidirectionality_guidelines_whennot1.png" / />
+                    </div>
+                        <figcaption>
+          <p>새로고침(Refresh) 아이콘은 시간이 앞으로 이동하는 것을 보여줍니다; 방향은 시계방향입니다. 아이콘은 미러링되지 않습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7YmhueHpTY1ZyN3c/usability_bidirectionality_guidelines_whennot2.png" / />
+                    </div>
+                        <figcaption>
+          <p>방문 기록(History) 아이콘은 시간이 뒤로 가는 것을 가리킵니다; 방향은 반시계방향입니다. 아이콘은 미러링되지 않습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>몇몇의 아이콘은 오른쪽에서 왼쪽으로인 세계에서 미러링되지 않는 물리 개체를 나타냅니다.</p><p>예를 들어, 물리 키보드는 세계 어디서나 동일한 모양이기에 미러링되지 않아야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7c2M0WDlSakI4akE/usability_bidirectionality_guidelines_whennot3.png" / />
+                    </div>
+                        <figcaption>
+          <p>키보드 아이콘</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RF9wQmxRbEM3dmM/usability_bidirectionality_guidelines_whennot4.png" / />
+                    </div>
+                        <figcaption>
+          <p>헤드셋 아이콘</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>어떤 아이콘은 방향이 있는 것처럼 보이지만, 그것은 실제적으로 누군가의 오른손으로 개체를 잡고 있는 것을 나타냅니다.</p><p>예를 들어, 검색 아이콘은 사용자의 대다수가 오른손잡이기 때문에 일반적으로 우측 하단에 손잡이가 있습니다.</p><p>RTL로 글을 쓰는 나라들에서 사용자의 대다수 또한 오른손잡이이기 때문에, 이러한 아이콘은 미러링되지 않아야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dmd3YXBWVmx1VG8/usability_bidirectionality_guidelines_whennot5.png" / />
+                    </div>
+                        <figcaption>
+          <p>검색 아이콘</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T1VfckZScnkxbVE/usability_bidirectionality_guidelines_whennot6.png" / />
+                    </div>
+                        <figcaption>
+          <p>지역 카페 아이콘</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 재생 버튼과 프로그레스 인디케이터는 미러링되지 않습니다. 이러한 요소의 LTR 방향은  시간의 방향이 아니라 테이프(Tape)의 방향을 나타냅니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TGMxd3hNaUlhUjQ/usability_bidirectionality_guidelines_whennot7.png"  />
+                    </div>
+                        <figcaption>
+          <p>미디어 재생 버튼과 프로그레스 인디케이터가 테이프의 방향을 나타내기 때문에, 이들은 미러링되지 않습니다.</p>
+        </figcaption>
+              </figure>
+<figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Sl9mNVJhVTJmWTA/usability_bidirectionality_guidelines_whennot_do.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>재생을 위한 미디어 컨트롤은 항상 LTR입니다.</p>
+        </figcaption>
+              </figure>
+<figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3YVNKNFZPbDdOZkE/usability_bidirectionality_guidelines_whennot_dont.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>미디어 재생 또는 프로그레스 바를 미러링하지 않습니다. 이러한 요소의 방향은 시간의 방향이 아니라 테이프의 방향을 나타냅니다.</p>
+        </figcaption>
+              </figure>              
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="bidirectionality-other-localization-considerations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    그 밖의 지역화 고려 사항
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>그래픽 안에 텍스트</h3>
+        <div class="module-body">
+      <p>그래픽적 요소 안에 텍스트가 항상 지역화를 요구할 것이기 때문에, 텍스트를 사용하지 않은 방법으로 개념을 전달하도록 노력하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>숫자</h3>
+        <div class="module-body">
+      <p>숫자도 또한 텍스트입니다. 숫자가 들어 있는 아이콘은 다른 수사(Numeral)을 사용하는 언어를 위해 지역화되어야만 합니다. 예를 들어, 뱅골어, 마라티어, 네팔어, 그리고 대부분의 아랍 지역은 숫자의 다른 형태를 사용합니다. 이러한 수사가 들어 있는 아이콘은 그 모양을 수용하기 위해 변경해야만 할 것입니다.</p><p>미러링은 LTR 지역을 위해서도 필요할 것입니다. 예를 들어, 누군가 구글 독스에서 영어 문서 안에 RTL 단락을 편집하는 중이라면, 들여쓰기와 리스트를 위한 버튼은 주된 UI 방향이 LTR일지라도 RTL이어야 합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-usability color-blue-grey">&nbsp;</div>
+    <div class="footer-grid-L section-usability">
+            <a class="footer-text" href="accessibility.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      접근성
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-resources color-light-blue">&nbsp;</div>
+    <div class="footer-grid-R section-resources">
+            <a class="footer-text" href="../resources/color-palettes.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      리소스
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/usability/bidirectionality.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:02 GMT -->
+</html>

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/menus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:46 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>메뉴 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Menus - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Menus - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Menus - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Menus</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">메뉴</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="nav_selected" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">메뉴
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>메뉴는 사용자가 머티리얼의 임시적인 새 시트를 열 때 드러나는 선택 리스트에서 선택하여 액션을 수행하는 것을 허용합니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#menus-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#menus-menu-items">메뉴 아이템
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#menus-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#menus-simple-menus">심플 메뉴
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#menus-specs">명세
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="menus-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>메뉴는 버튼, 액션, 포인터, 또는 적어도 두 개의 메뉴 아이템이 들어 있는 다른 컨트롤에서 발생된 머티리얼의 임시적인 조각입니다.</p><p>각 메뉴 아이템은 앱, 뷰, 또는 뷰 내에 선택된 요소에 영향을 미칠 수 있는 별개의 옵션이나 액션입니다.</p><p>메뉴는 앱 내에 탐색을 위한 주된 방법으로 사용되지 않아야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzN2RZYTY5dnE0RG8/components_menus_usage1.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바에서 액션 오버플로우는 메뉴를 발생시킬 것입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzdmJrQUk3aXd0RTg/components_menus_usage2.png" / />
+                    </div>
+                        <figcaption>
+          <p>이 특정한 액션 오버플로우 매뉴는 4개의 메뉴 아이템이 들어 있습니다: 새로 고침, 도움말 &amp; 피드백, 설정 그리고 로그아웃.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>메뉴를 발생한 버튼이나 컨트롤의 레이블은 간결하고 정확하게 메뉴 내에 들어 있는 그 메뉴 아이템을 반영합니다. 다른 상황에서 더 장황한 레이블을 가지는데 반하여, 메뉴 바는 일반적으로 “파일”, “형식”, “편집”, “보기”와 같은 한 단어의 레이블을 사용합니다.</p><p>메뉴는 어플리케이션의 현재 상태에 기반하여 각각 활성이나 비활성된 메뉴 아이템의 일관된 집합을 표시합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VW5LS2JTQ2puOUE/components_menus_usage3do.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>제목인 “보기”는 그것에 들어 있는 메뉴 아이템의 통합적인 특징을 묘사합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bGFGNkhwcF9mZVk/components_menus_usage3dont.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>제목인 “물건(Stuff)”은 서술적이지도 않고, 사용자가 그 메뉴에서 찾을 메뉴 아이템이 무엇이 있는지를 예상하지도 못하게 합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>상황에 맞는 메뉴(Contextual Menu)는 어플리케이션의 현재 상태에 근거하여 이용 가능하고 활성화된 메뉴 아이템이 유동적으로 변합니다.</p><p>일반적으로, 현재 상황에 연관되지 않는 메뉴 아이템을 제거하고, 연관되지만 만나야 할 어떠한 조건이 필요한 메뉴 아이템을 비활성화하십시오(예를 들어, 복사는 텍스트가 선택되었을 때 활성화됨).</p><p>어떤 어플리케이션 상태에서 단일 메뉴 아이템만 들어 있는 상황에 맞는 메뉴가 발생합니다. 예를 들어, 웹페이지에서 텍스트를 선택했을 때, 사용자가 텍스트를 자르기나 붙여넣기를 할 수 없기 때문에 안드로이드는 오직 복사만을 드러냅니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7c0ZsY292S1ZxZGs/components_menus_usage4a.png" / />
+                    </div>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eTlxdXpxd2Y3M00/components_menus_usage4b.png" / />
+                    </div>
+                        <figcaption>
+          <p>상황에 맞는 메뉴</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>메뉴의 높이가 모든 메뉴 아이템을 표시하는 것을 막는다면, 그 메뉴는 내부적으로 스크롤할 수 있습니다. 한 가지 예는 가로 방향의 핸드폰에서 메뉴를 볼 때입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7S1N2a2pNYzZoclk/components_menus_usage6.png"  />
+                    </div>
+                        <figcaption>
+          <p>내부적으로 스크롤하는 메뉴</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>데스크탑: 메뉴는 또한 종속(Cascade)될 수 있습니다. 화면의 가장자리에 근접한 메뉴에 기반하여 수직과 수평으로 메뉴를 재배치 하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dlkwTUdncmtTTXM/components_menus_usage7.png"  />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 종속된 메뉴</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>데스크탑: 이 애니메이션은 액션에서 스크롤과 종속된 메뉴를 보여줍니다.</p><p>노트: 이 컴포넌트의 구현은 플랫폼에 따라 다양할 것입니다. 표준 플랫폼 구현을 사용함으로, 당신은 향후 이와 관련하여 개선된 것을 얻을 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNWVBad29DaVJrREk/components-menus-menus-cascading_dropdown_spec_large_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 종속된 드롭다운</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbmlNRG81dkpQRjA/Components-Menus-Usage-Textfield_Dropdown_xhdpi_006.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>텍스트 필드 드롭다운</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQWNzMDdocjFSMzA/Component-Menus-Usage_Appbar_Dropdown_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>앱 바 드롭다운</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="menus-menu-items" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    메뉴 아이템
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>각 메뉴 아이템은 선택했을 때 수행될 액션을 묘사하는 텍스트 한 줄로 제한됩니다.</p><p>텍스트는 일반적으로 한 단어나 짧은 문구지만, 키보드 바로가기와 같이 아이콘과 도움을 주는 텍스트를 포함할 수 있습니다. <a href="lists-controls.html">리스트 컨트롤</a>을 참조하십시오.</p><p>정적 내용물이 있는 메뉴는 메뉴 최상단에 위치된 가장 자주 사용된 메뉴 아이템을 가져야 합니다.</p><p>동적인 내용물이 있는 메뉴는 메뉴 최상단에 이전에 사용된 폰트를 넣는 것과 같이 그 밖의 동작을 가질 것입니다. 그 순서는 사용자 액션에 기반하여 변경될 수 있습니다.</p><p>메뉴 아이템은 중첩된 서브 메뉴를 드러내 보일 수 있습니다. 여러 중첩된 서브 메뉴를 탐색하는 것이 어려울 수 있기 때문에 한 단계 깊이로 중첩을 제한하도록 노력하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VkEwT09kS3lOdFE/components_menus_items1.png"  />
+                    </div>
+                        <figcaption>
+          <p>메뉴 아이템의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>메뉴 아이템을 제거하는 것보다 비활성화로 표시하면 그것이 올바른 조건에 따라 존재한다는 것을 사용자가 알게 합니다.</p><p>예를 들어, 다시 실행(Redo)은 아무것도 다시 실행할 것이 없는 경우 비활성화됩니다. 잘라내기와 복사는 내용물이 선택될 때까지 비활성화됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bmZ1ajBVaXhsNTQ/components_menus_items2.png"  />
+                    </div>
+                        <figcaption>
+          <p>비활성화된 액션의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="menus-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>메뉴는 앱 내의 모든 다른 UI 요소 위에 보여집니다.</p><p>메뉴의 바깥을 탭하거나, 메뉴 발생 버튼을 탭하면(화면에 있는 경우) 메뉴가 사라집니다.</p><p>일반적으로, 메뉴 아이템을 선택하는 것 또한 메뉴가 사라지게 할 것입니다. 한 가지 예외는 체크 마크를 사용하는 것과 같이, 메뉴가 선택을 위한 여러 아이템을 허용하는 경우입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Q1pnd2dGclRhRTQ/components_menus_behavior1.png"  />
+                    </div>
+                        <figcaption>
+          <p>앱 내의 모든 다른 UI 요소 위에 보여지는 메뉴의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>현재 선택된 메뉴 아이템이 발생 요소의 위에 보여지는 것 같이 메뉴는 메뉴를 발생시키는 요소 위에 놓여집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzM19KYkRJakpqNVE/components_menus_behavior2.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>현재 선택된 메뉴 아이템은 발생 요소 위에 보여집니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>선택된 메뉴 아이템을 중복으로 표시하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYXlpaHo3N3ZYTjg/components_menus_behavior4.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>선택된 메뉴 아이템을 중복으로 표시하지 마십시오.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>발생 요소 아래에 메뉴를 위치시키는 것은 메뉴의 상황과 메뉴를 분리합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzaWwwcFZhVGpuU0k/components_menus_behavior3.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>메뉴는 그것의 발생 요소 위에 놓여져야 합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="menus-simple-menus" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    심플 메뉴
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>화면 가장자리에 가까운 경우, 심플 메뉴는 수직 정렬을 재배치함으로서 모든 메뉴 아이템을 완전히 표시합니다. </p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>심플 메뉴는 태블릿과 모바일 기기에서 특정한 리스트 아이템을 위한 옵션을 표시하기 위해 리스트 뷰 안에서 사용됩니다.</p><p><strong>차이점:</strong> 심플 메뉴와는 대조적으로, <a href="dialogs.html#dialogs-simple-dialogs">심플 다이얼로그</a>는 리스트 아이템을 위해 이용 가능한 옵션과 연관된 추가적인 세부사항을 보여 주거나, 주 작업과 연관된 탐색 또는 직교하는(Orthogonal) 액션을 제공할 수 있습니다. 둘 다  동일한 내용물을 표시하기는 하지만, 심플 메뉴가 사용자의 현재 상황에 보다 적게 지장을 주기 때문에 심플 메뉴는 심플 다이얼로그 보다 선호됩니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>특정한 리스트 아이템을 위한 옵션을 표시하기 위해 리스트 안에 심플 메뉴를 사용하십시오.</p><p>옵션 선택과 동시에 그 옵션을 적용하고 메뉴를 닫습니다.</p><p>메뉴의 바깥을 터치하거나 시스템 뒤로 가기 버튼을 누르면 액션이 취소되고 메뉴가 닫힙니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRDRDOXdsR1plOUU/components_dialogs_simplemenus1.png"  />
+                    </div>
+                        <figcaption>
+          <p>심플 메뉴의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>열려진 경우, 심플 메뉴는 현재 선택된 메뉴 아이템을 리스트 아이템에 맞춰 수직으로 정렬하려고 시도합니다. 현재 선택된 메뉴 아이템은 강조됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscEN4TlItQ1R4d3c/components_dialogs_simplemenus2.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>현재 선택된 메뉴 아이템은 리스트 아이템 위에 수직으로 정렬합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbXpoZkNIcXgxc3M/components_dialogs_simplemenus3.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>현재 선택된 메뉴 아이템은 리스트 아이템 위에 수직으로 정렬합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>리스트 아이템 위에 첫 번째 메뉴 아이템을 마음대로 놓지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWVNNYWoxV3hYT28/components_dialogs_simplemenus5.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>현재 선택된 메뉴 아이템과 상관 없이, 첫 번째 메뉴 아이템이 리스트 아이템 위에 마음대로 놓여졌습니다. </p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>화면 가장자리에 가까운 경우, 심플 메뉴는 수직 정렬을 재배치함으로서 모든 메뉴 아이템을 완전히 보이도록 만듭니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRmtOT0hySXRMYjg/components_dialogs_simplemenus4.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>현재 선택된 메뉴 아이템은 보통 리스트 아이템 위에 위치할 것입니다. 그러나 이 경우에 그렇게 하면 메뉴의 일부분이 화면 밖으로 나가기 때문에, 전체 메뉴는 수직으로 재배치됩니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>심플 메뉴는 발생 요소 아래가 아닌 위에 보여집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NzVwUlN5aDlPVU0/components_dialogs_simplemenus6.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>심플 메뉴는 발생 요소 위에 보여집니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WEFUUlg1WjR1eHM/components_dialogs_simplemenus7.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>심플 메뉴는 발생 요소 아래에 보여지지 않습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>메뉴 너비는 문자열의 길이에 따라 다양하고, 모바일에서는 56dp 단위 여러 개로 정의됩니다.</p><p>심플 메뉴는 항상 화면의 좌우 가장자리로 16dp 여백(모바일) 또는 24dp 여백(태블릿)을 유지합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPWE9mQmpvem1WVWs/components_dialogs_simplemenus8.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 여백이 있는 심플 메뉴</p><p>각 단위는 56dp 너비입니다.</p><p>모바일에서 최소 너비 = 2 * 56dp = 112dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPSmluWU5MSExRWms/components_dialogs_simplemenus9.png" / />
+                    </div>
+                        <figcaption>
+          <p>좌우에 16dp 여백이 있는 심플 메뉴</p><p>각 단위는 56dp 너비입니다.</p><p>모바일에서 최대 너비 (가로와 세로 방향 모두) = 5 * 56dp = 280dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>심플 메뉴에서 텍스트가 두 번째 줄로 줄 바꿈한다면, 그 대신에 <a href="dialogs.html#dialogs-simple-dialogs">심플 다이얼로그</a>를 사용하십시오. 심플 다이얼로그는 다양한 높이의 행을 가질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM1JlMU1GQlVCajg/components_dialogs_simplemenus10.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>심플 메뉴 안에 어떤 텍스트가 두 번째 줄로 줄 바꿈한다면 심플 다이얼로그를 사용하십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdzQ5ekJONHpJaU0/components_dialogs_simplemenus11.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>심플 메뉴에서 텍스트를 생략하지 마십시오. 그 대신에 심플 다이얼로그를 사용하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>메뉴는 내용물이 스크롤 가능할 때 지속된 스크롤 바를 보여줍니다.</p><p>심플 메뉴의 최대 높이는 뷰의 높이 보다는 적은 하나 또는 그 이상의 행이어야 합니다. 이것은 메뉴를 닫을 수 있도록 심플 메뉴 밖에 탭할 수 있는 영역을 보장합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM3lfVmVsWk9KRUE/components_dialogs_simplemenus12.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>스크롤 가능한 내용물을 위해 기본적으로 스크롤 바를 표시하십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX1p4YVVlWjk4MTA/components_dialogs_simplemenus13.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>스크롤 바 없이는 추가적인 메뉴 아이템이 있는 지가 불분명합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>선택된 메뉴 아이템을 중복하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdF8wbDhKSUpVM2s/components_dialogs_simplemenus14.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>각 메뉴 아이템은 오직 한 번 보여집니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdTVtZzBDcVVQSE0/components_dialogs_simplemenus15.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>선택된 요소를 중복해서 표시하지 마십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>심플 메뉴는 항상 리스트 아이템의 시작에서 왼쪽 정렬이므로, 터치 위치에 근거하여 수평으로 재배치하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzV05ZRkdMOFRidkU/components_dialogs_simplemenus16.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>심플 메뉴는 터치 위치와는 상관 없이 왼쪽 정렬입니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzYnRPT2RCdkh6R28/components_dialogs_simplemenus17.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>심플 메뉴는 터치 위치에 근거하여 재배치하지 않습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="menus-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>명세는 메뉴의 다양한 크기와 유형 그리고 다른 플랫폼을 위해 제공됩니다. 메뉴의 최상단과 최하단에 8dp 패딩을 추가하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>모바일</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bEZ2SjJVb195VmM/components_menus_specs1.png"  />
+                    </div>
+                        <figcaption>
+          <p>메뉴 아이템 높이: 48dp<br/>메뉴 아이템 텍스트 좌측 패딩: 16dp<br/>메뉴 아이템 텍스트 우측 패딩: 20dp</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>다양한 너비</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y0EtMTR1YXN5dTg/components_menus_specs2.png"  />
+                    </div>
+                        <figcaption>
+          <p>다양한 너비의 메뉴: 최소 너비의 1.5배, 3배, 6배 그리고 7배</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>종속된 메뉴</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TWEzWUtlNW9GeEE/components_menus_specs3.png"  />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 종속된 메뉴</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>종속된 메뉴 레드라인</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WjFra1IxUXp5NGM/components_menus_specs4.png"  />
+                    </div>
+                        <figcaption>
+                        <p>종속된 메뉴 상단 패딩: 16dp<br/>종속된 메뉴 좌측 패딩: 24dp<br/>종속된 메뉴 아이템 높이: 32dp<br/>메뉴 아이템 아이콘 우측 패딩: 32dp<br/>메뉴 서브 아이템 좌측 패딩: 64dp</p><p>15pt Roboto 폰트</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="lists-controls.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      리스트: 컨트롤
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="pickers.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      픽커
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/menus.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:46 GMT -->
+</html>

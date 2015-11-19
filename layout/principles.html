@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/layout/principles.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:33 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>기본 원리 - 레이아웃 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Principles - Layout - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Principles - Layout - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Principles - Layout" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Principles</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Layout</Attribute>
+      <Attribute name="section_slug">layout</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-layout first-chapter color-pink qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header class="qp-ui" data-qp-ui="{
+  'Peekaboo': {
+    'mobile': 72,
+    'desktop-sm': 72,
+    'default': 192
+  }
+}">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+    <div class="header-title">      <span class="section-title">레이아웃</span>
+      <span class="chapter-title">기본 원리</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">레이아웃
+                </dt>
+        <dd>
+                    <a class="nav_selected" href="principles.html">기본 원리
+                    </a>
+                    <a class="" href="units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="structure.html">구조
+                    </a>
+                    <a class="" href="adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">기본 원리
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>머티리얼 디자인은 사용자로 하여금 경험에 몰두하게 만드는 계층 구조, 의미, 그리고 초점을 생성하기 위해서 타이포그래피, 그리드, 공간, 비율, 색 그리고 이미지와 같은 인쇄 기반의 디자인 요소에 의해 설명됩니다. 머티리얼 디자인은 인쇄 디자인 분야로부터 온 도구(기준선 그리드와 구조적 템플릿과 같은)를 취하며, 그 도구는 플랫폼과 화면 크기에 걸쳐 시각적 요소, 구조적 그리드, 그리고 간격을 반복함으로서 여러 환경에 걸쳐 일관성을 유지하도록 돕습니다. 크기 변경이 가능한 앱을 생성하는 과정을 단순화시키는 이러한 레이아웃은 어떠한 화면 크기에도 알맞게 크기를 변경합니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#principles-how-paper-works">어떻게 페이퍼가 동작하는가
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#principles-floating-action-button">플로팅 액션 버튼
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="principles-how-paper-works" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    어떻게 페이퍼가 동작하는가
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>머티리얼 디자인에서, 페이퍼의 물리적 속성은 그 화면에서 번역됩니다. 어플리케이션의 배경은 페이퍼 한 장의 평평하고 불투명한 질감과 유사합니다.</p><p>어플리케이션의 동작은 크기가 변경되고, 섞이며, 여러 장이 함께 묶이는 페이퍼의 능력을 흉내냅니다. 스테이터스 바나 시스템 바와 같은 어플리케이션 외부의 존재하는 요소들은 다른 취급을 받습니다. 그들은 그들 아래에 앱 내용물로부터 분리되어 있고, 페이퍼의 물리적 특성을 갖지 않습니다.</p><p>머티리얼에 관한 자세한 정보를 얻기 위해서, <a href="../what-is-material/material-properties.html">머티리얼의 특성</a>을 확인하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+            <h3>층</h3>
+    <div class="module-body">
+    <p>공통의 가장자리 전체를 공유하는 페이퍼의 두 시트를 <strong>층(Seam)</strong>이라고 부릅니다. 층으로 연결되는 동안, 그들은 함께 움직입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RVhqalJxN01Fb0U/layout_principles_papercraft_paper1.png"  />
+                    </div>
+                        <figcaption>
+          <p>머티리얼의 두 시트에서 층(Seam)</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>계단</h3>
+    <div class="module-body">
+    <p>페이퍼에서 서로 다른 z축 위치(또는 깊이)로 겹쳐진(Overlapping) 두 시트는 <strong>계단(Step)</strong>을 형성합니다. 그것들은 서로 독립적으로 이동합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ck5NWGtlRHBCWVE/layout_principles_papercraft_paper2.png"  />
+                    </div>
+                        <figcaption>
+          <p>겹치는 머티리얼의 두 시트에서 계단(Step)</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="principles-floating-action-button" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    플로팅 액션 버튼
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>플로팅 액션 버튼</h3>
+    <div class="module-body">
+    <p><strong>플로팅 액션 버튼(FAB, Floating Action Button)</strong>은 툴바로부터 분리된 원형의 시트입니다. 그것은 단일의 홍보된 액션을 대표합니다.</p><p>만약 FAB가 계단(Step)이 생성하는 내용물과 관련이 있다면, 그것은 계단(Step) 양쪽에 걸칠 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aGcyakNwSW1iR1U/layout_principles_papercraft_actions1.png"  />
+                    </div>
+                        <figcaption>
+          <p>계단(Step)을 걸치는 플로팅 액션 버튼</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>플로팅 액션 버튼이 양 시트의 내용물과 관련이 있다면, 그것은 층(Seam) 양쪽에 걸칠 수 있습니다.</p><p>액션을 위한 고정점(Anchoring Point)을 제공하기 위해서 장식용의 층(Seam)을 넣지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eVA3azhXVEFabUE/layout_principles_papercraft_actions2.png"  />
+                    </div>
+                        <figcaption>
+          <p>층(Seam)을 걸치는 플로팅 액션 버튼</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>플로팅 액션 버튼에 관한 자세한 정보를 얻기 위해서, <a href="../components/buttons-floating-action-button.html">플로팅 액션 버튼</a>을 확인하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-style color-teal">&nbsp;</div>
+    <div class="footer-grid-L section-style">
+            <a class="footer-text" href="../style/writing.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      스타일
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-R section-layout">
+            <a class="footer-text" href="units-measurements.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      단위와 치수
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/layout/principles.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:33 GMT -->
+</html>

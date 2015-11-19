@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/progress-activity.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:48 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>프로그레스 &amp; 액티비티 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Progress & activity - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Progress & activity - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Progress & activity - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Progress &amp; activity</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">프로그레스 &amp; 액티비티</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="nav_selected" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드              
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">프로그레스 &amp; 액티비티
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>당신의 앱이 단일 액티비티 인디케이터로 각 작업을 나타냄으로서 내용물을 로딩하는 동안 발생하는 시각적 변경을 최소화하십시오. 예를 들어, 새로 고침 작업은 리프레시 바를 표시하거나 아니면 액티비티 서클을 표시하지만, 둘 다는 아닙니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#progress-activity-types-of-indicators">인디케이터의 유형
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#progress-activity-behavior">동작
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="progress-activity-types-of-indicators" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    인디케이터의 유형
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>인디케이터가 <strong>확정적(Determinate)</strong>일 때, 이것은 퍼센트 완료를 감지할 수 있을 때 작업이 얼마나 걸릴 지를 나타냅니다.</p><p>인디케이터가 <strong>비확정적(Indeterminate)</strong>일 때, 이것은 작업이 얼마나 걸릴 지 나타낼 필요가 없을 때 어떤 것이 끝날 동안 사용자가 기다릴 것을 요청합니다.</p><p>선형과 원형 프로그레스 인디케이터는 확정적이거나, 아니면 비확정적일 것입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>선형</h3>
+    <div class="module-body">
+    <p>선형 프로그레스 인디케이터는 항상 0% 부터 100% 까지 채워야 하고 결코 값이 줄어들어서는 안됩니다. 이것은 보여지거나 보여지지 않는 헤더나 시트의 가장자리 바(Bar)에 의해서 나타내어 집니다.</p><p>순차적으로 일어나는 <strong>여러 작업</strong>을 위해서, 개개의 작업이 아닌 전체 진행 상태를 나타내는 인디케이터를 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0NGgBg38lWWVXBBVF9qR3E4a2s/components-progressactivity-typesofindicators-061101_Linear_Sheet_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>선형 프로그레스 인디케이터</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVEl2TUc3ZjBmMDA/components-progressactivity-typesofindicators-Linear_Video_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>비디오에서 버퍼링 프로그레스 인디케이터</p><p> </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsanA2bGpzb1BxZDQ/components-progressactivity-typesofindicators-Linear_Image_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>웹페이지에서 질의(Query) 인디케이터</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>동작</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaE9IODJ3UUZpUWs/061101_Circular_Sheet_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>원형 확정적과 비확정적 프로그레스 인디케이터</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>통합한 원형 프로그레스</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0NGgBg38lWWaVpNbk1SV3dSbXc/components-progressactivity-typesofindicators-061101_Circular_Aspirational_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>원형 로더(Loader)는 플로팅 액션 버튼과 통합될 것입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdk1oMG9KY2pCcms/components-progressactivity-typesofindicators-Circular_wFab_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>통합한 원형 로더의 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="progress-activity-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>단계적으로 로드</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZ0V1QXpxOVdsTXM/components-progressactivity-behavior_Loading_SwipeDown_xhdpi_005.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">1단계 로드</div><p>잉크(복사와 이미지)는 존재하며 변경되지 않는 컨테이너 내에서 로딩됩니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsT3JTb0lnZWF0MWc/components-progressactivity-behavior-Loading_Photos_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">2단계 로드</div><p>페이퍼 컨테이너가 생성된 다음, 잉크(복사와 이미지)는 그것 내에서 로딩됩니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX2x1eFRUSF9QbW8/components-progressactivity-behavior-Loading_Files_Linear_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>처음으로 내용물을 로드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbjk2UFZsOGNENkE/components-progressactivity-behavior-Loading_Files_Circular_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>즉시 모든 내용물을 로딩하고 표시</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>추가적인 내용물 로드</strong></p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMTRCQU5OZG55TjA/components-progressactivity-behavior-Loading_BigTop_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">예제 1: 카드 확장</div><p>데스크탑과 같은 더 넓은 표면에서 확장하는 카드를 위해서 비확정적 선형 인디케이터가 권장됩니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsT3JTb0lnZWF0MWc/components-progressactivity-behavior-Loading_Photos_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">예제 2: 위로 스크롤하여 더 로딩하기</div><p>아래에서부터 리스트가 로딩될 때, 초기에 방사형 잉크 반응이 있는 비확정적 원형 인디케이터가 권장됩니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRjJWeHdCeEFVZWM/components-progressactivity-behavior_Loading_SwipeDown_noload_xhdpi_005.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">예제 3: 아래로 스와이프하여 새로 고침</div><p>위에서부터 리스트가 로딩될 때, 방사형 잉크 반응이 있는 비확정적 원형 인디케이터가 권장됩니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="pickers.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      픽커
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="selection-controls.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      셀렉션 컨트롤
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/progress-activity.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:48 GMT -->
+</html>

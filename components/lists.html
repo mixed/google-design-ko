@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:45 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>리스트 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Lists - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Lists - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Lists - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Lists</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">리스트</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="nav_selected" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">리스트
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>리스트는 수직 배열 안에서 여러 행의 아이템을 단일의 연속적인 요소로 나타냅니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#lists-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#lists-content">내용물
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#lists-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#lists-specs">명세
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="lists-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>리스트</strong>는 <strong>타일</strong>을 위한 컨테이너 기능을 하는 <strong>행</strong>이라고 불리는 동일 너비의 모자이크식 하위 분할의 단일 연속 열로 구성됩니다.</p><p><strong>타일</strong>은 내용물을 계속 가지고 있으며 리스트 내에서 높이가 다양할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aGNuNnFnVktPdGM/components_lists_usage1.png" / />
+                    </div>
+                        <figcaption>
+          <p>리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TmRJenRtUVZFLUk/components_lists_usage2.png" / />
+                    </div>
+                        <figcaption>
+          <p>행과 타일</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>리스트는 단일 데이터 유형 내에 데이터 유형이나 특성 사이를 구별하는 목표를 가진 읽기 이해력을 위해 최적화된, 이미지와 텍스트와 같은 균일한 데이터 유형이나 데이터 유형의 집합을 나타내기에 알맞습니다.</p><p>텍스트 세 줄 이상이 리스트 타일에서 보여질 필요가 있다면, 리스트 대신 카드를 사용하십시오.</p><p>주된 특징적인 내용물이 이미지로 구성되어 있다면, 그리드 리스트를 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSnBGdWd3WDhPUE0/components_lists_usage3.png" / />
+                    </div>
+                        <figcaption>
+          <p>일반적인 리스트 훑어 보기 패턴</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="lists-content" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용물
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>타일 내용물</h3>
+    <div class="module-body">
+    <p>리스트 타일은 일관된 유형이나 내용물 집합의 우선순위를 정함으로서 가독성을 높이는 계층 구조를 사용한 일관된 형식으로 관련된 내용물의 모음을 보여 줍니다. 예를 들어, 이메일 앱에서 받은 편지함 리스트는 시간 정보보다 아바타와 텍스트 정보를 강조합니다. 이것은 사용자가 내용물 모음 내에 가장 중요한 정보를 더 쉽게 찾도록 돕습니다.</p><p>리스트 타일은 텍스트 세 줄까지 들어 있을 수 있고, 텍스트의 양은 동일한 리스트 내에 타일들 사이에 다양할 수 있습니다. 텍스트 세 줄 이상을 표시하려면, 카드를 사용하십시오.</p><p>타일에서 가장 특징적인 내용물을 타일의 왼쪽에 놓으십시오. 여러 줄의 내용물이 있는 타일에서, 첫번째 줄에 가장 특징적인 내용물을 놓으십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ckJuUHNnUVlVYTQ/components_lists_content1.png" / />
+                    </div>
+                        <figcaption>
+          <p>타일의 왼쪽에 가장 특징적인 내용물을 놓고, 특징적이지 않은 내용물은 오른쪽에 놓으십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>타일 액션</h3>
+    <div class="module-body">
+    <p>리스트에서 공간의 다수는 주 액션을 위한 것이어야 합니다.</p><p>액션은 리스트 타일의 특징적인 요소가 아니기 때문에, 타일의 오른쪽에 부수적인 액션을 놓으십시오.</p><p>재생, 확대, 삭제, 선택과 같은 주된 액션과 부수적인 액션은 즉각적이고 일반적으로 리스트 내에서 옵션 서브 메뉴(액션 오버플로우)를 갖지 않습니다.</p><p>액션은 카드와 같은 그 다음 뷰(Subsequent View)를 열 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bTlwblZleHIwU1U/components_lists_content2.png" / />
+                    </div>
+                        <figcaption>
+          <p>주 액션은 타일에서 공간의 다수를 차지합니다. 부수적인 액션은 타일의 오른쪽에 위치합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>주 액션:</h4><ul><li>전체 타일을 채우기 때문에, 아이콘이나 텍스트 등을 통해 나타내어지지 않습니다.</li><li>특정한 리스트에서 타일 내내 일관됩니다. 예를 들어, 음악의 단일 리스트에서 모든 타일을 위한 주 액션은 노래를 재생하는 것이지만, 이메일의 리스트에서는 이메일을 여는 것일 것입니다.</li></ul><h4>부수적인 액션:</h4><ul><li>타일에서 아이콘, 부수적인 텍스트로 나타내어집니다.</li><li>누가 접속 중인지 아닌지를 나타내는 아이콘의 예와 같이 특정한 리스트에서 타일 내내 기능적으로 일관됩니다.</li><li>특정한 리스트의 타일 내에 일관된 위치에 놓여집니다.</li></ul><p>모든 타일에 공유 액션을 표시하는 것과 같이 타일 안에 부수적인 액션을 반복적으로 사용하는 것을 통해 시각적 잡음이 생성되는 것을 피하십시오. 별표나 핀(Pin)과 같은 토글은 상태 표시로 의미 있는 정보를 제공하기 때문에 예외입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="lists-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>스크롤</h3>
+        <div class="module-body">
+      <p>리스트는 오직 수직으로만 스크롤합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>제스처</h3>
+        <div class="module-body">
+      <p>타일 당 스와이프 액션은 리스트 내에서 일관되어야 합니다.</p><p>적절한 곳에서, 타일은 리스트와 떨어뜨릴 대상(예를 들어, 플더로 파일 이동) 사이를 이동할 수 있고, 집을 수 있으며, 리스트 내에서 수동으로 재배열 될 수 있습니다. </p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>타일 필터링과 정렬</h3>
+    <div class="module-body">
+    <p>리스트 타일을 날짜, 파일 크기, 알파벳 순서나 다른 속성들에 의해서 프로그래밍적으로 정렬되거나 필터링 될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTEYtcnczU3J5ZEU/components_lists_behavior1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>알파벳순의 정렬은 정보를 더 찾기 쉽게 만듭니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM0pZZjFTNTFmNU0/components_lists_behavior2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>무작위순으로 정보를 표시하지 마십시오. 만약 UI가 리스트 정렬을 사용자에게 허용하지 않는다면, 당신의 앱은 논리적 정렬 순서를 사용해야 합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="lists-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>한 줄 리스트</strong>에서, 각 타일은 텍스트 한 줄이 들어 있습니다. 텍스트의 양은 동일한 리스트 내 타일들 간에 다양할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYzdVRGozRHVYbms/components_lists_keylines1.png" / />
+                    </div>
+                    <figcaption>
+          <div class="caption-title">한 줄 리스트 명세</div><p>아이콘 좌측 패딩: 16dp<br>리스트 아이템 좌측 패딩: 72dp<br>리스트 우측 패딩: 16dp<br>리스트 우측 여백: 56dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZEZuU0xISS1OLTg/components_lists_keylines_single6.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>두 줄 리스트</strong>에서, 각 타일은 최대 텍스트 두 줄이 들어 있습니다. 텍스트의 양은 동일한 리스트 내 타일들 간에 다양할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZklTYnVxWkRtU28/components_lists_keylines3.png" / />
+                    </div>
+                    <figcaption>
+          <div class="caption-title">두 줄 리스트 명세</div><p>아이콘 좌측 패딩: 16dp<br>리스트 아이템 좌측 패딩: 72dp<br>리스트 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTFBBZ2lLODUxZlE/components_lists_keylines4.png" / />
+                    </div>
+                        <figcaption>
+          <p>두 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p><strong>세 줄 리스트</strong>에서, 각 타일은 최대 텍스트 세 줄이 들어 있습니다.</p><p>텍스트의 양은 동일한 리스트 내 타이들 간에 다양할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsa2hRX0pTVnlxYmc/components_lists_keylines5.png" / />
+                    </div>
+                    <figcaption>
+          <div class="caption-title">세 줄 리스트 명세</div><p>아이콘 좌측 패딩: 16dp<br>리스트 아이템 좌측 패딩: 72dp<br>리스트 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTll3U0dBTFByeUU/components_lists_keylines6.png" / />
+                    </div>
+                        <figcaption>
+          <p>세 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>한 줄 리스트</h3>
+    <div class="module-body">
+    <h4>텍스트 전용</h4><p>폰트: Roboto Regular 16sp<br/>타일 높이: 48dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WGxpMDJqMTJxWEE/components_lists_keylines_single1.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y1FsdElhSlJ1WEU/components_lists_keylines_single2.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 리스트 명세</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsc3JTdU5BVnVLbGM/components_lists_keylines_single3.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아이콘</h4><p>폰트: Roboto Regular 16sp<br/>타일 높이: 48dp<br/>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7a3RZSEFjNmlZcVk/components_lists_keylines_single4.png" / />
+                    </div>
+                        <figcaption>
+                        <p>아이콘이 있는 한 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eUpZcXJRODJvMXc/components_lists_keylines_single5.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 한 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZEZuU0xISS1OLTg/components_lists_keylines_single6.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 한 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아바타</h4><p>폰트: Roboto Regular 16sp<br/>타일 높이: 56dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 20dp<br/>텍스트 하단 패딩: 24dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7a3JraGNfZTE0VW8/components_lists_keylines_single7.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 한 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bzEta2VMeTQ5QTg/components_lists_keylines_single8.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 한 줄 리스트 명세</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNlAwTVZUcXB1M0U/components_lists_keylines_single9.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 한 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트와 아이콘이 있는 아바타</h4><p>폰트: Roboto Regular 16sp<br/>타일 높이: 56dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 20dp<br/>텍스트 하단 패딩: 24dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>우측 아이콘 패딩: 16dp</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UUw0bzVwU2lMUHc/components_lists_keylines_single10.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타와 아이콘이 있는 한 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T2pKUG0teEQycTA/components_lists_keylines_single11.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타와 아이콘이 있는 한 줄 리스트 명세</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNlAwTVZUcXB1M0U/components_lists_keylines_single9.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타와 아이콘이 있는 한 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>두 줄 리스트</h3>
+    <div class="module-body">
+    <h4>텍스트 전용</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 72dp<br/>텍스트 좌측 패딩: 16dp<br/>텍스트 상단과 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SmhjTUNqNndIanM/components_lists_keylines_two1.png" / />
+                    </div>
+                        <figcaption>
+          <p>두 줄 리스트 </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UkNZZk02N3BYazg/components_lists_keylines_two2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">두 줄 리스트 명세:</div><p>제목 위의 패딩: 8dp<br/>화면 가장자리부터 좌측과 우측 패딩: 16dp<br/>타일 높이: 72dp </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaGczdEdTVmQ2T0k/components_lists_keylines_two3.png" / />
+                    </div>
+                        <figcaption>
+          <p>두 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아이콘</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 72dp<br/>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단과 하단 패딩: 20dp<br/>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7X3EyVXlLNVFsY00/components_lists_keylines_two4.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 두 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RTJvc2pWMnFvQTg/components_lists_keylines_two5.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아이콘이 있는 두 줄 리스트 명세:</div><p>타일 높이: 72dp<br/>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>리스트 상단 패딩: 8dp<br/>텍스트 우측 패딩: 16dp<br/></p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsb0ZGN0FYMmtiNWs/components_lists_keylines_two12.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 두 줄 리스트의 명세</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아바타</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 72dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단과 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>텍스트 영역에 맞춰 아이콘을 가운데 정렬하십시오.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Z2tISG42SEgyWE0/components_lists_keylines_two6.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 두 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Tm9ZQmFCZzlITkE/components_lists_keylines_two7.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아바타가 있는 두 줄 리스트 명세:</div><p>타일 높이: 72dp<br/>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>리스트 상단 패딩: 8dp<br/>텍스트 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWGQ4OWVWREpLNkU/components_lists_keylines_two8.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 두 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트와 아이콘이 있는 아바타</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 72dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단과 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>우측 아이콘 패딩: 16dp</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TWVjYVJIcno0YjA/components_lists_keylines_two9.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트와 아이콘이 있는 아바타</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NkI5bzU3Y3BQQzg/components_lists_keylines_two10.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트와 아이콘이 있는 아바타를 위한 키라인</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZWxVbjYxdDJ1ZEE/components_lists_keylines_two11.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트와 아이콘을 위한 아바타의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>세 줄 리스트</h3>
+    <div class="module-body">
+    <h4>텍스트 전용</h4><p>주 텍스트 폰트: Roboto Regular 16sp</p><p>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 88dp<br/>텍스트 좌측 패딩: 16dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7am9jN1JnVmRHYmc/components_lists_keylines_three1.png" / />
+                    </div>
+                        <figcaption>
+          <p>세 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SHJoWmR6M1ZwLWs/components_lists_keylines_three2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">세 줄 리스트 명세:</div><p>타일 높이: 88dp<br/>텍스트 좌측 패딩: 16dp<br/>텍스트 우측 패딩: 16dp<br/>리스트 상단 패딩: 8dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZmJRelNHTjVkSDQ/components_lists_keylines_three12.png" / />
+                    </div>
+                        <figcaption>
+          <p>세 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아이콘</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 88dp<br/>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>주 텍스트에 맞춰서 아이콘을 상단 정렬하십시오.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7c3ZqaUVJVkt2MlE/components_lists_keylines_three4.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 세 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SzM3LXBidHdrTXc/components_lists_keylines_three5.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아이콘이 있는 세 줄 리스트 명세:</div><p>타일 높이: 88dp</p><p>아이콘 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 우측 패딩: 16dp</p><p>리스트 상단 패딩: 8dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd1JGLWlpbU9NNUk/components_lists_keylines_three3.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 세 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트가 있는 아바타</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 88dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>주 텍스트에 맞춰서 아바타를 상단 정렬하십시오.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QjBWdDR5M0RyR28/components_lists_keylines_three6.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 세 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7S25WMDVnMnBRbVE/components_lists_keylines_three7.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아바타가 있는 세 줄 리스트 명세:</div><p>타일 높이: 88dp<br/>리스트 상단 패딩: 8dp<br/>아바타 좌측 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSHRDUllnV1kxSFE/components_lists_keylines_three8.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타가 있는 세 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트와 아이콘이 있는 아바타</h4><p>주 텍스트 폰트: Roboto Regular 16sp<br/>부 텍스트 폰트: Roboto Regular 14sp<br/>타일 높이: 88dp<br/>좌측 아바타 패딩: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>텍스트 상단 패딩: 16dp<br/>텍스트 하단 패딩: 20dp</p><p>하단 패딩은 기준선에서부터 측정됩니다.</p><p>우측 아이콘 패딩: 16dp</p><p>주 텍스트에 맞춰 아바타와 아이콘을 상단 정렬하십시오.</p><p>리스트의 상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브 헤더가 있는 리스트의 상단입니다. 왜냐하면 서브 헤더는 자체에 패딩이 들어 있기 때문입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TzFEbTdZYm1MTWM/components_lists_keylines_three9.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타와 아이콘이 있는 세 줄 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NWVjdTktU1JqUW8/components_lists_keylines_three10.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아바타와 아이콘이 있는 세 줄 리스트 명세:</div><p>타일 높이: 88dp<br/>좌측 아바타 높이: 16dp<br/>텍스트 좌측 패딩: 72dp<br/>리스트 상단 패딩: 8dp<br/>아이콘 좌측, 우측 패딩: 16dp</p><p><br/></p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdFNSZ1kzeXBfR1U/components_lists_keylines_three11.png" / />
+                    </div>
+                        <figcaption>
+          <p>아바타와 아이콘이 있는 세 줄 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="grid-lists.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      그리드 리스트
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="lists-controls.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      리스트: 컨트롤
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:45 GMT -->
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/layout/adaptive-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:38 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>적응형 UI - 레이아웃 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Adaptive UI - Layout - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Adaptive UI - Layout - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Adaptive UI - Layout" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Adaptive UI</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Layout</Attribute>
+      <Attribute name="section_slug">layout</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-layout noninitial-chapter color-pink qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">레이아웃</span>
+      <span class="chapter-title">적응형 UI</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="principles.html">기본 원리
+                    </a>
+                    <a class="" href="units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="structure.html">구조
+                    </a>
+                    <a class="nav_selected" href="adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                   
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">적응형 UI
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>머티리얼 디자인에서 반응형 레이아웃(Responsive Layout)은 어떠한 화면 크기에도 적응합니다. 이 적응형(Adaptive) UI 가이드는 레이아웃에 걸쳐 일관성을 보장하는 융통성 있는 그리드, 어떻게 내용물이 각기 다른 화면에서 공간을 조정하는지에 관한 중단점 세부 사항, 그리고 어떻게 앱이 작은 화면에서 가장 큰 화면까지 크기 조정할 수 있는지에 대한 설명을 포함합니다. </p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#adaptive-ui-breakpoints">중단점
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#adaptive-ui-grid">그리드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#adaptive-ui-surface-behaviors">표면 동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#adaptive-ui-patterns">패턴
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="adaptive-ui-breakpoints" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    중단점
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>최적의 사용자 경험을 위해서, 머티리얼 사용자 인터페이스는 다음의 중단점(Breakpoint) 너비에 레이아웃을 맞춰야 합니다: 480, 600, 840, 960, 1280, 1440, 그리고 1600dp.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPSGFxemFiQVRtb1k/layout_adaptive_breakpoints_01.png"  />
+              </div>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>1. 레이아웃에서 요약과 디테일 뷰 내용물</strong></p><ul><li>600dp 너비 아래의 레이아웃은 내용물 계층 구조의 단일 단계로 화면을 채울 것입니다(요약이나 아니면 세부적인 내용물, 하지만 둘 다는 아님).</li><li>600dp 너비를 넘는 레이아웃은 화면에서 내용물 계층 구조의 두 단계에 위치할 것입니다(요약과 세부적인 내용물 양쪽 모두).</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>2. 최대 화면 너비</strong></p><p>1600dp 너비를 넘는 레이아웃은 그 레이아웃이 최대 너비에 다다를 때까지 커질 것입니다. 그 시점에서, 그리드는 다음 중 하나를 행할 것입니다: </p><ul><li>증가된 여백으로 가운데 정렬됨</li><li>오른쪽 여백이 커지는 동안 왼쪽 정렬로 남겨짐</li><li>추가적인 내용물을 보여주는 동안 지속적으로 커짐</li></ul>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>중단점 체계</strong></p><p>이 중단점들은 다른 화면과 디바이스와 방향에 대한 열과 너비의 명세서를 서술합니다.</p><p>몇몇의 치수를 위해서, 값은 디바이스가 회전되더라도 계속 동일합니다. 그런 이유로 어느 한 방향에서 최소 너비는 정의한 그 값입니다.</p><p>* 기기의 최소 너비가 600dp 보다 작은 경우에는 16dp </p><p>** 브라우저 외부 장식(Chrome) 안에 변종(Variation)을 수용하기 위해서 데스크탑 중단점은 표에 있는 값 보다 적은 16dp 입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c9"><tbody><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>중단점 (dp)</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>핸드셋 / 태블릿 세로 방향</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>핸드셋 / 태블릿 가로 방향</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>윈도우</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>열</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>홈(Gutter)</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>0</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>작은 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>xsmall</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>4</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>360</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>중간 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>xsmall</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>4</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>400</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>xsmall</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>4</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>480</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>작은 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>xsmall</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>4</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>600</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>작은 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>중간 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>small</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>8</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16/24*</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>720</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>small</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>8</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16/24*</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>840</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 핸드셋</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>small</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>16/24*</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>960</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>작은 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>small</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>1024**</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>medium</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>1280**</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>큰 태블릿</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>medium</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>1440**</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>large</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>1600**</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>large</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr><tr class="c5"><td class="c2" colspan="1" rowspan="1"><p><span>1920**</span></p></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"></td><td class="c2" colspan="1" rowspan="1"><p><span>xlarge</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>12</span></p></td><td class="c2" colspan="1" rowspan="1"><p><span>24</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="adaptive-ui-grid" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    그리드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>머티리얼 디자인의 반응형 UI는 12열 그리드 레이아웃을 기반으로 합니다. 이 그리드는 디자인의 넓은 다양성 전체에 걸쳐 융통성을 허용하는 데 반하여, 레이아웃 사이에 시각적 일관성을 생성합니다. 그리드 열의 수는 중단점 체계에 따라 달라집니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+            <video loop  controls>
+                                      <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmATmowU3BOUFR6Wk0/layout_adaptiveUI_grid_01_hero.mp4" type="video/mp4" />
+                        </video>
+          </div>
+              </div>
+            <figcaption>
+        <p>이 애니메이션은 어떻게 표면과 패널이 12열 그리드에 영향을 주기 위해 정렬할 수 있는지를 보여줍니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>여백과 홈</h4><p>적응형 그리드는 열 너비 보다는 일관된 여백과 홈(Gutter) 너비에 초점을 맞춥니다. 머티리얼 디자인의 여백과 행은 8dp 정사각형 기준선 그리드를 따릅니다. 여백과 홈은 8, 16, 24 또는 40dp 너비일 수 있습니다.</p><p>여백과 홈이 같을 필요는 없습니다. 예를 들어, 같은 레이아웃 안에서 40dp 여백과 24dp 홈을 사용하는 것이 허용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmAOHhfNWdvdmw1RUE/layout_adaptiveUI_grid_02_margins.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">이 애니메이션은 다음의 여백과 홈 너비 조합의 상호작용을 보여줍니다.:</div><ol start="1"><li>8dp 여백과 홈</li><li>16dp 여백과 홈</li><li>24dp 여백과 홈</li><li>40dp 여백과 홈</li><li>40dp 여백과 24dp 홈</li></ol>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>전체 너비 vs 가운데 정렬</h4><p><strong>전체 너비 그리드(Full-width Grid)</strong>는 레이아웃에 변경이 필요한 때를 결정하기 위해서 유동적인 열과 중단점을 사용합니다.</p><p><strong>가운데 정렬된 그리드(Centered Grid)</strong>는 모든 열(정의된 여백을 추가한)이 더이상 화면에 맞지않을 때 고정된 열을 사용하고 레이아웃을 공간 조정합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmASzY4clJvRmNFZTA/layout_adaptiveUI_grid_03_width.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <ol start="1"><li>전체 너비 그리드</li><li>가운데 정렬된 그리드</li></ol>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>그리드에 영향을 주는 패널</h4><p><a href="../patterns/navigation-drawer.html#navigation-drawer-behavior">네비게이션 패턴</a>에 정의된 것처럼, 사이드 네비게이션은 영구적이거나, 지속적, 또는 임시적일 것입니다. 이러한 동작은 그저 사이드 네비게이션만이 아니라 어떠한 패널에도 적용됩니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>영구적</strong></p><p>영구적인 패널은 반응형 그리드의 바깥쪽에 존재합니다. 그 패널은 정의된 중단점(화면이 패널을 수용할 수 있을 떄)에 발생하고 내용물을 쥐어짭니다. 패널을 보이거나/숨기기 위한 컨트롤이 없습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmAdlN2bVFjXy1ZUzQ/layout_adaptiveUI_grid_04_behaviorPermanent.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>적응형 그리드에서 영구적인 패널의 효과</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+      <p><strong>그리드에서 사이드 패널 효과</strong></p><p>이 애니메이션은 두 가지 단계에서 발생합니다: </p><ol start="1"><li>지속적 사이드 패널이 나타나면, 내용물과 그리드 양쪽 모두를 쥐어짭니다. 내용물은 패널이 표시되는 동안 접근할 수 있습니다. 패널은 토글로 숨겨집니다.</li><li>임시적 사이드 패널이 나타나면, 그리드와 내용물은 화면 밖으로 밀려납니다. 패널 밖과 패널 안의 항목 중 하나를 터치하면 패널이 숨겨집니다.</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmAX3VfWTVZZjdpSnc/layout_adaptiveUI_grid_05_behaviorSqueezePush.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>적응형 그리드에서 지속적인 패널의 효과</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>임시적으로 덮어씌우기</strong></p><p>임시적인 패널은 화면 밖에 있을 때 그리드나 내용물에 영향을 미치지 않습니다. 화면에 보이기 위해서 토글되었을 때, 그것은 패널 밖 아무 곳이나 패널 안의 항목을 터치함으로 다시 숨겨질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0nwUo5pqvmAV0Fnc2xLTmljUWc/layout_adaptiveUI_grid_06_behaviorOverlay.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>적응형 그리드에서 임시적인 패널의 효과</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="adaptive-ui-surface-behaviors" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    표면 동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>화면 크기를 변경할 때, UI는 아래와 같은 특정한 표면(Surface) 동작을 사용하여 조정합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>가시성 (Visibility)</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c12"><tbody><tr class="c6"><td class="c8" colspan="1" rowspan="1"><p><span>행동</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>정의</span></p></td></tr><tr class="c6"><td class="c8" colspan="1" rowspan="1"><p><span>영구적 (Permanent)</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>화면 공간이 가능할 때, 표면은 항상 표시됩니다.</span></p></td></tr><tr class="c6"><td class="c8" colspan="1" rowspan="1"><p><span>지속적 (Persistent)</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>표면 가시성은 보이기와 숨기기로 토글될 수 있습니다. 표시되는 경우, 화면에 다른 요소와 상호작용하는 것이 가시성을 변경하지 않습니다.</span></p></td></tr><tr class="c6"><td class="c8" colspan="1" rowspan="1"><p><span>임시적 (Temporary)</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>표면 가시성은 보이기와 숨기기로 토글될 수 있습니다. 표시되는 경우, 화면에 다른 요소와 상호작용하는 것은 숨기기나 최소화가 될 수 있는 표면을 토글합니다.</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>너비</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c12"><tbody><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>행동</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>정의</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>고정된 (Fixed)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비는 화면 크기가 변할 때 동일하게 유지됩니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>유연한 (Fluid)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비는 화면 크기 변경으로 증가합니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>달라붙는 (Sticky)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비는 다른 요소나 중단점에 의해 영향을 받을 때까지 고정됩니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>쥐어짜는 (Squeeze)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비는 패널이 보여짐으로 인해 줄어듭니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>밀기 (Push)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비는 동일하게 유지됩니다. 요소의 위치는 패널이 나타남으로 인해 수평 방향으로 변하고, 화면의 가장자리에 의해 부분적으로 가려질 것입니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>덮어씌우기 (Overlay)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>요소의 너비와 위치는 패널이 내용물 위로 나타나기 때문에 동일하게 유지됩니다.</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>설명자 (Descriptors)</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c12"><tbody><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>동작</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>정의</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>위, 아래 (Above, Below)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>요소의 y측 위치</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>위, 아래 (Over, Under)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>모션에서 요소의 z축 위치</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>앞, 뒤 (In Front, Behind)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>요소의 고정된 z축 위치</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>왼쪽, 오른쪽, 가운데 (Left, Right, Centered)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>요소의 x축 위치</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>상단, 하단 (Top, Bottom)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>요소와 화면 가장자리와 연관된 요소 위치의 y축 위치</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>평평한, 올려진 (Flat, Raised)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>요소의 그림자의 z축 위치. 평평한 요소는 그림자를 갖지 않을 것입니다.</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>삽입, 전체로 번짐 (Inset, Full Bleed)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>이미지 또는 요소의 패딩(Padding)</span></p></td></tr><tr class="c6"><td class="c4" colspan="1" rowspan="1"><p><span>요약, 세부 사항 (Summary, Detail)</span></p></td><td class="c5" colspan="1" rowspan="1"><p><span>내용물 요약과 요약의 전체 확장</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="adaptive-ui-patterns" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    패턴
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>화면에 더 많은 공간이 있다면, 다음의 패턴을 적용할 수 있습니다.</p><h4>드러내기 (Reveal)</h4><p>숨겨진 UI를 드러내십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPUWt3NmVSbHFWdDQ/layout_adaptiveUI_patterns_01_reveal.png"  />
+              </div>
+            <figcaption>
+        <p>사이드 네비게이션과 같은 요소가 표시될 것입니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>변형 (Transform)</h4><p>UI는 하나의 형식에서 다른 형식으로 변형할 수 있습니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPSmpTSzdyVXdKS2s/layout_adaptiveUI_patterns_02_transform.png"  />
+              </div>
+            <figcaption>
+        <p>사이드 네비게이션은 탭으로 변형할 수 있습니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>나누기 (Divide)</h4><p>이전에 레이어가 되었던 UI를 이용 가능한 새로운 공간으로 나누십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPUElOU1A5Q05ac28/layout_adaptiveUI_patterns_03_divide.png"  />
+              </div>
+            <figcaption>
+        <p>사이드 네비게이션, 요약 내용물, 그리고 세부적인 내용물은 공간이 생기면 동일한 뷰 안에서 나뉘어집니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>공간 조정 (Reflow)</h4><p>이용 가능한 공간으로 UI를 조정하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPT1VuQ0hCa2VOY1k/layout_adaptiveUI_patterns_04_reflow.png"  />
+              </div>
+            <figcaption>
+        <p>요소들은 나란히 있는 요소들의 다양한 조합으로 내용물 영역을 채우기 위해서 단일 열 형식에서부터 공간을 조정할 것입니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <h4>확장 (Expand)</h4><p>더 많은 공간을 차지하기 위해 UI의 크기를 늘리십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPQnJWNW94UTZlWmc/layout_adaptiveUI_patterns_05_expand.png"  />
+              </div>
+            <figcaption>
+        <p>내용물 카드는 더 많은 수평 공간을 사용하도록 확장할 것입니다.</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-L section-layout">
+            <a class="footer-text" href="structure.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      구조
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="../components/bottom-sheets.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      컴포넌트
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/layout/adaptive-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:38 GMT -->
+</html>

@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/text-fields.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:50 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>텍스트 필드 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Text fields - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Text fields - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Text fields - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Text fields</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">텍스트 필드</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더                      
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="nav_selected" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">텍스트 필드
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+          <p>텍스트 필드는 사용자에게 텍스트 입력과 텍스트 선택(잘라내기, 복사하기, 붙여넣기)과 자동 완성을 통한 데이터 찾기를 허용합니다.</p><p>텍스트 필드를 터치하면 커서가 놓여지고 자동으로 키보드가 표시됩니다. 텍스트 선택 디자인을 위해 <a href="../patterns/selection.html">패턴 &gt; 선택</a>을 확인해 보십시오.</p>
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-formatting" data-qp-ui-data-id="qp:e">형식
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-single-line-text-field">한 줄 텍스트 필드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-floating-labels">플로팅 레이블
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-multi-line-text-field">여러 줄 텍스트 필드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-full-width-text-field">전체 너비 텍스트 필드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-character-counter">글자 카운터
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-auto-complete-text-field">자동 완성 텍스트 필드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#text-fields-search-filter">검색 필터
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+    <div id="text-fields-formatting" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:m">
+      <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:n">
+        형식
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+          <title id="title">Expand and collapse content</title>
+          <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+          <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+        </svg>
+      </h2>
+        <div class="article-content">
+        <div class="module-list">
+                      <div>
+                  <section class="moduleB1">
+            <div class="module-body">
+          <p>텍스트 필드는 한 줄이거나, 스크롤이 있거나 없거나, 또는 여러 줄일 수 있습니다. 이것은 또한 아이콘을 표시할 것입니다.</p>
+        </div>
+      </section>
+
+            </div>
+                  <div>
+                  <section class="moduleB1">
+              <h3>허용 가능한 문자</h3>
+            <div class="module-body">
+          <p>텍스트 필드의 글자(Type)는 필드 내에 허용된 문자의 종류가 무엇인지를 결정합니다. 가상 키보드 레이아웃은 자주 사용된 문자를 위해 최적화될 것입니다.</p><p>당신이 최적화 해야 할 보통의 입력 유형은 다음을 포함합니다:</p><ul><li>숫자: 전화번호, 신용카드 번호, 카드 비밀번호(PIN)</li><li>텍스트: 고유명사, 사용자 이름, URL</li><li>혼합된 형식: 이메일 주소, 거리(Street) 주소, 검색 질의</li></ul>
+        </div>
+      </section>
+
+            </div>
+                  <div>
+                  <section class="moduleB1">
+              <h3>자동 대문자 사용</h3>
+            <div class="module-body">
+          <p>블루투스 기기, 사용자, 지문, 알람과 같이 어떤 것에 이름 붙이기 위해 의도된 입력은 기본적으로 모든 단어가 자동으로 대문자로 사용되어야 합니다.</p><p>그 외에는, 문자 메세지나 화면 잠금과 같이 입력 필드가 문장과 유사한 메세지를 위해 의도된 것이라면, 오직 그 첫번째 단어만 자동으로 대문자가 되어야 합니다.</p>
+        </div>
+      </section>
+
+            </div>
+              <div>
+              <section class="moduleB1">
+          <h3>밀도</h3>
+        <div class="module-body">
+      <p>마우스와 키보드가 주 입력 방법일 때, 치수는 밀집한 레이아웃을 수용하기 위해 축소될 것입니다.</p>
+    </div>
+  </section>
+
+        </div>            
+                  </div>
+      </div>
+    </div>      
+                        <div id="text-fields-single-line-text-field" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    한 줄 텍스트 필드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>한 줄 텍스트 필드 </h3>
+    <div class="module-body">
+    <p>한 줄 필드는 텍스트 입력 커서가 입력 필드의 오른쪽 가장자리에 도달할 때 자동으로 내용물을 왼쪽으로 스크롤합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZmFxQzhvblFKVzQ/components_textfields_single1.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbGg3SklJUjNGSHc/components_textfields_single2.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aXhSeDQyQWIzb2c/components_textfields_single3.png"  />
+                    </div>
+                        <figcaption>
+          <p>한 줄 텍스트 필드</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>밝은 테마</h3>
+    <div class="module-body">
+    <ul><li>힌트와 입력 폰트: Roboto Regular 16sp</li><li>타일 높이: 48dp</li><li>텍스트 상단과 하단 패딩: 16dp</li><li>텍스트 필드 디바이더 패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NjBXVDd4eUhWbDA/components_textfields_single4.png"  />
+                    </div>
+                        <figcaption>
+          <p>한 줄 텍스트 필드 밝은 테마</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>어두운 테마</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7R0NLRHd5NWJVUFE/components_textfields_single5.png"  />
+                    </div>
+                        <figcaption>
+          <p>한 줄 텍스트 필드 어두운 테마</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LYmhoNU5sWXp0LUE/components_textfields_single6.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">한 줄 텍스트 필드</div><p>높이: 48dp<br/>텍스트 상단과 하단 패딩: 16dp<br/>디바이더 하단 패딩: 8dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VV9xVzNMUEhUM0E/components_textfields_single6_dense.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밀집한 한 줄 텍스트 필드</div><p>힌트와 입력 텍스트: 13sp</p><p>높이: 40dp<br>텍스트 상단과 하단 패딩: 12dp<br>디바이더 하단 패딩: 4dp<br></p>
+        </figcaption>
+                </figure>                
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>아이콘이 있는 밝은 테마</h3>
+    <div class="module-body">
+    <ul><li>힌트와 입력 폰트: Roboto Regular 16sp</li><li>타일 높이: 48dp</li><li>텍스트 상단과 하단 패딩: 16dp</li><li>텍스트 필드 디바이더 패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7S2NCRjNkZk9SVkU/components_textfields_single7.png"  />
+                    </div>
+                        <figcaption>
+          <p>밝은 테마: 힌트 텍스트가 있는 정상 상태, 초점을 얻은 상태, 그리고 입력 텍스트가 있는 정상 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>아이콘이 있는 어두운 테마</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WVBhSkFhUm5XdWM/components_textfields_single8.png"  />
+                    </div>
+                        <figcaption>
+          <p>어두운 테마: 힌트 텍스트가 있는 정상 상태, 초점을 얻은 상태, 그리고 입력 텍스트가 있는 정상 상태 </p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MzFBNE9JWTk5ZHc/components_textfields_single9.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아이콘이 있는 한 줄 텍스트 필드</div><p>높이: 48dp<br/>텍스트 상단과 하단 패딩: 16dp<br/>디바이더 하단 패딩: 8dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3YThfMkdKWlRrUU0/components_textfields_single9_dense.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">아이콘이 있는 밀집한 한 줄 텍스트 필드</div><p>힌트와 입력 텍스트: 13sp</p><p>높이: 40dp<br>텍스트 상단과 하단 패딩: 12dp<br>디바이더 하단 패딩: 4dp<br>아이콘: 20dp</p>
+        </figcaption>
+                </figure>                
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-floating-labels" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    플로팅 레이블
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>플로팅 레이블</h3>
+    <div class="module-body">
+    <p>사용자가 텍스트 입력 필드를 사용할 때, 플로팅 인라인 레이블은 그 필드 위에 떠 있기 위해서 이동합니다. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVUczaWc4RUV4Mkk/components_textfields_labels1.png" / />
+                    </div>
+                        <figcaption>
+          <p>플로팅 인라인 레이블</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsS3cwejNqQlZVNms/components_textfields_labels2.png" / />
+                    </div>
+                        <figcaption>
+          <p>플로팅 인라인 레이블</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>밝은 테마</h3>
+    <div class="module-body">
+    <ul><li>힌트와 입력 폰트: Roboto Regular 16sp</li><li>레이블 폰트: Roboto Regular 12sp</li><li>타일 높이: 72dp</li><li>텍스트 상단과 하단 패딩: 16dp</li><li>텍스트 필드 디바이더 패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SGthNmdNaFZhT00/components_textfields_labels3.png"  />
+                    </div>
+                        <figcaption>
+          <p>플로팅 인라인 레이블 밝은 테마: 힌트 텍스트/레이블이 있는 일반 상태, 초점을 얻은 상태, 입력 텍스트가 있는 일반 상태, 그리고 레이블과 비활성화 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>어두운 테마</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7d1VjallhcTNJQkU/components_textfields_labels4.png"  />
+                    </div>
+                        <figcaption>
+          <p>플로팅 인라인 레이블 어두운 테마: 힌트 텍스트/레이블이 있는 일반 상태, 초점을 얻은 상태, 입력 텍스트가 있는 일반 상태, 그리고 레이블과 비활성화 상태 </p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7V1hoemJNQk5UQlU/components_textfields_labels5.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">플로팅 레이블</div><p>높이: 72dp<br/>레이블 텍스트 상단 패딩: 16dp<br/>레이블과 입력 텍스트 사이의 패딩: 8dp<br/>입력 텍스트 하단 패딩: 16dp<br/>텍스트 디바이더 하단 패딩: 8dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RExER2RZOUJyZFE/components_textfields_labels5_dense.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밀집한 플로팅 레이블</div><p>레이블과 입력 텍스트: 13sp</p><p>높이: 60dp<br>레이블 텍스트 상단 패딩: 12dp<br>레이블과 입력 텍스트 사이 패딩: 4dp<br>입력 텍스트 하단 패딩: 12dp<br>텍스트 디바이더 하단 패딩: 4dp</p>
+        </figcaption>
+                </figure>                
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-multi-line-text-field" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    여러 줄 텍스트 필드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>여러 줄 텍스트 필드는 넘치는 텍스트를 위해 자동으로 새 줄로 줄 바꿈하고, 커서가 아래쪽 가장자리에 닿을 때 수직으로 스크롤합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUTdsRW1tcDJIcGM/components_textfields_multiline1.png" / />
+                    </div>
+                        <figcaption>
+          <p>여러 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYkFtMm5yMGpXV1E/components_textfields_multiline2.png" / />
+                    </div>
+                        <figcaption>
+          <p>여러 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>밝은 테마</h3>
+    <div class="module-body">
+    <ul><li>힌트와 입력 폰트: Roboto Regular 16sp</li><li>레이블 폰트: Roboto Regular 12sp</li><li>텍스트 상단과 하단 패딩: 16dp</li><li>텍스트 필드 디바이더 패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVkIzaTVwdXljUHc/components_textfields_multiline3.png"  />
+                    </div>
+                        <figcaption>
+          <p>여러 줄 텍스트 필드를 위한 밝은 테마: 힌트 텍스트가 있는 일반 상태, 초점을 얻은 상태, 그리고 여러 줄 입력 텍스트가 있는 일반 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>어두운 테마</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOEhfWnZkR0paWlU/components_textfields_multiline4.png"  />
+                    </div>
+                        <figcaption>
+          <p>여러 줄 텍스트 필드를 위한 밝은 테마: 힌트 텍스트가 있는 일반 상태, 초점을 얻은 상태, 그리고 여러 줄 입력 텍스트가 있는 일반 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aUJxbVJOSWtOQ00/components_textfields_multiline5.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">어두운 테마 명세:</div><p>패딩: 레이블 텍스트 위 16dp<br/>텍스트 아래 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3QWhwSzE3WUk5U00/components_textfields_multiline5_dense.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밀집한 어두운 테마 명세:</div><p>레이블과 입력 텍스트: 13sp</p><p>레이블 텍스트 상단과 하단 패딩: 12dp</p>
+        </figcaption>
+                </figure>                
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-full-width-text-field" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    전체 너비 텍스트 필드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>전체 너비 텍스트 필드는 더 심도 있는 작업을 위해 유용합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYWMzLTlqZVlXaUE/components_textfields_full1.png" / />
+                    </div>
+                        <figcaption>
+          <p>전체 너비 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOUh4Zml1dzFuUDA/components_textfields_full2.png" / />
+                    </div>
+                        <figcaption>
+          <p>전체 너비 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>한 줄 필드와 여러 줄 필드</h3>
+    <div class="module-body">
+    <ul><li>힌트와 입력 폰트: Roboto Regular 16sp </li><li>텍스트를 위한 상단과 하단 패딩: 20dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MGZia09EYkk1VHM/components_textfields_full3.png"  />
+                    </div>
+                        <figcaption>
+          <p>한 줄 필드와 여러 줄 필드: 일반 상태, 초점을 얻은 상태, 그리고 여러 줄 입력 텍스트가 있는 일반 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Q1FhU3h5OVY5VlU/components_textfields_full4.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">전체 너비 한 줄 텍스트 필드를 위한 명세:</div><p>높이: 56dp<br/>텍스트를 위한 상단과 하단 패딩: 20dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ZkZlWTBNOUEwZDA/components_textfields_full4_dense.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밀집한 전체 너비 한 줄 텍스트 필드를 위한 명세:</div><p>힌트와 입력 텍스트: 13sp</p><p>높이: 48dp<br>텍스트 상단과 하단 패딩: 16dp</p>
+        </figcaption>
+                </figure>                
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-character-counter" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    글자 카운터
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>글자 제한이 있는 필드에 글자 카운터를 사용하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>글자 카운터가 있는 한 줄 텍스트 필드</h3>
+    <div class="module-body">
+    <p>카운터 텍스트: Roboto Regular 12sp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3WUlMaC1qemQ4WDA/components_textfields_counter1.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 제한을 초과하지 않았음을 사용자에게 보여주는 녹색 줄과 함께 글자 카운터가 있는 한 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRmNncUxvTEJFWTg/components_textfields_counter2.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 제한을 초과했음을 보여주는 빨간 줄과 함께 글자 카운터가 있는 한 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>글자 카운터가 있는 여러 줄 텍스트 필드</h3>
+    <div class="module-body">
+    <p>카운터 텍스트: Roboto Regular 12sp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbm5FTTNSTk5mNWc/components_textfields_counter3.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 제한을 초과하지 않았음을 사용자에게 보여주는 녹색 줄과 함께 글자 카운터가 있는 여러 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSnZCNzM3MG9tVnc/components_textfields_counter4.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 제한을 초과했음을 보여주는 빨간 줄과 함께 글자 카운터가 있는 여러 줄 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTDJ1S1UyalVwWFE/components_textfields_counter5.png"  />
+                    </div>
+                        <figcaption>
+          <p>한 줄 필드의 초점을 얻은 상태, 최대 글자를 초과한 한 줄 필드의 초점을 얻은 상태, 여러 줄 필드의 초점을 얻은 상태, 그리고 최대 글자를 초과한 여러 줄 필드의 초점을 얻은 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>글자 카운터가 있는 전체 너비 텍스트 필드</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU3RMS05OTjJlOTQ/components_textfields_counter6.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 카운터가 없는 전체 너비 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNWRaZE9UdFdxTEU/components_textfields_counter7.png" / />
+                    </div>
+                        <figcaption>
+          <p>글자 카운터가 있는 전체 너비 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WlJzNlVQeEF3TEU/components_textfields_counter8.png"  />
+                    </div>
+                        <figcaption>
+          <p>초점을 얻은 한 줄 텍스트 필드와 초점을 얻은 여러 줄 텍스트 필드</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-auto-complete-text-field" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    자동 완성 텍스트 필드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>드롭다운에서 실시간 제안과 완성을 보여 주기 위해서 자동 완성 텍스트 필드를 사용하면, 사용자는 더 정확하고 효율적으로 정보를 입력할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsejJ2Nm4xdjk2cXc/components_textfields_auto1.png" / />
+                    </div>
+                        <figcaption>
+          <p>자동 완성 텍스트 필드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMl9RcXdaU0ZLNUk/components_textfields_auto2.png" / />
+                    </div>
+                        <figcaption>
+          <p>드롭다운에서 자동 완성 텍스트 필드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>전체 너비 자동 완성</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSXRfbk0zVmY5NVU/components_textfields_auto3.png"  />
+                    </div>
+                        <figcaption>
+          <p>전체 너비 텍스트 필드와 전체 너비 제안</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>삽입된(Inset) 자동 완성</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUU1XTzBRYmxLckk/components_textfields_auto4.png" / />
+                    </div>
+                        <figcaption>
+          <p>삽입된 자동 완성</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd0ZFWU5OaDROLTQ/components_textfields_auto5.png" / />
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NnNWa09Pb2xlNlk/components_textfields_auto6.png"  />
+                    </div>
+                        <figcaption>
+          <p>삽입된 텍스트 필드와 초점을 얻은 카드 제안</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>전체 너비 인라인 자동 완성</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU0NDOGZLa1hSMmc/components_textfields_auto7.png" / />
+                    </div>
+                        <figcaption>
+          <p>전체 너비 인라인 자동 완성</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsb0ZjNGZpMHF6Y2c/components_textfields_auto8.png" / />
+                    </div>
+                        <figcaption>
+          <p>전체 너비 인라인 자동 완성</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aVFNeGM1ajZMUG8/components_textfields_auto9.png"  />
+                    </div>
+                        <figcaption>
+          <p>힌트 텍스트가 있는 일반 상태 그리고 제안이 있는 초점을 얻은 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>인라인 자동 완성</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y0pGNWVFRGgyWlk/components_textfields_auto10.png"  />
+                    </div>
+                        <figcaption>
+          <p>인라인 자동 완성</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="text-fields-search-filter" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    검색 필터
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>앱 바는 텍스트 입력 필드로 동작할 수 있습니다. 사용자가 입력한 대로, 내용물 하부에 필터링되고 정렬됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMnhTVmVUNHUtM3c/components_textfields_search1.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바는 텍스트 입력 필드로 동작합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOEdQX292cEQ5Skk/components_textfields_search2.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바는 텍스트 입력 필드로 동작하며, 그 내용물 아래에 필터링되고 정렬됩니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>앱 바에서 전체 너비 텍스트 필드</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7V2JUNy1BaUttWXc/components_textfields_search3.png"  />
+                    </div>
+                        <figcaption>
+          <p>삽입된 텍스트 필드가 있는 앱 바에서 전체 너비 텍스트 필드 그리고 초점을 얻은 카드 제안</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="tabs.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      탭
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="toolbars.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      툴바
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/text-fields.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:50 GMT -->
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/loading-images.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:57 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>이미지 로드 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Loading images - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Loading images - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Loading images - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Loading images</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">이미지 로드</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더                      
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="nav_selected" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">이미지 로드
+          </h1>
+    <div class="chapter-content">
+        
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#loading-images-loading-images">이미지 로드
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="loading-images-loading-images" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    이미지 로드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>삽화(Illustration)와 사진은 불투명도 변화에 의지하는 것보다, 시간 차를 둔 기간에 세 단계로 로드와 트랜지션을 할 것입니다. 불투명도와 노출(Exposure)과 채도(Saturation)의 조합은 당신의 필요에 어울리도록 변화합니다.<br/></p><p>노출 정도는 저대비(Low-contrast)와 채도를 저하시킨 색을 위해 조정됩니다. 불투명도가 100%에 도달했을 때, 그 마지막 단계는 풀 컬러의 채도를 포함합니다.</p><p>저대비 효과는 어두운 이미지를 위해 감마와 검정색 출력의 변화를 조합합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7M05lWkx3NTVncEE/patterns_loadingimages1.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">이미지 로드를 위한 불투명도(Opacity), 노출(Exposure), 그리고 채도(Saturation)의 권장 사항</div><p>불투명도: 시작 0%, 끝 100%<br/>노출: 감마, 검정 출력 (어두운 이미지를 위해)<br/>채도: 시작 0% 또는 20%, 끝 100%</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNYUtBc1paS3hmY0U/patterns-imagetreatment-imageload2_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <p>낮은 불투명도와 낮은 대비(Contrast)</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNY3FnbmJOeGNEMFE/patterns-imagetreatment-imageload3_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <p>최대 불투명도와 노출</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNaFhNWkc0bHdEUVk/patterns-imagetreatment-imageload4_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <p>색 채도</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>점진적인 페이드인(Progressive Fade-in)</h3>
+    <div class="module-body">
+    <p>사진 편집 과정 중에 사진과 같이 페이드인하는 이미지를 상상해 보십시오.</p><p>밝기값을 과도하게 노출하는 방법으로 정도(Level)를 조정하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNTWdocmdNQ3pERmM/patterns-imagetreatment-aperturevsdevelopment1-yes-no_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNV3Nna1RjSjc1TlU/patterns-imagetreatment-aperturevsdevelopment2-yes-no_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>지속 기간</h3>
+    <div class="module-body">
+    <p>이미지 로드를 위해 긴 지속 기간이 권장되며, 트랜지션을 위해서는 짧은 지속 기간이 권장됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNU2VGSFotTTluU2s/patterns-imagerytreatment-imageload-transition_large_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>로드와 트랜지션 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>                </p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>큰 화면</h3>
+    <div class="module-body">
+    <p>크롬 OS의 배경화면을 로딩하는 것과 같이, 이 과정은 큰 화면에 가장 알맞습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFYnpZYVpEdGtmaXM/patterns_loadingimages_largescreen.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>크롬 OS 배경화면을 위한 큰 화면에서 로딩을 보여주는 애니메이션</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>애니메이션 추가하기</h3>
+    <div class="module-body">
+    <p>이미지 로드에 작은 위치 변화를 추가하십시오. 다음에 보여지는 것과 같이 계정 변경에서 배경 이미지는 가로로 애니메이션합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0NGgBg38lWWRm5QODB0bk95SUE/patterns-loadingimages-loading-070901_Load_Add_Animation_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>애니메이션을 추가한 것을 보여주는 비디오</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="launch-screens.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      시작 화면
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="navigation.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      네비게이션
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/loading-images.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:57 GMT -->
+</html>

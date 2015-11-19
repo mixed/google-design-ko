@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:41 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>카드 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Cards - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cards - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Cards - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Cards</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">카드</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="nav_selected" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">카드
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>카드는 더 자세한 정보를 제공하는 진입점으로서 고유한 연관 데이터를 가진 페이퍼의 조각입니다. 예를 들어, 카드는 단일 주제에 관한 사진, 텍스트와 링크를 포함할 수 있습니다.</p><p>카드는 고정 너비와 가변 높이를 가집니다. 최대 높이는 플랫폼에서 가용 공간의 높이로 제한되지만, 임시적으로 확장할 수 있습니다(예를 들어, 덧글 필드를 표시하는 경우). 카드는 뒤에 있는 정보를 드러내기 위하여 뒤집지 않습니다. </p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#cards-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#cards-content">내용물
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#cards-actions">액션
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#cards-content-blocks">내용물 블록
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#cards-behavior">동작
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="cards-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>정의</strong></p><p>카드는 다른 요소로 구성된 내용물을 표시하는 편리한 수단입니다. 그것은 또한 가변 길이의 캡션을 가진 사진과 같이 크기나 지원하는 액션이 다양한 요소를 보여 주기에 알맞습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzLWpnQlRuZVM4azQ/components_cards1.png"  />
+                    </div>
+                        <figcaption>
+          <p>카드의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>카드 컬렉션은 동일 평면상에 있거나, 동일한 평면에서 카드의 레이아웃입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVkozd2tLVGczdDA/components_cards2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>카드 컬렉션의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUjhfMDFndk5wcnM/components_cards3.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>카드 컬렉션의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>사용하는 경우</strong></p><p>다음과 같은 내용물을 표시할 때 카드 레이아웃을 사용하십시오:</p><ul><li>컬렉션으로, 다양한 데이터 타입을 구성하는 경우(예를 들어, 이미지와 동영상과 텍스트로 구성된 카드 컬렉션).</li><li>직접적인 비교가 요구되지 않는 경우(사용자는 직접적으로 이미지나 텍스트 문자열을 비교하지 않음).</li><li>덧글과 같은 매우 가변적인 길이의 내용물을 지원하기 위해.</li><li>+1 버튼이나 덧글과 같은 풍부한 내용물이나 상호작용으로 구성되는 경우.</li><li>리스트 안에서 기존과는 다르게 세 줄 이상의 텍스트를 표시하는 것이 필요한 경우.</li><li>그리드 안에서 기존과는 다르게 이미지에 보충하여 텍스트를 추가하여 표시하는 것이 필요한 경우.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzSG9CdkJzMEJCODQ/components_cards6.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>1. 카드는 둥근 모서리를 갖고 있습니다.<br/>2. 카드는 다양한 액션을 가질 수 있습니다.<br/>3. 카드는 없애거나 재배치 될 수 있습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzSk92SnhSbTQwRlk/components_cards7.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>이것은 타일이지 카드가 아닙니다.<br/>1. 타일은 직각의 모서리를 갖고 있습니다.<br/>2. 타일은 두 개 이상의 액션을 갖지 않습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZGZTVVJIWW4zZWs/components_cards8.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>카드 대신에 빠르게 살펴 보는 것이 가능한 리스트는 많은 액션을 갖지 않는 동종의 내용물을 나타내기 위한 적절한 방법입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM3ZqMmJXdjRyZk0/components_cards9.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>여기에 카드의 사용은 빠르게 살펴 보는 것에 대한 사용자의 집중을 분산시킵니다. 이러한 리스트 항목은 또한 없앨 수 없습니다. 그래서 분할된 카드로 나타내는 것은 혼란스럽습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsN2F1Y2RWNzQ0R1U/components_cards10.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>그리드 타일은 이미지의 갤러리를 보여주기 위한 깔끔하고 가벼운 방법입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscVl0VzR1SlZkMWM/components_cards11.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>카드는 이미지의 갤러리(동종의 내용물)에서 불필요합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="cards-content" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용물
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>카드 내용물 유형과 양은 대단히 다양할 수 있습니다. 카드 컬렉션 내에 카드는 각각 고유한 데이터 집합을 포함할 수 있습니다. 예를 들어, 카드 컬렉션 내에 다양한 카드는 액션이 있는 체크리스트와 액션이 있는 노트 그리고 사진이 있는 노트를 포함할 것입니다.</p><p>카드는 더 생기 넘치는 정보와 뷰에 상황과 진입점을 제공합니다. 관련 없는 정보나 액션이 있는 카드를 넣지 마십시오.</p><h4>내용물 계층 구조</h4><p>가장 중요한 정보에 사용자의 주의를 집중하기 위한 카드 내에 계층 구조를 사용하십시오. 예를 들어, 카드의 최상단에 주 내용물을 위치시키거나, 주 내용물을 강조하기 위해 타이포그래피를 사용하십시오.</p><p>이미지는 카드 사이의 내용물을 쉽게 비교하거나 대조하도록 사용자를 도울 수 있습니다. 그러나, 카드 내에 이미지의 크기와 위치는 이미지가 주 내용물인지 아니면 카드 위에 다른 내용물을 보충하는데 사용하는 것인지에 달려있습니다.</p><p><strong>배경 이미지</strong></p><p>텍스트는 텍스트에 충분한 대비율을 적용한 단색 배경에 위치할 때 대부분 또렷하게 보입니다. 이미지 배경에 위치한 택스트는 텍스트 가독성을 지켜야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsa3BOQWNqV19FcGM/components_cards_content1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>이 카드 컬렉션은 다양한 레이아웃이 있는 카드를 포함합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQWp4VDdsWEV1VHM/components_cards_content3.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>타이포그래피는 주 내용물을 강조할 수 있습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZWNWWDZVek41S1U/components_cards_content2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>이 카드 컬렉션은 다양한 내용물 유형과 레이아웃이 있는 카드를 포함합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="cards-actions" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    액션
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>카드에서 주 액션은 일반적으로 카드 자신입니다.</p><p>추가적인 액션은 내용물 유형과 예상되는 결과에 따라 카드에서 컬렉션 안의 카드까지 다양합니다; 예를 들어, 영화 재생 vs 책 열기. 컬렉션 안의 카드 내에, 일관적인 액션을 배치하십시오. </p><h4>추가적인 액션</h4><p>카드 내에 추가적인 액션은 일반적으로 카드의 맨 아래에 위치하는 아이콘과 텍스트와 UI 컨트롤을 사용하는 것을 통해 명시적으로 호출됩니다.</p><p>오버플로우 메뉴 외에 추가적인 액션을 두 가지로 제한하십시오.</p>
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPUmhvNm8tUGhuUVU/components_cards16.png"  />
+                    </div>
+                        <figcaption>
+          <p>액션 영역과 리치 미디어와 지원하는 텍스트가 있는 카드</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPUEZzOWZzckI0WUk/components_cards17.png"  />
+                    </div>
+                        <figcaption>
+          <p>액션 영역 1, 2와 선택적인 헤더, 리치 미디어, 지원하는 텍스트와 추가적인 액션이 있는 카드</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPZUtlWjlUNlRoUTg/components_cards18.png"  />
+                    </div>
+                        <figcaption>
+          <p>액션 영역 1, 2, 3, 4와 선택적인 헤더, 리치 미디어, 추가적인 액션이 있는 카드</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPd19lRDVqSVVaaTg/components_cards19.png"  />
+                    </div>
+                        <figcaption>
+          <p>액션 영역 1, 2와 선택적인 헤더, 지원하는 텍스트과 추가적인 액션이 있는 카드</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>    
+          </section>
+                  </div>
+                  <div>
+                    <section class="moduleE1">
+                      <div class="module-body">    
+    <h4>UI 컨트롤</h4><p>주 내용물과 일직선에 위치하는 슬라이더와 같은 UI 컨트롤은 주 내용물의 뷰를 수정할 수 있습니다. 예를 들어, 날짜를 선택하기 위한 슬라이더, 내용물의 평점을 매기기 위한 별점, 또는 날짜 범위를 선택하기 위한 세그먼티드 버튼.</p><h4>오버플로우 메뉴</h4><p>오버플로우 메뉴(선택적)는 일반적으로 카드의 우측 상단 모서리에 위치하지만, 배치가 내용물의 레이아웃과 가독성을 향상시킨다면 우측 하단에 있을 수 있습니다.</p><p>오버플로우 메뉴에 너무 많은 액션을 넣지 않도록 유의하십시오.</p></div>
+<div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3OXdMTGNiaG9MVXc/components_cards_action1.png">
+                    </div>
+                        <figcaption>
+          <p>이 카드는 액션 영역 블록 내에 UI 컨트롤이 들어 있습니다.</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3aERrY01iZGdNcXM/components_cards_action4.png">
+                    </div>
+                        <figcaption>
+          <p>이 카드는 액션 영역 블록 내에 세그먼티드 버튼이 들어 있습니다.</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bkJxQTR3YW9YRXc/components_cards_action6.png">
+                    </div>
+                        <figcaption>
+          <p>이 카드는 액션 영역 블록 내에 슬라이더 컨트롤이 들어 있습니다.</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cXJ0OTI1MXJUV0U/components_cards_action5.png">
+                    </div>
+                        <figcaption>
+          <p>이 카드는 액션 영역 블록 내에 탭이 들어 있습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>  
+</section>
+        </div>
+        <div>
+          <section class="moduleE1">
+            <div class="module-body">
+            <h4>고려 사항</h4><p>텍스트 내용물 내에 인라인 링크는 권장되지 않습니다.</p><p>카드가 다양한 액션, UI 컨트롤, 그리고 오버플로우 메뉴를 지원할 수 있긴 하지만, 제한을 두고 사용하십시오. 그리고 카드가 더 복잡하고 자세한 정보로 접근하는 진입점이라는 것을 기억하십시오.</p>
+            </div>
+            <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3b3BtZFhRRXRPd2c/components_cards_action2.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>더 자세한 정보로 접근하기 위한 진입점으로 카드를 사용하십시오.</p>
+        </figcaption>
+              </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3X1h3R2hSdFM5am8/components_cards_action3.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>카드는 더 생생한 정보와 뷰로 접근하기 위한 상황과 진입점을 제공합니다. 관련 없는 정보나 액션으로 카드를 지나치게 채우지 마십시오. 텍스트 내용물 내에 인라인 링크는 권장되지 않습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+          </section>
+              </div>
+    </div>
+  </div>
+</div>                  <div id="cards-content-blocks" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용물 블록
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>카드는 다음을 포함한 내용물의 블록을 사용하여 만들게 됩니다:</p><ul><li>선택적인 헤더</li><li>주 제목</li><li>리치 미디어</li><li>지원하는 텍스트</li><li>액션</li></ul><p>이러한 내용물 블록은 카드 내에 시각적인 계층 구조를 생성하기 위해 조합될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPZkk0Z2xYLW5PRTQ/components_cards20.png"  />
+                    </div>
+                    <figcaption>
+          <p>주 제목 상단 패딩: 24dp<br>주 제목 하단 패딩: 16dp<br>액션 버튼 행 패딩: 8dp<br>지원하는 텍스트 상단 패딩: 16dp<br>지원하는 텍스트 하단 패딩: 24dp</p>
+        </figcaption>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>내용물 블록 유형</h3>
+    <div class="module-body">
+      <p><strong>리치 미디어</strong></p><p>16:9 또는 1:1 종횡비 (권장됨)</p><p><strong>액션</strong></p><p>패딩: 8dp</p><p><strong>주 제목/텍스트</strong></p><p>제목: 24sp 또는 14sp<br/>부제: 14sp<br/>좌측과 우측 패딩: 16dp<br/>상단 패딩: 16dp 또는 24dp (큰 주 제목이 있을 때)<br/>하단 패딩: 16dp (추가적인 액션이나 지원하는 텍스트가 있다면) 또는 24dp (액션이나 지원하는 텍스트가 없는 경우) </p><p><strong>지원하는 텍스트</strong></p><p>지원하는 텍스트: 14sp<br/>좌측과 우측 패딩: 16dp<br/>상단 패딩: 16dp<br/>하단 패딩: 24dp (추가적인 액션이나 텍스트가 아래에 있는 경우에는 16dp)</p><p>불릿 포인트(텍스트 제외), 이미지, 그리고 버튼은 16dp 패딩 밖에서 확장할 것입니다.</p><p><strong>모바일에서 카드 여백</strong></p><p>화면의 가장자리부터 카드까지 패딩: 8dp<br/>카드 사이의 공간: 8dp</p><p><strong>고도(Elevation)</strong></p><p>카드의 휴식 고도(Resting Elevation): 2dp<br/>카드의 들어 올려진 고도(Raised Elevation): 8dp</p>  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3SlFXMFhUNW0zT2s/components_cards28.png"  />
+                    </div>
+                      </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NzFzbnNJYmZYSnM/components_cards_elevation.png">
+                    </div>
+                      </figure>                      
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>내용물 블록 조합</h3>
+        <div class="module-body">
+      <p>다음의 예제는 내용물 블록의 일부 가능한 조합을 보여줍니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역</p><ul><li>16:9 비율 </li></ul><p>지원하는 텍스트</p><ul><li>텍스트: 14sp</li><li>패딩: 16dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPSGdWbTVveTZuTWs/components_cards29.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>아바타, 제목과 부제 영역</p><ul><li>72dp</li></ul><p>미디어 영역</p><ul><li>16:9 비율<br/></li></ul><p>지원하는 텍스트</p><ul><li>텍스트: 14sp</li></ul><ul><li>패딩: 16dp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPYThLYWdwT1ZQbnc/components_cards30.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>아바타, 제목과 부제 영역</p><ul><li>72dp</li></ul><p>미디어 영역 </p><ul><li>16:9 비율 </li></ul><p>액션</p><ul><li>패딩: 8dp</li><li>액션 간 패딩: 4dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPd1JqUTVEcGdJc1E/components_cards31.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역</p><ul><li>16:9 비율 </li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li></ul><ul><li>상단 패딩: 24dp</li></ul><ul><li>하단 패딩: 16dp</li></ul><p>부 텍스트</p><ul><li>텍스트: 14sp</li></ul><ul><li>하단 패딩: 16dp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPWWJOMXZqS3VQekE/components_cards32.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역</p><ul><li>16:9 비율 </li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li><li>상단 패딩: 24dp</li><li>하단 패딩: 16dp</li></ul><p>부 텍스트</p><ul><li>텍스트: 14sp</li><li>하단 패딩: 16dp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul><p>확장된 지원하는 텍스트</p><ul><li>텍스트: 14sp</li><li>상단 패딩: 16dp</li><li>하단 패딩: 24dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPXzVKX0pOOWpqRnM/components_cards33.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>주 텍스트</p><ul><li>텍스트: 24sp</li><li>상단 패딩: 24dp</li><li>하단 패딩: 16dp</li></ul><p>부제</p><ul><li>상단 패딩: 12dp</li></ul><p><br/>부 텍스트</p><ul><li>텍스트: 14sp</li><li>하단 패딩: 16dp</li></ul><p>지원하는 텍스트</p><ul><li>텍스트: 14sp</li><li>상단 패딩: 16dp</li><li>하단 패딩: 16dp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPeWJlSFlxOVB1YmM/components_cards34.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>16:9 비율 </li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPY2dOaVNLVmxUS3M/components_cards35.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>1:1 비율</li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li><li>상단 패딩: 24dp</li></ul><p><br/>부 텍스트</p><ul><li>텍스트: 14sp</li><li>하단 패딩: 16dp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPX2ROQ19MRk5CMTg/components_cards36.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>1:1 비율</li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPS1NtcVRBNHJ2WDg/components_cards37.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>1x</li><li>상단 패딩: 16dp</li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li><li>상단 패딩: 24dp<br/></li></ul><p>부 텍스트</p><ul><li>텍스트: 14sp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPV2lNY2IxVGJ2ZUk/components_cards24.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>3/8x</li><li>상단 패딩: 16dp</li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li><li>상단 패딩: 24dp<br/></li></ul><p>부 텍스트</p><ul><li>텍스트: 14sp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPX0RqTGZ2V2I3YkE/components_cards25.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>2x</li><li>상단 패딩: 16dp</li></ul><p>주 텍스트</p><ul><li>텍스트: 24sp</li></ul><ul><li>상단 패딩: 24dp<br/></li></ul><p>부 텍스트</p><ul><li>텍스트: 14sp</li></ul><p>액션</p><ul><li>패딩: 8dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPV0Jna09RcTN5OG8/components_cards26.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>미디어 영역 </p><ul><li>3x</li><li>패딩: 16dp</li></ul><p>액션</p><ul><li>모든 둘러싸는 패딩: 8dp + 16dp</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPd2FfRnRkLTRILU0/components_cards41.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="cards-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleD1">
+          <h3>지원되는 제스처</h3>
+        <div class="module-body">
+          <p>스와이프 제스처는 카드 별로 지원됩니다. 카드 제스처는 카드 컬렉션 내에서 일관적으로 구현되어야 합니다.</p><p>뷰 내에 스와이프 제스처를 제한하여, 다른 것과 겹치지 않게 하십시오. 예를 들어, 스와이프가 가능한 카드는 스와이프가 가능한 이미지 캐러셀(Carousel)이 들어 있지 않아야 하며, 카드가 스와이프될 때 오직 단일 액션만이 발생해야 합니다.</p><p>집어서 이동하는 제스처 또한 지원됩니다. 그러나, 컬렉션 내에서 카드 정렬이 가능한 것이 사용자에게 중요한지, 아니면 내용물이 프로그램적인 필터링이나 정렬을 사용하여 더 낫게 정리될 수 있는지를 고려하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleE1">
+          <h3>카드 컬렉션 필터링과 정렬</h3>
+        <div class="module-body">
+      <p>카드 컬렉션은 프로그램적으로 날짜, 파일 크기, 알파벳 순서나 다른 매개 변수에 의해 정렬되거나 필터링 될 수 있습니다. 컬렉션의 첫번째 항목은 컬렉션의 좌측 상단에 위치하고, 그 순서는 좌측에서 우측으로 그리고 상단에서 하단으로 진행합니다.</p>
+    </div>
+    <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dU9ETE9PUDExMUU/components_cards_behavior1.png">
+                    </div>
+                      </figure>
+          </div>
+  </div>    
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleD1">
+          <h3>스크롤</h3>
+        <div class="module-body">
+      <p>카드 컬렉션은 오직 수직으로만 스크롤합니다. 최대 카드 높이를 넘는 카드 내용물은 잘려지거나 스크롤되지 않습니다.</p><p>카드의 높이가 뷰의 최대 높이를 넘는 것을 의미하는, 내용물이 잘려진 카드는 확장될 수 있습니다. 이 경우에, 카드는 카드 컬렉션과 함께 스크롤합니다.</p>
+    </div>
+<div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dnROYlN6b1hsTmM/components_cards_behavior2.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>최대 카드 높이를 초과하는 카드 내용물은 잘려지고 스크롤하지 않습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>    
+  </section>
+
+        </div>
+<div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3eEdpVE9jVm54OG8/components_cards_behavior4.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>모바일에서, 카드 내에 이중 스크롤 바와 스크롤 가능한 공간을 피하십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3X3FmbXU5WXF0VlU/components_cards_behavior5.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>카드는 더 많은 내용물을 드러내기 위해서 스크롤 가능한 영역을 생성하는 것 대신 아래로 확장할 수 있습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+        <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RWFNdDhxOEtKc1E/components_cards_behavior3.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>데스크탑에서, 카드 내용물은 확장할 수 있으며 내부적으로 스크롤 할 수 있습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleE1">
+          <h3>카드 초점</h3>
+        <div class="module-body">
+          <p>카드에서 초점을 통해 이동할 때, 모든 초점을 얻을 수 있는 요소들은 그 다음 카드로 이동하기 전에 방문됩니다.</p><p>탐색을 위한 초점 이동에 의존하는 인터페이스(다이얼 패드와 키보드)를 위해서, 카드는 주 액션을 갖고 있거나 아니면 추가적인 액션이 들어 있는 새로운 뷰를 열어야 합니다.
+    </div>
+<div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NW5oUGduR2VscXM/components_cards_behavior6.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>포커스 이동 중에 선택된 액션</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Q3BSMEZNOVNOWU0/components_cards_behavior7.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>보여진 확장된 지원 텍스트, 초점을 얻고 나서 추가적인 액션을 수행</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>    
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="buttons-floating-action-button.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      버튼: 플로팅 액션 버튼
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="chips.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      칩
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:41 GMT -->
+</html>

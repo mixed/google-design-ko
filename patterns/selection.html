@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/selection.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:01 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>선택 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Selection - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Selection - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Selection - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Selection</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">선택</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="nav_selected" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">선택
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>선택(Selection)은 사용자 선택을 허용하는 제스처와 시각적 자극을 포함합니다.</p>
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#selection-usage">사용법
+                </a></li>        
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#selection-item-selection">아이템 선택
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#selection-text-selection">텍스트 선택
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+<div id="selection-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:h">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:i">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>선택 제스처</h3>
+        <div class="module-body">
+      <p>데이터를 선택하기 위한 전반적인 제스처는 어느 한 순간 동안 동일한 위치를 유지하는 롱프레스, 터치, 또는 마우스 클릭입니다. 두 손가락 터치 또한 터치 기기에서 선택을 작동시킬 것입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>체크박스</h3>
+        <div class="module-body">
+          <p><strong>모바일</strong></p><p>체크박스나 커스텀 다이얼로그는 작업 리스트나 체크 리스트의 아이템을 체크하는 것과 같이 완료를 나타내기 위해서만 사용되야 합니다.</p><p>이것은 모바일에서 선택을 위해 사용되지 않아야 합니다.</p><p><strong>데스크탑</strong></p><p>체크박스는 데스크탑에서 다음과 같은 동작을 가질 것입니다:</p><ul><li>아이템 위를 맴돌때, 그 아이템을 위한 단일 체크박스를 표시하십시오.</li><li>아이템이 선택된 후에, 그 집합에서 모든 남아 있는 아이템을 위한 체크 박스를 표시하십시오.</li></ul><p>각 아이템의 일부분으로 체크박스가 지속적으로 표시되는 것을 피하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>      
+                        <div id="selection-item-selection" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    아이템 선택
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+          <p>다중 선택 지원은 리스트와 그리드 컨테이너를 위해 매우 권장됩니다. 이것은 단일 선택(전화만이 유일한 액션인 곳에 전화번호 리스트와 같은)을 위해 이용 가능한 액션이나, 상황이 단일 아이템 조작(안드로이드 홈 화면에서 아이콘을 이동하는 것처럼)을 요구한다면 적용하지 않습니다. </p><p>제스처:</p><ul><li>선택 초기에, 롱프레스 뿐만 아니라 두 손가락 터치도 여러 아이템을 선택하기 위한 드래그 제스처를 사용하여 확장될 것입니다. 드래그 시작과 끝 사이에 아이템은 선택에 포함될 것입니다.</li><li>데스크탑에서, 모든 아이템의 경계 밖에서 시작한 드래그는 다중 선택을 시작하게 할 것입니다(예를 들어, 리스트의 왼쪽 여백에서 드래그를 시작하여 아래로 확장한 다음 오른쪽으로 이동하여 리스트 아이템을 선택하는 경우). </li></ul><p>초기 선택이 시작될 때, 사용자 액션을 통해 달라질 수 있습니다:</p><ul><li>아이템을 선택 해제하기 위해서 선택된 아이템을 터치. 아이템을 선택하기 위해서 선택되지 않은 아이템을 터치.</li><li>두 개의 선택점 사이에 모든 아이템을 선택하기 위해서 아이템에 쉬프트 키 + 터치/클릭.</li></ul>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="selection-text-selection" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    텍스트 선택
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>선택된 택스트의 경계를 하이라이팅(Highlighting)하면 텍스트 선택이 나타납니다.</p><p>모바일에서, 셀렉션 핸들(Selection Handle)은 선택의 시작과 끝 양쪽에 추가됩니다. 텍스트와 연관된 액션은 바로 위에 위치한 드롭다운 메뉴에 보여지지만, 선택과 겹져지지 않습니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+      <p>텍스트 선택은 하나의 연속적인 블록에서 발생해야만 합니다. 그러나, 선택의 경계는 사용자 액션을 통해 달라질 것입니다:</p><ul><li>선택을 확장하기 위해서 초기 선택을 드래그</li><li>선택을 확장하거나 줄이기 위해서 셀렉션 핸들 중 하나를 드래그</li><li>선택을 확장(한 단어 &gt; 단락 &gt; 전체)하기 위해서 선택 안을 반복적으로 터치(또는 클릭)</li><li>키보드 바로가기(Shortcut) (다음의 표 확인)</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c7">
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>키보드 바로가기</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>결과</span></p>
+            </td>
+        </tr>
+        <tr class="c7">
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>쉬프트 + 왼쪽/오른쪽 화살표</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>문자간(Character-by-character) 선택</span></p>
+            </td>
+        </tr>
+        <tr class="c7">
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>쉬프트 + 위쪽/아래쪽 화살표</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>행간(Line-by-line) 선택</span></p>
+            </td>
+        </tr>
+        <tr class="c7">
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>컨트롤/커맨드 + A</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p><span>전체 선택</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>텍스트 선택 키보드 바로가기는 선택 경계를 변경하기 위해 사용될 수 있습니다.</p>             
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>텍스트 셀렉션 핸들</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMVJxYmgwT1VRbnM/patterns_selection_text01.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트 셀렉션 핸들의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRG9FSUNuMDlmOTg/patterns_selection_text02.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트 셀렉션 핸들의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>텍스트 선택 - 밝은 테마</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscGx0c3BfYktVeWs/patterns_selection_text03.png"  />
+                    </div>
+                        <figcaption>
+          <p>텍스트 선택 - 밝은 테마</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>텍스트 선택 - 어두운 테마</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMXcwTVc0YzI0ZTg/patterns_selection_text04.png"  />
+                    </div>
+                        <figcaption>
+          <p>텍스트 선택 - 어두운 테마</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>텍스트 셀렉션 툴바</h3>
+    <div class="module-body">
+    <p>플로팅 툴바는 잘라내기(Cut), 복사하기(Copy), 붙여넣기(Paste), 그리고 더 보기(More)의 주 액션과 함께 선택 영역 위에 보여집니다. 사용자가 더 보기 아이콘을 선택할 때, 툴바는 접히고 추가적인 액션을 드러내는 부수적인 메뉴로 변형합니다.</p><p>플로팅 툴바 텍스트의 폰트는 모두 대문자인 Roboto Medium 14sp입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscno0MmlCVDFyR2s/patterns_selection_text05.png" / />
+                    </div>
+                        <figcaption>
+          <p>잘라내기, 복사하기, 붙여넣기, 그리고 더 보기를 위한 드롭다운 메뉴는 선택 영역 위에 보여집니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYWltR25aTzE1M00/patterns_selection_text06.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자가 더 보기를 선택할 때, 그 메뉴는 오버플로우 아이템을 보여주기 위해서 트랜지션을 시작합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWGJoQnVxTXZTRWs/patterns_selection_text07.png" / />
+                    </div>
+                        <figcaption>
+          <p>더 보기</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNll1eVFlNVpQZWc/patterns_selection_text08.png" / />
+                    </div>
+                        <figcaption>
+          <p>오버플로우 메뉴 아이템: 공유, 검색, 그리고 번역</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0BwJzNNZmsTcKX1B1bzkwMzN6SG8/patterns_selection_text09.png" / />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">텍스트 선택</div><p>드롭다운 메뉴 높이: 44dp<br/>드롭다운 메뉴 텍스트 상단 패딩: 12dp<br/>드롭다운 메뉴 텍스트 하단 패딩: 14dp<br/>드롭다운 메뉴 텍스트 좌측 패딩: 24dp<br/>드롭다운 메뉴 텍스트 우측 패딩: 16dp<br/>메뉴 텍스트 아이템 사이에 드롭다운 메뉴 공간: 32dp<br/>선택된 텍스트 상단 패딩: 8dp<br/>확장 아이콘 상단과 하단 패딩: 10dp<br/>텍스트 셀렉션 핸들: 22 x 22 dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="search.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      검색
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="settings.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      설정
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/selection.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:01 GMT -->
+</html>

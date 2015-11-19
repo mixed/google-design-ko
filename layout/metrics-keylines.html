@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/layout/metrics-keylines.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:36 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>측정 기준 &amp; 키라인 - 레이아웃 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Metrics & keylines - 레이아웃 - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Metrics & keylines - 레이아웃 - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Metrics & keylines - 레이아웃" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Metrics &amp; keylines</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">레이아웃</Attribute>
+      <Attribute name="section_slug">layout</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-layout noninitial-chapter color-pink qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">레이아웃</span>
+      <span class="chapter-title">측정 기준 &amp; 키라인</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="principles.html">기본 원리
+                    </a>
+                    <a class="" href="units-measurements.html">단위와 치수
+                    </a>
+                    <a class="nav_selected" href="metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="structure.html">구조
+                    </a>
+                    <a class="" href="adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                   
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">측정 기준 &amp; 키라인
+          </h1>
+    <div class="chapter-content">
+        
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#metrics-keylines-baseline-grids">기준선 그리드
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#metrics-keylines-keylines-spacing">키라인과 간격
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#metrics-keylines-ratio-keylines">비율 키라인
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#metrics-keylines-sizing-by-increments">증분으로 크기 정하기
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#metrics-keylines-touch-target-size">터치 대상 크기
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="metrics-keylines-baseline-grids" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    기준선 그리드
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>모든 컴포넌트는 모바일, 태블릿, 그리고 데스크탑을 위해 8dp 정사각형 기준선 그리드(Baseline Grid)에 맞춰 조정합니다. 툴바에서 아이콘은 4dp 기준선 그리드에 맞춰 조정합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbExOZTZCd0hUZ0E/layout_metrics_baseline2.png"  />
+                      </div>
+                        <figcaption>
+          <p>기준선 그리드의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsc0tpMGdyWDh2OUE/layout_metrics_baseline3.png"  />
+                      </div>
+                        <figcaption>
+          <p>기준선 그리드의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="module-body">
+    <p>활자(Type)는 4dp 기준선 그리드에 맞춰 조정합니다. 자세한 정보는 <a href="../style/typography.html">타이포그래피</a>에서 확인하십시오.</p>
+  </div>            
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNzAtNkU0RW1vSVE/layout_metrics_baseline5.png"  />
+              </div>
+            <figcaption>
+        <p>기준선 그리드에서 타이포그래피의 예제</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="metrics-keylines-keylines-spacing" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    키라인과 간격
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+  <section class="moduleB1">
+        <div class="module-body">
+      <p>다음의 템플릿과 예제는 모바일, 태블릿, 그리고 데스크탑에서 요소를 위한 키라인, 간격 안내, 그리고 예제 화면이 들어 있습니다.</p>
+    </div>
+  </section>
+                  </div>
+<div>
+              <section class="moduleB1">
+          <h3>템플릿</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+    <div>
+          <div class="modulettes">
+    <a download="" class="modulette download trackdl" href="http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LSGI2MmtqdFNEMG8/Layout_Mobile_Whiteframe.ai" title="Mobile layout template">
+    <img class="icon download-icon" src="../static/images/download_black.svg" alt="">
+    <div class="info">
+      <div class="title">Mobile layout template</div>
+      <span class="subtitle">2.57 MB (.ai)</span>
+    </div>
+  </a>
+    <a download="" class="modulette download trackdl" href="http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LNTgxRXh4YW5rSjA/Layout_Tablet_Whiteframe.ai" title="Tablet layout template">
+    <img class="icon download-icon" src="../static/images/download_black.svg" alt="">
+    <div class="info">
+      <div class="title">Tablet layout template</div>
+      <span class="subtitle">1.88 MB (.ai)</span>
+    </div>
+  </a>
+    <a download="" class="modulette download trackdl" href="http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LUlhDOC1lWG5iX3M/Layout_Desktop_Whiteframe.ai" title="Desktop Layout Template">
+    <img class="icon download-icon" src="../static/images/download_black.svg" alt="">
+    <div class="info">
+      <div class="title">Desktop Layout Template</div>
+      <span class="subtitle">89.40 MB (.ai)</span>
+    </div>
+  </a>
+  </div>
+        </div>        
+                  <div>
+              <section class="moduleB1">
+          <h3>모바일</h3>
+        <div class="module-body">
+    </div>
+  </section>
+    </div>
+              <div>
+              <section class="moduleD1">
+  <div class="module-body">
+    <p><strong>리스트</strong></p><p>56dp 플로팅 액션 버튼이 있는 두 개의 열, 좌측 정렬된 리스트</p>
+  </div>                
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseWRUbzJuUnpkNHM/layout_metrics_keyline_mobile2.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">키라인과 여백(Margin)</div><p>화면 가장자리 왼쪽과 오른쪽 여백: 16dp<br/>아이콘이나 아바타와 관련된 내용물 왼쪽 여백: 72dp<br/>모바일에서 가로 여백: 16dp.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWFRSRjhiV2t2WEE/layout_metrics_keyline_mobile3.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">수직 간격</div><ol start="1"><li>스테이터스바: 24dp</li><li>툴바: 56dp</li><li>부제: 48dp</li><li>리스트 아이템: 72dp</li></ol>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleD1">
+        <div class="module-body">
+
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMldpS1Bzc2R0NVk/layout_metrics_keyline_mobile5.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">키라인과 여백</div><p>화면 가장자리 왼쪽과 오른쪽 여백: 16dp<br/>화면 가장자리로 부터 내용물의 왼쪽 여백: 72dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUXV2Z1gwVjdFS0E/layout_metrics_keyline_mobile6.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">수직 간격</div><ol start="1"><li>스테이터스바: 24dp</li><li>툴바: 56dp</li><li>제목과 리스트 아이템: 72dp</li><li>부제: 48dp</li><li>내용물 영역 사이의 간격: 8dp</li></ol>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleD1">
+        <div class="module-body">
+      <p><strong>디테일 뷰</strong></p>
+      <p>56dp 플로팅 액션 버튼이 있는 상세한 카드</p>
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNVlYYkdnMktUVmc/layout_metrics_keyline_mobile8.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">키라인과 여백</div><p>화면 가장자리 왼쪽과 오른쪽 여백: 16dp<br/>화면 가장자리부터의 내용물 왼쪽 여백: 72dp<br/>오른쪽 아이콘은 플로팅 액션 버튼과 잘 어울리도록 오른쪽 가장자리로부터 32dp 거리에 정렬합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsN0hFU2wxOHNNU3M/layout_metrics_keyline_mobile9.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">수직 간격</div><ol start="1"><li>스테이터스바: 24dp</li><li>툴바: 56dp</li><li>내용물 영역 사이의 간격: 8dp</li><li>리스트 아이템: 72dp</li></ol>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleD1">
+        <div class="module-body">
+      <p><strong>네비게이션 드로어</strong></p>
+      <p>왼쪽에 배치된 아이콘, 아바타, 그리고 텍스트가 있는 사이드 네비게이션 메뉴. 그 밖의 아이콘은 오른쪽에 배치합니다.
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOFlvYmdNb3ZyYVk/layout_metrics_keyline_mobile14.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">키라인과 여백</div><p>화면 가장자리 왼쪽과 오른쪽 여백: 16dp<br/>아이콘이나 아바타와 관련된 내용물 왼쪽 여백: 72dp<br/>사이드 네비게이션 너비: 화면 너비 - 액션바의 높이. 여기서는 너비가 오른쪽 가장자리에서부터 56dp입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWWRuZnU4NS05cEU/layout_metrics_keyline_mobile15.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">수직 간격</div><ol start="1"><li>계정 메뉴와 리스트 아이템: 48dp</li><li>내용물 영역 사이의 간격: 8dp</li><li>네비게이션 오른쪽 여백: 56dp</li></ol>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>태블릿</h3>
+        <div class="module-body">
+          </div>
+  </section>
+
+        </div>
+        <div>
+              <section class="moduleE1">
+        <div class="module-body">
+        <p><strong>디테일 뷰가 있는 리스트</strong></p>
+        <p>오른쪽으로 정렬된 플로팅 액션 버튼이 있는 좌측으로 정렬된 리스트</p>
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ09PVGVhZEF6VWs/layout_metrics_keyline_tablet2.png"  />
+              </div>
+            <figcaption>
+<div class="caption-title">키라인과 여백</div>            
+<p>화면 가장자리 좌측과 우측 여백: 24dp<br>화면 가장자리에서부터 내용물 좌측 여백: 80dp<br>카드 좌측과 우측 패딩: 24dp<br>카드 내용물 좌측 패딩: 104dp</p>
+      </figcaption>
+            </figure>
+    </div>
+              </section>
+  </div>
+  <section class="moduleE1">
+    <div class="module-body">
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsc0tUUXZrS0tmc0E/layout_metrics_keyline_tablet3.png"  />
+              </div>
+            <figcaption>
+        <div class="caption-title">수직 간격</div><ol start="1"><li>스테이터스바 그리고 리스트 위의 간격: 24dp</li><li>리스트 아이템: 64dp</li><li>내용물 영역 사이의 간격: 8dp</li><li>리스트 아이템: 72dp</li></ol>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleE1">
+        <div class="module-body">
+          <p><strong>디테일 뷰가 있는 리스트</strong></p>
+          <p>좌측 정렬된 플로팅 액션 버튼이 있는 좌측 정렬된 리스트</p>
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd1R5dnZ5TWJ2X00/layout_metrics_keyline_tablet5.png"  />
+              </div>
+            <figcaption>
+            <div class="caption-title">키라인과 여백</div><p>화면 가장자리 좌측과 우측 여백: 24dp<br/>화면 가장자리 부터 아이콘의 세로 중앙까지의 거리: 52dp<br/>네비게이션 아이템 텍스트 내용물까지 좌측 여백 거리: 104dp<br/>화면 가장자리부터의 내용물 좌측 여백: 80dp</br>카드 좌측과 우측 패딩: 32dp<br/> 카드 네비게이션 아이템 좌측 패딩: 96dp</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+            <div class="module-body">
+            </div>
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaDZ3NHRNbmJ3QVU/layout_metrics_keyline_tablet6.png"  />
+              </div>
+            <figcaption>
+        <div class="caption-title">수직 간격</div><ol start="1"><li>스테이터스바: 24dp</li><li>툴바와 리스트 아이템: 64dp</li><li>내용물 영역 사이의 간격: 8dp</li><li>부제, 리스트 아이템과 슬라이더: 48dp</li><li>제목: 80dp</li></ol>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>데스크탑</h3>
+        <div class="module-body">
+      <p>데스크탑을 위한 키라인과 간격 블록은 윈도우 크기에 따라 태블릿과 모바일에서 그리드 규칙을 상속받습니다.</p>
+    </div>
+  </section>
+
+        </div>
+            <div>
+          <section class="moduleE1">
+            <div class="module-body">
+            </div>
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7c2FiNEFVZHJQcFE/layout_metrics_keylines_desktop1.png"  />
+              </div>
+            <figcaption>
+        <p>데스크탑 전체화면</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+            <div class="module-body">
+              <p>크기 조정된 윈도우</p>
+            </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dS1xT3hwRC1kTFU/layout_metrics_keylines_desktop3.png"  />
+                      </div>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7alFtbGU1OXJtNVk/layout_metrics_keylines_desktop4.png"  />
+                      </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="metrics-keylines-ratio-keylines" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    비율 키라인
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p>요소의 너비와 높이의 비율(종횡비(Aspect Ratio)라고 불리는)은 UI 요소와 모바일 화면 크기 모두에 적용합니다. 그것은 너비:높이로 쓰여져 있습니다.</p><p>다음의 종횡비가 권장됩니다:</p><ul><li>16:9</li><li>3:2</li><li>4:3</li><li>1:1</li><li>3:4</li><li>2:3</li></ul><p>예제:</p><ul><li>1:1 종횡비는 요소의 너비와 높이가 같다는 것을 의미합니다.</li><li>2:3 종횡비를 가진 360dp 너비 이미지는 540dp 높이를 가집니다.</li></ul><p>다음의 공식을 사용하여 선택한 종횡비를 위한 당신의 요소의 너비나 높이를 결정하십시오. 종횡비는 항상 분수로 표현됩니다. 예를 들어, 3:2는 3/2로 취급됩니다.</p><p>너비 = 종횡비 * 높이 </p><p>높이 = 너비 / 종횡비</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZjBCVzdPOENpT28/layout_metrics_ratiokeylines1.png" / />
+                    </div>
+                        <figcaption>
+          <p>화면 너비</p><p> </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsS1RKNFQtdy1sYkU/layout_metrics_ratiokeylines2.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 화면 너비의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7LTV1b3k5ekZHa1E/layout_metrics_ratiokeylines3.png" / />
+                    </div>
+                        <figcaption>
+          <p>요소 너비</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM203V05SR1ZyX28/layout_metrics_ratiokeylines4.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 요소 너비의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="metrics-keylines-sizing-by-increments" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    증분으로 크기 정하기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+      <p>증분(Increment)는 앱 안에 다른 요소의 크기나 위치를 결정하기 위해 사용되는 치수입니다.</p><p>예를 들어, 당신은 액션 바와 같은 표준 요소의 높이로 증분을 정의할 수 있습니다. 액션 바가 56dp 높이라면, 당신은 증분 하나를 56 x 56dp와 같게 정의할 것입니다. 한 요소가 56dp 증분 너비나 높이를 몇 개 가져야 하는지로 다른 요소의 크기를 결정하십시오.</p><p>증분 크기로 56dp를 사용했을 때 한 요소가 8 증분 너비라면, 그 너비는 448dp와 같습니다.</p><p>증분 키라인은 대부분 데스크탑에, 그리고 종종 태블릿에, 또는 드물게 모바일에 적용합니다. 증분의 수는 윈도우 크기에 따라 다양합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUxUQWYyUE5NaWs/layout_metrics_incremental2.png"  />
+                    </div>
+                        <figcaption>
+          <p>이 예제 카드의 너비는 8배의 수평 증분을 가집니다.</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSElrWE5scnNaNkE/layout_metrics_incremental3.png"  />
+                    </div>
+                        <figcaption>
+          <p>예제인 확장된 앱 바의 높이는 2배 증분이며, 오른쪽 패널의 너비는 5배 증분입니다.</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseGRLSnk0LWhlZ3M/layout_metrics_incremental4.png"  />
+                    </div>
+                        <figcaption>
+          <p>증분은 머티리얼 UI 안에서 많은 요소에 걸쳐 동작할 수 있습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="metrics-keylines-touch-target-size" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    터치 대상 크기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p>균형 잡힌 정보 밀도와 사용성을 보장하기 위해서, 터치 대상(Target)은 적어도 48 x 48 dp 크기여야 합니다. 대부분의 경우, 터치 대상 사이의 간격은 8dp 또는 그 이상이어야 합니다.</p><p>화면 크기에 상관없이 약 9mm의 물리 크기를 보장하기 위해서 적어도 48dp 높이와 너비로 요소의 크기를 정하십시오. 터치스크린 개체를 위한 권장 대상 크기는 7-10mm입니다.</p>
+    </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eEVhSW1nVjBrZnM/layout_metrics_touchtarget1.png" / />
+                    </div>
+                        <figcaption>
+                        <p>아바타: 40dp<br/>아이콘: 24dp<br/>터치 대상: 48dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaU12eTNLSnBEcXc/layout_metrics_touchtarget2.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 대상의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dlN4cEMwWm9Tc28/layout_metrics_touchtarget3.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 대상 높이: 48dp <br/>버튼 높이: 36dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZjVQbVZ1MzN3RGs/layout_metrics_touchtarget4.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 대상과 버튼의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-L section-layout">
+            <a class="footer-text" href="units-measurements.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      단위와 치수
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-R section-layout">
+            <a class="footer-text" href="structure.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      구조
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/layout/metrics-keylines.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:36 GMT -->
+</html>

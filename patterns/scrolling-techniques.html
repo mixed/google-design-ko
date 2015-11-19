@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/scrolling-techniques.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:00 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>스크롤 기술 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Scrolling techniques - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Scrolling techniques - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Scrolling techniques - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Scrolling techniques</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">스크롤 기술</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="nav_selected" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">스크롤 기술
+          </h1>
+    <div class="chapter-content">
+        
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#scrolling-techniques-scrolling">스크롤
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="scrolling-techniques-scrolling" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    스크롤
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>스크롤 가능한 영역</h3>
+    <div class="module-body">
+    <p>스크롤 동작을 디자인할 때, 앱 바는 스크롤 구조를 구성하는 네 개의 주 영역(<strong>블록(Block)</strong>이라고 부르는)이 들어 있습니다:</p><ul><li>스테이터스 바</li><li>툴 바</li><li>탭 바/서치 바</li><li>융통성 있는 공간(Flexible Space): 이미지나 확장된 앱 바를 위해 원하는 종횡비를 수용하는 공간</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsejJDTlljT21nTzA/patterns_scrolling_scroll1.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바는 다음을 포함할 수 있습니다: 스테이터스 바, 네비게이션 바, 탭/검색 바, 그리고 융통성 있는 공간</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTjVFelJ1MmlJWWs/patterns_scrolling_video1.png" / />
+                    </div>
+                        <figcaption>
+          <p>스테이터스 바, 네비게이션 바, 탭/검색 바, 그리고 융통성 있는 공간의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>표준 앱 바</h3>
+    <div class="module-body">
+    <p>표준 앱 바 높이는 모바일에서 56dp, 큰 화면 크기에서는 64dp입니다.</p><p>스크롤을 위해 다음과 같은 두 가지 선택 사항이 있습니다:</p><ol start="1"><li>앱 바는 내용물과 화면 밖으로 스크롤할 수 있고 사용자가 반대로 스크롤 할 때 되돌아옵니다.</li><li>앱 바는 앱 바 아래에서 스크롤하는 내용물과 함께 최상단에 고정될 수 있습니다.</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLWpBcnBMU2txdnM/patterns_scrolling_scroll2.png" / />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">표준 앱 바</div>
+                        <p>스테이터스 바 높이: 24dp<br>툴바 높이: 56dp / 64dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsblFzM1BqYXlzYk0/patterns-scrolling-techniques_standard_appbar_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>스크롤하는 동안 화면 밖으로 이동하는 툴바의 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>탭</h3>
+    <div class="module-body">
+    <p><a href="../layout/structure.html#structure-app-bar">표준 앱 바</a>는 다음 블록을 포함할 수 있는 대단히 중요한 컴포넌트입니다: 툴바, 탭 바, 또는 융통성 있는 공간</p><p>이것은 다음 동작 중 하나를 가질 수 있습니다:</p><ol start="1"><li>탭 바는 툴바가 스크롤되는 동안에 최상단에 고정되어 있습니다.</li><li>앱 바는 그 아래에서 스크롤 하는 내용물과 함께 최상단에 고정되어 있습니다.</li><li>툴바와 탭 바 모두 내용물과 함께 스크롤됩니다. 탭 바는 반대 방향으로 스크롤할 때 돌아오며, 툴바는 반대 방향으로 완전히 스크롤할 때 돌아옵니다.</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLVFsY0xTOTFLXzA/patterns_scrolling_scroll3.png" / />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">스테이터스 바, 툴바, 그리고 탭 바</div>
+          <p>스테이터스 바 높이: 24dp<br>툴바 높이: 56dp / 64dp<br>탭 바 높이: 48dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLXBSOXZjOXVDQTg/patterns-scrolling-techniques_tabs_xhdpi_004.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>툴바가 스크롤되고 탭과 앱 바는 그 자리에 머무는 것을 보여주는 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>융통성 있는 공간</h3>
+    <div class="module-body">
+    <p>앱 바는 융통성 있기 때문에, 더 큰 타이포그래피나 이미지를 수용하기 위해서 확장될 수 있습니다. 앱 바를 확장하기 위해서, 융통성 있는 공간 블록(Flexible Space Block)을 추가하십시오.</p><p>여기에 두 가지의 표시를 위한 선택사항이 있습니다:</p><ol start="1"><li>융통성 있는 공간은 툴바가 남아 있을 때까지만 수축합니다. 제목은 네비게이션 바에서 20sp로 수축합니다. 그 페이지의 최상단으로 스크롤 할 때, 융통성 있는 공간과 제목은 다시 원래 크기로 돌아옵니다.</li><li>전체 앱 바가 스크롤되어 숨겨집니다. 사용자가 반대로 스크롤 할 때, 툴바는 최상단에 고정되어 돌아옵니다. 반대로 완전히 스크롤 할 때, 융통성 있는 공간과 제목은 다시 원래 크기로 돌아옵니다.</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseVRMX0VFUnFva0U/patterns_scrolling_scroll4.png" / />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">스테이터스 바, 툴바, 그리고 융통성 있는 공간</div>
+          <p>스테이터스 바 높이: 24dp<br>툴바 높이: 56dp / 64dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsV09qdnY1WkRLTmM/patterns-scrolling-techniques-flexible_space_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>스크롤하는 동안 융통성 있는 공간을 보여주는 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>이미지가 있는 융통성 있는 공간</h3>
+    <div class="module-body">
+    <p>원하는 종횡비(Aspect Ratio)를 가진 앱 바에 이미지를 수용하기 위해서 융통성 있는 공간을 사용하십시오.</p><p>이 예제에서, 종횡비는 4:3입니다. 스크롤 할 때, 내용물은 이미지를 위로 누르며, 융통성 있는 공간은 수축합니다. 변형의 끝에서, 이미지는 스크롤과는 별개로 주 색(Primary Color)을 띱니다. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsa3pFOVUya2tJX2c/patterns_scrolling_scroll5.png" / />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">스테이터스 바, 툴바, 그리고 융통성 있는 공간</div>
+          <p>스테이터스 바 높이: 24dp<br>툴바 높이: 56dp / 64dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZXB3RENhR1diQlk/patterns-scrolling-techniques_flex_space_image_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>스크롤하는 동안 융통성 있는 공간과 이미지를 보여주는 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>겹쳐지는 내용물이 있는 융통성 있는 공간</h3>
+    <div class="module-body">
+    <p>내용물은 앱 바에 겹쳐질 수 있습니다.</p><p>동작:</p><p>앱 바의 시작 위치는 그 내용물 아래에 위치합니다. 위쪽으로 스크롤 할 때, 앱 바는 내용물이 더 이상 앱 바에 겹쳐지지 않을 때까지 그 내용물 보다 빨리 스크롤 해야 합니다. 제자리에 고정될 때, 앱 바는 들어 올려져서 내용물이 그 아래로 스크롤 하는 것을 허용합니다.</p><p>이러한 상호작용에서, 앱 바는 탭을 포함할 수 없습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ2tyc3RQbUdna1E/patterns_scrolling_scroll6.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">융통성 있는 공간</div><p>스테이터스 바: 24dp<br/>툴바: 56dp / 64dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSGlibkVDVjBXTHc/patterns-scrolling-techniques_flex_space_overlap_xhdpi_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>스크롤하는 동안 융통성 있는 공간과 겸쳐지는 내용물을 보여주는 애니메이션</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFZ1p4NVBGN0kzTXc/patterns_scrollingtechnique_flexibleoverlap.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Z축 공간 다이어그램, 측면 뷰</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="navigational-transitions.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      네비게이션 트랜지션
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="search.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      검색
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/scrolling-techniques.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:02:00 GMT -->
+</html>

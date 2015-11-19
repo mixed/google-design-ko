@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/empty-states.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:54 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>비어 있는 상태 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Empty states - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Empty states - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Empty states - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Empty states</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">비어 있는 상태</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="nav_selected" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">비어 있는 상태
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>비어 있는 상태(Empty State)는 뷰의 고정적인 내용물이 보여질 수 없는 경우에 발생합니다. 이것은 아무 아이템이 없는 리스트이거나, 아무런 결과를 리턴하지 않는 검색일 것입니다. 비록 이 상태가 일반적이지 않다고 할지라도, 이것은 사용자의 실망이나 혼란을 피하는 좋은 디자인을 위한 중요한 기회입니다.</p><p>내용물이 시스템 실패 때문에 표시되지 않을 수 있다면, <a href="errors.html#errors-app-errors">앱 에러</a>를 확인해 보십시오.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#empty-states-displaying-empty-states">비어 있는 상태 표시하기
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#empty-states-avoiding-completely-empty-states">완전하게 비어 있는 상태 피하기
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="empty-states-displaying-empty-states" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    비어 있는 상태 표시하기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p>가장 기초적인 비어 있는 상태는 상호작용이 없는 이미지와 텍스트 슬로건(Tagline)을 표시합니다.</p><p>다음과 같은 이미지를 사용하십시오:</p><ul><li>배경에 대한 절묘하고 중립적인 이미지</li><li>당신의 앱 아이콘과 같이 목적과 앱의 가능성을 적극적으로 전달하는 이미지</li></ul><p>다음과 같은 슬로건을 포함하십시오:</p><ul><li>긍정적인 어조</li><li>당신의 브랜드와 일치하는 슬로건</li><li>액션이 가능하게 보여지는 것 없이 그 앱의 의도를 전달하는 슬로건</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsR1lNblN4aTMwSUU/patterns_emptystates_do.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>이미지는 배경의 중립적이고 분명한 부분입니다. 슬로건은 행동의 호출을 제공하는 것 없이 앱의 의도를 전달합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSWxHX1pHVWg3azg/patterns_emptystates_dont.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>이미지는 밝으며 슬로건은 액션의 호출 같이 쓰여져 있어서, 이것은 사용자에게 행아웃이 시작할 것이라고 생각하여 터치하는 것을 부추길 것입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="empty-states-avoiding-completely-empty-states" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    완전하게 비어 있는 상태 피하기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>당신이 완전히 비어 있는 상태에 대한 대안을 사용자에게 제공할 수 있는 몇 가지 상황들이 있습니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>새 사용자를 위한 컨텐츠</strong></p><p>당신의 앱에 관하여 배우고 재미를 느끼게 하기 위해서, 새로운 사용자를 위한 가장 설득력 있는 방법은 이것을 사용하는 것입니다. 사용자에게 당신의 앱을 제대로 탐험할 수 있도록 허용할 새 사용자를 위한 컨텐츠(Starter Content)를 제공하는 것을 고려해 보십시오.</p><p>권장 사항:</p><ul><li>주된 특징을 넓게 보여주고 시험해 보는 컨텐츠를 사용하십시오.</li><li>사용자에게 이 컨텐츠를 삭제하고 대체하는 권한을 주십시오.</li><li>가능하다면, 그 사용자에게 개인화된 컨텐츠를 제공하십시오.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbmpXdzNmLTZ4ZVk/patterns_emptystates_starter.png" / />
+                    </div>
+                        <figcaption>
+          <p>책 읽기 앱은 그 앱을 탐색하는 것을 즉시 시작할 수 있도록 모든 사용자에게 인기 있는 몇몇 무료 서적을 제공할 것입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>교육적인 컨텐츠</strong></p><p>화면의 목적이 이미지와 슬로건을 통해 쉽게 전달되지 않는다면, 대신에 교육적인 컨텐츠(Educational Content)를 보여주는 것을 고려해 보십시오.</p><p>권장 사항:</p><ul><li>사용자가 그 컨텐츠 한 번으로 이 화면에서 무엇을 할 수 있는지 이해하도록 도우십시오.</li><li>이 컨텐츠를 없애거나 넘어갈 수 있게 하십시오.</li><li>간단하게 하십시오.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZWk2REJtUDN6d2s/patterns_emptystates_education.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자가 이 영화 앱에서 비디오를 보기 전에, 버릴 수 있는 카드는 그 서비스의 특징과 유익을 설명하기 위해 보여집니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>최선의 맞춤(Best Match)</strong></p><p>사용자의 질의에 정확하게 맞는 것이 없다면, 글자를 약간 다르게 한 질의에 대해 어떠한 결과가 있습니까? 그렇다면, 그 결과를 보여주십시오. 사용자가 그 검색어 다음에 찾을 수 있는 것을 돕기 때문입니다.</p><p>이러한 접근법과 함께, 그 결과 위의 헤더에 이 내용물이 실제 질의 결과에 잘 맞기 때문에 잘못된 것이 아니라는 것을 명확하게 전달하십시오. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSUp3Q1NKYWVPNDQ/Empty-state_best_match_01.png" / />
+                    </div>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVVVPRjVPUjA1N28/Empty-state_best_match_02.png" / />
+                    </div>
+                        <figcaption>
+          <p>“최선의 맞춤(Best match)”을 제공하는 것은 명시적으로 사용자에게 책임을 돌리는 것 없이 철자가 틀린 질의를 다루는 아주 좋은 방법입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="data-formats.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      데이터 유형
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="errors.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      에러
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/empty-states.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:54 GMT -->
+</html>

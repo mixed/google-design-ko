@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:42 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>데이터 테이블 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Data tables - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Data tables - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Data tables - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Data tables</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">데이터 테이블</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="nav_selected" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">데이터 테이블
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>데이터 테이블은 원시 데이터(Raw Data) 집합을 표현하기 위해 사용되며, 보통 데스크탑 엔터프라이즈 제품에서 사용됩니다.</p><p>데이터 집합은 다음을 포함할 것입니다:</p><ul><li>셋 또는 그 이상의 데이터 열</li><li>그에 상응하는 시각화</li><li>범위에서 데이터를 질의하고 조작하는 사용자를 위한 능력</li></ul>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-structure">구조
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-interaction">상호 작용
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-tables-within-cards">카드 안 테이블
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-specs">명세
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="data-tables-structure" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    구조
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>단순한 형태에서, 데이터 테이블은 최상단에 있는 열 이름 행과 데이터를 위한 행이 들어있습니다. 사용자가 데이터를 선택하거나 조작할 필요가 있다면, 체크박스가 각 행에 동반되어야 합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhV25CdGNXYzA4cXM/components_datatables_structure_basictable.png"  />
+              </div>
+            <figcaption>
+        <p>기본적인 데이터 테이블</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>열 헤더</strong></p><ul><li>12sp Roboto Medium</li><li>54% 검정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>테이블 내용물</strong></p><ul><li>13sp Roboto Regular</li><li>87% 검정</li></ul>
+            </div>
+          </div>
+                        </figure>
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>텍스트 정렬</strong></p><ul><li>숫자 열은 오른쪽 정렬</li><li>텍스트 열은 왼쪽 정렬</li></ul>
+            </div>
+          </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="data-tables-interaction" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    상호 작용
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>행 맴돌기 (데스크탑)</h3>
+    <div class="module-body">
+    <p>사용자가 한 행에 어느 부분 위를 맴돌 때(Hover) 배경 채우기를 표시합니다. 만약 개개의 셀(예를 들어 수정 가능한)에서 분리된 맴돌기 상태가 존재한다면, 셀과 행의 맴돌기 상태 모두를 동시에 표시하십시오.</p><p><strong>맴돌기 배경</strong></p><ul><li>회색 200 (#EEEEEE)</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhUDEyWVZTVDJCMHM/components_datatables_interaction_rowhover.png"  />
+                    </div>
+                        <figcaption>
+          <p>행 위를 맴돌기</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>행 선택</h3>
+    <div class="module-body">
+    <p>한 행이 선택되었을 때, 그 행에 배경 채우기를 사용하십시오.</p><p><strong>선택된 행 배경</strong></p><ul><li>회색 100 (#F5F5F5)</li></ul><p><strong>체크박스</strong></p><ul><li>부수적인 앱 색을 사용하십시오.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhcWNyQl9xYmRkQnc/components_datatables_interaction_selectedrow.png"  />
+                    </div>
+                        <figcaption>
+          <p>선택된 테이블 행</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>정렬된 열</h3>
+    <div class="module-body">
+    <p>열 정렬이 활성화되었다면, 기본적으로 가장 중요한 데이터를 정렬하고 열 헤더에 정렬된 상태를 표시하십시오. 만약 사용자가 이미 정렬된 열을 클릭한다면, 정렬 순서를 뒤집고 정렬 아이콘을 회전하십시오.</p><p><strong>정렬된 열 이름</strong></p><ul><li>12sp Roboto Medium</li><li>87% 검정</li></ul><p><strong>정렬 아이콘</strong></p><ul><li>16dp 컨테이너</li><li>87% 검정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhMW1haUJDRWJKLUk/components_datatables_interaction_sortedcolumn.png"  />
+                    </div>
+                        <figcaption>
+          <p>오름차순 정렬된 열이 있는 테이블</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>열 이름 맴돌기 (데스크탑)</h3>
+    <div class="module-body">
+    <p>열 헤더에 정의(Definition)를 제공할 필요가 있다면, 맴돌기 시에 툴팁을 표시하십시오. 정렬이 활성화되었다면, 맴돌기 시에 그 열이 정렬 가능하다는 것을 나타내는 밝은 정렬 아이콘을 표시하십시오.</p><p><strong>툴팁</strong></p><ul><li><a href="tooltips.html">툴팁</a>을 위한 가이드 라인을 따르십시오.</li></ul><p><strong>정렬 아이콘</strong></p><ul><li>16dp 컨테이너</li><li>26% 검정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhenh5SWhFdFlyajg/components_datatables_interaction_tooltip.png"  />
+                    </div>
+                        <figcaption>
+          <p>열 이름 위에 맴돌기</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>긴 헤더 제목</h3>
+    <div class="module-body">
+    <p>때때로, 열 이름은 열 사이에 56dp 패딩이 권장되는 컨테이너에 알맞지 않습니다. 이것을 다루기 위해 두 가지 옵션이 있습니다:</p><ol start="1"><li>전체 열 이름을 표시하고 테이블 컨테이너에서 가로 스크롤을 활성화하십시오.</li><li>열 이름을 단축하고, 맴돌기 시에 그 전체를 표시하십시오.</li></ol>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhMkVuNC1Zd3QyZ1k/components_datatables_interaction_longtitle1.png"  />
+                    </div>
+                        <figcaption>
+          <p>줄임표로 생락된 긴 열 이름</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhclI1SGllZkZQTkE/components_datatables_interaction_longtitle2.png"  />
+                    </div>
+                        <figcaption>
+          <p>생략된 열 이름 위에 맴돌기</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>인라인 텍스트 편집</h3>
+    <div class="module-body">
+    <p>테이블은 기본적인 텍스트 편집을 요구할 것입니다(예를 들어, 존재하는 텍스트 내용물을 편집하거나 덧글을 추가하기 위해서). 테이블 내에 편집 가능한 필드를 포함하고 플레이스 홀더 텍스트를 사용하여 그것을 나타내십시오. 당신은 그저 텍스트 필드만 있는 단순한 편집 다이얼로그를 사용하거나, 클릭 시에 전체 다이얼로그 컴포넌트를 표시할 수 있습니다.</p><p><strong>플레이스 홀더 텍스트</strong></p><ul><li>13sp Roboto Regular</li><li>26% 검정</li><li>텍스트 필드에 디바이더 선은 없음</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhZTViOVFXZTNucGs/components_datatables_interaction_editing1.png"  />
+                    </div>
+                        <figcaption>
+          <p>플레이스 홀더 텍스트가 있는 편집 가능한 테이블 셀</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+      <p><strong>작은 편집 다이얼로그</strong></p><ul><li>근처의 디바이더 선이나 테이블 가장자리에 다이얼로그의 가장자리를 정렬</li><li>24dp의 좌측과 우측 패딩</li><li>단일 <a href="text-fields.html">텍스트 필드</a>를 포함, 적용 가능한 곳에 앱 테마를 적용</li><li>사용자는 Enter를 누름으로서 텍스트를 확정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhZHhJSVhoT2JuTkE/components_datatables_interaction_editing2.png"  />
+                    </div>
+                        <figcaption>
+          <p>단순하고 필드 하나인 편집 다이얼로그</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>큰 편집 다이얼로그</strong></p><ul><li>근처의 디바이더 선이나 가장자리에 다이얼로그의 가장자리를 정렬</li><li><a href="dialogs.html">다이얼로그</a> 가이드라인을 따름, 적용 가능한 곳에 앱 테마를 적용</li><li>사용자는 저장 버튼을 클릭함으로서 텍스트를 확정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhZkY4b1VkME5QcXM/components_datatables_interaction_editing3.png"  />
+                    </div>
+                        <figcaption>
+          <p>복잡하고 유연한 편집 다이얼로그</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>인라인 편집 아이콘</strong></p><ul><li>18dp 컨테이너</li><li>54% 검정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhazJZa2VmSU5ldTQ/components_datatables_interaction_editing4.png"  />
+                    </div>
+                        <figcaption>
+          <p>(선택적) 아이콘에 기반한 행동 유도. 내용물의 반대 쪽인 셀의 가장자리에 아이콘을 포함하십시오.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>인라인 메뉴</h3>
+    <div class="module-body">
+      <p>텍스트 편집 대신에, 사용자는 옵션의 미리 정의된 리스트에서 선택할 필요가 있을 것입니다. 이러한 시나리오에서, 테이블에 직접적으로 메뉴 컴포넌트를 넣으십시오.</p><p><strong>인라인 메뉴</strong></p><ul><li>13sp Roboto Regular</li><li>87% 검정</li><li><a href="menus.html">메뉴</a>를 위한 간격과 크기 가이드라인을 따름</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhblJlanhBSHYzNWs/components_datatables_interaction_inlinemenus1.png"  />
+                    </div>
+                        <figcaption>
+          <p>인라인 메뉴가 있는 테이블</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhV200T3NSWG9TZFU/components_datatables_interaction_inlinemenus2.png"  />
+                    </div>
+                        <figcaption>
+          <p>확장된 인라인 메뉴</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="data-tables-tables-within-cards" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    카드 안 테이블
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>테이블은 상단과 하단에 가능한 테이블 네비게이션과 데이터 조작 도구가 있는 카드 내에 들어갈 수 있습니다. </p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhUTEwa21JUEtza0k/components_datatables_cards_tablecard.png"  />
+              </div>
+            <figcaption>
+        <p>헤더와 푸터가 있는 테이블 카드</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>카드 제목</strong></p><ul><li>20sp Roboto Regular</li><li>87% 검정</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>카드 액션 아이콘 (헤더와 푸터)</strong></p><ul><li>24dp 컨테이너</li><li>54% 검정</li></ul>
+            </div>
+          </div>
+                        </figure>
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>푸터 페이지 번호 레이블</strong></p><ul><li>12sp Roboto Regular</li><li>54% 검정</li></ul>
+            </div>
+          </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>대체 가능한 헤더</h3>
+        <div class="module-body">
+      <p>몇몇의 테이블 카드는 제목 대신 액션이 있는 헤더를 요구할 것입니다. 이것에 대한 두 가지의 가능한 접근법은 아이템이 선택될 때 활성화 되는 지속적인 액션이나, 상황에 맞는 헤더를 표시하는 것입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhemNvbnZOcXNpODQ/components_datatables_cards_altheaders.png"  />
+              </div>
+            <figcaption>
+        <p>테이블 카드를 위한 대체 가능한 헤더</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>액션 버튼</strong></p><ul><li>경계선이 없는 버튼을 사용</li><li>아이템 선택 시 활성화</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>색깔이 있는 헤더</strong></p><ul><li>배경 채우기를 위한 부수적인 앱 색의 50 틴트 사용</li><li>선택된 아이템의 수를 표시</li><li>아이템 선택 시 이용 가능한 상황에 맞는 아이콘을 표시</li></ul>
+            </div>
+          </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="data-tables-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>수직 간격</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhNEs2bWtmUDdPWWc/components_datatables_specs_verticalspacing.png"  />
+              </div>
+            <figcaption>
+        <p>데이터 테이블 카드와 그 마지막 행의 수직 간격</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <ol start="1"><li>64dp 카드 헤더 높이</li><li>마지막 행에 56dp 높이</li><li>48dp 데이터 행 높이</li></ol>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>헤더 &amp; 푸터 패딩</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhTV91bEF3cWl5eG8/components_datatables_specs_01_horizontalspacing.png"  />
+              </div>
+            <figcaption>
+        <p>테이블 카드의 요소 사이에 가로 패딩</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <ol start="1"><li>테이블 카드의 주변을 두르는 패딩 24dp</li><li>푸터 컨트롤 집합 사이에 32dp</li><li>푸터 행 개수와 그 레이블 사이에 40dp</li></ol>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>열 패딩</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhckNvQzhHaWI5Ulk/components_datatables_specs_02_horizontalspacing.png"  />
+              </div>
+            <figcaption>
+        <p>열 사이 패딩</p>
+      </figcaption>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <ol start="1"><li>열 사이에 패딩으로 최소 56dp를 사용하십시오. 열의 가장 넓은 아이템(데이터와 열 이름을 포함한)은 열의 경계를 설명해야 합니다.</li><li>체크박스 아이콘은 24dp 아이콘 컨테이너 내에 18dp의 너비와 높이를 가집니다.</li></ol>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="chips.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      칩
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="dialogs.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      다이얼로그
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:42 GMT -->
+</html>

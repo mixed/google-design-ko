@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/notifications.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2015 09:16:27 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>알림 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Notifications - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Notifications - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Notifications - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Notifications</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">알림</span>
+        </div>
+  </div>
+
+</header>
+
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="nav_selected" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">알림
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p><strong>안드로이드 전용</strong></p><p>알림(Notification)은 당신의 앱에서 관련 있고 시기 적절한 이벤트를 당신의 앱 사용자에게 알려줍니다. 당신은 친구에게서 온 메시지로 주의를 끌거나, 통근하는 사람에게 교통 둔화를 알리거나, 설치 중인 새 앱의 진행 상태를 보여주는 등의 여러가지 이벤트를 위한 알림을 생성할 수 있습니다.</p><p>알림은 사용자의 기기들 모두에 동기화될 수 있습니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#notifications-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#notifications-guidelines">가이드라인
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#notifications-content">내용
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#notifications-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#notifications-peeking-notifications">알림 엿보기
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="notifications-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>중단을 최소화하십시오</h3>
+        <div class="module-body">
+      <p>알림은 사용자가 다른 것에 집중하는 동안 당신의 앱에 이벤트를 사용자에게 알립니다. 알림은 중단(Interruptive)할 수 있기 때문에, 현명하게 알림을 사용하십시오.</p><p>알림은 다음과 같은 것들을 위해 사용되지 않아야 합니다:</p><ul><li>현재 화면에 있는 정보 (예를 들어, 활성화된 대화창의 대화)</li><li>사용자의 개입을 요구하지 않는 기술적인 동작 (예를 들어, 동기화)</li><li>사용자 액션 없이 해결될 수 있는 일시적인 에러 상태</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>알림을 선택할 수 있도록 만드십시오</h3>
+        <div class="module-body">
+      <p>사용자는 항상 알림을 관리하고 있어야 합니다. 당신의 앱 설정에서 알림을 비활성화하거나 변경할 수 있도록 사용자에게 허용하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="notifications-guidelines" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    가이드라인
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>소셜 대화에 우선순위를 두십시오</strong></p><p>다른 사람과 관련된 이벤트를 위해 알림을 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dWJhLXFUWHBWMFU/notifications_guidelines1.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>들어오는 대화는 사용자가 적극적으로 응답을 기다리게 만듭니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>시기 적절하게 사용하십시오</strong></p><p>특별하게 지정된, 분초를 다투는 정보를 사용자에게 알리십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cHlVMUJNVWR6ejQ/notifications_guidelines2.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>사용자가 특별하게 동의한 경우 외에는, 소셜 네트워크 업데이트로 인한 중단이 타당한 경우는 드뭅니다. 또한 문서 저장과 같은 통상적인 액션과 같이, 사용자가 액션을 취할 필요가 없는 상태 업데이트는 즉각적인 관심이 필요하지 않습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>알림을 개인화하십시오</strong></p><p>다른 사람에게로 보낸 알림을 위해, 그 사람의 이미지를 포함하십시오.</p><p>당신의 앱의 아이콘은 개인화된(Personalized) 이미지와 짝을 지어 보여집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cEZEZGFiSWl4VTg/notifications_guidelines3.png"  />
+                    </div>
+                        <figcaption>
+          <p>보낸 메세지와 내용물을 발신한 사람을 보여 주는 알림</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>적절한 곳으로 탐색하십시오</strong></p><p>사용자가 알림을 터치할 때, 사용자가 알림에 즉각적인 액션을 취할 수 있게 하십시오. 이것은 메세지나 여러 알림을 위한 요약 뷰와 같은 세부적인 뷰를 열 것입니다.</p><div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/design/patterns/navigation.html#into-your-app" title="Navigate to Your App via Home Screen Widgets and Notifications">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">홈 화면 위젯과 알림을 통해 당신의 앱으로 탐색하기</div>
+        <span class="subtitle"></span>
+      </div>
+    </a>
+      </div>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>알림에 우선순위를 정하십시오</strong></p><p>당신의 알림이 다른 것과 연관된 곳에 영향을 끼치게 하기 위해서, 안드로이드는 당신이 우선순위 플래그(Flag)를 정하는 것을 허용합니다. 이 플래그는 사용자가 항상 가장 중요한 알림을 먼저 보는 것을 보장하도록 돕습니다. 당신은 다음과 같은 알림 우선순위 단계에서 선택할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="table-example">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c17">
+    <tbody>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>우선순위</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>사용</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>MAX</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>시간이 중요한(Time-critical) 상태나 특정한 작업을 계속하려면 먼저 문제 해결이 필요한 상태를 사용자에게 경고하는 대단히 중요하며 다급한 알림을 위해 사용하십시오.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>HIGH</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>사용자를 위해 특별히 흥미있는 내용이 있는 메세지와 대화 이벤트와 같은 중요한 대화를 위해 주로 사용하십시오. 높은 우선순위 알림은 헤드업 알림 디스플레이를 발생시킵니다.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>DEFAULT</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>여기에 서술된 다른 우선순위 중 어느 것도 맞아 떨어지지 않는 모든 알림을 위해 사용하십시오.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>LOW</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>당신이 사용자에게 알려주기 원하지만 덜 긴급한 알림을 위해 사용하십시오. 낮은 우선순위 알림은 리스트의 최하단에 나타나는 경향이 있습니다. 이것은 공개나 무작위의 소셜 업데이트와 같은 것을 위한 좋은 선택입니다. 사용자가 자신에 관한 것을 알려주기를 요구했다고 하더라도, 이 알림은 결코 긴급하거나 직접적인 대화보다 우선하지 않아야 합니다.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c7" colspan="1" rowspan="1">
+                <p><span>MIN</span></p>
+            </td>
+            <td class="c9" colspan="1" rowspan="1">
+                <p><span>날짜 정보나 상황에 맞는 위치 정보와 같은 상황에 맞거나 배경이 되는 정보를 위해 사용하십시오. 최소 우선순위 알림은 스테이터스 바에 보이지 않습니다. 사용자는 노티피케이션 셰이드(Notification Shade)를 확장하여 알림을 발견합니다.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>알림을 보낼 때 위의 우선순위 단계에서 선택하십시오.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>알림을 분류하십시오</strong></p><p>가장 알맞는 미리 정의된 분류를 당신의 알림에 부여하십시오. 시스템 UI는 순위와 필터링을 결정하기 위해서 이 정보를 사용할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c17">
+    <tbody>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>분류</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_CALL</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>걸려오는 전화(음성 또는 영상) 또는 유사한 동기적(Synchronous) 대화 요청</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_MESSAGE</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>들어오는 직접(Direct) 메세지(문자 메세지(SMS), 단문 메세지 등)</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_EMAIL</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>비동기(Asynchronous) 대량(Bulk) 메세지 (이메일)</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_EVENT</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>달력 이벤트</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_PROMO</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>홍보 또는 광고</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_ALARM</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>알람 또는 타이머</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_PROGRESS</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>오랫동안 백그라운드로 실행되는 작업의 진행</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_SOCIAL</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>소셜 네트워크나 공유 업데이트</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_ERROR</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>백그라운드 작업이나 인증 상태의 오류</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_TRANSPORT</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>재생을 위한 미디어 이동 컨트롤</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_SYSTEM</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>시스템이나 기기 상태 업데이트. 시스템 사용을 위해 예약됨.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_SERVICE</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>백그라운드 서비스 실행의 알림</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_RECOMMENDATION</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>단일 상황을 위한 분명하고 시기 적절한 추천. 예를 들어, 뉴스 앱은 사용자가 다음에 읽기 원할 것이라고 생각하는 뉴스 기사를 추천하기 원할 것입니다.</span></p>
+            </td>
+        </tr>
+        <tr class="c0">
+            <td class="c3" colspan="1" rowspan="1">
+                <p><span>CATEGORY_STATUS</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>기기나 상황에 맞는 상태에 관한 계속 진행 중인 정보</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>알림을 요약하십시오</strong></p><p>동일한 유형의 여러 알림이 가능하다면, 단일의 요약 알림으로 그것들을 조합하십시오. 요약은 얼마나 많은 특정한 종류의 알림이 기다리는 중인지를 보여줍니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3OVc4c1pzVzlRTWM/notifications_guidelines4.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>당신은 확장된 요약 레이아웃이 있는 요약에 알림에 관한 더 자세한 내용을 제공할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ZzMtUmNwS3ByRG8/notifications_guidelines6.png"  />
+                    </div>
+                        <figcaption>
+          <p>확장되고 추축하는 요약 알림 (받은 편지함 스타일 사용)</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>뚜렷한 아이콘을 사용하십시오.</strong></p><p>기다리는(Pending) 알림 아이콘은 시스템 바에서 인식할 수 있어야 합니다.</p><p>알림 아이콘은 다음과 같아야 합니다:</p><ul><li>존재하는 안드로이드 알림 아이콘에서부터 뚜렷해야 함</li><li><a href="http://www.google.com/design/spec/style/icons.html#icons-system-icons">시스템 아이콘 스타일</a> 가이드라인을 따라야 함</li><li>시각적으로 단순해야 함</li><li>오직 알파 채널만 사용한 불투명한 흰색이어야 함</li><li>투명 배경을 가져야 함</li></ul><p>아이콘은 안티 에일리어싱이 적용된 가장자리를 가질 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bXJHWWl1cEp6RjA/notifications_guidelines7.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>알림 아이콘은 다음과 같지 않아야 합니다:</p><ul><li>알파(조명(Dimming)이나 흐리게 하기(Fading))를 추가</li><li>색을 사용</li><li>불투명한 배경을 가짐</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3WXhhWE50WW95OEU/notifications_guidelines8.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RjJIX2F3SGNDbTg/notifications_guidelines9.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="notifications-content" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>기본 레이아웃</h3>
+    <div class="module-body">
+    <p>모든 알림은 다음과 같은 요소를 반드시 포함해야 합니다:</p><ul><li>원래 앱의 아이콘</li><li>제목과 부수적인 텍스트</li><li>타임 스탬프</li></ul><p>필요하다면 알림 유형이 포함될 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TTlPRlZxZE1oV28/notifications_content1.png"  />
+                    </div>
+                        <figcaption>
+          <p>알림은 알림 아이콘, 제목, 부수적인 텍스트, 그리고 타임 스탬프가 들어 있습니다. 발송자(Sender)의 정보가 있는 개인화된 레이아웃은 발송자의 사진과 앱 아이콘이 짝을 이룰 것입니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UWxsX2diVFdEaUE/notifications_content2.png"  />
+                    </div>
+                        <figcaption>
+          <p><strong>모든 알림 유형:</strong></p><p>좌측과 우측 여백: 8dp<br/>제목 상단 여백: 16dp<br/>제목 하단 여백: 8dp<br/>아이콘 상단과 하단 여백: 12dp<br/>아이콘 영역 너비: 72dp</p><p><strong>개인화된 알림:</strong></p><p>아이콘 하단 패딩: 8dp</p><p><strong>요약 알림:</strong></p><p>발송자 상단과 하단 여백: 12dp<br/>제목 하단 여백: 8dp</p><p><br/></p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>확장된 레이아웃</h3>
+    <div class="module-body">
+    <p>당신은 당신의 앱의 알림을 얼마나 자세히 제공할지 선택할 수 있습니다. 예를 들어: </p><ul><li>메세지의 처음 몇 줄</li><li>큰 이미지 미리보기</li><li>전체 메세지</li></ul><p>사용자는 간편한 레이아웃에서 확장된 레이아웃으로 변경하기 위해서 핀치 오픈이나 드래그를 할 수 있습니다.</p><p>각각의 알림을 위해서, 안드로이드는 세 개의 확장된 레이아웃 템플릿을 제공합니다: 텍스트, 받은편지함, 그리고 이미지.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Sk1yakx3RlFLY2s/notifications_content3.png"  />
+                    </div>
+                        <figcaption>
+          <p>손에 들고 사용하는 기기(Handheld Device)와 웨어러블 기기에서 단일 이벤트 알림</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RFZRb3dJQTJvNkk/notifications_content4.png"  />
+                    </div>
+                        <figcaption>
+          <p>손에 들고 사용하는 기기와 웨어러블 기기에서 요약 알림</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cjhUb2NJM3ZEd2s/notifications_content5.png"  />
+                    </div>
+                        <figcaption>
+          <p>손에 들고 사용하는 기기에서 확장된 알림</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>액션</h3>
+    <div class="module-body">
+    <p>안드로이드는 알림의 최하단에 일반적인 작업을 위한 액션을 표시합니다. 사용자는 원래 어플리케이션을 열지 않고 특정한 알림에서 가장 일반적인 작업을 빠르게 처리할 수 있습니다.</p><p>액션은 다음과 같아야 합니다:</p><ul><li>시간에 예민하고 의미 있어야 합니다.</li><li>내용물과 어울려야 합니다.</li><li>사용자에게 작업을 완수하도록 허용해야 합니다.</li></ul><p>액션은 다음과 같지 않아야 합니다:</p><ul><li>모호하지 않아야 합니다.</li><li>기본 액션을 중복하지 않아야 합니다. (예를 들어, "읽기(Read)" 또는 "열기(Open)")</li></ul><p>명세:</p><ul><li>알림 당 최대 세 개의 액션</li><li>각 액션은 아이콘과 이름을 가집니다.</li><li>액션은 확장된 알림을 위해 보여지지만, 그 외에는 숨깁니다.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3N0Q0RzljNWwxdzA/notifications_content6.png"  />
+                    </div>
+                        <figcaption>
+          <p>두 개의 액션이 있는 알림</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>타임 스탬프</h4><p>알림 타임 스탬프는 이벤트가 발생된 때를 나타내야 합니다. 타임 스탬프는 알림을 보낸 시간과 이벤트 시간이 같은 경우 외에는 알림을 보낼 때 설정되지 않아야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>        
+              </div>
+  </div>
+</div>                  <div id="notifications-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>스테이터스 바에서 알림은 아이콘으로 나타나며, 노티피케이션 드로어(Notification Drawer)를 통해 접근 가능합니다. 알림을 터치하면 연관된 앱을 엽니다. 알림에서 왼쪽이나 오른쪽으로 스와이프하면 드로어에서 그 알림을 제거합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>계속 진행 중인 알림</h4><p>계속 진행 중인 알림(Ongoing Notification)은 백그라운드 진행에 대해서 사용자에게 계속 알려주며, 파일 다운로드와 같은 긴 작업을 위해 상태를 제공합니다.</p><p>사용자는 노티피케이션 드로어에서 계속 진행 중인 알림을 수동으로 제거할 수 없습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NmJ1c2RQWVFld1k/notifications_behavior1.png" / />
+                    </div>
+                        <figcaption>
+          <p>음악 플레이어는 사용자가 재생을 중지할 때까지 알림 시스템에서 현재 재생하는 곡을 알립니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>미디어 재생</h4><p>앱이 활성화된 미디어를 위해 계속 진행 중인 알림을 제공할 때, 사용자는 그 앱이 포그라운드(Foreground)가 아닐 때에도 재생을 조절할 것입니다. 알림은 잠금 화면에서 제공되기 때문에, 이러한 동일한 경험은 화면이 잠겼을 때에도 가능합니다. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>순서와 정리</h4><p>알림은 그 앱의 정해진 알림 우선순위가 주어진 고려 사항과 함께 시간의 역순으로 보여집니다.</p><p>알림은 잠금 화면에서 두드러진 특징이기에 알림을 위한 이유를 한 눈에 보여줘야 합니다.</p><p>안드로이드는 다음을 따라 알림을 정렬합니다:</p><ul><li>타임 스탬프와 어플리케이션의 정해진 우선순위</li><li>소리나 진동으로 사용자에게 알림이 최근 알려졌는지 여부</li><li>어떤 사람이 알림과 즐겨찾기된 연락처에 속하였는지 여부</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NUNMeEhjcnp2WGM/notifications_behavior2.png" / />
+                    </div>
+                        <figcaption>
+          <p>행아웃 알림</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cTlaTE5sOUtfRTQ/notifications_behavior3.png" / />
+                    </div>
+                        <figcaption>
+          <p>도착하자마자 짧은 기간 동안, 지메일 알림은 그 기기의 전화벨이나 진동 다음의 높은 우선순위를 받을 것입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NUt3UUh6ejRicGs/notifications_behavior4.png" / />
+                    </div>
+                        <figcaption>
+          <p>"최근에 알려진(Recently Notified)" 기간이 경과한 후에, 지메일 알림은 기본 우선순위 수준으로 설정됩니다. 그 알림은 행아웃에서 인스턴트 메세지와 같은 높은 우선순위가 있는 메세지 아래에 보여집니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>잠금 화면 개인정보</h4><p>알림은 잠금 화면에서 보여지기 때문에, 사용자 개인정보는 특별히 중요한 고려 사항입니다. 알림은 종종 민감한 정보가 들어 있기에, 디스플레이를 보는 누구에게도 보여지지 않아야 합니다.</p><p>안전한 잠금 화면(PIN, 패턴 또는 비밀번호)을 가진 기기를 위해서, 인터페이스의 공개된 버전은 표시될 것입니다. 비공개 인터페이스는 사용자가 그 기기를 잠금 해제한 때만 보여집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3MVhnMmdWMnJTRVk/notifications_behavior5.png" / />
+                    </div>
+                        <figcaption>
+          <p>단문 메세지 텍스트와 발신자 이름과 연락처 아이콘을 포함한 단문 메세지 앱의 알림이 있는 잠금 화면에 알림. 알림의 내용물은 사용자가 그 기기를 잠금 해제한 후에만 드러납니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>안전한 잠금 화면 정보의 사용자 컨트롤</h4><p>사용자는 안전한 잠금 화면에서 민감한 세부 사항을 숨기는 것을 선택할 수 있습니다. 이러한 경우, 시스템은 무엇이 안전하게 보여질 수 있는지 계산하여 각 알림의 보이기 수준을 평가합니다.</p><p>이 설정은 당신의 앱에 "새 메세지 3개"와 같이 유용한 것은 남기고 개인적인 정보는 숨기는 내용물의 수정된 버전을 표시하는 것을 허용합니다.</p><div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/reference/android/app/Notification.Builder.html#setVisibility(int)" title="Notification Builder">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">노티피케이션 빌더(Notification Builder)</div>
+        <span class="subtitle"></span>
+      </div>
+    </a>
+      </div>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="notifications-peeking-notifications" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    알림 엿보기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>높은 우선순위의 알림이 도착했을 때, 이것은 가능한 액션을 공개하는 확장된 레이아웃과 함께 시간의 짧은 기간 동안 사용자에게 나타내어집니다. 그 다음 그 알림은 사라집니다.</p><p>알림의 <a href="http://developer.android.com/design/patterns/notifications.html#correctly_set_and_manage_notification_priority">우선순위</a>가 높게(High), 최대(Max) 또는 전체화면(Full-screen)으로 설정되었다면, 알림 엿보기(Peeking Notification)를 가집니다.</p><p>알림 엿보기의 좋은 예제는 다음과 같습니다:</p><ul><li>기기를 사용할 때 걸려오는 전화</li><li>알람</li><li>새로운 문자 메세지</li><li>낮은 배터리 상태</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bG40cW1NUElidmc/notifications_peeking1.png" / />
+                    </div>
+                        <figcaption>
+          <p>에워싸는 앱 위에 보여지는 알림 엿보기(걸려온 전화, 높은 우선순위)의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="navigational-transitions.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      네비게이션 트랜지션
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="permissions.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      퍼미션
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/notifications.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2015 09:19:15 GMT -->
+</html>

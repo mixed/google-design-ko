@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2015 08:43:33 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>설정 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Settings - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Settings - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Settings - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Settings</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">설정</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="nav_selected" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>   
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">설정
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>어플리케이션 설정(Settings)은 사용자가 앱이나 서비스가 어떻게 동작해야 하는지를 위한 사용자의 선호도(Preference)를 나타내도록 합니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#settings-placement">배치
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#settings-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#settings-grouping-settings">설정을 그룹화하기
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#settings-labels-secondary-text">레이블과 부수적인 텍스트
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#settings-writing-guidelines">글쓰기 가이드라인
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="settings-placement" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    배치
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>앱의 설정은 모두 “설정(Settings)” 레이블을 통해 접근되야 합니다. “옵션(Options)” 또는 “환경설정(Preferences, 선호도)” 과 같은 유의어를 사용하지 마십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>사이드 네비게이션</strong></p><p>네비게이션 드로어와 같은 사이드 네비게이션이 존재한다면, 다른 모든 아이템의 아래에 “설정(Settings)”을 포함하십시오(도움말 &amp; 피드백(Help &amp; Feedback)은 제외).</p><p><strong>네비게이션이 없는 앱</strong></p><p>툴바 메뉴에서 모든 다른 아이템 아래에 설정(Settings)을 놓으십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX0Z3Q2hWSUljd00/patterns_settings_sidenav.png" / />
+                    </div>
+                        <figcaption>
+          <p>네비게이션 드로어에서 설정</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNzVuX3hCZ3pxVmc/patterns_settings_menu.png" / />
+                    </div>
+                        <figcaption>
+          <p>툴바 메뉴에서 설정</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="settings-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>설정은 잘 조직화되어 있고, 예상 가능해야 하며, 관리할 수 있는 수의 옵션이 들어 있어야 합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>개요를 제공하십시오</strong></p><p>사용자는 모든 가능한 설정과 그 현재값을 빠르게 이해할 수 있어야 합니다.</p><p>설정이 많다면, 사용자에게 가장 관심을 가질 것으로 예상되는 설정을 우선으로 놓으십시오. 덜 중요한 설정은 그룹화될 수 있으며 그 화면 자체에서 이동될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7clprVXFrZGZ6QWM/patterns_settings_sliders.png" / />
+                    </div>
+                        <figcaption>
+          <p>중요한 설정은 리스트의 최상단에 보여집니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>적절한 설정을 선택하십시오</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>설정에 알맞은 컨트롤은 다음과 같습니다:</strong></p><ul><li>사용자 선호도를 포착</li><li>드물게 접근됨</li><li>많은 수의 사용자들에 의해 사용됨</li><li>소수의 사용자에 의해 사용되지만, 그들의 요구를 지원하는데 필수적임</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>설정은 다음과 같지 않아야 합니다:</strong></p><ul><li>자주 접근되는 액션이 아니어야 함(이러한 아이템은 툴바로 이동)</li><li>버전(Version Number)이나 라이센스와 같은 그 앱에 관한 정보가 들어 있지 않아야 함(이러한 것들은 도움말(Help) 화면으로 이동)</li><li>사용자 계정을 관리하지 않아야 함(사이드 네비게이션 내에서와 같이 당신의 앱의 주된 흐름 내에서 이러한 액션을 표시)</li></ul>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>사려깊은 기본값을 고르십시오</h3>
+        <div class="module-body">
+      <p>각 설정의 초기값은 다음과 같아야 합니다:</p><ul><li>대부분의 사용자가 선택할 기본값을 보여줘야 함</li><li>중립적이며 리스크가 적어야 함</li><li>배터리와 모바일 데이터를 적게 사용해야 함</li><li>중요한 경우에만 중단해야 함</li></ul>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="settings-grouping-settings" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    설정을 그룹화하기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>큰 설정 리스트를 위해서, 여러 작은 크기의 리스트로 설정을 모으십시오. 당신의 앱의 설정(Settings) 패널에서 설정의 총 수에 따라 그것들을 정리하십시오.</p><p><strong>7개 또는 그 이하</strong><br/>그룹으로 만들지 마십시오.</p><p><strong>9개에서 10개</strong><br/>한 개나 두 개의 섹션 디바이더 아래에 연관된 설정을 그룹화하십시오. 설정을 위해 다음과 같은 것들은 그룹화될 수 없습니다:</p><ul><li>중요하다면, 그것들을 섹션 디바이더 없이 최상단에 나열하십시오.</li><li>그렇지 않으면, "그 외(Other)" 라고 부르는 섹션 디바이더와 함께 최하단에 그것들을 중요도에 맞게 나열하십시오.</li></ul><p><strong>11개에서 15개</strong><br/>두 개에서 네 개의 섹션 디바이더 아래에 연관된 설정을 그룹화하십시오. 두 개의 연관된 설정을 단일 설정으로 결합하십시오.</p><p>예를 들어, 체크박스가 있는 두 개의 연관된 설정은 단일의 다중 선택 설정으로 결합할 수 있습니다.</p><p><strong>16개 또는 그 이상</strong><br/>부수적인 화면(Subscreen) 아래에 네 개나 그 이상의 연관된 설정을 그룹화하십시오. 일관된 용어를 사용하고, 반드시 부수적인 화면의 제목이 설정의 레이블과 맞도록 하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscmdrc2xWTjNnOE0/patterns_settings_subscreen2.png" / />
+                    </div>
+                        <figcaption>
+          <p>중단(Interruption)을 위한 그룹화된 설정</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOEdqZHpWZHNKaXM/patterns_settings_subscreen3.png" / />
+                    </div>
+                        <figcaption>
+          <p>부수적인 화면 아래 그룹화된 연관된 설정</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="settings-labels-secondary-text" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    레이블과 부수적인 텍스트
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>레이블</h3>
+        <div class="module-body">
+          <p>당신의 레이블을 짧고 의미있게 만드십시오.</p><p>레이블을 다음과 같야야 합니다:</p><ul><li>각 레이블의 첫번째 단어와 적절한 명사만 대문자로 만드십시오.</li><li>당신의 레이블의  가장 중요한 텍스트가 처음에 위치하게 하십시오.</li><li>"하지 마십시오(Don't)" 또는 "결코(Never)" 와 같은 부정적인 단어를 "막기(Block)" 과 같은 중립적인 용어로 바꾸십시오.</li><li>"나에게 알려주세요(Notify me)" 대신에 "알림(Notifications)" 과 같은 개인적이지 않은 레이블을 사용하십시오. 예외: 그 사용자를 언급하는 것이 설정을 이해하기 위해 필요하다면, 1인칭 "나(I)" 보다는 2인칭 "당신(you)" 을 사용하십시오.</li></ul><p>레이블을 다음을 피해야 합니다:</p><ul><li>일반적인 용어, 예를 들어: 설정(Set), 변경(Change), 편집(Edit), 수정(Modify), 사용(Use), 선택(Select), 또는 선택(Choose)</li><li>섹션 디바이더나 부수적인 화면(Subscreen) 제목에서 단어를 반복하는 것</li><li>기술적인 용어, 당신의 목표 고객들이 널리 이해하는 경우는 제외</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>부수적인 텍스트</h3>
+    <div class="module-body">
+    <p>부수적인 텍스트(Secondary Text)는 선택사항입니다. 만약 레이블이 그 자체로 충분하다면, 부수적인 텍스트 설명을 추가하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Notifications</strong><span><br/>Show notifications</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>부수적인 텍스트에서 레이블과 반복적인 단어를 피하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>스위치 또는 체크박스 설정</strong></p><p>정확한 설명을 요구하는 설정은 설정 레이블 아래에 한 줄 설명을 추가할 것입니다. 설명은 다음과 같아야 합니다:</p><ul><li>설정을 활성화할 때 무슨 일이 일어나는지를 전하십시오.</li><li>레이블에서 이미 보여지지 않은 단어를 사용하십시오.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Enable NFC</strong><span><br/>Allow data exchange when the phone touches another device</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>동사로 설명을 시작하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>긴 설명을 요구하는 설정은 두 번째 화면에 설명을 추가할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3eWRXVkNtT05wNDg/settings_switch1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>레이블 아래에, "활성(On)" 또는 "비활성(Off)” 으로 스위치의 상태 텍스트를 보여주십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3blBlR3RGYUtjbjA/settings_switch2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>두 번째 화면에 스위치 그 자체와 긴 설명을 추가하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>그 외의 모든 설정</strong></p><p>스위치가 아닌 설정을 위해서, 부수적인 텍스트는 설정의 현재 상태만을 보여줘야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Sleep</strong><span><br/>After 10 minutes of inactivity</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Screen timeout</strong><span><br/>Adjust the delay before the screen automatically turns off</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="settings-writing-guidelines" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    글쓰기 가이드라인
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>직접적이고 이해 가능하게 쓰십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Vibrate on touch</strong></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Use tactile feedback</strong></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>적절한 상황 내에 위치한 특정한 세부 사항과 함께 상태를 나타내십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Sleep</strong><span><br/>After 10 minutes of inactivity</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Screen timeout</strong><span><br/>Adjust the delay before the screen automatically turns off</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>정확하게 설정을 설명하는 핵심 단어(Keyword)를 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Screen lock</strong><span><br/>Pattern</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>사용자가 화면 잡금을 설정하지 않았다면, 부수적인 텍스트는 “없음(None)” 이라고 말해야 합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>Change screen lock</strong><span><br/>Change or disable pattern, PIN, or password security</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>더 나은 대체어가 없을 때 익숙한 이니셜을 사용하십시오. 어떻게 또는 왜 낯선 설정이 존재하는지를 전달하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example example do">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>NFC</strong><span><br/>Allow data exchange when the phone touches another device</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class="text-example example dont">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><strong>NFC</strong><span><br/>Use Near Field Communication to read and exchange tags</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="selection.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      선택
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="swipe-to-refresh.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      스와이프로 새로고침
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2015 08:44:04 GMT -->
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/errors.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:55 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>에러 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Errors - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Errors - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Errors - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Errors</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">에러</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="nav_selected" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">에러
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>에러는 앱이 기대하던 작업을 완료하지 못할 때 발생합니다. 예를 들어:</p><ul><li>앱이 사용자 입력을 이해하지 못하는 경우</li><li>시스템이나 앱이 실패하는 경우</li><li>사용자가 동시에 양립할 수 없는 작업을 실행하려는 경우</li></ul><p>사용자가 정보를 쉽고 융통성 있게 입력하도록 앱을 디자인하여 에러를 최소화하십시오. 앱은 사용자 이해를 높이기 위해서 행동 유도성을 사용한 공통된 데이터 형식을 받아들여야 합니다.</p><p>에러를 다루는 방법:</p><ul><li>무엇이 일어날 지 분명하게 전하십시오.</li><li>어떻게 사용자가 그것을 해결할 수 있는지 설명하십시오.</li><li>가능한 한 사용자가 입력한 내용을 보호하십시오.</li></ul>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#errors-user-input-errors">사용자 입력 에러
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#errors-app-errors">앱 에러
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#errors-incompatible-state-errors">양립할 수 없는 상태 에러
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="errors-user-input-errors" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용자 입력 에러
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>입력 에러가 발견되자마자 사용자가 그것을 고치도록 도와주십시오. 에러가 발견되면 그 폼(Form)의 제출을 비활성화하고, 폼 제출 후에 발견되었다면 그 에러와 그것을 고치는 방법을 분명하게 설명하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>텍스트 필드 입력</h3>
+    <div class="module-body">
+    <p><strong>헬퍼 텍스트</strong>는 사용자가 폼에 각 필드와 상호작용하기 전, 동안, 또는 후에 포함될 것입니다.</p><p><strong>에러 텍스트</strong>는 오직 필드와 사용자 상호작용 후에 보여 주십시오. 사용자 입력이 올바르지 않은 데이터라면, 헬퍼 텍스트는 에러 텍스트로 변형할 것입니다.</p><p>기본적으로 폼 텍스트를 최소화하십시오. 모든 텍스트 필드가 헬퍼 그리고/또는 에러 텍스트를 필요로 하지 않습니다.</p><p>명세:</p><p>텍스트 필드와 그 아래 에러 텍스트 사이에 16dp의 수직 공간을 놓으십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOVhUS0MxUU5hTHc/patterns_errors_userinput1.png" / />
+                    </div>
+                        <figcaption>
+          <p>텍스트 필드 입력의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNlRLZjAtdjdmeXc/patterns_errors_userinput2.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트가 있는 텍스트 필드 입력의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>밝은 배경을 위한 폰트</h4><ul><li>에러: Roboto Regular 12sp #DD2C00</li><li>힌트와 헬퍼 텍스트: #000000, 38% 불투명도</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzRExHaS1VUl9GTm8/patterns_errors_userinput3.png"  />
+                    </div>
+                        <figcaption>
+          <p>다음과 같은 상태를 보여주는 밝은 테마: 힌트 텍스트가 있는 일반 상태, 에러 텍스트가 있는 일반 상태, 헬퍼 텍스트가 있는 일반 상태, 에러 텍스트로 헬퍼가 있는 일반 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>어두운 배경을 위한 폰트</h4><ul><li>에러: Roboto Regular 12sp</li><li>힌트와 헬퍼 텍스트: #FFFFFF, 30% 불투명도</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzY1kzRnVHZzcwQUE/patterns_errors_userinput4.png"  />
+                    </div>
+                        <figcaption>
+          <p>다음과 같은 상태를 보여주는 어두운 테마: 힌트 텍스트가 있는 일반 상태, 에러 텍스트가 있는 일반 상태, 헬퍼 텍스트가 있는 일반 상태, 에러 텍스트로 헬퍼가 있는 일반 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>헬퍼와 에러 텍스트</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZlB1ci1WalpMSzg/patterns_errors_userinput5.png" / />
+                    </div>
+                        <figcaption>
+          <p>헬퍼 텍스트가 있는 예제 </p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSEZULWZRVlptaG8/patterns_errors_userinput6.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트가 있는 예제 </p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsb1RBVlBqcG1raVU/patterns_errors_userinput7.png" / />
+                    </div>
+                        <figcaption>
+          <p>헬퍼 텍스트가 있는 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMWdCT0RwTTRWelE/patterns_errors_userinput8.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트가 있는 예제 </p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzVDFqemVZX1BFNlk/patterns_errors_userinput9.png"  />
+                    </div>
+                        <figcaption>
+          <p>헬퍼 텍스트가 있는 일반 상태 그리고 헬퍼와 에러 텍스트가 있는 일반 상태의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzLUNZa3NEUnJZV0k/patterns_errors_userinput_keyline1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">입력과 에러 텍스트</div><p>타일 높이: 64dp<br/>입력 텍스트 상단 패딩: 16dp<br/>입력 텍스트 하단 패딩: 8dp<br/>에러 텍스트 상단과 하단 패딩: 4dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>플로팅 텍스트 레이블이 있는 에러</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYWhVZlVHYmN1TnM/patterns_errors_userinput10.png" / />
+                    </div>
+                        <figcaption>
+          <p>입력 텍스트가 있는 플로팅 텍스트 레이블의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscTNycG1nMkxvdVk/patterns_errors_userinput11.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트가 있는 플로팅 텍스트 레이블의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzUzhrWTZrLUowdzg/patterns_errors_userinput12.png"  />
+                    </div>
+                        <figcaption>
+          <p>힌트 텍스트/레이블이 있는 일반 상태 그리고 입력 텍스트, 레이블과 에러가 있는 일반 상태의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzeFZnUDFYUGhKTU0/patterns_errors_userinput_keyline2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">플로팅 텍스트 레이블을 위한 명세</div><p>타일 높이: 80dp<br/>레이블 텍스트 상단 패딩: 8dp<br/>입력 텍스트 상단과 하단 패딩: 8dp<br/>에러 텍스트 상단과 하단 패딩: 4dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>텍스트 필드 입력 - 위/아래 글자나 단어 개수 세기</h3>
+        <div class="module-body">
+      <p>글자 카운터는 필드와 사용자 상호작용 이전, 동안, 그리고 후에 표시될 것입니다. 사용자가 글자 제한에 다다를 때까지 카운터를 표시하지 않는 것을 고려해 보십시오.</p><ul><li>카운터 폰트: Roboto Regular 12sp</li><li>카운터 필드는 16dp의 추가적인 하단 패딩을 가집니다.</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>글자 카운터가 있는 한 줄 필드</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNWlUb0hQaERFN0k/patterns_errors_userinput13.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자 입력 텍스트와 함께 글자 카운터가 있는 한 줄 필드의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOFhWeDJlME1KdVk/patterns_errors_userinput14.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트와 함께 글자 카운터가 있는 한 줄 필드의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>글자 카운터가 있는 여러 줄 필드</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOHBVQmM3OHJydEk/patterns_errors_userinput15.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자 입력 텍스트와 함께 글자 카운터가 있는 여러 줄 필드의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsenlOeHFQMnhtZGc/patterns_errors_userinput16.png" / />
+                    </div>
+                        <figcaption>
+          <p>에러 텍스트와 함께 글자 카운터가 있는 여러 줄 필드의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzbTc3Mnl0cGxWd2M/patterns_errors_userinput17.png"  />
+                    </div>
+                        <figcaption>
+          <p>다음과 같은 상태의 예제: 사용자 입력 텍스트가 있는 한 줄 입력 레이블, 에러 텍스트가 있는 한 줄 입력 레이블, 사용자 입력 텍스트가 있는 한 줄 입력 레이블, 그리고 에러 텍스트가 있는 여러 줄 입력 레이블</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzU1c2Y2F3dHZpVGs/patterns_errors_userinput_keyline3.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">텍스트 필드 입력</div><p>한 줄 입력 레이블 상단 패딩: 16dp<br/>한 줄 필드를 위한 입력 텍스트의 상단과 하단 패딩: 8dp<br/>전체 입력 영역의 높이: 88dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>호환되지 않는 값</h3>
+    <div class="module-body">
+    <p>사용자가 텍스트 필드와 상호작용하는 동안이나 후에 호환되지 않는 값(Incompatible Value)에 대한 에러를 보여주십시오.</p><p>만약, 두 개나 그 이상의 필드가 호환되지 않는 입력을 가진다면:</p><ul><li>텍스트 필드에서, 필요한 수정을 보여 주십시오. 아래에 에러 메세지를 추가하십시오.</li><li>폼이나 화면의 최상단에 수정이 필요한 것과 어떠한 추가적인 설명을 요약한 메세지를 표시하십시오.</li></ul><h4>폼 제출 시 발견된 에러</h4><p>최상단에 통합된 에러 메시지와 스크롤 위치가 있는 그 폼을 다시 로드하십시오. 각 필드에 대한 에러 메세지는 사용자가 그 폼을 통해 수정하는 동안에 해결될 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUgtdlRxV2lqUUk/patterns_errors_userinput18.png" / />
+                    </div>
+                        <figcaption>
+          <p>폼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMkRKVU9PVE9nanc/patterns_errors_userinput19.png" / />
+                    </div>
+                        <figcaption>
+          <p>폼 제출 시도 후에 발견된 에러의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>미완성 폼</h3>
+    <div class="module-body">
+    <p>비어 있는 폼 필드는 텍스트 필드와 아래 에러 메세지 모두에 의해 보여져야 합니다.</p><p>사용자가 폼을 통해 진행한 후에 필드를 건너뛰었다는 것을 나타내기 위해서 미완성 폼 에러를 표시하십시오. 그 폼을 통해 사용자의 진도를 확인할 수 없다면, 사용자가 그 폼을 제출하려고 시도한 후에 에러를 표시하십시오.</p><h4>폼 제출 전의 여러가지 에러</h4><p>사용자가 그 폼을 사용하는 동안에 개별적으로 에러 메세지를 붙이십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWHZzYkhZV0hJU3c/patterns_errors_userinput21.png" / />
+                    </div>
+                        <figcaption>
+          <p>폼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsR3JHMFNfczNyTGc/patterns_errors_userinput22.png" / />
+                    </div>
+                        <figcaption>
+          <p>미완성 폼의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>한 줄 리스트 에러</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMzNPNXhwSDZHQWc/patterns_errors_userinput23.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 리스트 에러의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="errors-app-errors" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    앱 에러
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>앱 에러는 사용자 입력과는 별도로 발생합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>일반적인 앱 에러</h3>
+    <div class="module-body">
+    <p>에러가 발생했을 때, 앱은 에러 메세지가 보여질 때까지 로딩(Loading) 인디케이터를 표시해야 합니다.</p><p>이용 불가능한 기능이 UI에 비활성화된 채로 보여질 것입니다. 예를 들어, 이용 불가능한 버튼은 이용 불가능하다는 것을 설명하는 텍스트와 함께 비활성화된 상태로 표시될 것입니다. 모든 에러가 팝업으로 표시하는 새로운 컴포넌트를 요구하는 것은 아닙니다.</p><p>가능하다면, 당신의 사용자에게 에러를 다루도록 도울 액션을 주십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWTJDTmVQZkI4NE0/patterns_errors_app1.png" / />
+                    </div>
+                        <figcaption>
+          <p>경보(Alert) 다이얼로그: 에러에 관한 앱 피드백은 일반적인 작업을 막습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNzNWRHJnY1FacmM/patterns_errors_app2.png" / />
+                    </div>
+                        <figcaption>
+          <p>스낵바: 주변(Peripheral) 에러에 관한 앱 피드백. 스낵바는 일시적이기에, 중요하거나 지속되거나 중대한 에러를 위해서는 사용하지 마십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>로드하기 위한 동기화의 에러/실패</h3>
+    <div class="module-body">
+    <p>동기화가 되지 않거나 내용물을 로드하는 것을 실패했을 때, 사용자는 가능한 한 그 앱의 나머지와 상호작용할 수 있어야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRHVESW4tZnpXVlE/patterns_errors_app3.png" / />
+                    </div>
+                        <figcaption>
+          <p>로드하는 것을 실패한 화면/내용물을 위한 비어 있는 상태</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ3ozZkVNa3lPZTA/patterns_errors_app4.png" / />
+                    </div>
+                        <figcaption>
+          <p>액션이 있는 컨테이너/컴포넌트의 특정한 에러</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>연결</h3>
+    <div class="module-body">
+    <p>연결이 되지 않을 때, 사용자는 가능한 한 그 앱의 나머지와 상호작용할 수 있어야 합니다.</p><p>적절하다면, 사용자에게 그 작업을 완료하는 것을 돕는 링크를 제공하십시오. 오직 당신이 실제적으로 지원할 수 있는 링크만 제공하십시오. 예를 들어, 당신이 그 작업이 실패할 것을 감지할 수 있는 경우에 "다시 시도(Try again)"와 같은 옵션을 제공하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbjJqa04xVjdOQ1k/patterns_errors_app5.png" / />
+                    </div>
+                        <figcaption>
+          <p>재시도 액션이 있는 스낵바</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZzZid0VPZUp2SFE/patterns_errors_app6.png" / />
+                    </div>
+                        <figcaption>
+          <p>오직 온라인에서만 이용 가능한 화면을 위한 비어 있는 상태</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="errors-incompatible-state-errors" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    양립할 수 없는 상태 에러
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>양립할 수 없는 상태(Incompatible State) 에러는 비행기 모드인 상태에서 전화를 하려거나 제한된 작업 계정에서 스크린샷을 찍으려 하는 것과 같이 사용자가 상충하는 작업을 실행하려고 시도하는 경우에 발생합니다. 사용자가 선택한 상태와 사용자 경험의 나머지를 위한 결과를 분명하게 전달하여 이러한 상황에 놓여지는 것으로부터 사용자를 방지하도록 도우십시오. 이러한 에러가 발생되었을 때, 사용자의 잘못이라고 나타내지 마십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>일반적으로 양립할 수 없는 경우</h4><p>그 이유와 에러의 발생을 명확하게 하십시오.</p><p>예를 들어, 스크린샷과 고급 기능은 제한된 모드인 동안에는 허용되지 않습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsekxHRTdVY0pWY0E/patterns_errors_state1.png" / />
+                    </div>
+                        <figcaption>
+          <p>스낵바 + 특별한 모드 인디케이터</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>선택에 의한 오프라인</h4><p>사용자가 온라인 상태를 요구하는 작업을 하려고 시도했지만 오프라인일 때, 관심을 끌지 않으며 지속되는 인디케이터를 표시하십시오.</p><p>예제: </p><ul><li>비행기 모드인 동안 전화하기</li><li>오프라인인 동안 음악의 이용 가능성</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbUZyQUd0eERoekk/patterns_errors_state2.png" / />
+                    </div>
+                        <figcaption>
+          <p>스낵바</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMnRLM1k2QWVod2M/patterns_errors_state3.png" / />
+                    </div>
+                        <figcaption>
+          <p>기기가 비행기 모드로 놓여졌을 때 인디케이터</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>허가 요청</h4><p>당신의 앱이 액션 수행 전에 사용자 허가를 요구한다면, 에러로 그것을 처리하는 것 대신에 앱 흐름에 허가 요청을 포함하십시오.</p><p>앱의 첫 실행 전에 허가가 필요하다면, 당신의 앱의 첫 실행 경험 안에 그 허가를 포함하는 것을 고려하십시오.</p><p>예제: </p><ul><li>앱 퍼미션이 변경된 경우</li><li>앱 내 구매가 비활성화 된 경우</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsakx4QjdTSnV2d2c/patterns_errors_state4.png" / />
+                    </div>
+                        <figcaption>
+          <p>다이얼로그</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="empty-states.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      비어 있는 상태
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="gestures.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      제스처
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/errors.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:55 GMT -->
+</html>

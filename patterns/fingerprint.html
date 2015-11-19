@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/fingerprint.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2015 09:20:41 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>지문 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Fingerprint - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Fingerprint - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Fingerprint - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Fingerprint</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">지문</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+    
+    
+    
+
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="nav_selected" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">지문
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p><strong>안드로이드 전용</strong></p><p>지문 인식은 기기 잠금 해제와 앱 로그인, 그리고 구글 플레이로 구입한 것들과 일부의 서드파티 앱을 인증하기 위해 사용될 수 있습니다.</p><p>지문은 강력한 PIN이나 비밀번호만큼 안전하지 않습니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#fingerprint-enrollment">등록
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#fingerprint-authentication">인증
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#fingerprint-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#fingerprint-fingerprint-icon">지문 아이콘
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#fingerprint-reauthentication">재인증
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="fingerprint-enrollment" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    등록
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>당신의 앱에 지문을 불러오기 전에, 당신은 사용자가 자신을 인증하는 대체 방법으로 지문을 사용하기 원하는지에 대해서 사용자로부터 동의를 얻어야만 합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>지문 사용을 시도하도록 사용자에게 요청이 가능한 때는 다음과 같습니다:</p><ul><li>앱을 열 때</li><li>당신의 앱의 구입 흐름 중에</li><li>당신의 앱 설정에서</li><li>지문 등록 후에</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>앱을 열 때</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3DnSAB-NSN5V3BOUU1tck1Fdmc/v_01_fp_enrollment_login_alt_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>사용자는 로그인 후에 바로 지문 등록을 위한 옵션을 제공받습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3DnSAB-NSN5eThrR25CSzZDbTQ/v_02_fp_enrollment_create_acct_after_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>사용자는 계정을 생성한 후에 바로 지문 등록을 위한 옵션을 제공받습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>당신의 앱의 구입 흐름 중에</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMSlkyY2hlR0dMb2M/components_fp_03_state1.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자는 기존 계정으로 구입한 후에 바로 지문 등록을 위한 옵션을 제공받습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>당신의 앱 설정에서</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3DnSAB-NSN5eE1hNjk3R0trMWs/v_04_fp_enrollment_app_settings_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>사용자는 앱의 설정 내에 잠금으로 지문 사용을 활성화하기 위한 옵션을 제공받습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>지문 등록 후에</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3DnSAB-NSN5eHV3NWg1T2k1Q2M/v_05_fp_auth_purchase_xhdpi.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>지문 등록 후, 당신이 사용자로부터 인증이 필요할 때 언제든지 지문 다이얼로그를 보여 주십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="fingerprint-authentication" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    인증
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>당신의 앱의 사용자가 지문을 사용한 로그인이나 구입 인증을 위해서 옵션을 설정할 수 있습니다.</p><p>사용자 액션이 인증을 필요로 할 때, 당신의 로그인 화면 대신에 지문 인증 다이얼로그를 표시하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>제목</strong></p><p>“로그인(Sign in)”과 같은 수행되는 액션을 묘사하는 제목을 사용하십시오. 그 제목은 지문 사용을 소개하기 위해 사용되지 않아야 합니다.</p><p><strong>부차적인 텍스트</strong></p><p>“지문을 확인해 주십시오(Confirm fingerprint)” 문구를 사용하십시오. 이 문구는 안드로이드 설정과 일관성을 유지합니다.</p><p>“구입을 완료하기 위해 지문을 확인해 주십시오(Confirm fingerprint to complete purchase)”와 같이 관련된 사용자 액션과 위의 텍스트를 조합할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMZ2RIS0tpZjZnS00/components_fp_06.png"  />
+                    </div>
+                        <figcaption>
+          <p>지문 확인 다이얼로그</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMa0toQzB0cUV2Rkk/components_fp_07.png"  />
+                    </div>
+                        <figcaption>
+          <p>지문 확인 다이얼로그를 위한 명세:</p><p>다이얼로그 좌측과 우측 패딩: 24dp<br/>다이얼로그 상단 패딩: 24dp<br/>제목 하단 여백: 20dp<br/>부제목(Subtitle) 하단 여백: 28dp<br/>지문 아이콘 우측 여백: 16dp<br/>터치 센서 높이: 40dp<br/>터치 센서 액션 호출 상단과 하단 패딩: 12dp<br/>버튼 컨테이너 높이: 52dp<br/>버튼 컨테이너 하단 패딩: 8dp<br/>버튼 높이: 36p<br/>버튼 오른쪽 패딩: 8dp</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="fingerprint-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>기본 상태</h4><p>사용자에게 센서에 손가락을 놓을 것을 요청하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMOGM5X0MzTDIzV1k/components_fp_08.png"  />
+                    </div>
+                        <figcaption>
+          <p>사용자에게 센서에 손가락을 놓을 것을 요청하는 기본 상태</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>성공 상태</h4><p>지문이 인식되었을 때, 그 다이얼로그를 성공 메세지로, 그리고 이미지를 체크 모양이 있는 지문 아이콘으로 변경하십시오.</p><p>명세:</p><ul><li>성공 텍스트와 아이콘을 위해 당신의 앱의 주 색, 또는 청록색(Teal) 500 (#009688)을 사용하십시오</li></ul><p>성공 상태는 다음과 같은 것을 피해야 합니다:</p><ul><li>두 개의 성공 상태를 동시에 표시하기</li><li>기본과 성공 상태 사이에 광범위한 트랜지션</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMdG9rdmZ1aDBuVG8/components_fp_09.png"  />
+                    </div>
+                        <figcaption>
+          <p>지문이 인식되었음을 나타내는 성공 메세지</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>실패 상태</h4><p>실패할 때, 사용자의 지문이 인식되지 않은 것과 다시 시도해야 하다는 것을 나타내는 분명한 말을 제공하며, 상태 메세지가 있던지 없던지 간에 에러 아이콘을 사용하십시오.</p><p>명세:</p><ul><li>실패 상태에 할당된 당신의 앱의 색이나, 짙은 오렌지색(Deep Orange) 600 (#F4511E)을 사용하십시오.</li></ul><p>실패 상태는 다음과 같은 것을 피해야 합니다:</p><ul><li>기본과 실패 상태 사이에 광범위한 트랜지션</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMbzEzSWVqc2RJY2c/components_fp_10.png"  />
+                    </div>
+                        <figcaption>
+          <p>지문이 인식되지 않았음을 말하는 에러 메세지</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>종료</h4><p>다이얼로그를 떠날 수 있는 대체 방법을 제공하십시오. 최소한, “취소(Cancel)”와 같은 지문 다이얼로그를 닫기 위한 행동 유도를 제공하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>인증 대체</h4><p>지문은 인증을 위한 유일한 방법이지 않아야 합니다. 다음과 같이 대체할 수 있는 인증 방법을 제공하십시오:</p><ul><li>사용자의 계정 비밀번호</li><li>앱 PIN</li><li><a href="https://developer.android.com/preview/api-overview.html#confirm-credential">기기 자격 증명(Device Credential)</a></li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="fingerprint-fingerprint-icon" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    지문 아이콘
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>사용법과 크기</h4><p>지문 아이콘은 40dp 원 내에 표준 시스템 아이콘 크기인 24dp로 표시되어야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMQ3dGVGpqZ28yVDA/components_fp_11_state1.png" / />
+                    </div>
+                        <figcaption>
+          <p>40dp 원</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMWEF1RlBXZnZKbWc/components_fp_11_state2.png" / />
+                    </div>
+                        <figcaption>
+          <p>24dp 시스템 아이콘</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>기본 아이콘</h4><p>사용자는 지문을 사용할 수 있는 곳에 이 아이콘을 찾을 것입니다. </p><p>명세: </p><ul><li>원 배경색: #607D8B </li><li>하얀 배경 위에서 사용</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMQ1pjX2NabjFUQTA/components_fp_12_state1.png"  />
+                    </div>
+                        <figcaption>
+          <p>기본 아이콘</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMZElCTUpXNmdJdG8/components_fp_12_state2.png"  />
+                    </div>
+                        <figcaption>
+          <p>다이얼로그 박스와 기본 아이콘</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>색조를 띤 아이콘</h4><p>아이콘을 둘러싸는 원은 지문 아이콘의 선과 비교하여 적절한 대조를 제공하는 색으로 변경할 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMYmtob3JkYTFrYVk/components_fp_13_state1.png"  />
+                    </div>
+                        <figcaption>
+          <p>대조와 색조를 띤 아이콘</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>밝은 배경이 있는 UI</strong></p><p>짙은 배경의 원이 있는 지문 아이콘을 사용하십시오.</p><p>명세:</p><ul><li>색: #FFFFFF</li><li>불투명도: 100%</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMVXE4aldleDJsVkE/components_fp_13_state2.png"  />
+                    </div>
+                        <figcaption>
+          <p>밝은 배경을 위한 지문 아이콘이 있는 짙은 배경의 원</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p><strong>어두운 배경이 있는 UI</strong></p><p>밝은 배경의 원이 있는 지문 아이콘을 사용하십시오.</p><p>명세:</p><ul><li>색: #000000</li><li>불투명도: 54%</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMX25sN2pRbGs1WHc/components_fp_15_state1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMM0lfMFotOUZySUE/components_fp_15_state2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>원형 배경이 없는 아이콘</h4><p>더 다목적인 지문 아이콘을 요구하는 앱은 원형 배경을 제거할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMclptUnowM2t3a3c/components_fp_14_state1.png"  />
+                    </div>
+                        <figcaption>
+          <p>원형 배경이 없는 아이콘</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMczVieXJ3YzFNYWc/components_fp_14_state2.png"  />
+                    </div>
+                        <figcaption>
+          <p>원형 배경이 없는 아이콘이 있는 다이얼로그 박스</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="fingerprint-reauthentication" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    재인증
+            <svg xmlns="http:/Tech Blog: #285-12/www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <p>재인증(Reauthentication)은 사용자가 계속하기 전에 신원을 확인할 필요가 있을 때 적용합니다.</p><p>재인증은 다음과 같은 경우를 위해서 사용합니다:         </p><ul><li>민감한 정보의 인증되지 않은 표시를 방지하기 위해서</li><li>인증되지 않은 구입으로부터 보호하기 위해서</li><li>암호 키가 만료되어 사용자가 신원의 재확인을 요구받는 경우</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMbkxzQU8wVGVpX0U/components_fp_16.png" / />
+                    </div>
+                        <figcaption>
+          <p>재인증 다이얼로그</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>그 대신에, 사용자가 지문 인증에 대해 잊었다면, 당신은 사용자에게 백업 비밀번호 사용을 물어 볼 수 있으며 다음 번에 지문 옵션을 다시 알려줄 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0iWdZjcphyMQ1ctVF92SlM2d1E/components_fp_17.png" / />
+                    </div>
+                        <figcaption>
+          <p>사용자에게 백업 비밀번호를 묻는 다이얼로그</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="gestures.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      제스처
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="launch-screens.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      시작 화면
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/fingerprint.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2015 09:21:29 GMT -->
+</html>

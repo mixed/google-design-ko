@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/animation/authentic-motion.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:27 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>정확한 모션 - 애니메이션 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Authentic motion - Animation - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Authentic motion - Animation - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Authentic motion - Animation" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Authentic motion</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Animation</Attribute>
+      <Attribute name="section_slug">animation</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-animation first-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header class="qp-ui" data-qp-ui="{
+  'Peekaboo': {
+    'mobile': 72,
+    'desktop-sm': 72,
+    'default': 192
+  }
+}">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
+    <div class="header-title">      <span class="section-title">애니메이션</span>
+      <span class="chapter-title">정확한 모션</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">애니메이션
+                </dt>
+        <dd>
+                    <a class="nav_selected" href="authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                   
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">정확한 모션
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>개채의 모양이 그것이 어떻게 행동하는지를 나타내는 것처럼, 개체의 움직임을 보면 그것이 가볍던지, 무겁던지, 유연하던지, 단단하던지, 작던지, 크던지를 나타냅니다. 머티리얼 디자인의 세계에서, 모션은 아름다움과 우아함으로 공간적 관계, 기능성, 그리고 의도를 묘사합니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#authentic-motion-mass-weight">질량과 무게
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="authentic-motion-mass-weight" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    질량과 무게
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>물질 세계에서 물리력은 움직이려는 개체를 위해 알맞게 그 개체에 적용되어야 합니다. 이러한 물리력의 힘과 지속 기간은 한 개체가 얼마나 빨리 가속하거나, 속도를 줄이거나, 방향을 바꾸는 지에 영향을 줍니다. 최대의 진동이 멈추거나 시작할 때 조차도 즉각적이지 않습니다. 왜나하면 개체가 속도를 올리거나 줄이기 위해서는 시간이 소요되기 때문입니다. 따라서, 애니메이션이 갑작스럽게 시작하거나, 멈추거나, 방향을 변경할 경우 그것은 자연스럽게 보이지 않습니다.</p><p>머티리얼 디자인에서 모션은 우아함과 단순함과 아름다움의 희생이 없이, 물리적 개체의 익숙함과 현실 세계의 행동을 포괄해야 합니다. </p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>자연스러운 가속과 감속</h3>
+    <div class="module-body">
+    <p>가속이나 감속에서 변화는 애니메이션의 지속 기간 전체에 걸쳐 매끄러워야만 합니다.</p><p>특별한 목적을 위해 개체에 주의를 끄는 것이나, 또는 애니메이션에 특성을 추가하는 것은 시작할 때나 멈출 때에 속도면에서 각기 다릅니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFcm9aU1EzUUhnLUk/animation-authenticmotion-massandweight-asymmetric.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>불균형적인 가속과 감속은 더 자연스럽고 마음에 드는 모션을 만들어냅니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>가속 또는 감속이 매끄럽지 않을 때, 이동은 기계적으로 보입니다. 속도 또는 방향의 갑작스런 변화는 거슬리고 주의를 끌게 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                          <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFeFpQeVhRbDF2ZVE/animation-authenticmotion-massandweight-linear.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>선형적 모션을 피하십시오.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>입구와 출구</h3>
+    <div class="module-body">
+    <p>한 개체의 속도나 방향의 변화는 사용자의 주의를 끕니다.</p><p>프레임에 들어가거나 나오는 동안에 한 개체의 속도의 변화는 순회하는 거리를 말합니다. 예를 들어, 나오는 동안 속도를 줄이는 것은 관심을 이끌고 그 개체가 프레임의 가장자리 근처에서 멈출 것이라는 것을 넌지시 나타냅니다.</p><p>특별히 트랜지션 중에는, 입구 또는 출구의 어떤 부분이 가장 주의를 끌어야 하는 지를 고려하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFOWhhS1d1d1FGcEk/animation-authenticmotion-massandweight-do.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>공의 속도를 변경하는 것은 공의 도착과 휴식 위치에서 부터의 출발을 강조합니다. 주의(Attention)는 공이 거의 변함없는 속도로 프레임에 들어오고 나갈 때 최소화됩니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFTm01VjB5X2U3bjQ/animation-authenticmotion-massandweight-dont.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>들어올 때 속도를 높이고 나갈 때 속도를 낮추는 것은 원하지 않는 주의를 끌 수 있고, 사용자의 집중을 분산시킬 수 있습니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>천천히 움직임(Easing)에 대한 용어</h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+          <p>시간 곡선에 대해 논의할 때, 사용되는 정의들을 이해하는 것이 중요합니다. “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”이라는 용어는 전통적인 애니메이션과 UX 애니메이션 모두에 사용됩니다. 그러나 상황에 따라서 이 용어는 반대의 의미를 가집니다.</p><p><strong>전통적인 애니메이션</strong></p><p>전통적인 애니메이션 기법은 키 포즈를 그리는 것을 통하여 움직임의 순서를 표현합니다. 이 상황에서 “천천히 나감(Ease Out)”은 포즈에서 벗어나는 모션을 나타내고 “천천히 들어옴(Ease In)”은 포즈로 들어오는 모션을 나타냅니다.</p><p>최신의 애니메이션 도구들은 <strong>키 프레임</strong>으로 이러한 키 포즈를 표현합니다. 이 상황에서 “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”은 키 프레임으로 들어오거나 나가는 모션을 나타냅니다.</p><p><strong>UX 애니메이션</strong></p><p>UX 상황에서, 천천히 움직임(Easing)은 상태 사이의 트랜지션을 나타냅니다. 그 결과로, “천천히 들어옴(Ease In)”은 트랜지션으로 들어오는 동작을 나타내고, “천천히 나감(Ease Out)”은 트랜지션을 떠나는 모션을 나타냅니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>조정하기</h3>
+        <div class="module-body">
+      <p>모든 개체가 동일한 방법으로 움직이지는 않습니다. 가볍거나 작은 개체는 적은 힘을 필요로 하기 떄문에 빨리 움직일 것입니다. 그리고 크거나 무거운 개체는 속도를 높이기 위해서 더 많은 시간이 필요할 것입니다.</p><p><a href="http://developer.android.com/training/material/animations.html#CurvedMotion">곡선으로 된 모션을 사용</a>하고 선형 공간 패스를 피하십시오. 당신의 개체에 딱 맞는 모션의 특징을 알아 보십시오. 그리고 그에 맞춰 그 모션을 보여주십시오. 곡선은 특정한 값의 범위를 위한 시간으로 바꾸는 것을 나타냅니다. 당신이 묘사하는 모션의 특징에 알맞는 곡선을 찾으십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-what-is-material color-light-blue">&nbsp;</div>
+    <div class="footer-grid-L section-what-is-material">
+            <a class="footer-text" href="../what-is-material/elevation-shadows.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      머티리얼이란 무엇인가?
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-animation color-purple">&nbsp;</div>
+    <div class="footer-grid-R section-animation">
+            <a class="footer-text" href="responsive-interaction.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      반응형 상호 작용
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/animation/authentic-motion.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:27 GMT -->
+</html>

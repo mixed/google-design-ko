@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/gestures.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:56 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>제스처 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Gestures - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Gestures - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Gestures - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Gestures</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">제스처</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="nav_selected" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">제스처
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p><strong>모바일 전용</strong></p><p>제스처는 <strong>터치 메커니즘</strong>(Touch Mechanics, 당신의 손가락이 화면에서 무엇을 하는가)과 <strong>터치 액티비티</strong>(Touch Activity, 특정한 제스처의 결과)로 나뉘어집니다.</p><p>터치 메커니즘(스와이프와 같은)은 상황에 따라 여러 결과(예를 들어, 활성화/비활성화)를 가질 것입니다. 터치 액티비티(확대)는 여러 터치 메커니즘(핀치 오픈, 더블 터치 등)을 통해 달성될 것입니다.</p><p><a href="gestures.html#gestures-drag-swipe-or-fling-details">드래그, 스와이프 그리고 플링</a> 터치 액티비티는 상황과 결과가 높게 관련되어 있기 때문에 더 세부적으로 다루어져 있습니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#gestures-touch-mechanics">터치 메커니즘
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#gestures-touch-activities">터치 액티비티
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#gestures-drag-swipe-or-fling-details">드래그, 스와이프 또는 플링 세부 사항
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="gestures-touch-mechanics" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    터치 메커니즘
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>터치 메커니즘은 사용자의 손가락이 화면에서 무엇을 할 지를 나타냅니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNQWJmd05meTMwVmM/patterns-gestures-gestures-touch_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">터치</div><p>한 손가락 누르기, 떼기</p><p>예제: 선택</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNcm9nRFMzY2NGSW8/patterns-gestures-gestures-double-touch_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">더블 터치</div><p>한 손가락 누르기, 떼기, 한 손가락 누르기, 떼기</p><p>예제: 확대</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNUDNQN1kweVBsbDg/patterns-gestures-gestures-swipe_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">드래그, 스와이프 또는 플링</div><p>한 손가락 누르기, 이동, 떼기</p><p>예제: 버리기(Dismiss), 스크롤, 틸트 등</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNM0Vpb0hlck0tWXc/patterns-gestures-gestures-long-press_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">롱 프레스</div><p>한 손가락 누르기, 기다리기, 떼기</p><p>예제: 리스트 아이템과 같은 요소를 선택</p><p>롱 프레스는 상황에 맞는 메뉴(Contextual Menu)를 표시하기 위해 사용되지 않습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNQlFaTWJXREp1UjA/patterns-gestures-gestures-long-press-drag_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">롱 프레스 드래그</div><p>한 손가락 누르기, 기다리기, 이동, 떼기</p><p>예제: 집어서 이동, 여러 아이템 선택</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNVmFwVnNZR0ltV0E/Patterns-Gestures-TouchMechanics-6-Long-press-drag_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">더블 터치 드래그</div><p>한 손가락 누르기, 떼기, 한 손가락 누르기, 이동, 떼기</p><p>예제: 확대, 축소</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMS00Zi1TSG02YmM/patterns-gestures-gestures-pinch-open_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">핀치 오픈</div><p>두 손가락 누르기, 바깥쪽으로 이동, 떼기</p><p>예제: 확대</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNLUV0TW9Jd1YzSUE/patterns-gestures-gestures-pinch-closed_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">핀치 클로즈</div><p>두 손가락 누르기, 안쪽으로 이동, 떼기</p><p>예제: 축소</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNQUlHNEc5T3oxVzQ/patterns-gestures-gestures-two-finger-touch_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">두 손가락 터치</div><p>두 손가락 누르기, 떼기</p><p>예제: 축소</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNV2dWQk5ycGNCaWM/patterns-gestures-gestures-two-finger-swipe_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">두 손가락 스와이프, 드래그, 플링</div><p>두 손가락 누르기, 이동, 떼기</p><p>예제: 여러 아이템 선택하기, 팬(Pan), 틸트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNN3JmUHVaZWxpSnc/patterns-gestures-gestures-two-finger-long-press_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">두 손가락 롱 프레스</div><p>두 손가락 누르기, 기다리기, 떼기</p><p>예제: 없음; 이 제스처는 흔하지 않습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNZUw0elpoNDdpOWc/patterns-gestures-gestures-two-finger-long-press-drag_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">두 손가락 롱 프레스 드래그</div><p>두 손가락 누르기, 기다리기, 이동, 떼기</p><p>예제: 집어서 이동</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNSkhOQzJoS0tRWGc/patterns-gestures-gestures-two-finger-double-touch_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">두 손가락 더블 터치</div><p>두 손가락 누르기, 떼기, 두 손가락 누르기, 떼기</p><p>예제: 축소</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMmxWa3VSRVlONUU/patterns-gestures-gestures-rotate_large_xhdpi.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">로테이트</div><p>두 손가락 누르기, 중심점을 기준으로 양 손가락을 동시에 회전, 떼기</p><p>예제: 지도에서와 같이 내용물을 회전하기</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="gestures-touch-activities" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    터치 액티비티
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>특정한 제스처와 상황에 따른 결과.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c10">
+    <tbody>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>액션</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>터치 메커니즘</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>활성화</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>버튼과 같은 화면 요소를 활성화합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>취소</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>다이얼로그나 메뉴에서와 같이 취소하거나 또는 현재 작업 밖으로 떠납니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>보이기/숨기기</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>뷰의 외양을 숨기거나 보입니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>드래그나 스와이프 또는 플링</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+              <p><span>스크롤, 스크롤로 내용물 드러내기(Reveal upon scroll), 팬(Pan), 버리기(Dismiss), 스와이프로 새로고침(Swipe to refresh), 가장자리 스와이프, 페이지 스와이프, 오버스크롤 접기, 메뉴 열기 그리고 틸트를 구분하기 위해서 </span><strong>드래그, 스와이프 또는 플링 세부 사항</strong><span> 섹션을 확인하십시오.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>드래그, 스와이프 또는 플링</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>데이터 선택 (아무것도 선택되지 않았을 때)</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>단일 요소를 선택합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>롱 프레스, 두 손가락 터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>데이터 선택 (아이템이 이미 선택되었을 때)</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>선택 모드일 동안에 추가적인 요소를 선택합니다.<br/><br/>그 다음의 하나 또는 두 개의 손가락 제스처의 어떠한 조합을 사용할 수 있습니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>터치, 두 손가락 터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>여러 데이터 선택 드래그</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>제스처 시작점에서 부터 비롯된 선택 박스를 드러냅니다. 그 높이와 너비는 손가락 위치에 기반하여 조정될 수 있습니다.<br/>마지막 선택은 손가락을 떼었을 때 선택 박스의 크기에 기반합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>두 손가락 스와이 또는 드래그, 아이템 선택이 없을 때는 롱 프레스 드래그</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>집어서 이동</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>선택된 아이템(들)에 영향을 끼칩니다. 다음과 같은 것들을 위해 사용될 수 있습니다:</span></p>
+                <ul>
+                    <li><span>뷰 내의 데이터를 재정렬</span></li>
+                    <li><span>컨테이너 안으로나 대상 위로 아이템을 이동</span></li>
+                    <li><span>리스트나 카드 컬렉션에서 아이템의 순서를 재정렬</span></li>
+                </ul>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>두 손가락 롱 프레스 드래그, 선택된 아이템에서 롱 프레스 드래그</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>확대</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>내용물을 확대합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <ul>
+                    <li><span>더블 터치</span></li>
+                    <li><span>더블 터치 드래그 (아래로)</span></li>
+                    <li><span>핀치 오픈</span></li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>알맞게 확대</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>중첩된 뷰를 위해서, 대상이 될 수 있는 가장 작은 뷰를 확대합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>더블 터치</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>축소</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>내용물을 축소합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <ul>
+                    <li><span>최대 확대 시 더블 터치</span></li>
+                    <li><span>더블 터치 드래그 (위로)</span></li>
+                    <li><span>핀치 클로즈</span></li>
+                    <li><span>두 손가락 터치</span></li>
+                    <li><span>두 손가락 더블 터치</span></li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>펼치기</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>접혀진 내용물을 펼칩니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>핀치 오픈</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>접기</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>펼쳐진 내용물을 접습니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>핀치 클로즈</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>회전</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>대상 내용물을 회전합니다.</span></p>
+            </td>
+            <td class="c2" colspan="1" rowspan="1">
+                <p><span>로테이트</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="gestures-drag-swipe-or-fling-details" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    드래그, 스와이프 또는 플링 세부 사항
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>스와이프 제스처 액티비티는 상황에 따라 다양합니다. 제스처가 수행되는 속도는 드래그, 스와이프 그리고 플링 사이에 주된 차이입니다.</p><ul><li><strong>드래그: </strong>미세한 제스처, 느림, 더 조절됨, 일반적으로 화면에 표시된 대상을 가집니다.</li><li><strong>스와이프: </strong>뭉뚝한 제스처, 빠름, 일반적으로 화면에 표시된 대상을 가지지 않습니다.</li><li><strong>플링: </strong>뭉뚝한 제스처, 화면에 표시된 대상을 가지지 않음</li></ul><p>제스처 속도는 그 액션을 즉각적으로 되돌릴 수 있든 없든 상관없이 영향을 줍니다.</p><ul><li>스와이프는 마지막 속도 그리고 영향을 받는 요소가 한계점(또는 액션이 미완료될 수 있는 이전 지점)에 교차했는지 교차하지 않았는지에 따라 플링이 됩니다.</li><li>드래그는 요소와 접촉을 유지하기에, 제스처의 방향을 되돌리는 것은 한계점의 맞은편으로 그 요소를 드래그하는 것입니다.</li><li>플링은 빠른 스피드로 이동하고, 미완료되는 것에서부터 그 액션을 보호하는 한계점과 교차하는 동안 그 요소와의 접촉을 제거합니다.</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c16"><strong>스크롤</strong></h3><p><strong>스크롤</strong>은 내용물 본문 내에서 수직이나 수평 단일 방향으로 스와이프하는 것입니다.</p><p>사용법</p><ul><li>스크롤 양은 제스처의 속도에 따라 다양합니다: 드래그(느림) vs. 스와이프 vs. 플링(빠름)</li><li>스크롤 내용물은 수행되는 제스처를 통해 동일한 비율로 이동해야 합니다. 그 내용물이 손가락이나 터치 기기에 "닻이 내려진(Anchored)" 것처럼 느껴져야 합니다.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNS00tMHBTdXAtcE0/Patterns-Gestures-TouchActivities-02_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>스크롤 방향의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>스크롤 시 드러내기</strong></h3><p><strong>스크롤 시 드러내기(Reveal upon scroll)</strong>은 내용물 영역에서 스크롤 방향을 되돌리는 것이 숨겨진 앱 내의 요소를 드러내는 것을 의미합니다. 예를 들어, 크롬에서 위로 스크롤하는 것은 옴니박스를 보여줍니다. 이러한 앱 내의 요소를 없애기 위해서, 원래 스크롤 방향으로 재개하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNS00tMHBTdXAtcE0/Patterns-Gestures-TouchActivities-02_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>스크롤 방향의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>팬</strong></h3><p><strong>팬(Pan)</strong>은 뷰의 필드를 확장하는 전방향의 하나 또는 두 개의 손가락 제스처입니다. 드래그는 일반적으로 팬과 함께 사용됩니다. 플링은 제스처 속도를 유지할 것이기에, 제스처의 방향을 따라 내용물에 중요한 팬을 야기합니다.</p><p>팬은 다음과 같은 것을 위해 적용됩니다:</p><ul><li>무한한 내용물 (지도)</li><li>화면의 높이나 너비보다 큰 내용물 (확대된 웹페이지나 사진)</li></ul><p><strong>두 손가락 팬</strong>은 맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서부터 트랜지션할 때 발생합니다. 제스처가 두 손가락 팬과 함께 시작할 때, 그것은 <strong>틸트(Tilt)</strong>가 됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMjVoN0FZYXl4dUE/Patterns-Gestures-TouchActivities-03_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>팬의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>버리기</strong></h3><p><strong>버리기(Dismiss)</strong> 제스처는 스크롤의 방향으로 직교하는 리스트 아이템이나 카드와 같은 스와이프 가능한 요소에서 비롯되었습니다.</p><p>그 제스처는 일반적으로 가로 방향입니다.</p><p>버리기 제스처는 한계점에 교차함으로 인하여 적용될 수 있습니다. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMjY0RVBLaXpzNkk/Patterns-Gestures-TouchActivities-04_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>버리기 제스처의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>스와이프로 새로고침</strong></h3><p><strong>스와이프로 새로고침(Swipe to refresh)</strong>는 보통 수직과 아래쪽 이동으로 발생합니다. 그것은 리스트이 최상단이나, 새로운 내용물이 표면화된 어떤 카드나 컨테이너의 가장자리에서 가능합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNX0JSY0sxbHUzZFk/Patterns-Gestures-TouchActivities-05_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>Example of swipe to refresh</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9">가장자리 스와이프</h3><p><strong>가장자리 스와이프(Edge swipe)</strong> 제스처는 화면 밖의 내용물을 드러내기 위해서 화면의 바깥쪽에 고안하였습니다. 이것은 현재 뷰에서 분리된 내용물을 불러옵니다.</p><p>가장자리 스와이프 액션이 정의되어 있지 않다면, 가장자리 스와이프는 <strong>페이지 스와이프(Paging swipe)</strong>를 기본으로 할 수 있습니다.</p><p>가장자리 스와이프 제스처는 한계점을 교차함으로 인해 적용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNWXpQWWM5UzVlX2M/Patterns-Gestures-TouchActivities-06_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>가장자리 스와이프의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <h3 class="c9"><strong>페이지 스와이프</strong></h3><p><strong>페이지 스와이프(Paging swipe)</strong>는 연관된 화면 밖의 내용물을 드러내기 위해 화면 안, 내용물 내에서 스와이프하는 것입니다. 이것은 페이지 스와이프 당 한 페이지/탭을 드러냅니다.</p><p>페이지로 된 내용물이 100%를 초과하는 확대 상태라면, 안쪽 내용물 스와이프는 그 내용물의 가장자리로 <strong>팬(Pan)</strong> 할 것이고, 추가적인 안쪽 내용물 스와이프는 <strong>페이지(Page)</strong>가 될 것입니다.</p><p>페이지 스와이프 제스처는 한계점을 교차함으로 인해 적용됩니다.</p><p>각각의 요소를 스와이프 가능하도록 할 때에는 페이지 스와이프를 사용하지 마십시오.</p><p>아래를 확인하십시오: 오버스크롤 접기</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMmpuNlhPVDhGREk/Patterns-Gestures-TouchActivities-07_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>페이지 스와이프의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>오버스크롤 접기</strong></h3><p><strong>오버스크롤 접기(Overscroll collapse)</strong>는 스크롤 하는 내용물의 최상단 또는 최하단에 페이지 스와이프를 통해 내용물의 계층구조를 위로 탐색합니다.</p><p>오버스크롤 접기 제스처는 한계점을 교차함으로 인해 적용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNNmkxQmQ2MldrSjg/Patterns-Gestures-TouchActivities-08_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>오버스크롤 접기의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h3 class="c9"><strong>메뉴 열기</strong></h3><p>메뉴나 픽커에서 시작된 드래그는 메뉴를 드러냅니다. 손가락을 뗄 때, 강조된 메뉴 옵션이 선택됩니다.</p><p>메뉴는 터치하고 나서 보여집니다.</p><p>드래그는 <strong>메뉴 열기(Menu open)</strong>와 함께 사용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNU3BEMXFuU2NhMlE/Patterns-Gestures-TouchActivities-09_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>메뉴 열기 드래그의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <h3 class="c9"><strong>틸트</strong></h3><p><strong>틸트(Tilt)</strong>는 3차원 내용물을 앞으로나 뒤로 이동합니다.</p><p>맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서 트랜지션은 <strong>두 손가락 팬(Pan)</strong>이 될 것입니다.</p><p>드래그는 <strong>틸트</strong>와 함께 사용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNenotUjEzT29NWEU/Patterns-Gestures-TouchActivities-10_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>틸트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="errors.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      에러
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="fingerprint.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      지문
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/gestures.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:56 GMT -->
+</html>

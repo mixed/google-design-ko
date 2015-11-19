@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/animation/responsive-interaction.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:27 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>반응형 상호 작용 - 애니메이션 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Responsive interaction - Animation - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Responsive interaction - Animation - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Responsive interaction - Animation" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Responsive interaction</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Animation</Attribute>
+      <Attribute name="section_slug">animation</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-animation noninitial-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">애니메이션</span>
+      <span class="chapter-title">반응형 상호 작용</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="nav_selected" href="responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                   
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">반응형 상호 작용
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>반응형 상호 작용은 사용자 입력으로 시기 적절하고, 사리에 맞으며, 마음에 드는 화면 반응을 생성함으로서 앱에 대한 깊은 탐구를 고취시킵니다. 각각의 상호 작용은 사려 깊고, 어쩌면 기발하겠지만, 결코 산만하지 않습니다. 내가 이 화면을 터치하면 무슨 일이 발생할까요? 그리고 나서 이 아이콘은?</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#responsive-interaction-user-input">사용자 입력
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#responsive-interaction-surface-reaction">표면 반응
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#responsive-interaction-material-response">머티리얼 응답
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#responsive-interaction-radial-action">방사형 액션
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="responsive-interaction-user-input" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용자 입력
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>머티리얼 디자인에서, 앱은 다음과 같은 사용자 입력에 반응합니다: </p><ul><li>터치와 음성과 마우스와 키보드는 모두 동일하게 중요한 입력 방법입니다.</li><li>UI 요소는 유리막(장치의 화면) 뒤에 있다 할 지라도 만질 수 있는 것으로 보여집니다. 그 간격을 잇기 위하여 시각과 모션 자극은 즉각적으로 입력을 알리고, 직접적으로 조작하는 것 같이 보고 느끼는 방법으로 움직입니다.</li></ul><p>반응형 상호 작용은 정보 전달 서비스에서부터 여러 시각과 촉각 반응을 사용하여 통신하는 경험까지 앱의 가치를 높입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+                <video loop  controls>
+                                                  <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM0NfdERleXVfaTQ/animation_responsive_userInput_surfacereaction_004.mp4" type="video/mp4" />
+                                </video>
+              </div>
+                      </div>
+                        <figcaption>
+          <p>표면 반응</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+                <video loop  controls>
+                                                  <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFcDFYVWp0QUVGSEE/animation_responsiveinteraction_userinput_materialresponse.mp4" type="video/mp4" />
+                                </video>
+              </div>
+                      </div>
+                        <figcaption>
+          <p>머티리얼 응답</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+                <video loop  controls>
+                                                  <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRHNVbFdXLXhLeWc/animation_responsiveinteraction_radialreaction_xhdpi_003.mp4" type="video/mp4" />
+                                </video>
+              </div>
+                      </div>
+                        <figcaption>
+          <p>방사형 액션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="responsive-interaction-surface-reaction" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    표면 반응
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>하나의 입력 이벤트에서, 시스템은 접촉하는 그 시점에 즉각적인 시각적 확인을 제공합니다: 터치를 위해 손가락 패드 아래에서, 음성을 위해 마이크에서, 또는 키보드 입력을 위해 적절한 필드에서.</p><p>이 접촉을 표현하기 위한 핵심 시각 메커니즘은 터치 리플(파문)입니다. 이 장치는 음성의 진폭이나 터치 압력과 같이 상당히 동적인 변수들로 터치 이벤트의 방법과 지속 기간을 표현합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <h4 class="related">
+연관된 자료
+</h4>
+        </div>
+              <div>
+          <div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/training/material/animations.html#Touch" title="Customize Touch Feedback">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">터치 피드백 변경하기</div>
+        <span class="subtitle">사용자가 UI 요소들을 터치할 때 시각적 확인을 제공하십시오.</span>
+      </div>
+    </a>
+              <a class="modulette polymer" href="http://www.polymer-project.org/docs/elements/material.html#touch-ripple-effect" title="Customize Touch Feedback">
+      <img class="icon callout-icon" src="../static/images/callout_polymer.svg" alt="" />
+      <div class="info">
+        <div class="title">터치 피드백 변경하기</div>
+        <span class="subtitle">사용자가 UI 요소들을 터치할 때 시각적 확인을 제공하십시오.</span>
+      </div>
+    </a>
+      </div>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>모범 사례</h3>
+    <div class="module-body">
+    <p>입력의 지점(손가락의 접촉 지점 또는 음성을 위한 마이크 아이콘)부터 시각적 반응 원을 만드십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0NGgBg38lWWMndwZm1ScmlEY1U/animation-responsiveinteraction-surfacereaction-030202_TouchRipple_PressRelease_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>터치 리플: 누르고 떼기</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0NGgBg38lWWZmNTSmxsdXd5SGM/animation-responsiveinteraction-surfacereaction-030202_TouchRipple_DragRelease_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>터치 리플: 안과 밖으로 드래그</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="responsive-interaction-material-response" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    머티리얼 응답
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>잉크와 같은 표면 반응 뿐만 아니라, 머티리얼은 터치하거나 활성 상태를 나타낼 때 들어 올려질 수 있습니다. 터치에서 사용자는 새로 생성하거나, 존재하는 머티리얼을 변형하거나, 머티리얼을 드래그하거나 플링(밀어내기)하여 직접적으로 머티리얼 시트를 조작할 수 있습니다. 머티리얼은 선형적으로나 방사상으로(Radially) 크기 변경될 수 있습니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <h4 class="related">
+연관된 자료
+</h4>
+        </div>
+              <div>
+          <div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/training/material/animations.html#ViewState" title="Animate view state changes">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">뷰 상태 변경을 애니메이션하기</div>
+        <span class="subtitle">상태 변경 사이에 애니메이션을 보여주십시오.</span>
+      </div>
+    </a>
+      </div>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>발생지점</h3>
+    <div class="module-body">
+    <p>사용자가 새로운 머티리얼의 생성을 작동시킬 때, 그것은 입력 지점으로부터 시작하여 크기가 증가되어야만 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaENvS3czX1ZvaHc/animation-responsiveinteraction-materialresponse-PointOfOrigin_DO_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>머티리얼은 그 요소를 터치 지점에 묶는 터치 지점에서 부터 보여집니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ1pBbG5XTWt5WGM/animation-responsiveinteraction-materialresponse-PointOfOrigin_DONT_003.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>종이는 입력과의 관련성을 끊는 화면의 가운데에서 부터 보여집니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>터치 시에 들어 올리기</h3>
+    <div class="module-body">
+    <p>카드 또는 구분할 수 있는 요소가 활성화되었을 때, 카드는 활성화 상태를 나타내기 위하여 들어 올려야 합니다.</p><h4 class="related">
+연관된 자료
+</h4><div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/training/material/shadows-clipping.html#Elevation" title="Assign elevation to your views">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">당신의 뷰에 고도를 설정하기</div>
+        <span class="subtitle">요소의 고도를 변경할 때 애니메이션을 사용하십시오.</span>
+      </div>
+    </a>
+      </div>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTXRrcnkwYUROalU/animation-responsiveinteraction-materialresponce_liftontouch_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>터치 시에 들어 올리기</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>   </h3>
+        <div class="module-body">
+      
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="responsive-interaction-radial-action" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    방사형 액션
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>사용자 입력에 시작적인 반응들을 통해 사용자 입력에 명료성을 추가하십시오. 방사형 액션은 입력 지점으로 부터 퍼져나가는 잉크의 시각적 리플입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>입력 이벤트는 시각적입니다</h3>
+        <div class="module-body">
+      <p>입력 이벤트와 화면 액션 사이의 연결은 그들이 함께 묶여 시각적으로 표현되어야 합니다. 터치와 마우스를 위해서, 이것은 접촉 지점에서 발생합니다. 음성을 위해서는 마이크 아이콘입니다. 터치 리플은 터치가 어디서 또는 언제 발생하고 터치 입력을 받았다는 것을 인식했는 지를 나타냅니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>입력을 액션에 연결하십시오</h3>
+        <div class="module-body">
+      <p>입력 이벤트에 의해 발생되는 트랜지션 또는 액션은 시각적으로 입력 이벤트와 연결해야 합니다. 중심점 근처에서 리플 반응은 반응보다 빠르게 더 멀리 발생합니다.</p><p>예제:</p><ul><li>내용물의 변경의 순서: 이미지는 나타나거나 사라집니다.</li><li>머티리얼 움직임의 순서: 카드는 화면 안으로 들어오거나 나갑니다.</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <h4 class="related">
+연관된 자료
+</h4>
+        </div>
+              <div>
+          <div class="modulettes">
+          <a class="modulette android" href="http://developer.android.com/training/material/animations.html#Reveal" title="Use the reveal effect">
+      <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
+      <div class="info">
+        <div class="title">드러내는 효과(Reveal Effect)를 사용하기</div>
+        <span class="subtitle">UI 요소들을 보여주거나 숨길 때 시각적 연속성을 유지하십시오.</span>
+      </div>
+    </a>
+      </div>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-animation color-purple">&nbsp;</div>
+    <div class="footer-grid-L section-animation">
+            <a class="footer-text" href="authentic-motion.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      정확한 모션
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-animation color-purple">&nbsp;</div>
+    <div class="footer-grid-R section-animation">
+            <a class="footer-text" href="meaningful-transitions.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      의미 있는 트랜지션
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/animation/responsive-interaction.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:28 GMT -->
+</html>

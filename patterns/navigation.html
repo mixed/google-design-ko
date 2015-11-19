@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/navigation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:59 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>네비게이션 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Navigation - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Navigation - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Navigation - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Navigation</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">네비게이션</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="nav_selected" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">네비게이션
+          </h1>
+<div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>네비게이션은 당신의 앱의 각각 다른 부분들 사이로 사용자를 안내합니다.</p><p>당신의 앱의 구조는 당신이 사용자에게 보여주기 원하는 내용물과 작업에 따라서 조직화되어야 합니다. 탭이나 사이드 네비게이션에 중요한 목적지(Destination)를 놓음으로서 해당 목적지에 초점을 맞추십시오. 그렇지 않으면, 덜 중요한 위치에 없어도 되는 내용물을 놓음으로서 해당 내용물을 덜 강조하십시오.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-usage" data-qp-ui-data-id="qp:e">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-defining-your-navigation" data-qp-ui-data-id="qp:f">당신의 네비게이션을 정의하기
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-hierarchy" data-qp-ui-data-id="qp:g">계층 구조
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-patterns" data-qp-ui-data-id="qp:h">패턴
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-combined-patterns" data-qp-ui-data-id="qp:i">조합된 패턴
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="navigation-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:j">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:k">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>당신의 앱을 통한 네비게이션은 직관적이며 예측 가능해야 합니다. 새로운 사용자 뿐만 아니라 다시 사용하는 사용자도 쉽게 당신의 앱을 통해 이동하는 방법을 이해할 수 있어야 합니다.</p><p>사용자가 하나의 뷰에서 그 다음으로 이동할 때, 사용자는 이미지, 액션, 그리고 내용물이 들어 있는 화면을 관찰합니다. 이러한 화면은 들어 있는 내용물에 관한 스토리를 전하기 위해 함께 일하며, 어느 액션을 강조하는 경로(Path)로 사용자를 인도합니다.</p><p>상태 사이의 이동에 대한 정보를 얻기 위해서, <a href="navigational-transitions.html">네비게이션 트랜지션</a>을 확인하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>관계 &amp; 상황을 전달하십시오</h4><p>항목 사이에 명확한 관계를 보여 주는 논리적이고 연관 가능한 덩어리로 내용물을 그룹화하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <h2><span>액션을 분명히 하십시오.</span></h2><p>특정한 선택이나 더 자유로운 탐색을 권장하는 경로(Path)를 사용하여 한 화면에서 그 다음으로 사용자를 안내하십시오.</p>
+            </div>
+          </div>
+                        </figure>
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <h2><span>관심에 초점을 맞추십시오.</span></h2><p>당신의 앱의 네비게이션을 중요한 내용물과 작업의 홍보에 맞추십시오.</p>
+            </div>
+          </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Z3V5a2o0dy1zb0U/patterns_navigation_structure1.png">
+                      </div>
+                        <figcaption>
+          <p>이 이미지는 다음과 같은 무리(Cluster)로 그룹화함으로서 이메일 항목 사이에 관계를 보여 줍니다: 홍보, 소셜, 재무</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <div class="qp-ui qp-ui-video-player qp-ui-video-player-mouse" data-qp-ui="{ 'VideoPlayer': {} }" data-qp-ui-data-id="qp:l">
+                <video loop="" tabindex="0">
+                                  <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3LWNhZHZ0WDVpems/components-buttons-fab-transition_speeddial_02.mp4" type="video/mp4">
+                                </video>
+              </div>
+                      </div>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bTd5OEhXT2NNd1E/patterns_navigation_structure3.png">
+                      </div>
+                        <figcaption>
+          <p>사용자의 필요가 단순할 때, 단순한 디자인과 가벼운 구조를 사용하십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-defining-your-navigation" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:m">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:n">
+    당신의 네비게이션을 정의하기
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleF1">
+  <div class="figure-group">
+    <div class="figure-row">
+      <figure>
+      <div class="media">
+                  <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3V2VyeUh2b0NYRjg/patterns_navigation_definingyournavigation-alt.png">
+              </div>
+            </figure>
+    </div>
+  </div>
+</section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>네비게이션은 내용물을 조직화하기 때문에 당신의 앱에서 중요한 목적지를 찾기가 더 쉽습니다. 네비게이션은 자주 방문하게 되는 곳을 포함하거나, 설정이 들어 있거나, 또는 특정한 액션을 홍보할 것입니다.</p><p>당신의 앱에 잘 맞는 네비게이션의 유형을 결정하기 위해서, 당신의 앱의 사용자, 사용자가 당신의 앱을 익히게 할 수 있는 일반적인 경로, 그리고 당신이 사용자에게 수행하기 원하는 액션을 확인하십시오.</p><p>예를 들어, 당신의 앱이 음식점 가이드라면, 당신의 사용자는 예약하기, 메뉴 올리기, 또는 후기 작성하기를 원할 것입니다. 대부분의 사용자가 가질 목표를 확인함으로서, 당신은 그들의 우선 순위에 맞는 네비게이션 구조를 정의할 수 있을 것입니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>목록을 얻으십시오</h4><p>소비자, 사업가, 또는 기자와 같이 당신의 앱의 사용자와 그들의 가능성 있는 역할을 확인하십시오. 그들이 수행하기 원할 가장 일반적인 작업을 확인하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cE9LOFJEemtORVU/inventory.png">
+                    </div>
+                        <figcaption>
+          <p>당신의 중요 사용자와 그들이 수행하기 원할 유즈케이스를 확인하십시오.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>우선순위를 정하십시오</h4><p>일반적인 사용자 작업에 높은, 중간, 또는 낮음의 우선순위 단계를 부여하십시오. 높은 우선순위 단계와 자주 사용하는 것이 있는 경로와 목적지를 UI에 부각시키십시오.</p><p>사용자의 필요가 시간이 흐르면서 변하는 동안에 우선순위 단계를 조절하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ejYzcGo1QVJWcms/prioritize.png">
+                    </div>
+                        <figcaption>
+          <p>음식점 앱을 위한 네비게이션을 디자인할 때, 가장 높은 우선순위의 작업은 음식점 세부 사항 보기 또는 새 음식점 찾기를 포함할 것입니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>순서대로 배열하십시오.</h4><p>사용자가 당신의 앱을 익히게 하고 당신의 네비게이션을 정의하기 위해 다음과 같은 경로를 사용한 각기 다른 경로를 확인하십시오:</p><ul><li>자주 방문하는 목적지를 당신의 네비게이션에 두드러지게 나열하십시오.</li><li>연관된 작업을 함께 그룹화하고, 당신의 네비게이션을 구조화하기 위해서 이러한 그룹을 사용하십시오.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UGRCRU1aUTJCNG8/sequence.png">
+                    </div>
+                        <figcaption>
+          <p>소비자가 새로운 음식점을 찾기 원하든 좋아하는 음식점을 보든 상관없이, 양쪽 경로 모두 음식점 세부 사항 뷰로 안내합니다. 쉽게 이용 가능하도록 이러한 목적지로 자주 사용되는 경로를 만드십시오. (예를 들어, 검색 또는 즐겨찾기)</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>해체하십시오.</h4><p>복잡하거나, 넓거나, 또는 모호한 유즈케이스를 작은 활동으로 나누십시오. 이러한 작은 작업은 자주 사용되거나, 더 쉽게 이해되거나, 또는 더 사용자의 목표에 알맞을 것입니다.</p><p>예를 들어, 검색을 이름, 위치, 또는 인기도에 의한 검색으로 구별하여 더 작은 활동으로 나누면 네비게이션의 일부분으로서 다음과 같은 더 작은 활동을 표면화하기 위해서 그 필요를 드러낼 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NGhzcTdPZHVyNzQ/deconstruct.png">
+                    </div>
+                        <figcaption>
+          <p>넓은 의미의 활동인 “음식점 찾기”는 실제로 더 작은 활동으로 요약할 것입니다, 예를 들어: 근처 검색, 이름 검색, 그리고 인기 음식점 검색. 이러한 더 작은 작업은 검색을 수행하는 사용자를 위해 더 쉬울 것이며, 당신의 네비게이션 내에 통합되어야 합니다.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-hierarchy" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:o">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:p">
+    계층 구조
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>네비게이션은 내용물을 계층 구조 안에 놓음으로서 내용물을 체계화합니다. 그 계층 구조의 최상단에 있는 화면(Scene)은 가장 중요하고 접근 가능하며, 그 계층 구조에서 보다 낮은 화면에 사용자를 연결합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3SzVoODlnQXZ6MmM/patterns_navigation_hierarchy_home.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">홈</div><p><strong>홈(Home)</strong> 화면은 앱의 입구입니다. 이것은 그 앱과 네비게이션을 시작합니다.</p><p>홈 화면이 표시하는 내용물은 다양할 것입니다. <strong>상태 홈(Stateful Home)</strong>은 그 앱과 사용자의 이전 상호 작용의 표시(Indication)가 들어 있습니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3X2w3Rm1JM1lGblE/patterns_navigation_hierarchy_parent-child.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">부모와 자식</div><p>네비게이션 계층 구조의 상위 단계를 <strong>부모(Parent)</strong>라고 부르며, 그 단계의 아래를 <strong>자식(Child)</strong>이라고 말합니다.</p><p>예를 들어, 홈 화면은 앱에서 모든 다른 화면의 부모입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dl9BSjhMVWRSWkk/patterns_navigation_hierarchy_navigation.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">네비게이션</div><p>당신이 앱 내로 더 깊게 탐색할 때, 당신은 계층 구조의 더 높은 단계에서 더 낮은 단계로 내려갑니다.</p><p>부모 화면에서 자식 화면으로 이동하는 것은 <strong>내려가는 네비게이션(Descending Navigation)</strong>입니다. 자식에서 부모로 이동하는 것은 <strong>올라가는 네비게이션(Ascending Navigation)</strong>입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3SmxZMEgzeWZVdDQ/patterns_navigation_hierarchy_siblings.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">형제</div><p>동일한 부모를 가진 화면들을 <strong>형제(Sibling)</strong>라고 부릅니다. 모두 동등한 우선 순위를 가진 여러 유즈케이스를 가진 앱은 보통 많은 형제 화면이 들어 있습니다.<br></p><p><strong>옆으로의 네비게이션(Lateral Navigation)</strong>은 형제 사이에 이동입니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Z2NNQTNTb25LYjA/patterns_navigation_hierarchy_collections.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">컬렉션</div><p><strong>컬렉션(Collections)</strong>은 동일한 부모를 공유하는 여러 화면을 포함합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3dTE0LVd4SVdZekE/patterns_navigation_hierarchy_links.png">
+                      </div>
+                        <figcaption>
+          <div class="caption-title">연결</div><p>연결(Link)은 사용자가 빠르게 인접하지 않은 화면 사이를 이동하는 것을 허용합니다.</p><p><strong>교차 연결(Crosslink)</strong>은 당신의 앱 내에 어디로든 사용자를 이동시키는 연결입니다.</p><p><strong>외부 연결(External links)</strong>은 당신의 앱 바깥의 원본(Source)에서부터의 연결입니다. 이것은 사용자를 당신의 앱 내 깊은 곳에 있는 화면으로 직접적으로 이동시킵니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-patterns" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:q">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:r">
+    패턴
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>네비게이션은 당신의 앱 사용자 다수의 필요를 가장 잘 수용해야 합니다. 복잡하고 깊은 계층 구조(여러 뷰 사이를 전환하는 것을 요구하는)를 가진 앱은 단일 기본 뷰가 있는 앱과는 다른 네비게이션 요구 사항을 가집니다.</p><p>아래의 내비게이션 패턴은 다음을 위해 디자인되었습니다:</p><ul><li>매력적이고 반응하는 레이아웃 사용을 촉진하기 위해서</li><li>네비게이션과 액션을 고정하기 위해서</li><li>중요한 목적지를 강조하고 드물게 사용되는 것을 덜 강조하기 위해서</li><li>플로팅 액션 버튼이 있는 주 액션 사용을 촉진하기 위해서</li></ul><p>&nbsp;</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>내장된 네비게이션(Embedded Navigation)</h4><p>단순한 네비게이션이 있는 앱은 앱 내용물 내에 네비게이션을 넣을 것이지만, 그렇게 하는 것은 그 내용물을 표시하기 위해 이용 가능한 공간을 줄입니다.</p><p>다음을 위해 권장됨:</p><ul><li>강력한 기본 뷰와 많지 않은 다른 뷰가 있는 앱</li><li>메인 뷰에서 기본적인 작업을 수행하는 앱</li><li>드물게 사용되는 앱</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VTk0QjZOVUxFY1k/patterns_navigation_patterns_embedded1.png">
+                    </div>
+                        <figcaption>
+          <p>내장된 네비게이션이 있는 앱의 모바일 예제. 일반적인 작업은 강력한 기본 뷰에서 수행됩니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>탭</h4><p><a href="../components/tabs.html">탭</a>은 사용자가 적은 수의 동등하게 중요한 뷰 사이를 빠르게 이동하는 것을 허용합니다.</p><p>이러한 계층 구조에 적합:</p><ul><li>내장된(Embedded) 자식 뷰가 있는 부모들</li><li>형제 뷰들의 그룹</li></ul><p>다음을 위해 권장됨:</p><ul><li>뷰 사이를 전환하는 것이 잦을 경우</li><li>많지 않은 최상단 뷰가 있는 앱</li><li>다른 뷰의 관심을 고취시키는 경우</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TEMxQ3BmVmFEQXc/patterns_navigation_patterns_tabs1.png">
+                    </div>
+                        <figcaption>
+          <p>세 개의 탭이 있는 모바일 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3bzVGNXBaTERWbHc/patterns_navigation_patterns_tabs2.png">
+                    </div>
+                        <figcaption>
+          <p>가운데 정렬된 탭의 태블릿 예제</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Y3NjV0xncGhMdk0/patterns_navigation_patterns_tabs3.png">
+                    </div>
+                        <figcaption>
+          <p>제목과 확장된 헤더가 있는 좌측 정렬 고정 탭의 데스크탑 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+      <h4>네비게이션 드로어</h4><p>탭을 지원하기 위한 충분한 공간이 없을 때, 사이드 네비게이션은 좋은 대체자입니다. 사이드 네비게이션은 많은 내비게이션 대상을 동시에 표시할 수 있습니다. 드로어는 사용자에 의해 불려질 때까지 숨겨져 있습니다.</p><p>단일 “홈(Home)”이 있는 앱은 사이드 네비게이션의 최상단에 가장 자주 접근하는 목적지를 나열합니다.</p><p>사이드 네비게이션은 <a href="navigation-drawer.html">네비게이션 드로어</a>가 있거나 아니면 없이 보여질 것입니다.</p><p>이러한 계층 구조에 적합:</p><ul><li>옆으로의 네비게이션(Lateral Navigation)</li><li>형제들이나 또래(Peer)들이 있는 부모들</li></ul><p>다음을 위해 권장됨:</p><ul><li>많은 최상단 뷰가 있는 앱</li><li>관련 없는 뷰 사이를 빠르게 탐색하는 것을 허용</li><li>깊은 네비게이션 구조</li><li>드문 목적지의 가시성을 줄임</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3eTBDWGxldS1GQ3M/patterns_navigation_patterns_navdrawer1.png">
+                    </div>
+                        <figcaption>
+          <p>닫혀진 좌측 네비게이션의 모바일 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ZjhIYS1GMlFVYVk/patterns_navigation_patterns_navdrawer2.png">
+                    </div>
+                        <figcaption>
+          <p>열린 좌측 네비게이션의 모바일 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3cElIYmJoT2RkQkU/patterns_navigation_patterns_navdrawer3.png">
+                    </div>
+                        <figcaption>
+          <p>열린 좌측 네비게이션의 태블릿 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Ty1Ob2FuTUMtQW8/patterns_navigation_patterns_navdrawer4.png">
+                    </div>
+                        <figcaption>
+          <p>열리고 제자리에 고정된 좌측 네비게이션의 데스크탑 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>중첩된 네비게이션(Nested Navigation)</h4><p>당신이 네비게이션의 여러 단계를 갖고 있을 때, 형제 뷰는 그들의 부모 아래에 중첩되어야 합니다.</p><p>데스크탑에서, 네비게이션의 부수적인 단계는 네비게이션 드로어 내에 중첩될 것입니다.</p><p>이러한 계층 구조에 적합:</p><ul><li>옆으로의 네비게이션(Lateral navigation)</li><li>형제들이나 또래들이 있는 부모들</li></ul><p>다음을 위해 권장됨:</p><ul><li>많은 뷰가 있는 깊은 네비게이션 구조</li><li>관련 없는 뷰 사이를 빠르게 탐색하는 것을 허용</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3X3JyV1JZQ1J6dms/patterns_navigation_patterns_nested1.png">
+                    </div>
+                        <figcaption>
+          <p>중첩된 좌측 네비게이션의 데스크탑 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>확장하는 네비게이션 드로어</h4><p>당신이 깊은 네비게이션 계층 구조를 가진다면, 당신은 네비게이션 드로어 내에 그 계층 구조를 확장할 것입니다. 단계를 선택할 때, 네비게이션 아래의 단계가 드러납니다. 축소된 섹션을 선택하면 한 줄로 된 그 단계를 확장하며, 그 바깥의 모든 단계는 숨겨집니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Z09DaUNORTJpWEE/patterns_navigation_patterns_expanding1.png">
+                    </div>
+                        <figcaption>
+          <p>확장하는 좌측 네비게이션의 데스크탑 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TTNvTzg5aE51M00/patterns_navigation_patterns_expanding2.png">
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>계단식 네비게이션 드로어(Cascading Navigation Drawer, 데스크탑 전용)</h4><p>당신이 깊은 네비게이션 계층 구조를 갖고 있다면, 당신은 네비게이션 드로어 내용물을 수평으로 확장하는 계단식 메뉴를 사용할 것입니다. 뷰의 각 컬렉션은 자체의 패널에 보여지고, 하나의 세부 항목이 선택될 때 한 단계를 닫습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3Rm9DeVpMU2tTMjA/patterns_navigation_patterns_cascading1.png">
+                    </div>
+                        <figcaption>
+          <p>계단식 좌측 네비게이션의 데스크탑 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3aVFiMjRyeXZ2cVE/patterns_navigation_patterns_cascading2.png">
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>제스처</h4><p>제스처 네비게이션(Gestural Navigation)은 사용자가 형제나 또래 뷰 사이를 탐색하기 위해서 스와이프 제스처를 사용하는 것을 허용합니다. 지원되는 제스처는 다음을 포함합니다: 터치하고 화면을 수평(좌/우)이나 수직(상/하)으로 드래그하거나, 또는 확대나 축소하는 동안에 드래그하기.</p><p>다음을 위해 권장됨:</p><ul><li>연이은 달력의 하루를 나타내는 페이지와 같이 자연 발생적인 순서가 있는 관계</li><li>많지 않은 형제가 있는 뷰</li><li>유사한 내용물 유형이 있는 뷰</li></ul><p>계층 구조에 따른 화면 간 이동에 대한 자세한 정보를 위해서 <a href="navigational-transitions.html">네비게이션 트랜지션</a>을 확인하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui qp-ui-video-player qp-ui-video-player-mouse" data-qp-ui="{ 'VideoPlayer': {} }" data-qp-ui-data-id="qp:s">
+              <video loop="" tabindex="0">
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3aTRwYTNaTDNiN28/Expanding - Overscroll Top.mp4" type="video/mp4">
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>받은 편지함에서, 당신은 부모 뷰로 돌아오기 위해 메세지에서 아래로 당길 수 있습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-combined-patterns" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:t">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:u">
+    조합된 패턴
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>상황에 맞는 네비게이션</h3>
+    <div class="module-body">
+    <p>상황에 맞는 네비게이션(탭이나 네비게이션 드로어와 함꼐 사용됨)은 연관된 데이터 집합 사이에 민첩한 움직임을 허용합니다.</p><p>상황에 맞는 네비게이션은 앱의 내용물에 통합되며, 일반적으로 덜 선형적입니다. 상황에 맞는 네비게이션을 통해 이동할 때, 새로운 화면으로 탐색하면 그 뷰에 특수한 네비게이션 컨트롤을 표시할 것입니다.</p><p>이러한 계층 구조에 적합:</p><ul><li>형제들이 있는 부모들</li></ul><p>다음을 위해 권장됨:</p><ul><li>자식 화면들의 큰 집합을 보여 주는 경우</li><li>특정한 작업 집합에 초점을 맞춘 경우</li><li>강력한 기본 뷰와 많지 않은 다른 뷰가 있는 앱</li></ul><p>사용 예제:</p><ul><li>아티스트와 노래를 연결</li><li>최근 항목과 완전한 방문 목록 사이를 이동</li><li>사용자의 프로필 페이지와 포스트를 연결</li></ul><p>위쪽 화살표는 이전 단계로 되돌아가기 위해 사용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3QW15VXF3Szd4Snc/patterns_navigation_patterncombinations1.png">
+                    </div>
+                        <figcaption>
+          <p>내용물과 통합된 네비게이션의 모바일 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3N2twRDB2ZEw3SWM/patterns_navigation_patterncombinations2.png">
+                    </div>
+                        <figcaption>
+          <p>위쪽 화살표의 모바일 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NzJReWpBQnZzUHM/patterns_navigation_patterncombinations3.png">
+                    </div>
+                        <figcaption>
+          <p>내용물과 통합된 네비게이션의 태블릿/데스크탑 예제</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3c3cwd3FiTEJORUU/patterns_navigation_patterncombinations4.png">
+                    </div>
+                        <figcaption>
+          <p>위쪽 화살표의 태블릿/데스크탑 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>사이드 네비게이션과 탭의 조합</h3>
+    <div class="module-body">
+    <p>두 단계의 네비게이션이 있는 제품은 탭과 좌측 네비게이션 드로어를 쌍으로 사용할 것입니다.</p><h4>&nbsp;</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ZjVsOXZJeDZTTUU/patterns_navigation_patterncombinations5.png">
+                    </div>
+                        <figcaption>
+          <p>두 단계의 네비게이션을 사용하는 모바일 예제: 네비게이션 드로어와 탭</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NWtRZVR4X3NMZXc/patterns_navigation_patterncombinations6.png">
+                    </div>
+                        <figcaption>
+          <p>열린 좌측 네비게이션의 모바일 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>&nbsp;</h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RXcxVnNCeHRRdjg/patterns_navigation_patterncombinations7.png">
+                    </div>
+                        <figcaption>
+          <p>두 단계의 네비게이션의 태블릿 예제: 네비게이션 드로어와 탭</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3aEtoM090azl6SW8/patterns_navigation_patterncombinations8.png">
+                    </div>
+                        <figcaption>
+          <p>탭 앞에 열린 좌측 네비게이션 드로어의 태블릿 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3b3VKRlpDWEJQcWc/patterns_navigation_patterncombinations9.png">
+                    </div>
+                        <figcaption>
+          <p>두 단계의 네비게이션을 사용한 데스크탑 예제: 네비게이션 드로어와 탭</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>중첩된 네비게이션 드로어 + 탭 (데스크탑 전용)</h3>
+    <div class="module-body">
+    <p>당신의 제품이 세 단계의 네비게이션을 가진다면, 탭과 중첩된 네비게이션 드로어를 쌍으로 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3U3lReGNUUUtndmM/patterns_navigation_patterncombinations10.png">
+                    </div>
+                        <figcaption>
+          <p>탭이 있는 중첩된 좌측 네비게이션의 데스크탑 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="loading-images.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      이미지 로드
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="navigation-drawer.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      네비게이션 드로어
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/navigation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:59 GMT -->
+</html>

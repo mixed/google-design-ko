@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/grid-lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:44 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>그리드 리스트 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Grid lists - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Grid lists - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Grid lists - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Grid lists</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">그리드 리스트</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="nav_selected" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">그리드 리스트
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>그리드 리스트는 표준 리스트 뷰의 대안입니다. 그리드 리스트는 레이아웃과 다른 시각적 표현을 위해 사용되는 그리드와는 완전히 다릅니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#grid-lists-usage">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#grid-lists-content">내용물
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#grid-lists-behavior">동작
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#grid-lists-specs">명세
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="grid-lists-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>그리드 리스트는 일반적으로 이미지와 같은 <strong>균일한 데이터(Homogenous Data)</strong>를 제공하기에 가장 알맞으며, <strong>시각적 이해(Visual Comprehension)</strong> 그리고 유사한 데이터 유형 간의 구별에 최적화되어 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7YTU2ekJPMU80MVU/components_grids_usage1.png" / />
+                    </div>
+                        <figcaption>
+          <p>그리드 리스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p><strong>그리드 리스트</strong>는 그리드 리스트 내에 가로와 세로로 배열된 <strong>셀</strong>의 반복된 패턴으로 구성되어 있습니다.</p><p><strong>타일</strong>은 내용물을 갖고 있으며, 수평이나 수직으로 하나 또는 그 이상의 셀에 걸쳐 있을 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7OVlEaXZ5YmU1Xzg/components_grids_usage2.png" / />
+                    </div>
+                        <figcaption>
+          <p>그리드 리스트의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VGhsOE5idWlJWXM/components_grids_usage3.png" / />
+                    </div>
+                        <figcaption>
+          <p>셀과 타일의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>타일 안에 텍스트가 주 내용물 조각들을 충분히 구별하기 위해 두드러질 필요가 있다면, 텍스트를 표시하고 읽기 이해를 높이는데 최적화된 리스트나 카드와 같은 다른 컨테이너를 사용하는 것을 고려해 보십시오.</p><p><strong>리스트: </strong>읽기 이해에 최적화됨, 특히 다양한 데이터 유형이 들어 있는 데이터의 집합을 비교하는 경우.</p><p><strong>카드: </strong>가변 길이의 캡션을 가진 사진, 여러 유형으로 이루어진 내용물이 있는 데이터 집합, 또는 사진과 비디오와 책이 혼합된 컬렉션과 같은 일관성이 없는 형식을 가진 내용물을 위해 사용.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="grid-lists-content" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용물
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>타일에서 내용물</h3>
+    <div class="module-body">
+      <p>타일 내용물은 주된 내용물과 부수적인 내용물로 구성되어 있습니다. 주된 내용물은 보통 이미지와 같은 주된 구분 요소입니다. 부수적인 내용물은 액션이나 텍스트일 수 있습니다.</p><p>주된 내용물을 위한 이미지가 없는 타일을 위해서 기본 이미지를 제공하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7YzdVdmpZT3FRX1E/components_grids_content1.png" / />
+                    </div>
+                        <figcaption>
+          <p>주된 액션과 부수적인 액션이 있는 타일 내용물의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>타일에서 액션</h3>
+    <div class="module-body">
+    <p>주된 내용물 뿐만 아니라 부수적인 내용물에서도 액션(재생, 확대, 삭제나 선택과 같은)은 즉각적이며, 일반적으로 그리드 리스트 내에 옵션(액션 오버플로우)의 서브 메뉴 안에서 발생하지 않습니다.</p><p>액션은 카드와 같은 그 다음 뷰를 열 수 있습니다.</p><h4>주 액션</h4><ul><li>전체 타일을 채우기 때문에 아이콘이나 텍스트를 통해 대표되지 않습니다.</li><li>특정한 그리드 리스트에서 타일 내내 일관됩니다. 예를 들어, 단일 그리드 리스트에서 모든 타일을 위한 주 액션은 이미지에 대한 세부 사항을 보여주는 것일 수 있습니다.</li></ul><h4>부수적인 액션 또는 내용물</h4><ul><li>아이콘이나 텍스트가 있는 타일에서 나타납니다.</li><li>특정한 그리드 리스트에서 타일 내내 일관됩니다.</li><li>특정한 그리드 리스트의 타일 내에 일관적인 위치에 놓여지지만, 그 일관적인 위치는 그리드 리스트 사이에 다양할 것입니다(모서리 또는 가장자리에서). 예를 들어, 다른 그리드 리스트에 모든 제목이 최상단 좌측 모서리에 놓여지는데 반하여, 어느 한 그리드 리스트에 모든 제목은 최하단 좌측 모서리에 놓여질 수 있습니다.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MHktdTZCcWZQcjA/components_grids_content2.png" / />
+                    </div>
+                        <figcaption>
+          <p>액션과 텍스트 위치가 있는 부수적인 액션의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="grid-lists-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>스크롤</h3>
+    <div class="module-body">
+    <p>그리드 리스트는 일반적으로 오직 수직으로만 스크롤합니다.</p><p>가로로 스크롤하는 그리드 리스트는 스크롤이 이해력에 영향을 끼치는 일반적인 읽기 패턴을 간섭하기 때문에 권장되지 않습니다. 하나의 주목할 만한 예외는 일반적인 읽기 패턴과 양립할 수 있는 이미지의 단일 행 그리드 리스트(갤러리와 같은)에서의 수평 스크롤입니다.</p><p>내용물 넘침에 대한 스크롤 방향을 알리기 위해 뷰의 초기 스크롤 위치에서 그리드 타일을 잘라내십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZVpFMDhCbXlXaEk/components_grids_behavior1.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>잘라낸 그리드 타일로 내용물의 넘침을 나타내십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dFdYTzkxLTI0X1E/components_grids_behavior2.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>뷰의 최초 스크롤 위치에서 뷰 가장자리를 따라 그리드 타일을 배치하는 것을 피하십시오. 이러한 위치 선정은 여기에 더 많은 내용물이 있다는 것을 효과적으로 알리지 못합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>제스처</h3>
+        <div class="module-body">
+      <p>타일 당 스와이프 액션은 허용되지 않습니다. 집어서 이동하는(Pick-up-and-move) 액션은 권장되지 않습니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>필터링과 정렬</h3>
+        <div class="module-body">
+      <p>그리드 리스트에서 내용물은 프로그래밍적으로 날짜, 파일 크기, 알파벳 순서나 다른 배개 변수에 의해 필터링되거나 정렬될 수 있습니다.</p><p>그리드 리스트의 첫번째 아이템은 그리드 리스트의 최상단에 놓여지고, 그 순서는 좌측에서 우측으로 그리고 상단에서 하단으로 진행합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>차원과 크기 변경</h3>
+        <div class="module-body">
+          <p>그리드 리스트를 크기 변경하는 것은 수평 공간이 생기는 대로 타일의 재정렬을 유발시킵니다. 플 브리드 그리드 리스트 타일은 화면 너비에 맞게 크기 변경됩니다.</p><p>수평 공간이 수축할 때, 그리드 리스트는 리스트로 변형하지 않습니다. 그리드 리스트와 리스트는 다른 데이터 유형을 강조하기에 서로 다른 구조입니다. 그리드 리스트는 텍스트보다 이미지를 우선하고 리스트는 이미지보다 텍스트를 우선합니다.</p><p>그리드 리스트 내내 일관적인 리듬을 유지하기 위해서, 타일의 너비를 위해 너무 긴 텍스트 내용물은 줄이십시오. 그 대신에, 그리드 크기를 늘려서 그 타일이 긴 제목을 수용할 수 있게 하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>반응형 디자인</h3>
+        <div class="module-body">
+      <p>전체 화면 그리드 리스트는 <a href="../layout/metrics-keylines.html#metrics-keylines-ratio-keylines">비율 키라인</a> 사용에서 파생된 최소와 최대 너비가 있는 유동적인 이미지 비율을 사용해야 합니다. 그것은 고정된 높이와 여백과 패딩을 유지해야 합니다.</p><p>가운데 정렬된 그리드 리스트는 최소 너비와 함께 유동적인 여백을 가집니다. 이것은 고정된 이미지 너비와 높이와 패딩을 유지합니다.</p>
+    </div>
+  </section>
+
+        </div>
+              </div>
+  </div>
+</div>                  <div id="grid-lists-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>그리드 리스트 헤더/푸터</h3>
+    <div class="module-body">
+    <h4>한 줄 헤더/푸터 </h4><p>높이: 48dp<br/>텍스트 패딩: 16dp<br/>기본 폰트 크기: 16sp<br/>부수적인 액션은 푸터 우측에 위치합니다.</p><h4>두 줄 헤더/푸터</h4><p>높이: 68dp<br/>텍스트 패딩: 16dp<br/>각 줄을 위한 기본 폰트 크기: 16sp/12sp 또는 14sp/14sp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzM3JBazdXUTg2Nmc/components_grids_specs1.png"  />
+                    </div>
+                        <figcaption>
+          <p>글자 14sp/14sp <br/>(아이콘이 있는)두 줄 바 높이: 68dp<br/>두 줄 바 높이: 68dp<br/>한 줄 바 높이: 48dp</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzb2lfYm1acXotaFk/components_grids_specs2.png"  />
+                    </div>
+                        <figcaption>
+          <p>글자 16sp/12sp <br/>(아이콘이 있는)두 줄 바 높이: 68dp<br/>두 줄 바 높이: 68dp<br/>한 줄 바 높이: 48dp</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzV1lsNXRSX0ROaTg/components_grids_specs22.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>헤더/푸터에서 텍스트 잘라내기</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>이미지만 있는 그리드 리스트</h3>
+    <div class="module-body">
+    <p>그리드 리스트 패딩: 4dp 또는 1dp</p><p>그리드 리스트에서 타일은 다양한 열에 걸칠 수 있습니다.</p><p>큰 타일은 뚜렷한 빈 공간을 만들 수 있기 때문에, 여러 열의 타일을 사용하는 그리드 리스트에서 부수적인 텍스트가 필요한지 신중히 고려하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MS1NVzlzeVc1RWs/components_grids_specs3.png" / />
+                    </div>
+                        <figcaption>
+          <p>이미지만 있는 그리드 리스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYW0xRlY4U3dOMUU/components_grids_specs4.png" / />
+                    </div>
+                        <figcaption>
+          <p>이미지만 있는 그리드 리스트 사진첩</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>한 줄 그리드 리스트</h3>
+    <div class="module-body">
+    <h4>텍스트 전용</h4><p>높이: 48dp<br/>텍스트 패딩: 16dp<br/>기본 폰트 크기: 16sp<br/>그리드 리스트 패딩: 4dp 또는 1dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzN1Mxb3NUV1FhelU/components_grids_specs5.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩의 한 줄 그리드 리스트 푸터</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzV09aXzJDMHpWa2c/components_grids_specs6.png" / />
+                    </div>
+                        <figcaption>
+          <p>한 줄 그리드 리스트 사진첩</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZXRKSnJtRzRYU1E/components_grids_specs7.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩의 한 줄 그리드 리스트 헤더</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>아이콘이 있는 텍스트</h4><p>높이: 48dp<br/>텍스트 패딩: 16dp<br/>기본 폰트 크기: 16sp<br/>그리드 리스트 패딩: 4dp 또는 1dp</p><p>부수적인 액션은 푸터나 헤더 내에 오른쪽이나 왼쪽에 놓여질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aXpmN2k3V3k3djg/components_grids_specs8.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩과 아이콘이 있는 한 줄 그리드 리스트 헤더</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzbG9MLTBjYmlUVDA/components_grids_specs9.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 한 줄 그리드 리스트 푸터</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RVl0VEZ2aEZVZUk/components_grids_specs10.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩과 아이콘이 있는 한 줄 그리드 리스트 푸터</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzdUNLYjBUVU81NWc/components_grids_specs11.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 한 줄 그리드 리스트 헤더</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYjZqOWJGa25LVjQ/components_grids_specs12.png" / />
+                    </div>
+                        <figcaption>
+          <p>사진첩에 아이콘이 있는 한 줄 그리드 리스트 푸터</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>두 줄 그리드 리스트</h3>
+    <div class="module-body">
+    <h4>텍스트만 있는</h4><p>높이: 68dp<br/>텍스트 패딩: 16dp<br/>각 줄을 위한 기본 폰트 크기: 16sp/12sp 또는 14sp/14sp<br/>그리드 리스트 패딩: 4dp 또는 1dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzQnd1TmFpRHlENUU/components_grids_specs13.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩이 있는 두 줄 그리드 리스트 푸터</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzVzU5a3BvS3hzOXc/components_grids_specs14.png" / />
+                    </div>
+                        <figcaption>
+          <p>16dp 패딩이 있는 두 줄 그리드 리스트 헤더</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscU9haHV6LU9SWnM/components_grids_specs15.png" / />
+                    </div>
+                        <figcaption>
+          <p>두 줄 그리드 리스트, 4dp 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUjNOd2tQaVdWdFU/components_grids_specs16.png" / />
+                    </div>
+                        <figcaption>
+          <p>두 줄 그리드 리스트, 1dp 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>아이콘이 있는 텍스트</h4><p>높이: 68dp<br/>텍스트 패딩: 16dp<br/>각 줄을 위한 기본 폰트 크기: 16sp/12sp 또는 14sp/14sp</p><p>부수적인 액션은 푸터나 헤더 내에 오른쪽이나 왼쪽에 놓여질 수 있습니다.</p><p>그리드 리스트 패딩: 4dp 또는 1dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SDFHT2JpYXRDN0k/components_grids_specs17.png" / />
+                    </div>
+                        <figcaption>
+          <p>푸터에 아이콘이 있는 두 줄 텍스트</p><p>텍스트 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzc01QbmE3RDZKZ2s/components_grids_specs18.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 두 줄 텍스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzMzl5aUhaWGpKNkk/components_grids_specs20.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 두 줄 텍스트</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bTg0OHdTNW5XM2s/components_grids_specs19.png" / />
+                    </div>
+                        <figcaption>
+          <p>헤더에 아이콘이 있는 두 줄 텍스트</p><p>텍스트 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd0RjRWd1bW9WY0E/components_grids_specs21.png" / />
+                    </div>
+                        <figcaption>
+          <p>아이콘이 있는 텍스트의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="dividers.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      디바이더
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="lists.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      리스트
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/grid-lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:44 GMT -->
+</html>

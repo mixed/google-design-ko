@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/layout/structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:37 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>구조 - 레이아웃 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Structure - Layout - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Structure - Layout - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Structure - Layout" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Structure</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Layout</Attribute>
+      <Attribute name="section_slug">layout</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-layout noninitial-chapter color-pink qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">레이아웃</span>
+      <span class="chapter-title">구조</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="principles.html">기본 원리
+                    </a>
+                    <a class="" href="units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="nav_selected" href="structure.html">구조
+                    </a>
+                    <a class="" href="adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">구조
+          </h1>
+    <div class="chapter-content">
+        
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-ui-regions">UI 영역
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-toolbars">툴바
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-app-bar">앱 바
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-system-bars">시스템 바
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-side-nav">사이드 네비게이션
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#structure-whiteframes">화이트프레임
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="structure-ui-regions" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    UI 영역
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>정확한 동작과 그림자를 이루기 위한 z공간 요소 배열을 안내하기 위해서, <a href="../what-is-material/environment.html">환경</a> 그리고 <a href="../what-is-material/elevation-shadows.html">고도와 그림자</a> 섹션을 확인하십시오.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+            <h3>모바일 구조</h3>
+    <div class="module-body">
+    <p>이 구조는 고정된 앱 바와 플로팅 액션 버튼(FAB)를 포함합니다. 선택적인 바텀 바는 추가적인 기능이나 액션 오버플로우를 위해 추가될 수 있습니다. 사이드 네비게이션 메뉴는 모든 다른 구조적 요소를 덮어씌웁니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">모바일 구조</div><p>좌측 상단부터 우측으로: 사이드 네비게이션, 앱 바/주 툴바, 내용물 영역 (앱 바/주 툴바 아래), 그리고 우측 네비게이션<br/>최하단: 바텀 바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>태블릿 구조</h3>
+    <div class="module-body">
+    <p>이 구조는 플로팅 액션 버튼(FAB)와 함께 고정된 앱 바를 보여줍니다. 앱 바는 태블릿과 모바일 바텀 바에서부터 요소를 받아들입니다. 선택적인 바텀 바는 추가적인 기능이나 액션 오버플로우를 위해 추가됩니다. 사이드 네비게이션은 모든 다른 구조적 요소를 덮어씌웁니다. 우측 네비게이션 메뉴는 임시적으로 접근되거나 고정될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VmpjWnp5UDZEWEU/layout_structure_regions_tablet.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">태블릿 구조</div><p>좌측 상단부터 우측으로: 사이드 네비게이션, 앱 바/주 툴바, 컨텐츠 캔버스 (앱 바/주 툴바 아래),  그리고 우측 네비게이션<br/>최하단: 바텀 바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>데스크탑 구조</h3>
+    <div class="module-body">
+    <p>데스크탑 구조는 플로팅 액션 버튼(FAB)과 함께 고정된 앱 바를 포함합니다. 앱 바는 태블릿과 모바일 바텀 바에서부터 요소를 받아들입니다. 가능한 곳에, 윈도우 컨트롤은 앱 바 내로 받아들여집니다.</p><p>사이드 네비게이션 메뉴는 화면 크기의 전체 높이(앱 바 아래를 포함)를 차지할 수 있고, 임시적으로 접근될 수 있으며, 또한 고정될 수 있습니다. 내용물 캔버스와 마찬가지로 사이드 네비게이션 메뉴도 탭, 팔레트, 또는 부수적인 액션을 위해 부수적인 툴바를 가질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SnotM2RNN2FFMzQ/layout_structure_regions_desktop.png"  />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title">데스크탑 구조</div><p>좌측 상단부터 우측으로: 앱 바/주 툴바</p><p>두번째 행의 좌측부터 우측까지: 툴바, 부수적인 툴바, 그리고 툴바</p><p>세번째 행의 좌측부터 우측까지: 사이드 네비게이션, 내용물 캔버스, 우측 네비게이션<br/>최하단: 플로팅 액션 버튼</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>UI 영역</h3>
+    <div class="module-body">
+    <p>주된 수평 또는 수직 디바이더를 정의하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7cGZWZmxBV1d1M2s/layout_structure_regions_guidance1.png" / />
+                    </div>
+                        <figcaption>
+          <p>수직 디바이더</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dnhDVHg4WTBrbnc/layout_structure_regions_guidance2.png" / />
+                    </div>
+                        <figcaption>
+          <p>수평 디바이더</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>L 모양의 인터페이스를 유발하는 너무 많은 영역으로 나누는 것을 피하십시오. 대신에, 부수적인 영역을 설명하는 하얀 여백(Whitespace)을 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RVg5NlRYc29XRTQ/layout_structure_regions_guidance3.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NHNfYW03U28wYnM/layout_structure_regions_guidance4.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>카드와 플로팅 액션 버튼으로 가장자리를 깨뜨리십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RHJsbFhpanhPQXc/layout_structure_regions_guidance5.png" / />
+                    </div>
+                        <figcaption>
+          <p>가장자리를 깨뜨리는 카드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aTFlbjdxV2dwZVE/layout_structure_regions_guidance6.png" / />
+                    </div>
+                        <figcaption>
+          <p>가장자리를 깨뜨리는 플로팅 액션 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>특정한 동작이 요구될 때 또는 정보의 그룹화가 빈 공간이나 디바이더가 제공할 수 있는 것 보다 더 많은 구분을 필요로 하는 경우에 내용물을 체계화하는 카드를 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QzR3ZFdSS1VhSkk/layout_structure_regions_guidance7.png" / />
+                    </div>
+                        <figcaption>
+          <p>카드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZXRFRzA3eGpQSG8/layout_structure_regions_guidance8.png" / />
+                    </div>
+                        <figcaption>
+          <p>카드</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="structure-toolbars" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    툴바
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>툴바는 다용도이고 많은 다른 방법으로 사용될 수 있습니다. 여기에 약간의 예제가 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eW41S2JtRm9CSmc/layout_structure_toolbars1.png"  />
+                    </div>
+                        <figcaption>
+          <p>전체 너비, 기본 높이 앱 바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UnNtdkNxY05oelk/layout_structure_toolbars2.png"  />
+                    </div>
+                        <figcaption>
+          <p>전체 너비, 확장된 높이 앱 바 </p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eTQ0WmN0cUlHWGs/layout_structure_toolbars3.png"  />
+                    </div>
+                        <figcaption>
+                        <p>계층 구조의 다양한 레벨에서 열 너비 툴바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bW1TYXlMT0JxUWM/layout_structure_toolbars4.png"  />
+                    </div>
+                        <figcaption>
+          <p>융통성 있는(Flexible) 툴바와 카드 툴바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7M1VKVkhLLUxuTGs/layout_structure_toolbars5.png"  />
+                    </div>
+                        <figcaption>
+                        <p>떠 있는(Floating) 툴바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aEJPTW1iV0EwQ0E/layout_structure_toolbars6.png"  />
+                    </div>
+                        <figcaption>
+          <p>떨어진(Detached) 툴바 팔레트</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7M2djcm1TSG1ZQVU/layout_structure_toolbars7.png"  />
+                    </div>
+                        <figcaption>
+                        <p>선반(Shelf)에서 시작하며 키보드나 그 밖의 하단 컴포넌트의 최상단에 붙은 바텀 툴바</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7R21ES09zcURiR0k/layout_structure_toolbars8.png"  />
+                    </div>
+                        <figcaption>
+          <p>바텀 툴바 선반(Shelf)</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="structure-app-bar" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    앱 바
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>이전에 안드로이드에서 액션 바로 알려진 앱 바는 브랜딩, 네비게이션, 검색, 그리고 액션을 위해 사용되는 툴바의 특별한 종류입니다.</p><p>앱 바의 왼쪽에 있는 네비게이션 아이콘은 다음과 같을 수 있습니다:</p><ul><li>네비게이션 드로어를 여는 조작.</li><li>당신의 앱의 계층 구조 사이로 위로 이동하기 위한 위쪽 화살표.</li><li>만약 이 화면에서부터 이동할 필요가 없다면 전부 생략됨.</li></ul><p>앱 바에서 제목(Title)은 현재 페이지를 반영합니다. 그것은 앱 제목이나, 페이지 제목, 또는 페이지 필터일 수 있습니다.</p><p>앱 바의 오른쪽의 아이콘은 앱과 관련된 액션입니다. 메뉴 아이콘은 부수적인 액션과 도움말, 설정, 그리고 피드백과 같은 메뉴 아이템을 포함하는 오버플로우 메뉴를 엽니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RTFrbmpoWjRrY00/layout_structure_appbar_structure1.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">앱 바 구조</div><p>좌측: 네비게이션 아이콘, 제목, 그리고 필터 아이콘<br/>우측: 액션과 메뉴 아이콘</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU1FwTUx3cmRUNG8/layout_structure_appbar_structure2.png" / />
+                    </div>
+                        <figcaption>
+                        <p>밝은</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbGREMW9BdDdnSUk/layout_structure_appbar_structure3.png" / />
+                    </div>
+                        <figcaption>
+          <p>어두운</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZF9VZDhtQlF5RGM/layout_structure_appbar_structure4.png" / />
+                    </div>
+                        <figcaption>
+          <p>색이 있는</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQnFjd0tiMmtsMU0/layout_structure_appbar_structure5.png" / />
+                    </div>
+                        <figcaption>
+          <p>투명</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>제목 색</h3>
+    <div class="module-body">
+    <p>앱 바에서, 모든 아이콘은 동일한 색이어야만 합니다.</p><p>만약 증가된 시각적 계층 구조가 요구된다면, 제목은 아이콘에 뚜렷한(Distinct) 색을 가질 수 있습니다. 뚜렷한 제목(Title) 색은 하얗거나 검은 아이콘 모두를 위해 충분한 대비를 가진 배경과 잘 어울립니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbkxqbW9kQWgxZkk/layout_structure_appbar_structure6.png" / />
+                    </div>
+                        <figcaption>
+          <p>단일 색 (기본)</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQselRDRFlzNkI0SFE/layout_structure_appbar_structure7.png" / />
+                    </div>
+                        <figcaption>
+          <p>뚜렷한 제목 색</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>측정</h3>
+    <div class="module-body">
+    <p><strong>기본 높이:</strong></p><p>모바일 가로 모드(Landscape): 48dp<br/>모바일 세로 모드(Portrait): 56dp<br/>태블릿/데스크탑: 64dp</p><p>확장된 앱 바를 위해서, 높이는 기본 높이 + 내용물 증분(Increment)과 같습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUFJUnFlRHVhUVU/layout_structure_appbar_metrics1.png" / />
+                    </div>
+        <figcaption>
+          <p>앱 바 높이: 56dp<br>앱 바 좌측과 우측 패딩: 16dp<br>앱 바 아이콘 상단, 하단, 좌측 패딩: 16dp<br>앱 바 제목 좌측 패딩: 72dp<br>앱 바 제목 하단 패딩: 20dp</p>
+        </figcaption>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscTFBTHJJTm41TzQ/layout_structure_appbar_metrics2.png" / />
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSDBhX3BwSURRc1U/layout_structure_appbar_metrics3.png" / />
+                    </div>
+        <figcaption>
+          <p>중요성을 위해 상당히 증가된 높이를 가진 앱 바</p><p>앱 바 높이 = 128dp</p>
+        </figcaption>                   
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsREdycWl2SmxSTVE/layout_structure_appbar_metrics4.png" / />
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTW1zb2x5WWg5cDA/layout_structure_appbar_metrics5.png" / />
+                    </div>
+        <figcaption>
+          <p>액션 영역 높이: 56dp<br>제목 영역 높이: 80dp<br>제목 영역 하단 패딩: 8dp<br>설명 영역 높이: 72dp<br>설명 영역 하단 패딩: 16dp</p>
+        </figcaption>                   
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsY19yMzV5RHZyams/layout_structure_appbar_metrics6.png" / />
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOFVmeDlPTU5LZ1E/layout_structure_appbar_metrics7.png"  />
+                    </div>
+       <figcaption>
+          <p>앱 바 높이: 64dp<br>앱 바 내용물 좌측과 우측 패딩: 24dp<br>앱 바 아이콘 상단과 하단 패딩: 20dp</p>
+        </figcaption>                   
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVm5pN2ZRWFZQV3c/layout_structure_appbar_metrics8.png"  />
+                    </div>
+        <figcaption>
+          <p>중요한 앱 바 높이: 128dp<br>앱 바 아이콘 좌측과 우측 패딩: 24dp<br>앱 바 내용물 좌측 패딩: 80dp</p>
+        </figcaption>                   
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUXlEQkIyN0xETTg/layout_structure_appbar_metrics9.png"  />
+                    </div>
+        <figcaption>
+          <p>증분 키라인은 키라인 증분을 결정하는 64dp의 높이를 가진 앱 바 높이에 의해 설정됩니다.</p><p>앱 바 높이: 64dp</p>
+        </figcaption>                   
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>메뉴</h3>
+    <div class="module-body">
+    <p>메뉴는 항상 앱 바에 겹쳐지는 페이퍼의 임시적인 시트이며, 앱 바의 확장으로 동작하지 않습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU094a25SRS1LXzQ/layout_structure_appbar_menu1.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUtFU1dySnRkbFE/layout_structure_appbar_menu2.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 안에 메뉴의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd0JpVzNpNzBuMjQ/layout_structure_appbar_menu3.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 안에 메뉴의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWFh0S09Rb3VvYWc/layout_structure_appbar_menu4.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 안에 메뉴의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX1BHTWxFbUdzMXc/layout_structure_appbar_menu5.png"  />
+                    </div>
+                        <figcaption>
+          <p>앱 바 안에 메뉴의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="structure-system-bars" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    시스템 바
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>스테이터스 바 / 윈도우 바</h3>
+    <div class="module-body">
+    <p>안드로이드에서, 스테이터스 바는 알림 아이콘과 시스템 아이콘을 포함합니다. 크롬에서, 상단 바는 윈도우 컨트롤을 포함합니다: 최소화, 전체 화면, 그리고 닫기. 크롬 앱에서, 상단 바는 사라질 수 있으며, 그 다음에 윈도우 컨트롤이 앱 바 안에 들어갑니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUFLM2xkRElVM2s/layout_structure_system_status1.png" / />
+                    </div>
+                        <figcaption>
+          <p>안드로이드 스테이터스 바</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Tkh3MGZVVktoOTQ/layout_structure_system_status2.png" / />
+                    </div>
+                        <figcaption>
+          <p>크롬 윈도우 바</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>측정:<br/>안드로이드 스테이터스 바 높이: 24dp<br/>크롬 윈도우 높이: 32dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUkFVNERQODRoakk/layout_structure_system_status3.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 위에 안드로이드 스테이터스 바</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7OFZxQTM5SmxHQjA/layout_structure_system_status4.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 위에 크롬 윈도우 바</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7cHV2LWpmTnRUbm8/layout_structure_system_status5.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 안에 크롬 윈도우 컨트롤</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>어두운 스테이터스 바</h3>
+    <div class="module-body">
+    <p>기본적으로, 스테이터스 또는 윈도우 바의 색은 앱 바 색보다 더 어두운 색조입니다. 그것은 또한 레이아웃 안의 다른 요소의 색을 사용하거나 반투명이 될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdkwzWUZZNEdaUzg/layout_structure_system_color1.png" / />
+                    </div>
+                        <figcaption>
+          <p>색은 내용물에서 가져온 샘플을 기반합니다</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLWE2REc4RnVuTWc/layout_structure_system_color2.png" / />
+                    </div>
+                        <figcaption>
+          <p>반투명 스테이터스 바, 20% 검정 #000000</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsN3pJUmlJeDJ5NHc/layout_structure_system_color3.png" / />
+                    </div>
+                        <figcaption>
+          <p>어두운 스테이터스 바</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdHAwWDlJWm1Sdnc/layout_structure_system_color4.png" / />
+                    </div>
+                        <figcaption>
+          <p>앱 바 색의 어두운 색조인 스테이터스 바 색</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>밝은 스테이터스 바</h3>
+    <div class="module-body">
+    <p>어두운 색 아이콘이 있는 밝은 스테이터스 바는 밝은 색 내용물과 잘 어울리고, 어두운 스테이터스 바의 대안으로 사용될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-X0Z6NHdnSjdUYTA/layout_structure_system_color5.png" / />
+                    </div>
+                        <figcaption>
+          <p>밝은 스테이터스 바 색은 내용물로부터 얻은 샘플에 기반합니다</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-RmR0RU9hc1MzWGc/layout_structure_system_color6.png" / />
+                    </div>
+                        <figcaption>
+          <p>반투명 밝은 스테이터스 바, 70% 흰색 #FFFFFF</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-VlV3YjN5bk0xUGc/layout_structure_system_color7.png" / />
+                    </div>
+                        <figcaption>
+          <p>밝은 스테이터스 바, 기본 배경 채우기색은 #E0E0E0</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eUoyd3JIWHc2MEU/layout_structure_system_color8.png" / />
+                    </div>
+                        <figcaption>
+          <p>밝은 앱 바 색의 어두운 색조인 밝은 스테이터스 바</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>안드로이드 네비게이션 바</h3>
+    <div class="module-body">
+    <p>안드로이드에서 네비게이션 바는 기기 네비게이션 컨트롤을 수용합니다: 이전, 홈, 그리고 개요(Overview). 그것은 또한 안드로이드 2.3 또는 이전에서 앱을 위한 메뉴를 표시합니다.</p><p>높이: 48dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RWpaeTZqTmlYOHc/layout_structure_system_android1.png" / />
+                    </div>
+                        <figcaption>
+          <p>어두운</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QkxkZjVDYmtSYXc/layout_structure_system_android2.png" / />
+                    </div>
+                        <figcaption>
+          <p>밝은</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>색의 변종</h3>
+    <div class="module-body">
+    <p>네비게이션 바는 불투명이나, 반투명, 또는 투명이 될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RzhjWURpTWVsRTA/layout_structure_system_android3.png" / />
+                    </div>
+                        <figcaption>
+          <p>반투명</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bl93YnVqdWE3NGM/layout_structure_system_android4.png" / />
+                    </div>
+                        <figcaption>
+          <p>복잡한 이미지 위에 반투명</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MzdRU2EtbHlaRlk/layout_structure_system_android5.png" / />
+                    </div>
+                        <figcaption>
+          <p>투명</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7S2tTVjBjcUNEM00/layout_structure_system_android6.png" / />
+                    </div>
+                        <figcaption>
+          <p>차분한 색조로 된 이미지 위에 투명</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>크롬 OS 임시보관함</h3>
+    <div class="module-body">
+    <p>임시보관함(Shelf)는 크롬 OS에서 앱 런처, 어플리케이션 메뉴, 그리고 시스템 설정을 수용합니다.</p><p>높이: 56dp</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7R3BySy1UQ2pDbGc/layout_structure_system_chrome.png"  />
+                    </div>
+                        <figcaption>
+          <p>크롬 OS 임시보관함의 예제</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="structure-side-nav" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    사이드 네비게이션
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>존재하는 경우, 사이드 네비게이션 바는 영구적으로 표시하기 위해 고정되거나 임시적으로 덮어씌워 띄울 수 있습니다. 사이드 네비게이션은 화면의 좌측 또는 우측에 위치할 수 있습니다.</p><p>좌측 네비게이션에 보이는 내용물은  탐색이나 신원을 기반으로 하는 것이 이상적입니다. 우측 네비게이션 내용물은 페이지에서 주 내용물에 부수적인 것이어야 합니다.</p><p><a href="../patterns/navigation-drawer.html">네비게이션 드로어</a> 또한 확인해 보십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbU5RX3BYcTJiOFk/layout_structure_sidenav1.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일 화면</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSnJFcnlLNUJXb2s/layout_structure_sidenav2.png" / />
+                    </div>
+                        <figcaption>
+          <p>사이드 네비게이션 메뉴</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>구조</h3>
+    <div class="module-body">
+    <p>사이드 네비게이션 바는 영구적으로 표시하기 위해 고정되거나, 또는 덮어씌우기 위해서 임시적으로 띄울 수 있습니다. 임시적인 네비게이션 드로어는 내용물 캔버스를 덮어씌웁니다; 그렇지만 고정된 네비게이션 패널은 컨텐츠 캔버스와 나란하거나 아래에 위치합니다.</p><p>화면 크기는 패널이 고정되거나 덮어씌우든지 간에 결정될 수 있습니다. 충분한 공간이 있다면, 패널은 고정될 수 있고 내용물은 반응하여 조정됩니다. 공간이 불충분하다면, 패널은 덮어씌워져야만 합니다.</p><h4>측정</h4><p><strong>모바일</strong>:</p><p>너비 = 화면 너비 − 56 dp</p><p>최대 너비: 320dp</p><p>최대 너비는 오직 좌측 네비게이션을 사용할 때만 적용합니다. 우측 네비게이션을 사용할 때, 패널은 화면의 전체 너비를 덮을 수 있습니다.</p><p><strong>데스크탑</strong>: 좌측 네비게이션을 위한 최대 너비는 400dp 입니다. 우측 네비게이션은 내용물에 따라 달라질 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsanRZMG5CaFRDWlE/layout_structure_sidenav_structure1.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 좌측 네비게이션</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTE1CMXNPMU02ekU/050407_Sidenav_02_xhdpi_002.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>모바일에서 우측 네비게이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bXlOVlM1bGV2Q0k/layout_structure_sidenav_structure3.png"  />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 좌측 네비게이션</p>
+        </figcaption>
+              </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7d2Z0QURUVk5hV2M/layout_structure_sidenav_structure4.png"  />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 우측 네비게이션</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="structure-whiteframes" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    화이트프레임
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>화이트프레임은 표면, 레이어, 그리고 그림자에 일관된 접근법을 사용하는 레이아웃 구조의 다양성을 제공합니다.</p><p>화이트프레임에 관한 그 밖의 정보와 다운로드를 위해서, <a href="../resources/layout-templates.html#layout-templates-whiteframes">리소스</a>를 확인하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNVGJCUHZUcUtBSVE/layout-structure-whiteframe_bigtop_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>확장되고 접히는 카드로 된 내용물</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNZ3ZWYkxacmJBZ1E/layout-structure-whiteframe_calendar_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 초점을 얻은 앱 바가 있는 덮어씌운 내용물 세부 사항</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNbjdWb0JqRmpOZFk/layout-structure-whiteframe_contacts_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 여러 툴바와 배경 이미지가 있는 겹쳐진 내용물 카드</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNbjdWb0JqRmpOZFk/layout-structure-whiteframe_contacts_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>확장된 앱 바와 우측 사이드 네비게이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNWFBhWmo1d1gyMlU/layout-structure-whiteframe_gallery_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 좌측 사이드 네비게이션과 하나의 업 스트림</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMU12c2xDS1QtZFk/layout-structure-whiteframe_mail_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>원본(Source) 리스트</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNM2k4eGVaYjg0LVk/layout-structure-whiteframe_maps_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>삽입된 검색 필드와 카드로 된 검색 결과가 있는 전체화면 배경 이미지</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNT29PaWxfZ21iOW8/layout-structure-whiteframe_music_large_xhdpi.png" / />
+                    </div>
+                        <figcaption>
+          <p>확장 가능한 푸터(Footer) 드로어</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-L section-layout">
+            <a class="footer-text" href="metrics-keylines.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      측정 기준 &amp; 키라인
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-layout color-pink">&nbsp;</div>
+    <div class="footer-grid-R section-layout">
+            <a class="footer-text" href="adaptive-ui.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      적응형 UI
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/layout/structure.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:37 GMT -->
+</html>

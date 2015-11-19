@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/components/buttons.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:39 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>버튼 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Buttons - Components - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Buttons - Components - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Buttons - Components" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Buttons</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Components</Attribute>
+      <Attribute name="section_slug">components</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">컴포넌트</span>
+      <span class="chapter-title">버튼</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="nav_selected" href="buttons.html">버튼
+                    </a>
+                    <a class="" href="buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="cards.html">카드
+                    </a>
+                    <a class="" href="chips.html">칩
+                    </a>
+                    <a class="" href="data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="dividers.html">디바이더
+                    </a>
+                    <a class="" href="grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="lists.html">리스트
+                    </a>
+                    <a class="" href="lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="menus.html">메뉴
+                    </a>
+                    <a class="" href="pickers.html">픽커
+                    </a>
+                    <a class="" href="progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="sliders.html">슬라이더
+                    </a>
+                    <a class="" href="snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="tabs.html">탭
+                    </a>
+                    <a class="" href="text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="toolbars.html">툴바
+                    </a>
+                    <a class="" href="tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="../patterns/data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="../patterns/empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="../patterns/errors.html">에러
+                    </a>
+                    <a class="" href="../patterns/gestures.html">제스처
+                    </a>
+                    <a class="" href="../patterns/fingerprint.html">지문
+                    </a>
+                    <a class="" href="../patterns/launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="../patterns/loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="../patterns/navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="../patterns/notifications.html">알림
+                    </a>
+                    <a class="" href="../patterns/permissions.html">퍼미션
+                    </a>
+                    <a class="" href="../patterns/scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="../patterns/search.html">검색
+                    </a>
+                    <a class="" href="../patterns/selection.html">선택
+                    </a>
+                    <a class="" href="../patterns/settings.html">설정
+                    </a>
+                    <a class="" href="../patterns/swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">버튼
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>버튼은 사용자가 이것을 터치할 때 액션이 발생할 것이라는 것을 분명히 알려줍니다. 버튼은 당신의 앱의 색 테마에 따라서 디자인된 텍스트나 이미지 또는 양쪽 다로 구성됩니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#buttons-button-types" data-qp-ui-data-id="qp:e">버튼 유형
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#buttons-usage" data-qp-ui-data-id="qp:f">사용법
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#buttons-flat-raised-buttons" data-qp-ui-data-id="qp:g">플랫 &amp; 레이즈드 버튼
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#buttons-toggle-buttons" data-qp-ui-data-id="qp:h">토글 버튼
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#buttons-dropdown-buttons" data-qp-ui-data-id="qp:i">드롭다운 버튼
+                </a></li>
+              </ul>      
+    </nav>
+    
+    <div class="article-list">
+                        <div id="buttons-button-types" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    버튼 유형
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>버튼에는 3가지의 표준 유형이 있습니다: </p><ul><li> <a href="buttons-floating-action-button.html">플로팅 액션 버튼(FAB)</a>: 들려 있으며 누를 때 잉크 반응을 보여주는 둥근 머티리얼 버튼.</li><li>레이즈드(Raised) 버튼: 들려 있으며 누를 때 잉크 반응을 보여주는 일반적인 직사각형 머티리얼 버튼.</li><li>플랫(Flat) 버튼: 들려 있지는 않지만 잉크 반응을 보여주는 잉크로 만든 버튼.</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRzFkRVBKN1U5cU0/components_buttons_usage1.png"  />
+                      </div>
+                        <figcaption>
+          <p>플로팅 액션 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VEdpenhQNFJRZm8/components_buttons_usage2.png"  />
+                      </div>
+                        <figcaption>
+          <p>레이즈드 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TTBJNTVNUDVZVFk/components_buttons_usage3.png"  />
+                      </div>
+                        <figcaption>
+          <p>플랫 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaVNEZEtFLU4yRUk/components_buttons_usage4.png"  />
+                      </div>
+                        <figcaption>
+          <p>플로팅 액션 버튼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOXlFU3lQN1BRSGM/components_buttons_usage5.png"  />
+                      </div>
+                        <figcaption>
+          <p>레이즈드 버튼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNVZFMGpzZ3hGWTA/components_buttons_usage6.png"  />
+                      </div>
+                        <figcaption>
+          <p>플랫 버튼의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>버튼 스타일 고르기</h3>
+    <div class="module-body">
+    <p>버튼 스타일 고르기는 버튼의 수위(Primacy), 화면에서 컨테이너의 수, 그리고 화면 레이아웃에 달려 있습니다.</p><p><strong>기능:</strong> 그것이 플로팅 액션 버튼이 되기에 충분히 중요하고 흔합니까? </p><p><strong>차원(Dimension):</strong> 들어갈 컨테이너 그리고 z 공간 레이어가 당신의 화면에 얼마나 있는지에 따라서 레이즈드 또는 플랫을 선택하십시오. 화면에 많은 수의 개체 레이어가 있지 않아야 합니다.</p><p><strong>레이아웃:</strong> 컨테이너 당 버튼은 주로 한 종류를 사용합니다. 혼합된 버튼은 중요한 기능을 강조하는 것과 같이 당신이 그에 대한 좋은 이유를 가지고 있을 때에만 사용하십시오. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RHFUU2dFdmMtcm8/components_buttons_usage_main.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+    </div>
+    </div>
+                        </div>
+<div id="buttons-usage" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:l">        
+<h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:m">
+    사용법
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2> 
+  <div class="article-content">
+    <div class="module-list">
+    <div>
+          <section class="moduleE1">
+      <h3>다이얼로그에서 버튼</h3>
+    <div class="module-body">
+    <p>다이얼로그 내용물과 버튼을 통합하기 위해서 다이얼로그에 플랫 버튼을 사용하십시오.</p><ul><li>다이얼로그 텍스트 패딩: 24dp</li><li>다이얼로그 버튼 컨테이너 높이: 52dp</li><li>다이얼로그 버튼: 컨테이너 가장자리에서부터 8dp 패딩, 컨테이너 우측 정렬 (LTR 문자를 위해서)</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSXNCRmd0aE5WWWs/components_buttons_usage_dialogs1.png"  />
+                    </div>
+                      </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUUY1MHRaUDdDTGs/components_buttons_usage_dialogs2.png"  />
+                    </div>
+                        <figcaption>
+                        <div class="caption-title"></div><p>다이얼로그에서 플랫 버튼</p><p><strong>다이얼로그 버튼</strong><br/>버튼 높이: 36dp<br/>버튼 상단 여백: 24dp<br/>버튼 패딩: 8dp<br/>버튼 정렬: LTR 문자에서 오른쪽 가장자리<br/>버튼 너비: 버튼 텍스트 길이에 따라 다양함</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU1A0aDJMMGhQRjQ/components_buttons_keyline1.png" / />
+                    </div>
+                        <figcaption>
+          <p>다이얼로그에서 플랫 버튼의 예제 </p><p><strong>버튼</strong><br/>높이: 36dp<br/>최소 너비: 64dp<br/>터치 대상 높이: 48dp<br/>가로 여백: 8dp<br/>가로 패딩: 8dp </p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>인라인 버튼</h3>
+    <div class="module-body">
+    <p>당신의 레이아웃에 따라 레이즈드 또는 플랫 버튼을 고르십시오. 사용자가 쉽게 그것들을 찾을 수 있도록 플랫 버튼 주위에 패딩을 추가하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdU42S2h4QnJMZVE/components_buttons_usage_buttons1.png" / />
+                    </div>
+                        <figcaption>
+          <p>플랫 버튼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscGRSZUU4a0lxc0U/components_buttons_usage_buttons2.png" / />
+                    </div>
+                        <figcaption>
+          <p>레이즈드 버튼의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>지속적인 푸터 버튼</h3>
+    <div class="module-body">
+    <p>당신의 앱이 지속적이고 사용자에게 손쉽게 가능한 액션을 필요로 한다면, 플로팅 액션 버튼을 사용하는 것을 고려하십시오.</p><p>그렇지 않으면, 쉽게 접근이 가능한 지속적인 푸터(Footer) 버튼 또한 고려해 보십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMlN2U1lUU0QtUkk/components_buttons_usage_buttons3.png" / />
+                    </div>
+                        <figcaption>
+          <p>지속적인 푸터 버튼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseU1yM2R4VmhFamc/components_buttons_usage_buttons4.png" / />
+                    </div>
+                        <figcaption>
+          <p>지속적인 푸터 버튼의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Ukt1TFRVUlgxY1k/components_buttons_keyline2.png" / />
+                    </div>
+                        <figcaption>
+          <p>지속적인 푸터 버튼은 48dp 높이입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>지속적인 버튼 영역 안에 레이즈드 버튼은 결코 사용하지 마십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SDNoT21jRWJkZG8/components_buttons_keyline3.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>디바이더의 추가로, 지속적인 푸터 버튼은 또한 스크롤 가능한 다이얼로그에 사용될 수 있습니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscWJWbkVHaDcyNEE/components_buttons_usage_buttons5.png" / />
+                    </div>
+                        <figcaption>
+          <p>다이얼로그에서 지속적인 푸터 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUnd1MlhhVUw1Z28/components_buttons_usage_buttons6.png" / />
+                    </div>
+                        <figcaption>
+          <p>스크롤 가능한 다이얼로그에서 지속적인 푸터 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="buttons-flat-raised-buttons" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    플랫 &amp; 레이즈드 버튼
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>레이즈드 버튼</h3>
+    <div class="module-body">
+    <p>레이즈드 버튼은 주로 평평한 레이아웃에 차원(Dimension)을 추가합니다. 그것은 복잡하거나 넓은 공간에서 기능을 강조합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsR0hib1ExN21wWjA/components_buttons_main5.png" / />
+                    </div>
+                        <figcaption>
+          <p>많은 다양한 내용물이 있는 레이아웃에서 액션에 더 중요성을 두기 위해서 레이즈드 버튼을 사용합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX0xZMnFkR1ZOVmc/components_buttons_main6.png" / />
+                    </div>
+                        <figcaption>
+          <p>레이즈드 버튼은 페이지에서 내용물의 부분을 설명하는 것도 도와줄 수 있습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMF8xdDNDNUc0Zk0/components_buttons_main7.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>레이즈드 버튼은 플랫 버튼보다 많이 두드러집니다.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZk0xMExROVpzLWs/components_buttons_main8.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>UI에서 알아 보기 어려울 수 있는 곳에 플랫 버튼을 사용하지 마십시오.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>플랫 버튼</h3>
+    <div class="module-body">
+    <p>지나친 레이어 사용을 피하기 위해서 툴바와 다이얼로그에 플랫 버튼을 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWVJfOVpiVHYtZ00/components_buttons_main9.png" / />
+                    </div>
+                        <figcaption>
+          <p>플랫 버튼은 다이얼로그에 적절합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsckpmZTBwSmh1VzQ/components_buttons_main10.png" / />
+                    </div>
+                        <figcaption>
+          <p>플랫 버튼은 내용물에 대한 집중을 방해하는 것을 최소화합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTDEwRlFpUmZtVm8/components_buttons_main11.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>플랫 버튼의 올바른 사용</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsS2U2VUVCOVFaRlU/components_buttons_main12.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>레이즈드 버튼은 여기에서 너무 무겁습니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>플랫과 레이즈드 버튼의 상태</h3>
+    <div class="module-body">
+      <p>플랫 버튼은 머티리얼 위에 출력됩니다. 이것은 들어 올려지지는 않지만, 누를 때 색이 채워집니다.</p><p>레이즈드 버튼은 다른 시트에 의존한 머티리얼의 조각처럼 행동합니다—이것은 들어 올려지며 누를 때 색이 채워집니다.</p><p>버튼 텍스트는 대문자를 가진 언어에서 모두 대문자여야 합니다. 대문자가 없는 언어를 위해서, 플랫 버튼 위에 색이 있는 텍스트는 플랫 버튼을 일반 텍스트와 구별하게 만듭니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SnA4Umw3S0pfNWs/components_buttons_main13.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밝은 플랫/밝은 테마</div><p>최소 너비: 88dp<br/>높이: 36dp<br/>맴도는(Hover): 20% #999999<br/>눌려진(Pressed): 40% #999999<br/>비활성화된 텍스트: 26% #000000</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bEFqalRSeUJkbEU/components_buttons_main14.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">어두운 플랫/어두운 테마</div><p>최소 너비: 88dp<br/>높이: 36dp<br/>맴도는(Hover): 15% #CCCCCC<br/>눌려진(Pressed): 25% #CCCCCC<br/>비활성화된 텍스트: 30% #FFFFFF</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WlduMk1kbTRzQWc/components_buttons_main15.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밝은 레이즈드/밝은 테마</div><p>최소 너비: 88dp <br/>높이: 36dp <br/>비활성화된 텍스트: 26% #000000<br/>비활성화된 버튼: 12% #000000</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UTh2dExpSlRVWVU/components_buttons_main16.png" / />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">어두운 레이즈드/어두운 테마</div><p>최소 너비: 88dp <br/>높이: 36dp <br/>보통(Normal) 색: 500 <br/>맴돌기(Hover) 색: 600 <br/>눌려진(Pressed) 색: 700 <br/>비활성화된 텍스트: 30% #FFFFFF <br/>비활성화된 버튼: 12% #FFFFFF</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>접근성</h4><p>장애를 가진 사람들을 위한 사용성을 보장하기 위해서, 버튼의 높이가 36dp인지, 그리고 터치 가능한 대상이 48dp의 최소 높이를 가졌는 지를 확인하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3LTRtTEtDdVpzYWM/components_buttons_keyline4.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>버튼 높이: 36dp<br/>터치 가능한 대상의 높이: 48dp</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>버튼 고도</h4><p>레이즈드 버튼은 2dp의 기본 고도(Elevation)를 가집니다. 데스크탑에서, 이 고도는 맴돌기(Hover) 상호작용을 위해 예약될 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPZm1EakJMZWxSdXc/components_buttons_main17.png">
+                    </div>
+                        <figcaption>
+          <p><strong>어두운/밝은 테마</strong></p><p>최소 너비: 64dp <br>높이: 36dp <br>Z축 깊이: 0dp<br>비활성화된 텍스트: 30% #FFFFFF<br>비활성화된 버튼: 12% #FFFFFF</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+<div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>밀도</h4><p>마우스와 키보드가 주 입력 방법일 때, 버튼 치수는 밀집한(Dense) UI를 수용하기 위해서 약간 줄여야 할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPM3QyLXVkSnpJOEE/components_buttons_main18.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">기본 버튼</div>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPdHFuQ2VaejdBQ3c/components_buttons_main19.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">밀집한 버튼</div>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPeUpjMndNN29HMTQ/components_buttons_main20.png">
+                    </div>
+                        <figcaption>
+          <p>버튼 텍스트: 14pt Roboto medium<br>버튼 높이: 36dp<br>버튼 좌측과 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPZ1hOcnRjRFhvZ2s/components_buttons_main21.png">
+                    </div>
+                        <figcaption>
+          <p>버튼 텍스트: 13pt Roboto medium<br>버튼 높이: 32dp<br>버튼 텍스트 좌측과 우측 패딩: 16dp</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>        
+              <div>
+          <section class="moduleD1">
+      <h3>모션 안에서 버튼</h3>
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFbjE5djFGMzdKcmc/components-buttons-flatbuttons.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>플랫 버튼</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFMFBOTERHZFR4aDg/components-buttons-raisedbuttons.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>레이즈드 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="buttons-toggle-buttons" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    토글 버튼
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+<div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>토글 버튼은 연관된 옵션을 그룹화 하기 위해서 사용될 것입니다. 어느 토글 버튼이 한 그룹의 일부분인 것을 전달하기 위해서 레이아웃과 공간을 정리하십시오.</p><p>초점을 얻은 상태와 눌려진 상태는 토글이 그룹의 일부분임을 나타내는 것을 보강할 것입니다. 예를 들어, 한 버튼 세그먼트가 초점을 얻었을 때, 초점은 동시에 그 세그먼트의 나머지에 표시될 것입니다.</p><p>토글 버튼 요구 사항:</p><ul><li>한 그룹 안에서 적어도 세 개의 토글 버튼이 존재할 것</li><li>텍스트, 아이콘, 또는 둘 다가 있는 레이블 버튼일 것</li></ul><p>다음의 조합이 권장됩니다:</p><ul><li>다중 선택 그리고 선택되지 않은 것들</li><li>전용(Exclusive) 선택 그리고 선택되지 않은 것들</li><li>전용 선택으로만 사용</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3V2JKWk9EbzFaMjg/components_buttons_togglebuttons1.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">전용 선택</div><p>텍스트 정렬 토글 버튼은 한 번에 오직 한 아이템만 선택이 가능하며, 왼쪽, 오른쪽, 가운데, 전체, 그리고 양쪽 정렬을 위한 텍스트 옵션을 제공합니다. 한 옵션을 선택하면 다른 옵션은 선택 해제됩니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NzNSMUpjSkhtdXM/components_buttons_togglebuttons2.png">
+                    </div>
+                        <figcaption>
+          <div class="caption-title">다중 선택</div><p>굵게, 이탤릭체, 그리고 밑줄과 같이 논리상으로 그룹화된 옵션은 여러 옵션을 선택하는 것을 허용합니다.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3ckVldVFCWE1INnc/components_buttons_togglebuttons3.png">
+                    </div>
+                        <figcaption>
+          <p>아무 옵션도 선택되지 않음</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3am5aV3VnUHFhQW8/components_buttons_togglebuttons4.png">
+                    </div>
+                        <figcaption>
+          <p>한 옵션이 선택됨</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>      
+                  <div>
+          <section class="moduleE1">
+      <h3>아이콘 토글</h3>
+    <div class="module-body">
+      <p>아이템에 별을 추가하거나 제거하는 것과 같이, 아이콘은 선택되거나 선택 해제되기 위한 단일 선택을 허용하는 토글 버튼에 적절합니다.</p><p>아이콘은 앱 바, 툴바, 액선 버튼, 또는 토글 안에 위치하는 것이 가장 알맞습니다.</p><p>아이콘 토글은 그 터치 대상 경계를 넘는 경계가 있거나 또는 없는 잉크 <a href="../animation/responsive-interaction.html#responsive-interaction-surface-reaction">표면 반응</a>을 표시할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B_udO5B8pzrzdXVuTlBoOTBjcU0/components_buttons_other1.png"  />
+                    </div>
+                        <figcaption>
+          <p>보통(Normal), 맴돌기(Hover), 초점을 얻은(Focused), 눌려진(Pressed) 그리고 비활성화(Inactive) 상태의 아이콘 토글</p>
+        </figcaption>
+              </figure>
+                     </div>
+  </div>
+</section>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="buttons-dropdown-buttons" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:t">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:u">
+    드롭다운 버튼
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">      
+              <div>
+          <section class="moduleD1">
+      <h3>모바일 드롭다운 버튼</h3>
+    <div class="module-body">
+    <h4>드롭다운 버튼</h4><p>드롭다운(Dropdown) 버튼은 다양한 선택지 사이에서 선택합니다. 그 버튼은 현재 상태와 아래쪽 화살표를 보여줍니다. 예를 들어, 이용 가능한 상태는 문자열의 리스트, 팔레트, 또는 아이콘으로서 보여질 것입니다.</p><p>사용자가 버튼으로 상호작용 할 때, 메뉴는 버튼을 덮고 가능한 상태를 보여줍니다. 상태를 누르는 것은 메뉴를 사라지게 하고 새로운 상태를 보여주기 위해서 버튼을 갱신합니다.</p><p>드롭다운 내에서의 스크롤은 메뉴 스크롤과 동일합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RkFoZFBPSmlBME0/components_buttons_mobile1.png" / />
+                    </div>
+                        <figcaption>
+          <p>드롭다운 메뉴</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVkg5V3htMWk0OVk/components_buttons_mobile2.png" / />
+                    </div>
+                        <figcaption>
+          <p>리스트 메뉴에 있는 일반적인 드롭다운 버튼</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UDJXZ0tXcG4xelU/components_buttons_dropdown1.png"  />
+                    </div>
+                        <figcaption>
+          <p>닫혀진 드롭다운 버튼, 열린 드롭다운 메뉴, 그리고 선택된 드롭다운 메뉴</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+      <h4>일반적인 오버플로우 드롭다운 버튼</h4><p>이 버튼은 보여주는 상태가 없지만 화살표나 일반적인(Generic) 메뉴 버튼을 가진 드롭다운 버튼입니다. 버튼이 눌려졌을 때, 메뉴가 표시됩니다. 메뉴에서 옵션을 누르는 것은 일반적으로 그 옵션을 위한 추가적인 설정을 안내합니다.</p><h4>세그먼티드 드롭다운 버튼</h4><p>세그먼티드(Segmented) 드롭다운은 두 개의 부분을 가지고 있습니다: 현재 상태 그리고 드롭다운 화살표 아이콘. 현재 상태를 누르면 화면 내에서 발생하는 상태의 액션을 유발할 것입니다. 드롭다운 화살표를 누르면 모든 상태 옵션을 보여줄 것입니다. 하나를 선택하면 표시된 상태를 변경할 것입니다.</p><h4>편집 가능한 세그먼티드 드롭다운 버튼</h4><p>이 버튼은 폰트 크기 픽커와 같이 표시된 상태에 텍스트 편집이 가능한 곳이 있는 세그멘티드 드롭다운을 가집니다. 현재 상태를 누르면 상태의 액션을 실행하는 것과 표시된 상태를 편집이 가능하도록 만드는 것 모두를 수행합니다. 하나를 선택하는 것은 표시된 상태를 변경할 것입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TnNXUmxFc1NyMjA/components_buttons_dropdown2.png"  />
+                    </div>
+                        <figcaption>
+          <p>보통(Normal), 맴돌기(Hover), 초점을 얻은(Focus), 눌려진(Pressed) 그리고 선택(Selecting) 상태의 일반적(Generic), 세그먼티드(Segmented) 그리고 편집 가능한(Editable) 오버플로우 드롭다운 버튼</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video loop  controls>
+                                            <source src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3321sZLoP_HMHZFaEJvMjQxa3M/components-buttons-otherbuttons-060203_MobileDropdowns_xhdpi_006.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>드롭다운 버튼의 애니메이션</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>데스크탑 드롭다운</h3>
+    <div class="module-body">
+    <p>데스크탑 앱 바 명세<br/> </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZW9FNWIwb2xtVnM/components_buttons_dropdown3.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">데스크탑 드롭다운</div><p>상단과 하단 패딩: 16dp<br/>왼쪽 패딩: 24dp<br/>오른쪽 여백: 16dp<br/>폰트 스타일 사이에 가로 공간: 24dp</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components">
+            <a class="footer-text" href="bottom-sheets.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      바텀 시트
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-R section-components">
+            <a class="footer-text" href="buttons-floating-action-button.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      버튼: 플로팅 액션 버튼
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/components/buttons.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:39 GMT -->
+</html>

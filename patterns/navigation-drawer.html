@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/navigation-drawer.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:58 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>네비게이션 드로어 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Navigation drawer - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Navigation drawer - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Navigation drawer - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Navigation drawer</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">네비게이션 드로어</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="nav_selected" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">네비게이션 드로어
+          </h1>
+    <div class="chapter-content">
+        
+        <div class="chapter-intro">
+            <p>네비게이션 드로어는 왼쪽에서부터 미끄러지듯이 들어옵니다. 이것은 구글 앱에서 발견되는 일반적인 패턴이며, 리스트를 위한 키라인과 측정 기준(Metric)을 따릅니다.</p>
+
+      
+      
+    </div>
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-drawer-specs">명세
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-drawer-content">내용물
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#navigation-drawer-behavior">동작
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+                        <div id="navigation-drawer-specs" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    명세
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleC1 moduleC2">
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UW53WklQYjJ2U1k/patterns_navdrawer_metrics1.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">타이포그래피</div><ol start="1"><li>이름: Roboto Medium, 14sp, #FFFFFF</li><li>이메일 주소: Roboto Regular, 14sp, #FFFFFF</li><li>리스트 아이템: Roboto Medium, 14sp, 87% #000000</li><li>서브헤더: Roboto Medium, 14sp, 54% #000000. 16dp 키라인에 맞춤</li></ol><div class="caption-title"> </div>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bVdPRzZzeUE2bGc/patterns_navdrawer_metrics2.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">키라인과 여백</div><p>아이콘은 화면 좌측과 우측 여백에 맞춥니다: 16dp</p><p>아이콘 값: 54% #000000</p><p>아이콘이나 아바타와 관련된 내용물의 좌측 여백: 72dp</p><p>사이드 네비게이션 너비: 화면 너비 - 액션바 높이와 같음. 위의 예제에서는 화면의 우측 가장자리에서부터 56dp입니다. 네비게이션 드로어의 최대 너비는 표준 증가값(모바일에서 56dp, 태블릿에서 64dp)의 5배입니다.</p><p>모바일에서는 16dp의 수평 여백을, 그리고 태블릿에서는 24dp의 수평 여백을 사용하십시오.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                          <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SEltaWlHZHFGdU0/patterns_navdrawer_metrics3.png"  />
+                      </div>
+                        <figcaption>
+          <div class="caption-title">수직 공간</div><ol start="1"><li>스테이터스 바: 24dp</li><li>부제(Subtitle): 56dp</li><li>내용물 영역 사이의 공간: 8dp</li><li>부제(Subtitle)와 리스트 아이템: 48dp</li></ol><p>모든 리스트 그룹의 최상단과 하단에 8dp 패딩을 추가하십시오. 한 가지 예외는 서브헤더가 있는 리스트의 최상단입니다. 왜냐하면 서브헤더는 자체에 패딩이 들어있기 때문입니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-drawer-content" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    내용물
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>고도 (Elevation)</h3>
+    <div class="module-body">
+    <p>네비게이션 드로어는 스테이터스 바 뒤를 포함하여 화면의 전체 높이에 걸쳐 이어져 있으며 16dp의 휴식 고도(Resting Elevation)을 가집니다. 드로어 뒤에 모든 것은 여전히 보이지만 배경막(Scrim)에 의해서 어둡게 표시됩니다.</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NDF2RjRVMlozQ2s/patterns_navdrawer_elevation1.png" / />
+                    </div>
+                        <figcaption>
+          <p>안드로이드에서 네비게이션 드로어</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>선택 상태</h3>
+    <div class="module-body">
+    <p>리스트 아이템이 선택된 후, 그 아이템은 선택을 나타내기 위해서 앱의 주 색(또는 #000000 100%)에 맞춰 색을 변경합니다. 또한, 터치 리플(Touch Ripple)은 그 리스트 아이템의 행을 강조합니다.</p><p>터치 리플/강조의 색이 당신의 주 색과 충분히 대비되지 않는다면, 주 색의 짙은 색조를 사용하십시오.</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7LWFrRENhVVJrYzQ/patterns_navdrawer_selection1.png" / />
+                    </div>
+                        <figcaption>
+          <p>선택된 리스트 아이템</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MmFvTUpJX0FtcFE/patterns_navdrawer_selection2.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 리플/강조</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bUZtOW4xeHlMV2s/patterns_navdrawer_selection3.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 리플/강조</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T2taRklMQ2Jja1k/patterns_navdrawer_selection4.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 리플/강조</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NWhwSnA1TUJveDQ/patterns_navdrawer_selection5.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 리플/강조</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7V0VqbkZxQ3AtelU/patterns_navdrawer_selection6.png" / />
+                    </div>
+                        <figcaption>
+          <p>터치 리플/강조</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>디바이더</h3>
+    <div class="module-body">
+    <p>네비게이션 드로어에서 모든 디바이더는 드로어 내에서 각 디바이더마다 8dp의 상단과 하단 패딩을 가지며, 풀브리드(Full-bleed, 너비를 채움)로 표시됩니다.</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y0hHNXJTYjExbWc/patterns_navdrawer_dividers1.png" / />
+                    </div>
+                        <figcaption>
+          <p>디바이더의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Z3RveHdXRDgwNmc/patterns_navdrawer_dividers2.png" / />
+                    </div>
+                        <figcaption>
+          <p>8dp 수직 간격</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>스크롤</h3>
+    <div class="module-body">
+    <p>네비게이션 드로어는 뷰의 스크롤과 동일한 방법으로 스크롤합니다.</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7X3FHZ3ZwNDF4LU0/patterns_navdrawer_scrolling1.png" / />
+                    </div>
+                        <figcaption>
+          <p>스크롤 하기 전 네비게이션 드로어</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MFMyT2ZxcTZXb3c/patterns_navdrawer_scrolling2.png" / />
+                    </div>
+                        <figcaption>
+          <p>스크롤 중인 네비게이션 드로어</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>설정과 지원</h3>
+    <div class="module-body">
+    <p>설정과 지원은 스크롤하는 리스트의 최하단에 리스트 내용물의 나머지와 함께 일직선으로 위치합니다. 이것은 당신의 제품이 제공하는 것에 따라 도움말, 피드백, 또는 도움말 &amp; 피드백을 나타냅니다. </p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dzZqN0Y0WHo3bkU/patterns_navdrawer_settings1.png" / />
+                    </div>
+                        <figcaption>
+          <p>설정과 지원은 스크롤하는 리스트의 최하단에 위치합니다.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="navigation-drawer-behavior" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    동작
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>영구적</h3>
+    <div class="module-body">
+    <p><strong>데스크탑을 위해 기본으로 권장됨</strong></p><p><br/>영구적인(Permanent) 네비게이션 드로어는 항상 보여지며, 내용물이나 배경과 동일한 고도(Elevation)로 왼쪽 가장자리에 고정되어 있습니다. 이것은 닫을 수 없습니다.</p><p>고정하기 위한 한계점(Threshold)은 다음 중 최소값을 사용하여 계산됩니다:</p><p>1. 사이드 네비게이션 너비<br/>2. 내용물 너비<br/>3. 내용물 패딩</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TEpSaGhDNktvd3M/patterns_navdrawer_behavior_permanent1.png"  />
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>영구적인 네비게이션 드로어의 유형</h4><p>전체 인터페이스의 구조와 동작은 사용하기 위한 영구적인 네비게이션 드로어가 어떤 유형인지를 결정합니다:</p><ul><li><strong>전체 높이 네비게이션 드로어: </strong>왼쪽에서 오른쪽인 계층 구조를 사용하는 정보 소비에 초점을 둔 앱</li><li><strong>앱 바 아래 잘려진(Clipped) 네비게이션 드로어: </strong>화면에 걸쳐 균형을 요구하는 생산성에 초점을 둔 앱</li><li><strong>플로팅 네비게이션 드로어</strong>: 적은 계층 구조를 요구하는 앱</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bmlZbE9Gc3M2OE0/patterns_navdrawer_behavior_permanent2.png" / />
+                    </div>
+                        <figcaption>
+          <p>영구적인 전체 높이 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Um9FdklJeGtQVWc/patterns_navdrawer_behavior_permanent3.png" / />
+                    </div>
+                        <figcaption>
+          <p>영구적인 잘려진 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TnNDMTZzOEROYkE/patterns_navdrawer_behavior_permanent4.png" / />
+                    </div>
+                        <figcaption>
+          <p>영구적인 플로팅 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ME1wX3RpSkNmSUU/patterns_navdrawer_behavior_permanent5.png" / />
+                    </div>
+                        <figcaption>
+          <p>카드 안 영구적인 플로팅 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>지속적</h3>
+    <div class="module-body">
+    <p>지속적인 네비게이션 드로어는 토글로 열거나 닫을 수 있습니다. 그 드로어는 내용물과 동일한 표면 고도(Surface Elevation) 위에 있습니다. 이것은 기본적으로 닫혀져 있고, 메뉴 아이콘을 선택하면 열리며, 사용자에 의해 닫혀질 때까지 계속 열려 있습니다. 그 드로어의 상태는 액션에서 액션까지 그리고 세션에서 세션까지 기억됩니다.</p><p>드로어가 열릴 때 페이지 그리드의 바깥에 있는 것은 크기를 변경하고 작은 뷰포트에 맞추도록 다른 내용물을 강제합니다.</p><p>지속적인 네비게이션 드로어는 모바일보다 큰 모든 크기에 허용됩니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NzRVc2pDbXRuVzg/patterns_navdrawer_behavior_persistent1.png" / />
+                    </div>
+                        <figcaption>
+          <p>닫힌 지속적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7YVdKQlF3TEo2S3M/patterns_navdrawer_behavior_persistent2.png" / />
+                    </div>
+                        <figcaption>
+          <p>열린 지속적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>지속적인 네비게이션 드로어는 네비게이션을 위해 위에 있는 화살표를 사용할 것을 요구하는 여러 단계의 계층 구조를 가진 앱에는 권장되지 않습니다.</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example dont">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aTM1NXR5SmJRSTQ/patterns_navdrawer_behavior_persistent3.png"  />
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>미니 버전 (Mini Variant)</h4><p>이 변형(Variation)에서, 지속적인 네비게이션 드로어는 자신의 너비를 변경합니다. 이것의 휴식 상태는 앱 바에 의해 잘려진, 내용물과 동일한 고도(Elevation)에 위치한 미니 드로어와 같습니다. 확장될 때, 이것은 일반적인 지속적인 네비게이션 드로어로 보여집니다.</p><p><strong>권장되는 경우: </strong><br/>내용물과 함께 빠른 선택 접근이 필요한 앱 섹션</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZVZzVEhrbF9YWk0/patterns_navdrawer_behavior_persistent4.png" / />
+                    </div>
+                        <figcaption>
+          <p>미니 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7TEVnWVlVS3RXMzQ/patterns_navdrawer_behavior_persistent5.png" / />
+                    </div>
+                        <figcaption>
+          <p>열린 지속적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>임시적</h3>
+    <div class="module-body">
+    <p>임시적인 네비게이션 드로어는 열리거나 닫히는 것을 토글할 수 있습니다. 기본적으로 닫혀진 드로어는 섹션이 선택되기까지 모든 다른 내용물 위에 임시적으로 열립니다.</p><p><strong>권장되는 경우</strong><strong>:</strong><br/>태블릿 </p><p><strong>요구되는 경우:</strong><br/>모바일</p><h4> </h4>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T193R2ZoY3BibkU/patterns_navdrawer_behavior_temporary1.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 닫힌 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Um43WTZrV2dCelk/patterns_navdrawer_behavior_temporary2.png" / />
+                    </div>
+                        <figcaption>
+          <p>모바일에서 열린 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>미니 버전은 또한 임시적인 네비게이션 드로어를 위해 허용된 닫혀진 상태입니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7N19Kem9BUU9sc2c/patterns_navdrawer_behavior_temporary3.png" / />
+                    </div>
+                        <figcaption>
+          <p>태블릿에서 닫힌 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NFJ3ZmUzMVhGeHc/patterns_navdrawer_behavior_temporary4.png" / />
+                    </div>
+                        <figcaption>
+          <p>태블릿에서 열린 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MTBONHlNbHFQZ0k/patterns_navdrawer_behavior_temporary5.png" / />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 닫힌 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VWQ1WkJlNXByUDg/patterns_navdrawer_behavior_temporary6.png" / />
+                    </div>
+                        <figcaption>
+          <p>데스크탑에서 열린 임시적인 드로어의 예제</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="navigation.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      네비게이션
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="navigational-transitions.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      네비게이션 트랜지션
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/navigation-drawer.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:58 GMT -->
+</html>

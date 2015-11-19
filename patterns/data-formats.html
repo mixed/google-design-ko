@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  
+<!-- Mirrored from www.google.com/design/spec/patterns/data-formats.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:53 GMT -->
+<head>
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>데이터 형식 - 패턴 - 구글 디자인 가이드라인</title>
+    <meta itemprop="name" content="Data formats - Patterns - Google design guidelines"/>
+    <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Data formats - Patterns - Google design guidelines" />
+    <meta property="og:image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Data formats - Patterns" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Data formats</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Patterns</Attribute>
+      <Attribute name="section_slug">patterns</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">패턴</span>
+      <span class="chapter-title">데이터 형식</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+</nav>
+
+    
+    
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼 디자인
+                        </dt>
+        <dd>
+                    <a class="" href="../material-design/introduction.html">소개
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">머티리얼이란 무엇인가?
+                </dt>
+        <dd>
+                    <a class="" href="../what-is-material/environment.html">환경
+                    </a>
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    </a>
+                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
+                </dt>
+        <dd>
+                    <a class="" href="../animation/authentic-motion.html">정확한 모션
+                    </a>
+                    <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
+                    </a>
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    </a>
+                    <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">스타일
+                </dt>
+        <dd>
+                    <a class="" href="../style/color.html">색
+                    </a>
+                    <a class="" href="../style/icons.html">아이콘
+                    </a>
+                    <a class="" href="../style/imagery.html">이미지
+                    </a>
+                    <a class="" href="../style/typography.html">타이포그래피
+                    </a>
+                    <a class="" href="../style/writing.html">글쓰기
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">레이아웃
+                </dt>
+        <dd>
+                    <a class="" href="../layout/principles.html">기본 원리
+                    </a>
+                    <a class="" href="../layout/units-measurements.html">단위와 치수
+                    </a>
+                    <a class="" href="../layout/metrics-keylines.html">측정 기준 &amp; 키라인
+                    </a>
+                    <a class="" href="../layout/structure.html">구조
+                    </a>
+                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
+                </dt>
+        <dd>
+                    <a class="" href="../components/bottom-sheets.html">바텀 시트
+                    </a>
+                    <a class="" href="../components/buttons.html">버튼
+                    </a>
+                    <a class="" href="../components/buttons-floating-action-button.html">버튼: 플로팅 액션 버튼(FAB)
+                    </a>
+                    <a class="" href="../components/cards.html">카드
+                    </a>
+                    <a class="" href="../components/chips.html">칩
+                    </a>
+                    <a class="" href="../components/data-tables.html">데이터 테이블
+                    </a>
+                    <a class="" href="../components/dialogs.html">다이얼로그
+                    </a>
+                    <a class="" href="../components/dividers.html">디바이더
+                    </a>
+                    <a class="" href="../components/grid-lists.html">그리드 리스트
+                    </a>
+                    <a class="" href="../components/lists.html">리스트
+                    </a>
+                    <a class="" href="../components/lists-controls.html">리스트: 컨트롤
+                    </a>
+                    <a class="" href="../components/menus.html">메뉴
+                    </a>
+                    <a class="" href="../components/pickers.html">픽커
+                    </a>
+                    <a class="" href="../components/progress-activity.html">프로그레스 &amp; 액티비티
+                    </a>
+                    <a class="" href="../components/selection-controls.html">셀렉션 컨트롤
+                    </a>
+                    <a class="" href="../components/sliders.html">슬라이더
+                    </a>
+                    <a class="" href="../components/snackbars-toasts.html">스낵바 &amp; 토스트
+                    </a>
+                    <a class="" href="../components/subheaders.html">서브헤더
+                    </a>
+                    <a class="" href="../components/steppers.html">스테퍼
+                    </a>                    
+                    <a class="" href="../components/tabs.html">탭
+                    </a>
+                    <a class="" href="../components/text-fields.html">텍스트 필드
+                    </a>
+                    <a class="" href="../components/toolbars.html">툴바
+                    </a>
+                    <a class="" href="../components/tooltips.html">툴팁
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">패턴
+                </dt>
+        <dd>
+                    <a class="nav_selected" href="data-formats.html">데이터 형식
+                    </a>
+                    <a class="" href="empty-states.html">비어 있는 상태
+                    </a>
+                    <a class="" href="errors.html">에러
+                    </a>
+                    <a class="" href="gestures.html">제스처
+                    </a>
+                    <a class="" href="fingerprint.html">지문
+                    </a>
+                    <a class="" href="launch-screens.html">시작 화면
+                    </a>
+                    <a class="" href="loading-images.html">이미지 로드
+                    </a>
+                    <a class="" href="navigation.html">네비게이션
+                    </a>                    
+                    <a class="" href="navigation-drawer.html">네비게이션 드로어
+                    </a>
+                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    </a>
+                    <a class="" href="notifications.html">알림
+                    </a>
+                    <a class="" href="permissions.html">퍼미션
+                    </a>
+                    <a class="" href="scrolling-techniques.html">스크롤 기술
+                    </a>
+                    <a class="" href="search.html">검색
+                    </a>
+                    <a class="" href="selection.html">선택
+                    </a>
+                    <a class="" href="settings.html">설정
+                    </a>
+                    <a class="" href="swipe-to-refresh.html">스와이프로 새로고침
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">사용성
+                </dt>
+        <dd>
+                    <a class="" href="../usability/accessibility.html">접근성
+                    </a>
+                    <a class="" href="../usability/bidirectionality.html">양방향성
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
+                </dt>
+        <dd>
+                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    </a>
+                    <a class="" href="../resources/devices.html">디바이스
+                    </a>
+                    <a class="" href="../resources/layout-templates.html">레이아웃 템플릿
+                    </a>
+                    <a class="" href="../resources/roboto-noto-fonts.html">Roboto &amp; Noto 폰트
+                    </a>
+                    <a class="" href="../resources/sticker-sheets-icons.html">스티커 시트 &amp; 아이콘
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">새로 추가된 내용
+                        </dt>
+        <dd>
+                    <a class="" href="../whats-new/whats-new.html">새로 추가된 내용
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">데이터 형식
+          </h1>
+    <div class="chapter-content">
+        
+    
+        <nav class="chapter-toc">
+      <h1>차례</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-formats-date-time">날짜 &amp; 시간
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-formats-data-redaction-truncation">데이터 교정과 생략
+                </a></li>
+              </ul>
+    </nav>
+    
+    <div class="article-list">
+<div id="data-formats-date-time" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:i">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:j">
+    날짜 &amp; 시간
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"></polygon>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+      <h3>날짜와 시간</h3>
+    <div class="module-body">
+    <p>당신이 어떻게 날짜와 시간을 형식화 하는지는 다음의 몇 가지 요인에 의존합니다:</p><ul><li>날짜와 시간이 현재의 것인지</li><li>당신이 12시간 형식을 사용하는지 아니면 24시간 형식을 사용하는지</li><li>얼마나 구체적인 것이 당신에게 필요한지</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c5">
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>요소</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p>예제 구현</p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>시간</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1">
+                <p><span>오늘 내라면, 마침표(Period) 없이 대문자로 AM이나 PM을 사용하여 시간을 표시하십시오. 당신이 24시간 형식을 사용한다면, AM/PM 없이 시간을 표시하십시오.</span></p>
+                <p><span>많은 비영어권 언어들은 am과 pm을 소문자로 사용합니다.</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>2:00 PM<br>14:00</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>월, 일, 년</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1">
+                <p><span>현재 달력 연도 내라면, 연도 없이 그 날짜를 표시하십시오. 그 외에는, 날짜와 연도를 표시하십시오.</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+              <p><span>January 14<br>14 January 2012</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>대략적인 시간</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1">
+                <p><span>대략적인 시간(Approximate Time)은 가장 크고 최근인 날짜나 시간 단위로 잘라내어 표시하십시오.</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>In 5 minutes<br>3 days ago</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>절대 시간</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1">
+                <p><span>대략적인 시간이 적합하지 않을 때, 구체적인 날짜 그리고/또는 시간을 표시하십시오.</span></p>
+            </td>
+            <td class="c28" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>Today, 10:00 AM</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>시간과 날짜 범위</h3>
+    <div class="module-body">
+    <p>날짜와 시간 범위는 다음과 같은 것에 근거하여 형식화됩니다: </p><ul><li>연도는 그 범위의 양 쪽 모두 동일합니다.</li><li>그 범위의 양쪽 모두 현재 연도입니다.</li><li>양 쪽 시간 모두 동일한 AM이든지 PM입니다.</li></ul>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c5">
+            <td class="c15" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>범위 요소</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c13" colspan="1" rowspan="1">
+                <p><span>예제 구현</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c15" colspan="1" rowspan="1">
+                <p><span>엔 대시</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p><span>공간 없이 엔 대시(En Dash)로 날짜나 시간의 범위를 구분하십시오. 월(Month)을 설명할 때나, 모호성을 제거하기 위해서 공간을 추가하십시오.</span></p>
+            </td>
+            <td class="c13" colspan="1" rowspan="1">
+                <p><span>8:00 AM–12:30 PM<br>6 Jan – 2 Feb</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c15" colspan="1" rowspan="1">
+                <p><span>연도</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+              <p><span>둘 다 현재 연도인 경우 외에는, 시작 뿐만 아니라 끝에도 연도를 보여 주십시오.</span></p>
+            </td>
+            <td class="c13" colspan="1" rowspan="1">
+                <p><span>Dec 6, 2013–Jan 2, 2014</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c15" colspan="1" rowspan="1">
+                <p><span>AM/PM</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p><span>시간이 모두 동일한 AM/PM이라면, 그 범위의 끝에 AM이나 PM 하나만 사용하십시오.</span></p>
+            </td>
+            <td class="c13" colspan="1" rowspan="1">
+                <p><span>8:00–10:30 AM</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>시간대</h3>
+    <div class="module-body">
+    <p>시간대(Time Zone)는 지역 전체에 걸쳐 다양하기 때문에, 시간대는 명확할 뿐만 아니라 적절해야 합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c5">
+            <td class="c9" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>시간대 유형</span></p>
+            </td>
+            <td class="c21" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>예제</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c9" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>한 자리 시간</span></p>
+            </td>
+            <td class="c21" colspan="1" rowspan="1">
+                <p><span>한 자리 시간을 위해 숫자 앞의 0을 제거하십시오.</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>UTC+5:00</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c9" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>단일 시간대</span></p>
+            </td>
+            <td class="c21" colspan="1" rowspan="1">
+                <p><span>단일 시간대를 나타낼 때 두 글자의 시간대를 사용하십시오. S(표준을 위한) 또는 D(일광 시간을 위한)를 제거하십시오.</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>Open 4–10 PM ET</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c9" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>시간대 조합</span></p>
+            </td>
+            <td class="c21" colspan="1" rowspan="1">
+                <p><span>전국적인 청중을 위해 날짜를 지정할 때, 혼란을 피하기 위해서 표준 또는 일광 시간의 두문자(예를 들어, EDT)를 포함하십시오. 애리조나와 같은 미국 일부의 주는 일광 절약 시간을 사용하지 않습니다.</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>The first game is on April 13, 2015 at 4 PM EDT.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>사람 그리고 상대적인 언어</h3>
+        <div class="module-body">
+          <p>공간이 허용할 때, 사람들이 보통 서로에게 말하는 대로 날짜와 시간 정보를 표시하십시오.</p><ul><li>Yesterday나 Tomorrow와 같은 용어로 어제나 내일을 나타내십시오.</li><li>그 날이 미래이고 그 주 내에 있다면, 요일을 표시하십시오(예를 들어, Tuesday).</li><li>시간을 설명하거나 묘시하는 것을 돕는 대체 단어를 표시하십시오. 예를 들어, “Store open 9:00 AM–Midnight” 또는 “Reminder for tomorrow afternoon”</li></ul>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>상황에 의한 날짜와 시간 수정</h3>
+    <div class="module-body">
+    <p>상황에 따라서, 날짜나 시간만 보여주거나, 아니면 날짜와 시간 모두를 보여 주십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+<table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c5">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>상황</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>예제 구현</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>미래</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>미래의 요일이나 날짜에 시간을 포함하십시오.</span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>10 Jan, 08:00 </span></p>
+            </td>
+        </tr>
+        <tr class="c32">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>과거</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>과거 시간을 나타낼 때, 날짜 뿐만 아니라 시간도 표시하십시오.</span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+              <p><span>Reminded Jan 5,<br/> 7:16 AM</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>먼 과거</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>먼 과거에 이벤트를 위한 시간을 생략하십시오.</span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>3 Jan</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>평일</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>캘린더 초대를 위해서와 같이 요일을 나타낼 때, 콤마로 구분된 축약된 요일 표시하십시오. </span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+              <p><span>Mon, Jan 10,<br/> 8:00 AM</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c4" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>기간</span></p>
+            </td>
+            <td class="c11" colspan="1" rowspan="1">
+                <p><span>오디오나 비디오와 같이 H:MM:SS 형식으로 녹음, 녹화의 기간을 보여 주십시오. 시간이나 초가 적용되지 않았다면 생략하십시오.</span></p>
+                <p><span>동일한 상황 전체에 걸쳐 동일한 형식을 사용하십시오. 시간과 분을 나타내는 “3:15”라는 레이블이 붙여진 비디오는 이 페이지 이후에 분과 초를 나타내기 위해서 이 시간 형식을 사용하지 않아야 합니다.</span></p>
+            </td>
+            <td class="c17" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>0:30<br>1:01:05</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>              
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>약어</h3>
+    <div class="module-body">
+    <p>공간이 제한된 경우, 월과 요일을 위해 약어(Abbreviation)를 사용하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table cellpadding="0" cellspacing="0" class="c19">
+    <tbody>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1">
+                <p><span>기간</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>설명</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>예제 구현</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1">
+                <p><span>월</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>월은 축약되거나 숫자일 수 있습니다. 많은 언어들은 월 이름을 축약하지 않습니다.</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>Jan 6<br>3/12/12</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1">
+                <p><span>날짜 형식</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>미국의 날짜 형식은 월/일/년이지만, 다른 나라는 일/월/년을 사용합니다.</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>March 12, 2012 written as 03/12/12 could be misinterpreted to mean December 3, 2012 across different users.</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1">
+                <p><span>요일</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>요일은 각 요일의 첫번째 글자를 사용하여 축약될 것입니다.</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>S for Sunday<br>M for Monday</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1">
+                <p><span>날짜와 시간</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>축약된 요일은 시간과 조합될 것입니다.</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>Sun, 2:00 PM<br>Sun, 14:00</span></p>
+            </td>
+        </tr>
+        <tr class="c5">
+            <td class="c27" colspan="1" rowspan="1" nowrap="nowrap">
+                <p><span>대략적인 수</span></p>
+            </td>
+            <td class="c30" colspan="1" rowspan="1">
+                <p><span>“:00”을 제거한 축약된 숫자 단위는 그래프, 기간 등에 레이블을 붙이는 타임스탬프에 적합합니다.</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p><span>8 AM<br>2 hr 32 min ago</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>      
+                  <div id="data-formats-data-redaction-truncation" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    데이터 교정과 생략
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+      <h3>중간선 줄임표가 있는 데이터 교정</h3>
+    <div class="module-body">
+    <p>중간선 줄임표(Midline Elipse)[• • •]는 신용카드, 직불카드, 사회 보장 번호와 같은 민감한 데이터의 교정과 숫자 생략을 보여 주기 위해 사용되는 세 개의 총알(Bullet) 모양으로 된 글자입니다.</p><p>중간선 줄임표는 흉내내는 마스킹으로 사용자 보안을 지키며, 보이지 않는 숫자를 효과적으로 점으로 표시하고, 머티리얼 디자인의 수직 중간선 대칭을 반영합니다.</p><p><strong>사용법</strong></p><p>첫 번째 중간선 줄임표 전에, 두 개의 일반 스페이스를 놓고, 그리고 나서 각 중간선 줄임표 사이와 마지막 중간선 줄임표 뒤에 얇은 스페이스를 추가하십시오. 아니면, 다음의 유니코드 문자열을 사용하십시오: U0020,U0020,U2022,U2006,U2022,U2006,U2022,U2006</p><p>이러한 공간 사용은 서체와 플랫폼에 걸쳐서 그 문자의 실제 모양을 유지합니다.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><span>Visa  • • • 1234</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title"></div><p>유니코드로 쓰기: "Visa",U0020,U0020,U2022,U2006,U2022,U2006,U2022,U2006, "1234" </p><p>유니코드는 다음과 같이 해석됩니다: <br/>"Visa", 스페이스, 스페이스, 총알 모양, 얇은 스페이스, 총알 모양, 얇은 스페이스, 총알 모양, 얇은 스페이스, "1234"</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>기준선 줄임표가 있는 데이터 생략</h3>
+    <div class="module-body">
+    <p>기준선 줄임표(Baseline Ellipse)[...]는 보여지지 않는 문자, 단어, 또는 구(Phrase)를 나타냅니다. 그것은 또한 이름이나 이메일 주소의 텍스트 생략을 나타냅니다.</p><p><strong>사용법</strong></p><p>마지막으로 보여지는 문자에 직접적으로 이어서 한 행에 세 개의 마침표(또는 유니코드 문자 U2026)로 줄임표를 입력하십시오.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="text-example">
+                          <div class="module-body">
+            <div class="text-box">
+              <p><span>PayPal krestovozdvizhensky@goog...</span></p>
+            </div>
+          </div>
+                        <figcaption>
+          <div class="caption-title"></div>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-L section-patterns">
+            <a class="footer-text" href="app-structure.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>이전</span>
+        <div>
+                      앱 구조
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-patterns color-orange">&nbsp;</div>
+    <div class="footer-grid-R section-patterns">
+            <a class="footer-text" href="empty-states.html">
+        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>다음</span>
+        <div>
+                      비어 있는 상태
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+
+
+<!-- Mirrored from www.google.com/design/spec/patterns/data-formats.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:53 GMT -->
+</html>
