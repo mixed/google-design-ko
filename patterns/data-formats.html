@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/patterns/data-formats.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:53 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>데이터 형식 - 패턴 - 구글 디자인 가이드라인</title>
+    <title>데이터 형식 - 패턴 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Data formats - Patterns - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,22 +41,35 @@
 -->
   </head>
 
-  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
-    <header>
-  <div class="header-wrapper">
+  <body class="site-material_ext_publish section-patterns first-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+    <header class="qp-ui" data-qp-ui="{
+  'Peekaboo': {
+    'mobile': 72,
+    'desktop-sm': 72,
+    'default': 192
+  }
+}">
+  <div class="header-wrapper qp-ui" data-qp-ui="{
+    'Peekaboo': {
+      'mobile': 28,
+      'desktop-sm': 28,
+      'default': 82
+    }
+  }">
     <div class="header-title">      <span class="section-title">패턴</span>
-      <span class="chapter-title">데이터 형식</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 데이터 형식</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
     
-    
+
+
 <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
   <div class="side-nav-wrapper">
     <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Google logo"/></span>
@@ -71,9 +86,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -83,7 +98,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -113,7 +128,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -187,7 +202,7 @@
                     </a>                    
                     <a class="" href="navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="notifications.html">알림
                     </a>
@@ -735,22 +750,22 @@
 
     <footer>
   <div class="footer-grid">
-    <div class="footer-L section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-L section-patterns">
-            <a class="footer-text" href="app-structure.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+    <div class="footer-L section-components color-indigo">&nbsp;</div>
+    <div class="footer-grid-L section-components color-indigo">
+            <a class="footer-text" href="../components/tooltips.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
-                      앱 구조
+                      컴포넌트
                   </div>
       </a>
           </div>
 
     <div class="footer-R section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-R section-patterns">
+    <div class="footer-grid-R section-patterns color-orange">
             <a class="footer-text" href="empty-states.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       비어 있는 상태
                   </div>
@@ -759,7 +774,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

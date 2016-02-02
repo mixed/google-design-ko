@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/patterns/navigational-transitions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:59 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>네비게이션 트랜지션 - 패턴 - 구글 디자인 가이드라인</title>
+    <title>네비게이션 전환 - 패턴 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Navigational transitions - Patterns - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,22 +41,22 @@
 -->
   </head>
 
-  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">패턴</span>
-      <span class="chapter-title">네비게이션 트랜지션</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 네비게이션 전환</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
+ 
 
-    
-    
+       
     
 <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
   <div class="side-nav-wrapper">
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                    
                     <a class="" href="navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="nav_selected" href="navigational-transitions.html">네비게이션 트랜지션
+                    <a class="nav_selected" href="navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="notifications.html">알림
                     </a>
@@ -245,12 +247,12 @@
 
     <div id="grid-cont">
       <section class="grid_outer chapter">
-  <h1 class="chapter-title">네비게이션 트랜지션
+  <h1 class="chapter-title">네비게이션 전환
           </h1>
     <div class="chapter-content">
         
         <div class="chapter-intro">
-            <p>네비게이션 트랜지션은 고수준 뷰에서 상세 뷰로 이동하는 것과 같이 앱 안에서의 상태 간의 이동입니다. 모두는 아니지만 대부분의 트랜지션은 자연적으로 계층적입니다.</p><p>이러한 순간은 앱의 각 상태를 통하여 사용자의 이동을 적절하게 반영해야 합니다.</p>
+            <p>네비게이션 전환은 고수준 뷰에서 상세 뷰로 이동하는 것과 같이 앱 안에서의 상태 간의 이동입니다. 모두는 아니지만 대부분의 전환은 자연적으로 계층적입니다.</p><p>이러한 순간은 앱의 각 상태를 통하여 사용자의 이동을 적절하게 반영해야 합니다.</p>
 
       
       
@@ -289,7 +291,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>머티리얼 디자인에서, 고도(Elevation) 변경은 부모에서 자식 요소로 초점을 변경하는 것을 나타냅니다.</p><p><strong>고도와 확장</strong></p><p>사용자가 터치하는 표면은 들어 올려져야 하고 그 원래 위치에서부터 변경된 위치로 확장해야 합니다. 이 확장과 모션은 머티리얼 모션 곡선을 사용한 자연스러운 이동으로 부모에게서 떠나 목적지를 향하는 이동을 강조합니다.</p>
+    <p>머티리얼 디자인에서, 엘리베이션(Elevation) 변경은 부모에서 자식 요소로 초점을 변경하는 것을 나타냅니다.</p><p><strong>엘리베이션과 확장</strong></p><p>사용자가 터치하는 표면은 들어 올려져야 하고 그 원래 위치에서부터 변경된 위치로 확장해야 합니다. 이 확장과 모션은 머티리얼 모션 곡선을 사용한 자연스러운 이동으로 부모에게서 떠나 목적지를 향하는 이동을 강조합니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -302,7 +304,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>부모에서 자식으로 트랜지션하는 애니메이션</p>
+          <p>부모에서 자식으로 전환하는 애니메이션</p>
         </figcaption>
               </figure>
           </div>
@@ -325,7 +327,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>부모에서 자식으로 트랜지션하는 애니메이션</p>
+          <p>부모에서 자식으로 전환하는 애니메이션</p>
         </figcaption>
               </figure>
           </div>
@@ -348,7 +350,7 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p><strong>형제 트랜지션(Sibling Transition)</strong>은 계층 구조의 동등한 수준의 요소 간에 발생하는 트랜지션입니다.</p>
+      <p><strong>형제 전환(Sibling Transition)</strong>은 계층 구조의 동등한 수준의 요소 간에 발생하는 전환입니다.</p>
     </div>
   </section>
 
@@ -356,7 +358,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>고정된 고도(Static Elevation)</strong></p><p>예를 들어 사용자가 탭을 통해 탐색할 때, 아무런 고도의 변경이 일어나지 않습니다. 각 탭의 내용물과 표면은 동일한 고도 수준(Elevation Level)에 머물러 있습니다. 새로운 내용물은 형제 내용물이 화면 밖을 향하여 왼쪽으로 이동하는 동안, 오른쪽에서 미끄러져 들어옵니다.</p>
+    <p><strong>고정된 엘리베이션(Static Elevation)</strong></p><p>예를 들어 사용자가 탭을 통해 탐색할 때, 아무런 엘리베이션의 변경이 일어나지 않습니다. 각 탭의 내용물과 표면은 동일한 엘리베이션 수준(Elevation Level)에 머물러 있습니다. 새로운 내용물은 형제 내용물이 화면 밖을 향하여 왼쪽으로 이동하는 동안, 오른쪽에서 미끄러져 들어옵니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -369,7 +371,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>형제(Sibling) 트랜지션</p>
+          <p>형제(Sibling) 전환</p>
         </figcaption>
               </figure>
           </div>
@@ -392,7 +394,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>형제에서 형제로 트랜지션하는 애니메이션</p>
+          <p>형제에서 형제로 전환하는 애니메이션</p>
         </figcaption>
                 </figure>
           </div>
@@ -410,10 +412,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-L section-patterns">
+    <div class="footer-grid-L section-patterns color-orange">
             <a class="footer-text" href="navigation-drawer.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       네비게이션 드로어
                   </div>
@@ -421,10 +423,10 @@
           </div>
 
     <div class="footer-R section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-R section-patterns">
+    <div class="footer-grid-R section-patterns color-orange">
             <a class="footer-text" href="notifications.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       알림
                   </div>
@@ -433,7 +435,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

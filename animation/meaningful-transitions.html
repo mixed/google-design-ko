@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/animation/meaningful-transitions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:28 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>의미 있는 트랜지션 - 애니메이션 - 구글 디자인 가이드라인</title>
+    <title>의미 있는 전환 - 애니메이션 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Meaningful transitions - Animation - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,19 +41,19 @@
 -->
   </head>
 
-  <body class="section-animation noninitial-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-animation noninitial-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">애니메이션</span>
-      <span class="chapter-title">의미 있는 트랜지션</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 의미 있는 전환</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
-</nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>  
 
     
     
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="nav_selected" href="meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="nav_selected" href="meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                   
                     <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="../patterns/notifications.html">알림
                     </a>
@@ -245,7 +247,7 @@
 
     <div id="grid-cont">
       <section class="grid_outer chapter">
-  <h1 class="chapter-title">의미 있는 트랜지션
+  <h1 class="chapter-title">의미 있는 전환
           </h1>
     <div class="chapter-content">
         
@@ -283,13 +285,13 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>두 개의 시각적 상태 간의 트랜지션은 분명하고 매끄러우며 수월해야 합니다. 잘 디자인된 트랜지션은 사용자에게 어디에 주의를 집중할 지를 말해줍니다.</p><p>트랜지션 타입과 액션: </p><ul><li><strong>들어오는 요소들:</strong> 새로 생성되거나 번역된 항목은 도입되거나 복구됩니다.</li><li><strong>나가는 요소들:</strong> 상황에 더 이상 관련이 없어진 요소들은 제거됩니다.</li><li><strong>공유되는 요소들:</strong> 트랜지션의 지속 기간 동안 지속되는 요소들은 미묘(subtle, 단일 아이콘)하거나 지배적(dominant, 화면을 채우기 위해 커지는 사진첩 이미지)일 수 있습니다.</li></ul><h4 class="related">
+    <p>두 개의 시각적 상태 간의 전환은 분명하고 매끄러우며 수월해야 합니다. 잘 디자인된 전환은 사용자에게 어디에 주의를 집중할 지를 말해줍니다.</p><p>전환 타입과 액션: </p><ul><li><strong>들어오는 요소들:</strong> 새로 생성되거나 번역된 항목은 도입되거나 복구됩니다.</li><li><strong>나가는 요소들:</strong> 상황에 더 이상 관련이 없어진 요소들은 제거됩니다.</li><li><strong>공유되는 요소들:</strong> 전환의 지속 기간 동안 지속되는 요소들은 미묘(subtle, 단일 아이콘)하거나 지배적(dominant, 화면을 채우기 위해 커지는 사진첩 이미지)일 수 있습니다.</li></ul><h4 class="related">
 연관된 자료
 </h4><div class="modulettes">
           <a class="modulette android" href="http://developer.android.com/training/material/animations.html#Transitions" title="Customize Activity Transitions">
       <img class="icon callout-icon" src="../static/images/callout_android.svg" alt="" />
       <div class="info">
-        <div class="title">액티비티 트랜지션을 설정하기</div>
+        <div class="title">액티비티 전환을 설정하기</div>
         <span class="subtitle">애니메이션의 입구와 출구를 꾸미십시오.</span>
       </div>
     </a>
@@ -306,7 +308,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>트랜지션 요소는 트랜지션의 지속 기간 동안 들어오거나, 나가거나, 화면에 고정될 수 있습니다.</p>
+          <p>전환 요소는 전환의 지속 기간 동안 들어오거나, 나가거나, 화면에 고정될 수 있습니다.</p>
         </figcaption>
               </figure>
           </div>
@@ -317,7 +319,7 @@
           <section class="moduleD1">
       <h3>고려 사항</h3>
     <div class="module-body">
-    <p>애니메이션을 디자인할 때, 다음을 고려하십시오:</p><ul><li><strong>사용자의 주의를 안내하십시오.</strong> 어떻게 하면 사용자의 주의가 유도될 수 있을까요? 어떠한 요소들과 모션들이 그 목표를 도울 수 있을까요? 어떻게 하면 들어 오고, 나가며, 공유되는 요소들이 트랜지션을 통해 강조되거나 경시될 수 있을까요?</li><li><strong>시각적으로 트랜지션을 연결하십시오.</strong> 트랜지션 상태 간에 색과 지속되는 요소를 통해서 시각적 연결을 생성하십시오.</li><li><strong>움직임을 신중하게 사용하십시오.</strong> 어떤 요소를 움직이는 것이 어떻게 트랜지션에 명료성과 즐거움을 더하는 지를 고려하십시오.</li></ul>
+    <p>애니메이션을 디자인할 때, 다음을 고려하십시오:</p><ul><li><strong>사용자의 주의를 안내하십시오.</strong> 어떻게 하면 사용자의 주의가 유도될 수 있을까요? 어떠한 요소들과 모션들이 그 목표를 도울 수 있을까요? 어떻게 하면 들어 오고, 나가며, 공유되는 요소들이 전환을 통해 강조되거나 경시될 수 있을까요?</li><li><strong>시각적으로 전환을 연결하십시오.</strong> 전환 상태 간에 색과 지속되는 요소를 통해서 시각적 연결을 생성하십시오.</li><li><strong>움직임을 신중하게 사용하십시오.</strong> 어떤 요소를 움직이는 것이 어떻게 전환에 명료성과 즐거움을 더하는 지를 고려하십시오.</li></ul>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -342,7 +344,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>딱딱한 컷은 삐걱거리며, 트랜지션을 이해하기 위해 전념하는 사용자를 요구합니다.</p>
+          <div class="caption-title">Don't.</div><p>딱딱한 컷은 삐걱거리며, 전환을 이해하기 위해 전념하는 사용자를 요구합니다.</p>
         </figcaption>
                 </figure>
           </div>
@@ -373,7 +375,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>트랜지션을 만들 때, 요소 움직임의 순서와 타이밍을 고려하십시오. 반드시 그 모션이 정보 계층 구조를 지원하여, 모션을 쫓는 눈을 위한 경로를 생성하는 것을 통해서 내용물이 가장 중요하다는 것을 전달하게 하십시오.</p><p>그러나 그것은 가장 중요한 것이 먼저 움직이고 가장 적게 중요한 것이 나중에 움직인다라는 단순한 공식이 아닙니다. 트랜지션 요소의 타이밍은 매끄럽게 흘려야 하며 일관성이 없다는 느낌을 피해야 합니다.</p>
+    <p>전환을 만들 때, 요소 움직임의 순서와 타이밍을 고려하십시오. 반드시 그 모션이 정보 계층 구조를 지원하여, 모션을 쫓는 눈을 위한 경로를 생성하는 것을 통해서 내용물이 가장 중요하다는 것을 전달하게 하십시오.</p><p>그러나 그것은 가장 중요한 것이 먼저 움직이고 가장 적게 중요한 것이 나중에 움직인다라는 단순한 공식이 아닙니다. 전환 요소의 타이밍은 매끄럽게 흘려야 하며 일관성이 없다는 느낌을 피해야 합니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -398,7 +400,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>동일한 순간에 발생하는 요소 트랜지션의 타이밍은 무엇이 중요한 지에 대하여 아무런 암시를 제공하지 않습니다. 만약 모든 요소들이 동일한 중요도를 가지고 있다면, 그들을 그룹으로 만드는 것을 고려해 보십시오.</p>
+          <div class="caption-title">Don't.</div><p>동일한 순간에 발생하는 요소 전환의 타이밍은 무엇이 중요한 지에 대하여 아무런 암시를 제공하지 않습니다. 만약 모든 요소들이 동일한 중요도를 가지고 있다면, 그들을 그룹으로 만드는 것을 고려해 보십시오.</p>
         </figcaption>
                 </figure>
           </div>
@@ -429,7 +431,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>트랜지션 중인 요소들은 협조하는 태도로 동작해야 합니다. 요소가 따라 이동하는 경로는 상식적이어야 하며 질서가 있어야 합니다. 무계획적인 모션은 집중을 방해합니다.</p><p>트랜지션 중인 요소가 협조적일 때, 앱의 사용자 이해를 돕습니다.</p>
+    <p>전환 중인 요소들은 협조하는 태도로 동작해야 합니다. 요소가 따라 이동하는 경로는 상식적이어야 하며 질서가 있어야 합니다. 무계획적인 모션은 집중을 방해합니다.</p><p>전환 중인 요소가 협조적일 때, 앱의 사용자 이해를 돕습니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -481,7 +483,7 @@
               <section class="moduleB1">
           <h3>모범 사례</h3>
         <div class="module-body">
-      <ul><li>움직임이 축으로 제한될 때나 다른 요소와 협력하는 지점에서 이동하는 것을 제외하고는 <a href="http://developer.android.com/training/material/animations.html#CurvedMotion">선형 공간 경로</a>를 피하십시오.</li><li>요소가 트랜지션 전체에 걸쳐 응집력 있게 이동하는 방향을 만드십시오. 상충되는 움직임과 중복되는 경로를 피하십시오.</li><li>어느 깊이에서 요소가 움직입니까, 그리고 이유는 무엇입니까?</li><li>모든 움직이는 요소가 화면에서 그들의 경로를 따라간다면, 그것이 아름답고 잘 정돈되어 있는 것처럼 보입니까? 그것이 어디서 보던지 분명한 그림을 생성하나요?</li><li>일관된 들어오고 나가는 모션으로 요소들 간의 공간적인 관계를 강화하십시오.<br/></li></ul>
+      <ul><li>움직임이 축으로 제한될 때나 다른 요소와 협력하는 지점에서 이동하는 것을 제외하고는 <a href="http://developer.android.com/training/material/animations.html#CurvedMotion">선형 공간 경로</a>를 피하십시오.</li><li>요소가 전환 전체에 걸쳐 응집력 있게 이동하는 방향을 만드십시오. 상충되는 움직임과 중복되는 경로를 피하십시오.</li><li>어느 깊이에서 요소가 움직입니까, 그리고 이유는 무엇입니까?</li><li>모든 움직이는 요소가 화면에서 그들의 경로를 따라간다면, 그것이 아름답고 잘 정돈되어 있는 것처럼 보입니까? 그것이 어디서 보던지 분명한 그림을 생성하나요?</li><li>일관된 들어오고 나가는 모션으로 요소들 간의 공간적인 관계를 강화하십시오.<br/></li></ul>
     </div>
   </section>
 
@@ -497,10 +499,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-animation color-purple">&nbsp;</div>
-    <div class="footer-grid-L section-animation">
+    <div class="footer-grid-L section-animation color-purple">
             <a class="footer-text" href="responsive-interaction.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       반응형 상호 작용
                   </div>
@@ -508,10 +510,10 @@
           </div>
 
     <div class="footer-R section-animation color-purple">&nbsp;</div>
-    <div class="footer-grid-R section-animation">
+    <div class="footer-grid-R section-animation color-purple">
             <a class="footer-text" href="delightful-details.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       기분 좋은 세밀함
                   </div>
@@ -520,7 +522,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../../../../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

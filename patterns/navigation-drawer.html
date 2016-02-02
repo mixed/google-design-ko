@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/patterns/navigation-drawer.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:58 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>네비게이션 드로어 - 패턴 - 구글 디자인 가이드라인</title>
+    <title>네비게이션 드로어 - 패턴 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Navigation drawer - Patterns - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,18 +41,18 @@
 -->
   </head>
 
-  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">패턴</span>
-      <span class="chapter-title">네비게이션 드로어</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 네비게이션 드로어</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
     
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                    
                     <a class="nav_selected" href="navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="notifications.html">알림
                     </a>
@@ -327,9 +329,9 @@
     <div class="module-list">
                   <div>
           <section class="moduleD1">
-      <h3>고도 (Elevation)</h3>
+      <h3>엘리베이션 (Elevation)</h3>
     <div class="module-body">
-    <p>네비게이션 드로어는 스테이터스 바 뒤를 포함하여 화면의 전체 높이에 걸쳐 이어져 있으며 16dp의 휴식 고도(Resting Elevation)을 가집니다. 드로어 뒤에 모든 것은 여전히 보이지만 배경막(Scrim)에 의해서 어둡게 표시됩니다.</p><h4> </h4>
+    <p>네비게이션 드로어는 스테이터스 바 뒤를 포함하여 화면의 전체 높이에 걸쳐 이어져 있으며 16dp의 레스팅 엘리베이션(Resting Elevation)을 가집니다. 드로어 뒤에 모든 것은 여전히 보이지만 배경막(Scrim)에 의해서 어둡게 표시됩니다.</p><h4> </h4>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -498,7 +500,7 @@
           <section class="moduleE1">
       <h3>영구적</h3>
     <div class="module-body">
-    <p><strong>데스크탑을 위해 기본으로 권장됨</strong></p><p><br/>영구적인(Permanent) 네비게이션 드로어는 항상 보여지며, 내용물이나 배경과 동일한 고도(Elevation)로 왼쪽 가장자리에 고정되어 있습니다. 이것은 닫을 수 없습니다.</p><p>고정하기 위한 한계점(Threshold)은 다음 중 최소값을 사용하여 계산됩니다:</p><p>1. 사이드 네비게이션 너비<br/>2. 내용물 너비<br/>3. 내용물 패딩</p><h4> </h4>
+    <p><strong>데스크탑을 위해 기본으로 권장됨</strong></p><p><br/>영구적인(Permanent) 네비게이션 드로어는 항상 보여지며, 내용물이나 배경과 동일한 엘리베이션(Elevation)으로 왼쪽 가장자리에 고정되어 있습니다. 이것은 닫을 수 없습니다.</p><p>고정하기 위한 한계점(Threshold)은 다음 중 최소값을 사용하여 계산됩니다:</p><p>1. 사이드 네비게이션 너비<br/>2. 내용물 너비<br/>3. 내용물 패딩</p><h4> </h4>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -569,7 +571,7 @@
           <section class="moduleD1">
       <h3>지속적</h3>
     <div class="module-body">
-    <p>지속적인 네비게이션 드로어는 토글로 열거나 닫을 수 있습니다. 그 드로어는 내용물과 동일한 표면 고도(Surface Elevation) 위에 있습니다. 이것은 기본적으로 닫혀져 있고, 메뉴 아이콘을 선택하면 열리며, 사용자에 의해 닫혀질 때까지 계속 열려 있습니다. 그 드로어의 상태는 액션에서 액션까지 그리고 세션에서 세션까지 기억됩니다.</p><p>드로어가 열릴 때 페이지 그리드의 바깥에 있는 것은 크기를 변경하고 작은 뷰포트에 맞추도록 다른 내용물을 강제합니다.</p><p>지속적인 네비게이션 드로어는 모바일보다 큰 모든 크기에 허용됩니다.</p>
+    <p>지속적인 네비게이션 드로어는 토글로 열거나 닫을 수 있습니다. 그 드로어는 내용물과 동일한 표면 엘리베이션(Surface Elevation) 위에 있습니다. 이것은 기본적으로 닫혀져 있고, 메뉴 아이콘을 선택하면 열리며, 사용자에 의해 닫혀질 때까지 계속 열려 있습니다. 그 드로어의 상태는 액션에서 액션까지 그리고 세션에서 세션까지 기억됩니다.</p><p>드로어가 열릴 때 페이지 그리드의 바깥에 있는 것은 크기를 변경하고 작은 뷰포트에 맞추도록 다른 내용물을 강제합니다.</p><p>지속적인 네비게이션 드로어는 모바일보다 큰 모든 크기에 허용됩니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -615,7 +617,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-    <h4>미니 버전 (Mini Variant)</h4><p>이 변형(Variation)에서, 지속적인 네비게이션 드로어는 자신의 너비를 변경합니다. 이것의 휴식 상태는 앱 바에 의해 잘려진, 내용물과 동일한 고도(Elevation)에 위치한 미니 드로어와 같습니다. 확장될 때, 이것은 일반적인 지속적인 네비게이션 드로어로 보여집니다.</p><p><strong>권장되는 경우: </strong><br/>내용물과 함께 빠른 선택 접근이 필요한 앱 섹션</p>
+    <h4>미니 버전 (Mini Variant)</h4><p>이 변형(Variation)에서, 지속적인 네비게이션 드로어는 자신의 너비를 변경합니다. 이것의 휴식 상태는 앱 바에 의해 잘려진, 내용물과 동일한 엘리베이션(Elevation)에 위치한 미니 드로어와 같습니다. 확장될 때, 이것은 일반적인 지속적인 네비게이션 드로어로 보여집니다.</p><p><strong>권장되는 경우: </strong><br/>내용물과 함께 빠른 선택 접근이 필요한 앱 섹션</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -732,10 +734,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-L section-patterns">
+    <div class="footer-grid-L section-patterns color-orange">
             <a class="footer-text" href="navigation.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       네비게이션
                   </div>
@@ -743,19 +745,19 @@
           </div>
 
     <div class="footer-R section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-R section-patterns">
+    <div class="footer-grid-R section-patterns color-orange">
             <a class="footer-text" href="navigational-transitions.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
-                      네비게이션 트랜지션
+                      네비게이션 전환
                   </div>
       </a>
           </div>
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/patterns/gestures.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:56 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>제스처 - 패턴 - 구글 디자인 가이드라인</title>
+    <title>제스처 - 패턴 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Gestures - Patterns - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,21 +41,21 @@
 -->
   </head>
 
-  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">패턴</span>
-      <span class="chapter-title">제스처</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 제스처</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
-    
+
     
     
 <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                    
                     <a class="" href="navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="notifications.html">알림
                     </a>
@@ -716,7 +718,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-    <h3 class="c9"><strong>팬</strong></h3><p><strong>팬(Pan)</strong>은 뷰의 필드를 확장하는 전방향의 하나 또는 두 개의 손가락 제스처입니다. 드래그는 일반적으로 팬과 함께 사용됩니다. 플링은 제스처 속도를 유지할 것이기에, 제스처의 방향을 따라 내용물에 중요한 팬을 야기합니다.</p><p>팬은 다음과 같은 것을 위해 적용됩니다:</p><ul><li>무한한 내용물 (지도)</li><li>화면의 높이나 너비보다 큰 내용물 (확대된 웹페이지나 사진)</li></ul><p><strong>두 손가락 팬</strong>은 맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서부터 트랜지션할 때 발생합니다. 제스처가 두 손가락 팬과 함께 시작할 때, 그것은 <strong>틸트(Tilt)</strong>가 됩니다.</p>
+    <h3 class="c9"><strong>팬</strong></h3><p><strong>팬(Pan)</strong>은 뷰의 필드를 확장하는 전방향의 하나 또는 두 개의 손가락 제스처입니다. 드래그는 일반적으로 팬과 함께 사용됩니다. 플링은 제스처 속도를 유지할 것이기에, 제스처의 방향을 따라 내용물에 중요한 팬을 야기합니다.</p><p>팬은 다음과 같은 것을 위해 적용됩니다:</p><ul><li>무한한 내용물 (지도)</li><li>화면의 높이나 너비보다 큰 내용물 (확대된 웹페이지나 사진)</li></ul><p><strong>두 손가락 팬</strong>은 맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서부터 전환할 때 발생합니다. 제스처가 두 손가락 팬과 함께 시작할 때, 그것은 <strong>틸트(Tilt)</strong>가 됩니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -849,7 +851,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-      <h3 class="c9"><strong>틸트</strong></h3><p><strong>틸트(Tilt)</strong>는 3차원 내용물을 앞으로나 뒤로 이동합니다.</p><p>맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서 트랜지션은 <strong>두 손가락 팬(Pan)</strong>이 될 것입니다.</p><p>드래그는 <strong>틸트</strong>와 함께 사용됩니다.</p>
+      <h3 class="c9"><strong>틸트</strong></h3><p><strong>틸트(Tilt)</strong>는 3차원 내용물을 앞으로나 뒤로 이동합니다.</p><p>맵에서와 같이 또 다른 두 손가락 제스처(핀치 줌 또는 로테이션)에서 전환은 <strong>두 손가락 팬(Pan)</strong>이 될 것입니다.</p><p>드래그는 <strong>틸트</strong>와 함께 사용됩니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -876,10 +878,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-L section-patterns">
+    <div class="footer-grid-L section-patterns color-orange">
             <a class="footer-text" href="errors.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       에러
                   </div>
@@ -887,10 +889,10 @@
           </div>
 
     <div class="footer-R section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-R section-patterns">
+    <div class="footer-grid-R section-patterns color-orange">
             <a class="footer-text" href="fingerprint.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       지문
                   </div>
@@ -899,7 +901,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

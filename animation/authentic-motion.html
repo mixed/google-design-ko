@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/animation/authentic-motion.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:27 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>정확한 모션 - 애니메이션 - 구글 디자인 가이드라인</title>
+    <title>정확한 모션 - 애니메이션 - 구글 디자인 가이드라인</title>   
     <meta itemprop="name" content="Authentic motion - Animation - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,7 +41,7 @@
 -->
   </head>
 
-  <body class="section-animation first-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-animation first-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header class="qp-ui" data-qp-ui="{
   'Peekaboo': {
     'mobile': 72,
@@ -55,17 +57,18 @@
     }
   }">
     <div class="header-title">      <span class="section-title">애니메이션</span>
-      <span class="chapter-title">정확한 모션</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 정확한 모션</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
-    
+
+
     
 <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
   <div class="side-nav-wrapper">
@@ -83,9 +86,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">애니메이션
@@ -95,7 +98,7 @@
                     </a>
                     <a class="" href="responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -125,7 +128,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -199,7 +202,7 @@
                     </a>                   
                     <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="../patterns/notifications.html">알림
                     </a>
@@ -346,7 +349,7 @@
           <section class="moduleE1">
       <h3>입구와 출구</h3>
     <div class="module-body">
-    <p>한 개체의 속도나 방향의 변화는 사용자의 주의를 끕니다.</p><p>프레임에 들어가거나 나오는 동안에 한 개체의 속도의 변화는 순회하는 거리를 말합니다. 예를 들어, 나오는 동안 속도를 줄이는 것은 관심을 이끌고 그 개체가 프레임의 가장자리 근처에서 멈출 것이라는 것을 넌지시 나타냅니다.</p><p>특별히 트랜지션 중에는, 입구 또는 출구의 어떤 부분이 가장 주의를 끌어야 하는 지를 고려하십시오.</p>
+    <p>한 개체의 속도나 방향의 변화는 사용자의 주의를 끕니다.</p><p>프레임에 들어가거나 나오는 동안에 한 개체의 속도의 변화는 순회하는 거리를 말합니다. 예를 들어, 나오는 동안 속도를 줄이는 것은 관심을 이끌고 그 개체가 프레임의 가장자리 근처에서 멈출 것이라는 것을 넌지시 나타냅니다.</p><p>특별히 전환 중에는, 입구 또는 출구의 어떤 부분이 가장 주의를 끌어야 하는 지를 고려하십시오.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -401,7 +404,7 @@
               <div>
               <section class="moduleB1">
         <div class="module-body">
-          <p>시간 곡선에 대해 논의할 때, 사용되는 정의들을 이해하는 것이 중요합니다. “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”이라는 용어는 전통적인 애니메이션과 UX 애니메이션 모두에 사용됩니다. 그러나 상황에 따라서 이 용어는 반대의 의미를 가집니다.</p><p><strong>전통적인 애니메이션</strong></p><p>전통적인 애니메이션 기법은 키 포즈를 그리는 것을 통하여 움직임의 순서를 표현합니다. 이 상황에서 “천천히 나감(Ease Out)”은 포즈에서 벗어나는 모션을 나타내고 “천천히 들어옴(Ease In)”은 포즈로 들어오는 모션을 나타냅니다.</p><p>최신의 애니메이션 도구들은 <strong>키 프레임</strong>으로 이러한 키 포즈를 표현합니다. 이 상황에서 “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”은 키 프레임으로 들어오거나 나가는 모션을 나타냅니다.</p><p><strong>UX 애니메이션</strong></p><p>UX 상황에서, 천천히 움직임(Easing)은 상태 사이의 트랜지션을 나타냅니다. 그 결과로, “천천히 들어옴(Ease In)”은 트랜지션으로 들어오는 동작을 나타내고, “천천히 나감(Ease Out)”은 트랜지션을 떠나는 모션을 나타냅니다.</p>
+          <p>시간 곡선에 대해 논의할 때, 사용되는 정의들을 이해하는 것이 중요합니다. “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”이라는 용어는 전통적인 애니메이션과 UX 애니메이션 모두에 사용됩니다. 그러나 상황에 따라서 이 용어는 반대의 의미를 가집니다.</p><p><strong>전통적인 애니메이션</strong></p><p>전통적인 애니메이션 기법은 키 포즈를 그리는 것을 통하여 움직임의 순서를 표현합니다. 이 상황에서 “천천히 나감(Ease Out)”은 포즈에서 벗어나는 모션을 나타내고 “천천히 들어옴(Ease In)”은 포즈로 들어오는 모션을 나타냅니다.</p><p>최신의 애니메이션 도구들은 <strong>키 프레임</strong>으로 이러한 키 포즈를 표현합니다. 이 상황에서 “천천히 들어옴(Ease In)”과 “천천히 나감(Ease Out)”은 키 프레임으로 들어오거나 나가는 모션을 나타냅니다.</p><p><strong>UX 애니메이션</strong></p><p>UX 상황에서, 천천히 움직임(Easing)은 상태 사이의 전환을 나타냅니다. 그 결과로, “천천히 들어옴(Ease In)”은 전환으로 들어오는 동작을 나타내고, “천천히 나감(Ease Out)”은 전환을 떠나는 모션을 나타냅니다.</p>
     </div>
   </section>
 
@@ -426,10 +429,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-what-is-material color-light-blue">&nbsp;</div>
-    <div class="footer-grid-L section-what-is-material">
+    <div class="footer-grid-L section-what-is-material color-light-blue">
             <a class="footer-text" href="../what-is-material/elevation-shadows.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       머티리얼이란 무엇인가?
                   </div>
@@ -437,10 +440,10 @@
           </div>
 
     <div class="footer-R section-animation color-purple">&nbsp;</div>
-    <div class="footer-grid-R section-animation">
+    <div class="footer-grid-R section-animation color-purple">
             <a class="footer-text" href="responsive-interaction.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       반응형 상호 작용
                   </div>
@@ -449,7 +452,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

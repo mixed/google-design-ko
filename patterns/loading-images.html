@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/patterns/loading-images.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:57 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>이미지 로드 - 패턴 - 구글 디자인 가이드라인</title>
+    <title>이미지 로드 - 패턴 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Loading images - Patterns - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,19 +41,19 @@
 -->
   </head>
 
-  <body class="section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-patterns noninitial-chapter color-orange qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">패턴</span>
-      <span class="chapter-title">이미지 로드</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 이미지 로드</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
-</nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav> 
 
     
     
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                    
                     <a class="" href="navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="notifications.html">알림
                     </a>
@@ -273,7 +275,7 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>삽화(Illustration)와 사진은 불투명도 변화에 의지하는 것보다, 시간 차를 둔 기간에 세 단계로 로드와 트랜지션을 할 것입니다. 불투명도와 노출(Exposure)과 채도(Saturation)의 조합은 당신의 필요에 어울리도록 변화합니다.<br/></p><p>노출 정도는 저대비(Low-contrast)와 채도를 저하시킨 색을 위해 조정됩니다. 불투명도가 100%에 도달했을 때, 그 마지막 단계는 풀 컬러의 채도를 포함합니다.</p><p>저대비 효과는 어두운 이미지를 위해 감마와 검정색 출력의 변화를 조합합니다.</p>
+    <p>삽화(Illustration)와 사진은 불투명도 변화에 의지하는 것보다, 시간 차를 둔 기간에 세 단계로 로드와 전환을 할 것입니다. 불투명도와 노출(Exposure)과 채도(Saturation)의 조합은 당신의 필요에 어울리도록 변화합니다.<br/></p><p>노출 정도는 저대비(Low-contrast)와 채도를 저하시킨 색을 위해 조정됩니다. 불투명도가 100%에 도달했을 때, 그 마지막 단계는 풀 컬러의 채도를 포함합니다.</p><p>저대비 효과는 어두운 이미지를 위해 감마와 검정색 출력의 변화를 조합합니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -353,7 +355,7 @@
           <section class="moduleD1">
       <h3>지속 기간</h3>
     <div class="module-body">
-    <p>이미지 로드를 위해 긴 지속 기간이 권장되며, 트랜지션을 위해서는 짧은 지속 기간이 권장됩니다.</p>
+    <p>이미지 로드를 위해 긴 지속 기간이 권장되며, 전환을 위해서는 짧은 지속 기간이 권장됩니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -366,7 +368,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>로드와 트랜지션 애니메이션</p>
+          <p>로드와 전환 애니메이션</p>
         </figcaption>
                 </figure>
           </div>
@@ -440,10 +442,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-L section-patterns">
+    <div class="footer-grid-L section-patterns color-orange">
             <a class="footer-text" href="launch-screens.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       시작 화면
                   </div>
@@ -451,10 +453,10 @@
           </div>
 
     <div class="footer-R section-patterns color-orange">&nbsp;</div>
-    <div class="footer-grid-R section-patterns">
+    <div class="footer-grid-R section-patterns color-orange">
             <a class="footer-text" href="navigation.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       네비게이션
                   </div>
@@ -463,7 +465,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

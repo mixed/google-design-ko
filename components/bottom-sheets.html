@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/components/bottom-sheets.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:39 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>바텀 시트 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <title>바텀 시트 - 컴포넌트 - 구글 디자인 가이드라인</title>   
     <meta itemprop="name" content="Bottom sheets - Components - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,7 +41,7 @@
 -->
   </head>
 
-  <body class="section-components first-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-components first-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header class="qp-ui" data-qp-ui="{
   'Peekaboo': {
     'mobile': 72,
@@ -55,15 +57,16 @@
     }
   }">
     <div class="header-title">      <span class="section-title">컴포넌트</span>
-      <span class="chapter-title">바텀 시트</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 바텀 시트</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
+
 
     
     
@@ -83,9 +86,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -95,7 +98,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -125,7 +128,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
@@ -199,7 +202,7 @@
                     </a>                    
                     <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="../patterns/notifications.html">알림
                     </a>
@@ -298,7 +301,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-      <p>바텀 시트의 두 가지 주요 유형은 다음과 같습니다:</p><ul><li><strong>모달 바텀 시트(Modal Bottom Sheet)</strong>는 메뉴나 심플 다이얼로그의 대체 요소입니다. 이것은 또한 다른 앱에 딥 링크된 내용물을 보여줄 수 있습니다. 이것은 주로 모바일을 위해 사용됩니다.</li><li><strong>지속적인 바텀 시트(Persistent Bottom Sheet)</strong>는 앱 내의 내용물을 보여 줍니다.</li></ul><p>고도(Elevation)가 지속적인 바텀 시트와 모달을 구분 짓습니다. 모달 바텀 시트는 앱의 내용물보다 높은 고도에 있습니다; 반면에 지속적인 바텀 시트는 그 앱과 동일한 고도에 있으며 그 내용물을 통합합니다.</p><p>공간이 덜 제한되는 큰 화면에서, <a href="/design/spec/components/dialogs.html#dialogs-simple-dialogs">심플 다이얼로그</a>나 <a href="/design/spec/components/menus.html">메뉴</a>와 같은 대체 가능한 표면과 컴포넌트를 사용하는 것이 바텀 시트를 사용하는 것 보다 더 적절할 것입니다.</p>
+      <p>바텀 시트의 두 가지 주요 유형은 다음과 같습니다:</p><ul><li><strong>모달 바텀 시트(Modal Bottom Sheet)</strong>는 메뉴나 심플 다이얼로그의 대체 요소입니다. 이것은 또한 다른 앱에 딥 링크된 내용물을 보여줄 수 있습니다. 이것은 주로 모바일을 위해 사용됩니다.</li><li><strong>지속적인 바텀 시트(Persistent Bottom Sheet)</strong>는 앱 내의 내용물을 보여 줍니다.</li></ul><p>엘리베이션(Elevation)이 지속적인 바텀 시트와 모달을 구분 짓습니다. 모달 바텀 시트는 앱의 내용물보다 높은 엘리베이션에 있습니다; 반면에 지속적인 바텀 시트는 그 앱과 동일한 엘리베이션에 있으며 그 내용물을 통합합니다.</p><p>공간이 덜 제한되는 큰 화면에서, <a href="/design/spec/components/dialogs.html#dialogs-simple-dialogs">심플 다이얼로그</a>나 <a href="/design/spec/components/menus.html">메뉴</a>와 같은 대체 가능한 표면과 컴포넌트를 사용하는 것이 바텀 시트를 사용하는 것 보다 더 적절할 것입니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -339,7 +342,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>지속적인(Persistent) 바텀 시트는 메인 뷰를 보충하는 앱 내의 내용물을 표시합니다. 이것은 능동적으로 사용하지 않을 때에도 보여지며, 앱과 동일한 고도에 있고 그 내용물과 통합됩니다.</p><h4>사용법</h4><ol start="1"><li>고유의 표면에 새로운 내용물을 넣기 위해 사용</li><li>주 내용물과 가치가 동일한 내용물을 표시하기 위해 사용</li></ol>
+    <p>지속적인(Persistent) 바텀 시트는 메인 뷰를 보충하는 앱 내의 내용물을 표시합니다. 이것은 능동적으로 사용하지 않을 때에도 보여지며, 앱과 동일한 엘리베이션에 있고 그 내용물과 통합됩니다.</p><h4>사용법</h4><ol start="1"><li>고유의 표면에 새로운 내용물을 넣기 위해 사용</li><li>주 내용물과 가치가 동일한 내용물을 표시하기 위해 사용</li></ol>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -1003,10 +1006,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-layout color-pink">&nbsp;</div>
-    <div class="footer-grid-L section-layout">
-            <a class="footer-text" href="../layout/adaptive-ui.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+    <div class="footer-grid-L section-layout color-pink">
+            <a class="footer-text" href="../layout/responsive-ui.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       레이아웃
                   </div>
@@ -1014,10 +1017,10 @@
           </div>
 
     <div class="footer-R section-components color-indigo">&nbsp;</div>
-    <div class="footer-grid-R section-components">
+    <div class="footer-grid-R section-components color-indigo">
             <a class="footer-text" href="buttons.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       버튼
                   </div>
@@ -1026,7 +1029,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>

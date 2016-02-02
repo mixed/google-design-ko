@@ -7,13 +7,15 @@
   
 <!-- Mirrored from www.google.com/design/spec/components/chips.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jul 2015 06:01:42 GMT -->
 <head>
+    <meta charset="utf-8">
     <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/css/print.css" rel="stylesheet" />
-        <link href='../fonts.googleapis.com/css5a7c.css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon6654.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
-    <title>칩 - 컴포넌트 - 구글 디자인 가이드라인</title>
+    <title>칩 - 컴포넌트 - 구글 디자인 가이드라인</title>    
     <meta itemprop="name" content="Chips - Components - Google design guidelines"/>
     <meta itemprop="image" content="../material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
     <meta property="og:type" content="article" />
@@ -39,18 +41,18 @@
 -->
   </head>
 
-  <body class="section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
+  <body class="site-material_ext_publish section-components noninitial-chapter color-indigo qp-ui" data-qp-ui="{ 'Mask': {} }">
     <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">컴포넌트</span>
-      <span class="chapter-title">칩</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 칩</span>
         </div>
   </div>
 
 </header>
 
 <nav>
-  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">네비게이션 보기</button>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
     
@@ -72,9 +74,9 @@
         <dd>
                     <a class="" href="../what-is-material/environment.html">환경
                     </a>
-                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 특성
+                    <a class="" href="../what-is-material/material-properties.html">머티리얼의 속성
                     </a>
-                    <a class="" href="../what-is-material/elevation-shadows.html">고도와 그림자
+                    <a class="" href="../what-is-material/elevation-shadows.html">엘리베이션과 그림자
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">애니메이션
@@ -84,7 +86,7 @@
                     </a>
                     <a class="" href="../animation/responsive-interaction.html">반응형 상호 작용
                     </a>
-                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 트랜지션
+                    <a class="" href="../animation/meaningful-transitions.html">의미 있는 전환
                     </a>
                     <a class="" href="../animation/delightful-details.html">기분 좋은 세밀함
                     </a>
@@ -114,7 +116,7 @@
                     </a>
                     <a class="" href="../layout/structure.html">구조
                     </a>
-                    <a class="" href="../layout/adaptive-ui.html">적응형 UI
+                    <a class="" href="../layout/responsive-ui.html">반응형 UI
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">컴포넌트
@@ -188,7 +190,7 @@
                     </a>                    
                     <a class="" href="../patterns/navigation-drawer.html">네비게이션 드로어
                     </a>
-                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 트랜지션
+                    <a class="" href="../patterns/navigational-transitions.html">네비게이션 전환
                     </a>
                     <a class="" href="../patterns/notifications.html">알림
                     </a>
@@ -411,7 +413,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-      <h4>닫혀진 컨택트 칩</h4><ul><li>연락처 이름 텍스트는 Roboto Regular 14sp 입니다.</li><li>초점을 얻은 경우, 칩은 2dp 의 고도로 떠오릅니다. 눌렀을 때, 이것은 연락처의 대체 주소를 보여주기 위하여 확장합니다.</li></ul><h4>열린 컨택트 칩</h4><ul><li>연락처 이름 텍스트:  Roboto Regular 16sp</li><li>주소 텍스트: Roboto Regular 14sp</li><li>열린 컨택트 칩의 고도는 8dp 입니다.</li><li>누를 때, 컨택트 칩은 자동으로 닫힙니다.</li><li>기본으로, 최상단 필드는 활성화되며 초점을 받습니다.</li></ul>
+      <h4>닫혀진 컨택트 칩</h4><ul><li>연락처 이름 텍스트는 Roboto Regular 14sp 입니다.</li><li>초점을 얻은 경우, 칩은 2dp 의 엘리베이션으로 떠오릅니다. 눌렀을 때, 이것은 연락처의 대체 주소를 보여주기 위하여 확장합니다.</li></ul><h4>열린 컨택트 칩</h4><ul><li>연락처 이름 텍스트:  Roboto Regular 16sp</li><li>주소 텍스트: Roboto Regular 14sp</li><li>열린 컨택트 칩의 엘리베이션은 8dp 입니다.</li><li>누를 때, 컨택트 칩은 자동으로 닫힙니다.</li><li>기본으로, 최상단 필드는 활성화되며 초점을 받습니다.</li></ul>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -465,10 +467,10 @@
     <footer>
   <div class="footer-grid">
     <div class="footer-L section-components color-indigo">&nbsp;</div>
-    <div class="footer-grid-L section-components">
+    <div class="footer-grid-L section-components color-indigo">
             <a class="footer-text" href="cards.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>이전</span>
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">이전</span>
         <div>
                       카드
                   </div>
@@ -476,10 +478,10 @@
           </div>
 
     <div class="footer-R section-components color-indigo">&nbsp;</div>
-    <div class="footer-grid-R section-components">
+    <div class="footer-grid-R section-components color-indigo">
             <a class="footer-text" href="data-tables.html">
-        <img class="arrow-L" alt="" src="../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>다음</span>
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">다음</span>
         <div>
                       데이터 테이블
                   </div>
@@ -488,7 +490,7 @@
 
   </div>
 </footer>
-    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.html"></script>
+    <script src="../www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
     <script src="../static/js/main.js"></script>
     
   </body>
