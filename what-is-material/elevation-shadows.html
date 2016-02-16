@@ -284,12 +284,12 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>엘리베이션은 z축을 따라 두 표면 간의 연관된 깊이 또는 거리를 의미합니다.</p><p><strong>명세:</strong></p><ul><li>엘리베이션은 x축과 y축과 같이 같은 단위(dp)로 측정됩니다. 머티리얼 요소들은 깊이(모든 머티리얼은 1dp의 두께를 가짐)를 가지고 있기 때문에, 엘리베이션은 한 표면의 상단부터 다른 표면의 상단까지의 거리로 측정됩니다.</li><li>자식 개체의 엘리베이션은 그 부모 개체의 엘리베이션에 따라서 정해집니다.</li></ul><p>이미지들과 값들은 안드로이드 앱들을 위한 것입니다.</p><div class="modulettes">
+    <p>엘리베이션은 z축을 따르는 두 표면 사이의 연관된 깊이 또는 거리를 의미합니다.</p><p><strong>명세:</strong></p><ul><li>엘리베이션은 x축과 y축과 같이 동일한 단위(dp)로 측정됩니다. 머티리얼 요소들은 깊이(모든 머티리얼은 1dp의 두께를 가짐)를 가지고 있기 때문에, 엘리베이션은 한 표면의 상단부터 다른 표면의 상단까지의 거리로 측정됩니다.</li><li>자식 개체의 엘리베이션은 그 부모 개체의 엘리베이션에 따라서 정해집니다.</li></ul><p>다음의 이미지과 값은 안드로이드 앱을 위한 것입니다.</p><div class="modulettes">
           <a class="modulette polymer" href="https://www.polymer-project.org/docs/elements/material.html#shadow-effect" title="Shadow effect">
       <img class="icon callout-icon" src="../static/images/callout_polymer.svg" alt="" />
       <div class="info">
         <div class="title">그림자 효과</div>
-        <span class="subtitle">커스텀 요소를 위한 그림자를 정의하십시오</span>
+        <span class="subtitle">사용자 정의 요소를 위한 그림자를 정의하십시오</span>
       </div>
     </a>
       </div>
@@ -310,9 +310,9 @@
         </div>
               <div>
           <section class="moduleE1">
-      <h3>레스팅 엘리베이션 (Resting Elevation)</h3>
+      <h3>기본 엘리베이션 (Resting Elevation)</h3>
     <div class="module-body">
-      <p>모든 머티리얼 개체들은 크기에 상관없이 레스팅 엘리베이션 또는 변하지 않는 기본 엘리베이션을 가지고 있습니다. 만약 개체가 엘리베이션을 변경한다면, 그것은 되도록 빨리 자신의 레스팅 엘리베이션으로 돌아와야 합니다.</p><p><strong>컴포넌트 엘리베이션:</strong></p><ul><li>컴포넌트 타입의 레스팅 엘리베이션은 여러 앱에 걸쳐 일관적입니다. (예를 들어, FAB의 엘리베이션은 한 앱의 6dp 부터 다른 앱의 16dp까지 달라지지 않습니다.)</li><li>컴포넌트는 여러 플랫폼에 걸쳐 그 환경의 깊이에 의존한 다른 레스팅 엘리베이션들을 가질 수 있습니다. (예를 들어, 텔레비전은 모바일이나 데스크답 보다 더 깊이가 깊습니다.)</li></ul><h4>반응형 엘리베이션과 동적인 엘리베이션 오프셋</h4><p>어떤 컴포넌트 타입은 사용자 입력(예를 들어, 보통(Normal), 초점을 얻은(Focused), 눌려진(Pressed)) 또는 시스템 이벤트의 응답으로 엘리베이션을 변경하는 것을 의미하는 반응형 엘리베이션을 가지고 있습니다. 이러한 엘리베이션 변경은 일관적으로 <strong>동적인 엘리베이션 오프셋(Dynamic Elevation Offsets)</strong>을 사용하여 구현됩니다.</p><p>동적인 엘리베이션 오프셋은 컴포넌트가 향하여 이동하기 위한 목표 엘리베이션이며, 그 컴포넌트의 휴식 상태와 관련이 있습니다. 그것은 엘리베이션 변경이 액션과 컴포넌트 타입에 걸쳐서 일관적인 것을 보장합니다. 예를 들어, 눌려질 때(Pressed) 들어 올리는 모든 컴포넌트는 그들의 레스팅 엘리베이션과 연관된 동일한 엘리베이션 변경을 갖게 됩니다.</p><p>입력 이벤트가 완료되거나 취소될 때, 그 컴포넌트는 자신의 레스팅 엘리베이션으로 돌아갈 수 있습니다.</p><h4>엘리베이션 간섭 피하기</h4><p>반응형 엘리베이션을 가진 컴포넌트들은 레스팅 엘리베이션과 동적 엘리베이션 오프셋 사이를 이동하면서 다른 컴포넌트들과 마주칠 것입니다. <a href="material-properties.html#material-properties-physical-properties">머티리얼은 다른 머티리얼이 통과할 수 없기 때문에</a>, 컴포넌트는 컴포넌트별 기반에서든 그 전체 앱 레이아웃을 사용하든 간에 다른 여러가지 방법으로 간섭을 피합니다.</p><p>컴포넌트 레벨에서, 컴포넌트는 간섭을 일으키기 전에 움직이거나 제거될 수 있습니다. 예를 들어, FAB는 사용자가 카드를 집거나, 스낵바가 표시되기 전에 사라지거나 화면 밖으로 이동할 수 있습니다.</p><p>레이아웃 레벨에서, 간섭의 기회를 최소한으로 할 수 있도록 당신의 앱 레이아웃을 디자인하십시오. 예를 들어, FAB를 카드 스트림의 한쪽으로 위치시키십시오. 그러면 FAB는 사용자가 카드 중 하나를 집으려고 할 때 간섭하지 않을 것입니다.</p>
+      <p>모든 머티리얼 개체들은 크기에 상관없이 변하지 않는 기본 엘리베이션을 가지고 있습니다. 만약 어느 한 개체가 엘리베이션을 변경한다면, 되도록 빨리 자신의 기본 엘리베이션으로 돌아와야 합니다.</p><p><strong>컴포넌트 엘리베이션:</strong></p><ul><li>컴포넌트 타입의 기본 엘리베이션은 여러 앱에 걸쳐 일관적입니다. (예를 들어, FAB의 엘리베이션은 한 앱의 6dp에서 다른 앱의 16dp까지 달라지지 않습니다.)</li><li>컴포넌트는 여러 플랫폼에 걸쳐 그 환경의 깊이에 따라 각기 다른 기본 엘리베이션들을 가질 수 있습니다. (예를 들어, 텔레비전은 모바일이나 데스크탑 보다 더 깊이가 깊습니다.)</li><li>화면이 일반적으로 더 크고 사용자에게서 더 먼 데스크탑 환경에서, 기본 엘리베이션은 줄어들 것입니다.</li></ul><h4>반응형 엘리베이션과 동적인 엘리베이션 오프셋</h4><p>어떤 컴포넌트 타입은 사용자 입력(예를 들어, 보통(Normal), 초점을 얻은(Focused), 눌러진(Pressed)) 또는 시스템 이벤트의 응답으로 엘리베이션을 변경하는 것을 의미하는 반응형 엘리베이션을 가지고 있습니다. 이러한 엘리베이션 변경은 <strong>동적인 엘리베이션 오프셋(Dynamic Elevation Offsets)</strong>을 사용하여 일관적으로 구현됩니다.</p><p>동적인 엘리베이션 오프셋은 컴포넌트가 향하여 이동하기 위한 목표 엘리베이션이며, 그 컴포넌트의 기본 상태와 관련이 있습니다. 이것은 엘리베이션 변경이 액션과 컴포넌트 타입에 걸쳐 일관적인 것을 보장합니다. 예를 들어, 눌러질 때(Pressed) 들어 올리는 모든 컴포넌트는 그들의 기본 엘리베이션과 연관된 동일한 엘리베이션 변경을 갖게 됩니다.</p><p>입력 이벤트가 완료되거나 취소될 때, 그 컴포넌트는 자신의 기본 엘리베이션으로 돌아갈 수 있습니다.</p><h4>엘리베이션 간섭 피하기</h4><p>반응형 엘리베이션을 가진 컴포넌트들은 기본 엘리베이션과 동적 엘리베이션 오프셋 사이를 이동하면서 다른 컴포넌트들과 마주칠 것입니다. <a href="material-properties.html#material-properties-physical-properties">머티리얼은 다른 머티리얼이 통과할 수 없기 때문에</a>, 컴포넌트는 컴포넌트별 기반에서든 그 전체 앱 레이아웃을 사용하든 간에 서로 여러가지 방법으로 간섭을 피합니다.</p><p>컴포넌트 레벨에서, 컴포넌트는 간섭을 일으키기 전에 움직이거나 제거될 수 있습니다. 예를 들어, FAB는 사용자가 카드를 집거나, 스낵바가 표시되기 전에 사라지거나 화면 밖으로 이동할 수 있습니다.</p><p>레이아웃 레벨에서, 간섭의 기회를 최소한으로 할 수 있도록 당신의 앱 레이아웃을 디자인하십시오. 예를 들어, FAB를 카드 스트림의 한쪽으로 위치시키십시오. 그러면 FAB는 사용자가 카드 중 하나를 집으려고 할 때 간섭하지 않을 것입니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -340,48 +340,6 @@
         </tr>
         <tr class="c2">
             <td class="c4" colspan="1" rowspan="1">
-                <p><span>23</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>22</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>21</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>20</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>19</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>18</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>17</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
                 <p><span>16</span></p>
             </td>
             <td class="c14" colspan="1" rowspan="1">
@@ -392,41 +350,11 @@
         </tr>
         <tr class="c2">
             <td class="c4" colspan="1" rowspan="1">
-                <p><span>15</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>14</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>13</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
                 <p><span>12</span></p>
             </td>
             <td class="c14" colspan="1" rowspan="1">
-                <p><span>플로팅 액션 버튼 (FAB - 눌려진 상태)</span></p>
+                <p><span>플로팅 액션 버튼 (FAB - 눌러진 상태)</span></p>
             </td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>11</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>10</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
         </tr>
         <tr class="c2">
             <td class="c4" colspan="1" rowspan="1">
@@ -443,31 +371,19 @@
             <td class="c14" colspan="1" rowspan="1">
                 <p><span>메뉴</span></p>
                 <p><span>카드 (카드를 집은 상태)</span></p>
-                <p><span>레이즈드 버튼 (Raised Button - 눌려진 상태)</span></p>
+                <p><span>레이즈드 버튼 (Raised Button - 눌러진 상태)</span></p>
             </td>
-        </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>7</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
         </tr>
         <tr class="c2">
             <td class="c4" colspan="1" rowspan="1">
                 <p><span>6</span></p>
             </td>
             <td class="c14" colspan="1" rowspan="1">
-                <p><span>플로팅 액션 버튼 (FAB - 레스팅 엘리베이션)</span></p>
+                <p><span>플로팅 액션 버튼 (FAB - 기본 엘리베이션)</span></p>
                 <p><span>스낵바</span></p>
             </td>
         </tr>
-        <tr class="c2">
-            <td class="c4" colspan="1" rowspan="1">
-                <p><span>5</span></p>
-            </td>
-            <td class="c3" colspan="1" rowspan="1"></td>
-        </tr>
-        <tr class="c2">
+         <tr class="c2">
             <td class="c4" colspan="1" rowspan="1">
                 <p><span>4</span></p>
             </td>
@@ -489,9 +405,9 @@
                 <p><span>2</span></p>
             </td>
             <td class="c14" colspan="1" rowspan="1">
-                <p><span>카드 (레스팅 엘리베이션)</span></p>
-                <p><span>레이즈드 버튼 (Raised Button - 레스팅 엘리베이션)</span></p>
-                <p><span>퀵 엔트리 / 서치 바 (레스팅 엘리베이션)</span></p>
+                <p><span>카드 (기본 엘리베이션)</span></p>
+                <p><span>레이즈드 버튼 (Raised Button - 기본 엘리베이션)</span></p>
+                <p><span>퀵 엔트리 / 서치 바 (기본 엘리베이션)</span></p>
             </td>
         </tr>
         <tr class="c2">
@@ -515,7 +431,7 @@
               <section class="moduleB1">
           <h3>컴포넌트 엘리베이션 비교</h3>
         <div class="module-body">
-      <p>다음의 다이어그램은 다양한 컴포넌트의 레스팅 엘리베이션과 동적인 엘리베이션 오프셋을 비교한 것입니다.</p>
+      <p>다음의 다이어그램은 다양한 컴포넌트의 기본 엘리베이션과 동적인 엘리베이션 오프셋을 비교한 것입니다.</p>
     </div>
   </section>
 
@@ -587,7 +503,7 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>그림자는 개체의 깊이와 방향성이 있는 움직임에 관한 중요한 시각적인 자극을 제공합니다. 그것은 표면 사이를 구분하는 양을 나타내는 유일한 시각적 자극입니다. 한 개체의 엘리베이션은 그 그림자의 모습을 결정합니다.</p>
+      <p>그림자는 개체의 깊이와 방향성이 있는 움직임에 관한 중요한 시각적인 자극을 제공합니다. 이것은 표면 사이를 구분하는 양을 나타내는 유일한 시각적 자극입니다. 한 개체의 엘리베이션은 그 개체의 그림자 모습을 결정합니다.</p>
     </div>
   </section>
 
@@ -617,7 +533,7 @@
                           <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UW5QQ010bm0tZFk/whatismaterial_3d_elevation_shadow3.png"  />
                       </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>부드러워 지고 커진 그림자는 FAB가 더 선명한 그림자를 가진 파란색 시트 보다 높이 있다는 것을 나타냅니다.</p>
+          <div class="caption-title">Do.</div><p>더 부드럽고 큰 그림자는 FAB가 더 선명한 그림자를 가진 파란색 시트 보다 높이 있다는 것을 나타냅니다.</p>
         </figcaption>
                 </figure>
           </div>
@@ -692,7 +608,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>레이즈드 버튼(Raised button)</strong></p><p>레스팅 상태: 2dp</p><p>눌려진 상태: 8dp</p>
+    <p><strong>레이즈드 버튼(Raised button)</strong></p><p>기본 상태: 2dp</p><p>눌러진 상태: 8dp</p><p>데스크탑 만을 위한, 레이즈드 버튼은 다음의 엘리베이션을 가질 수 있습니다:</p><p>기본 상태: 0dp</p><p>눌러진 상태: 2dp</p><p>더 자세한 정보를 위해 <a href="../components/buttons.html#buttons-flat-raised-buttons">플랫 레이즈드 버튼</a>을 참조하십시오.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -708,7 +624,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>플로팅 액션 버튼(FAB)</strong></p><p>레스팅 상태: 6dp</p><p>눌려진 상태: 12dp</p>
+    <p><strong>플로팅 액션 버튼(FAB)</strong></p><p>기본 상태: 6dp</p><p>눌러진 상태: 12dp</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -724,7 +640,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>카드</strong></p><p>레스팅 상태: 2dp</p><p>집은 상태: 8dp</p>
+    <p><strong>카드</strong></p><p>기본 상태: 2dp</p><p>올려진 상태: 8dp</p><p>데스크탑 만을 위한, <a href="/design/spec/components/cards.html#cards-content-blocks">내용물 블록</a>을 참조하십시오.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -820,7 +736,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>퀵 엔트리/서치 바</strong></p><p>레스팅 상태: 2dp</p><p>스크롤된 상태: 3dp</p>
+    <p><strong>퀵 엔트리/서치 바</strong></p><p>기본 상태: 2dp</p><p>스크롤된 상태: 3dp</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -882,7 +798,7 @@
           <section class="moduleE1">
       <h3>개체 계층 구조</h3>
     <div class="module-body">
-      <p>앱 내에서 당신이 어떻게 개체나 개체의 모음을 조직하는 지는 그것이 어떻게 또 다른 것과 관계하여 이동하는 지를 결정합니다. 개체들은 서로 아무런 관계 없이 이동하거나 개체들에 의해 계층 구조의 상위로 이동하도록 강요될 수 있습니다.</p><p>모든 개체들은 부모-자식 관계라는 면으로 묘사되는 한 계층 구조의 일부입니다. 이러한 관계들 각각에서 “자식(Child)”은 그것의 “부모(Parent)” 요소에 종속된 한 요소를 말합니다.</p><p>부모-자식 관계의 세부 사항:</p><ul><li>각 개쳬는 하나의 부모를 가집니다.</li><li>각 개체는 여러 개의 자식을 가질 수 있습니다.</li><li>자식들은 그들의 부모로 부터 위치, 회전, 규모, 엘리베이션과 같은 변형 속성을 상속받습니다.</li><li>형제(Sibling)는 계층 구조의 같은 레벨에 있는 개체를 말합니다.</li></ul><h4>예외</h4><p>주된 UI 요소들과 같이 루트 요소의 돌봄을 받는 항목은 다른 개체와 상관없이 이동합니다. 예를 들어, FAB는 내용물과 같이 스크롤 되지 않습니다. 그 밖의 예외적인 요소는 다음을 포함합니다:</p><ul><li>앱 측면의 네비게이션 드로어</li><li>액션 바</li><li>다이얼로그</li></ul><h4>상호 작용</h4><p>개체가 어떻게 다른 것과 상호 작용하는 지는 부모-자식 계층안에서 그들의 위치에 의해 결정됩니다.</p><p>예제:</p><ul><li>자식들은 그들의 부모로 부터 아주 적은 z축 구분을 가집니다; 다른 개체는 부모와 자식 간에 삽입되지 않습니다.</li><li>스크롤하는 카드 컬렉션에서, 카드들은 서로 형제 관계입니다. 그래서 그들은 모두 나란히 함께 이동합니다. 그들은 그들의 이동을 제어하는 카드 컬렉션 개체의 자식들입니다.</li></ul><h4>엘리베이션</h4><p>당신이 어떻게 개체의 엘리베이션—z공간에서의 위치—를 결정하는 지는 한 개체가 다른 개체와 상관없이 이동할 필요가 있던지 없던지 간에 당신이 표현하기 원하는 그 내용물의 계층 구조에 의존합니다.</p>
+      <p>앱 내에서 당신이 어떻게 개체나 개체의 모음을 조직하는지는 이들이 어떻게 서로 관계하여 이동하는지를 결정합니다. 개체들은 서로 아무런 관계 없이 이동하거나 개체들에 의해 계층 구조의 상위로 이동하도록 강요될 수 있습니다.</p><p>모든 개체들은 부모-자식 관계라는 면으로 묘사되는 한 계층 구조의 일부입니다. 이러한 관계들 각각에서 “자식(Child)”은 그것의 “부모(Parent)” 요소에 종속된 한 요소를 말합니다. 개체들은 시스템 아니면 또 다른 개체의 자식일 수 있습니다.</p><p>부모-자식 관계의 세부 사항:</p><ul><li>각 개쳬는 하나의 부모를 가집니다.</li><li>각 개체는 여러 개의 자식을 가질 수 있습니다.</li><li>자식들은 그들의 부모로 부터 위치, 회전, 규모, 엘리베이션과 같은 변형 속성을 상속받습니다.</li><li>형제(Sibling)는 계층 구조의 같은 레벨에 있는 개체를 말합니다.</li></ul><h4>예외</h4><p>주된 UI 요소들과 같이 루트 요소의 돌봄을 받는 항목은 다른 개체와 상관없이 이동합니다. 예를 들어, FAB는 내용물과 같이 스크롤 되지 않습니다. 그 밖의 예외적인 요소는 다음을 포함합니다:</p><ul><li>앱 측면의 네비게이션 드로어</li><li>액션 바</li><li>다이얼로그</li></ul><h4>상호 작용</h4><p>개체가 어떻게 서로 상호 작용하는지는 부모-자식 계층안에서 그들의 위치에 의해 결정됩니다.</p><p>예제:</p><ul><li>자식들은 그들의 부모에서부터 아주 적은 z축 구분을 가집니다; 다른 개체는 부모와 자식 간에 삽입되지 않습니다.</li><li>스크롤하는 카드 컬렉션에서, 카드들은 서로 형제 관계입니다. 그래서 이들은 모두 나란히 함께 이동합니다. 이들은 이들의 이동을 제어하는 카드 컬렉션 개체의 자식들입니다.</li></ul><h4>엘리베이션</h4><p>당신이 어떻게 개체의 엘리베이션—z공간에서의 위치—를 결정하는지는 한 개체가 다른 개체와 상관없이 이동할 필요가 있던지 없던지 간에 당신이 표현하기 원하는 그 내용물의 계층 구조에 달려 있습니다.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
