@@ -218,7 +218,7 @@
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">리소스
                 </dt>
         <dd>
-                    <a class="" href="../resources/color-palettes.html">색상 팔레트
+                    <a class="" href="../resources/color-palettes.html">색상표
                     </a>
                     <a class="" href="../resources/devices.html">디바이스
                     </a>
@@ -252,20 +252,19 @@
     <div class="chapter-content">
         
         <div class="chapter-intro">
-            <p>데이터 테이블은 원시 데이터(Raw Data) 집합을 표현하기 위해 사용되며, 보통 데스크탑 엔터프라이즈 제품에서 사용됩니다.</p><p>데이터 집합은 다음을 포함할 것입니다:</p><ul><li>셋 또는 그 이상의 데이터 열</li><li>그에 상응하는 시각화</li><li>범위에서 데이터를 질의하고 조작하는 사용자를 위한 능력</li></ul>
-
+            <p>데이터 테이블은 원시 데이터(Raw Data) 집합을 표현하기 위해 사용되며, 보통 데스크탑 엔터프라이즈 제품에서 사용됩니다.</p>
       
       
     </div>
     
         <nav class="chapter-toc">
-      <h1>차례</h1>
+      <h1>목차</h1>
       <ul>
                 <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-structure">구조
                 </a></li>
                 <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-interaction">상호 작용
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-tables-within-cards">카드 안 테이블
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-tables-within-cards">카드 내 테이블
                 </a></li>
                 <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#data-tables-specs">명세
                 </a></li>
@@ -287,7 +286,8 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>단순한 형태에서, 데이터 테이블은 최상단에 있는 열 이름 행과 데이터를 위한 행이 들어있습니다. 사용자가 데이터를 선택하거나 조작할 필요가 있다면, 체크박스가 각 행에 동반되어야 합니다.</p>
+          <p>데이터 테이블은 최상단에 열 이름을 나열한 <strong>헤더 행(Header Row)</strong>이 들어 있으며, 데이터를 위한 행이 그 뒤를 따릅니다.</p><p>사용자가 데이터를 선택하거나 조작할 필요가 있다면, 체크박스가 각 행에 동반되어야 합니다.</p><p>데이터 집합은 다음을 포함할 것입니다:</p><ul><li>셋 또는 그 이상의 데이터 열</li><li>그에 상응하는 시각화</li><li>범위에서 데이터를 질의하고 조작하는 사용자를 위한 능력</li></ul>
+
     </div>
   </section>
 
@@ -300,39 +300,14 @@
       <div class="media">
                   <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhV25CdGNXYzA4cXM/components_datatables_structure_basictable.png"  />
               </div>
-            <figcaption>
-        <p>기본적인 데이터 테이블</p>
-      </figcaption>
+              <figcaption>
+          <p>기본적인 데이터 테이블</p><p><strong>테이블 내용물</strong></p><p>13sp Roboto Regular<br>87% 검정</p><p><strong>열 헤더</strong></p><p>12sp Roboto Medium<br>54% 검정</p><p><strong>텍스트 정렬</strong></p><p>숫자 열은 우측 정렬<br>텍스트 열은 왼쪽 정렬</p>
+        </figcaption>
             </figure>
     </div>
   </div>
 </section>
 
-        </div>
-              <div>
-          <section class="moduleD1">
-    <div class="module-body">
-    <p><strong>열 헤더</strong></p><ul><li>12sp Roboto Medium</li><li>54% 검정</li></ul>
-  </div>
-  <div class="figure-group">
-    <div class="figure-row">
-            <figure class="">
-                          <div class="module-body">
-            <div class="text-box">
-              <p><strong>테이블 내용물</strong></p><ul><li>13sp Roboto Regular</li><li>87% 검정</li></ul>
-            </div>
-          </div>
-                        </figure>
-            <figure class="">
-                          <div class="module-body">
-            <div class="text-box">
-              <p><strong>텍스트 정렬</strong></p><ul><li>숫자 열은 오른쪽 정렬</li><li>텍스트 열은 왼쪽 정렬</li></ul>
-            </div>
-          </div>
-                        </figure>
-          </div>
-  </div>
-</section>
         </div>
               </div>
   </div>
@@ -351,7 +326,7 @@
           <section class="moduleE1">
       <h3>행 맴돌기 (데스크탑)</h3>
     <div class="module-body">
-    <p>사용자가 한 행에 어느 부분 위를 맴돌 때(Hover) 배경 채우기를 표시합니다. 만약 개개의 셀(예를 들어 수정 가능한)에서 분리된 맴돌기 상태가 존재한다면, 셀과 행의 맴돌기 상태 모두를 동시에 표시하십시오.</p><p><strong>맴돌기 배경</strong></p><ul><li>회색 200 (#EEEEEE)</li></ul>
+    <p>사용자가 한 행에 어느 부분 위를 맴돌 때(Hover) 배경 채우기를 표시합니다. 만약 개개의 셀에 분리된 맴돌기 상태가 존재한다면, 동시에 셀과 행의 맴돌기 상태 모두를 표시하십시오.</p><p><strong>맴돌기 배경</strong></p><ul><li>회색 200 (#EEEEEE)</li></ul>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -371,7 +346,7 @@
           <section class="moduleE1">
       <h3>행 선택</h3>
     <div class="module-body">
-    <p>한 행이 선택되었을 때, 그 행에 배경 채우기를 사용하십시오.</p><p><strong>선택된 행 배경</strong></p><ul><li>회색 100 (#F5F5F5)</li></ul><p><strong>체크박스</strong></p><ul><li>부수적인 앱 색을 사용하십시오.</li></ul>
+    <p>한 행이 선택되었을 때, 그 행에 배경 채우기를 사용하십시오.</p><p><strong>선택된 행 배경</strong></p><ul><li>회색 100 (#F5F5F5)</li></ul><p><strong>체크박스</strong></p><ul><li>부수적인(Secondary) 앱 색을 사용하십시오.</li></ul>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -468,7 +443,6 @@
                       <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhZTViOVFXZTNucGs/components_datatables_interaction_editing1.png"  />
                     </div>
                         <figcaption>
-          <p>플레이스 홀더 텍스트가 있는 편집 가능한 테이블 셀</p>
         </figcaption>
               </figure>
           </div>
@@ -564,7 +538,7 @@
   </div>
 </div>                  <div id="data-tables-tables-within-cards" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    카드 안 테이블
+    카드 내 테이블
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -589,8 +563,8 @@
       <div class="media">
                   <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhUTEwa21JUEtza0k/components_datatables_cards_tablecard.png"  />
               </div>
-            <figcaption>
-        <p>헤더와 푸터가 있는 테이블 카드</p>
+              <figcaption>
+        <p>헤더와 푸터가 있는 테이블 카드</p><p><strong>카드 제목</strong></p><p>20sp Roboto Regular<br>87% 검정</p><p><strong>카드 액션 아이콘 (헤더와 푸터)</strong></p><p>24dp 컨테이너<br>54% 검정</p><p><strong>푸터 페이지 번호 레이블</strong></p><p>12sp Roboto Regular<br>54% 검정</p>
       </figcaption>
             </figure>
     </div>
@@ -599,35 +573,11 @@
 
         </div>
               <div>
-          <section class="moduleD1">
-    <div class="module-body">
-    <p><strong>카드 제목</strong></p><ul><li>20sp Roboto Regular</li><li>87% 검정</li></ul>
-  </div>
-  <div class="figure-group">
-    <div class="figure-row">
-            <figure class="">
-                          <div class="module-body">
-            <div class="text-box">
-              <p><strong>카드 액션 아이콘 (헤더와 푸터)</strong></p><ul><li>24dp 컨테이너</li><li>54% 검정</li></ul>
-            </div>
-          </div>
-                        </figure>
-            <figure class="">
-                          <div class="module-body">
-            <div class="text-box">
-              <p><strong>푸터 페이지 번호 레이블</strong></p><ul><li>12sp Roboto Regular</li><li>54% 검정</li></ul>
-            </div>
-          </div>
-                        </figure>
-          </div>
-  </div>
-</section>
-        </div>
-              <div>
               <section class="moduleB1">
           <h3>대체 가능한 헤더</h3>
         <div class="module-body">
-      <p>몇몇의 테이블 카드는 제목 대신 액션이 있는 헤더를 요구할 것입니다. 이것에 대한 두 가지의 가능한 접근법은 아이템이 선택될 때 활성화 되는 지속적인 액션이나, 상황에 맞는 헤더를 표시하는 것입니다.</p>
+          <p>몇몇의 테이블 카드는 제목 대신 액션이 있는 헤더를 요구할 것입니다. 이 경우에 당신은 다음 중 하나를 행할 것입니다:</p>
+          <ul><li>지속적인 액션을 표시</li><li>아이템이 선택될 때 활성화 되는 상황에 맞는 헤더를 표시</li></ul>
     </div>
   </section>
 
@@ -640,32 +590,14 @@
       <div class="media">
                   <img src="../material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3mOPoJlxiFhemNvbnZOcXNpODQ/components_datatables_cards_altheaders.png"  />
               </div>
-            <figcaption>
-        <p>테이블 카드를 위한 대체 가능한 헤더</p>
+              <figcaption>
+        <p>테이블 카드를 위한 대체 가능한 헤더</p><p><strong>액션 버튼</strong></p><p>경계선이 없는 버튼을 사용s<br>아이템 선택 시 활성화</p><p><strong>색이 있는 헤더</strong></p><p>배경 채우기를 위해서 부수적인(Secondary) 앱 색의 50 버전 사용<br>선택된 아이템의 수를 표시<br>아이템 선택 시 이용 가능한 상황에 맞는 아이콘을 표시</p>
       </figcaption>
             </figure>
     </div>
   </div>
 </section>
 
-        </div>
-              <div>
-          <section class="moduleD1">
-    <div class="module-body">
-    <p><strong>액션 버튼</strong></p><ul><li>경계선이 없는 버튼을 사용</li><li>아이템 선택 시 활성화</li></ul>
-  </div>
-  <div class="figure-group">
-    <div class="figure-row">
-            <figure class="">
-                          <div class="module-body">
-            <div class="text-box">
-              <p><strong>색깔이 있는 헤더</strong></p><ul><li>배경 채우기를 위한 부수적인 앱 색의 50 틴트 사용</li><li>선택된 아이템의 수를 표시</li><li>아이템 선택 시 이용 가능한 상황에 맞는 아이콘을 표시</li></ul>
-            </div>
-          </div>
-                        </figure>
-          </div>
-  </div>
-</section>
         </div>
               </div>
   </div>
