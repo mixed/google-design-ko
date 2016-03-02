@@ -10,8 +10,8 @@
 
 원문이 지속적으로 수정되는 문서이기 때문에, 이 프로젝트도 빠르지는 않지만 지속적으로 업데이트 될 것입니다.
 
-* [Google Design Guideline (English)](http://www.google.com/design/spec/)
-* [구글 디자인 가이드라인 한국어 번역](http://davidhyk.github.io/google-design-ko)
+* [Google Design Guidelines (English)](http://www.google.com/design/spec/)
+* [구글 디자인 가이드라인 한국어 번역](https://davidhyk.github.io/google-design-ko)
 
 ## 수정 사항
 
@@ -27,13 +27,12 @@
 ## 개선된 사항
 
 * 기존 가이드라인에서 일부 문맥상 맞지 않는 내용을 수정
-* 데스크탑에서 동영상이 제대로 나오지 않는 문제 수정
+* 데스크탑에서 동영상이 제대로 표시되지 않는 문제 수정
+* Noto Sans KR 웹폰트 적용
 
 ## 변경 기록
 
-* 0.1 (2015-11-19)
-  - 최초 릴리즈
-  - 2015년 10월 변경사항까지 번역 완료
+자세한 변경 기록은 [릴리즈 노트](https://github.com/davidhyk/google-design-ko/releases)를 참고해 주시기 바랍니다.
 
 ## 책임과 한계
 
@@ -45,5 +44,5 @@
 
 ## 번역자 정보
 
-David Kim < davidhyk7_at_gmail.com >
+David Kim &lt;davidhyk7_at_gmail.com&gt;
 
